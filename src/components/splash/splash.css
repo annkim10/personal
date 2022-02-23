@@ -1,0 +1,73 @@
+
+
+.splash-outer-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.splash-inner-div {
+    /* background-color: rgb(101, 206, 206); */
+    min-width: 1200px;
+    max-width: 1600px;
+    height: 800px;
+    display: flex;
+    
+}
+
+.splash-left-div {
+    /* background-color: rgba(220, 212, 228, 0.247); */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.splash-header-div > h2 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.splash-name {
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.splash-header-div {
+    animation: left-div 3s forwards;
+}
+
+@keyframes left-div {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+.splash-descrip {
+    margin-top: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+    width: 250px;
+}
+
+
+.splash-right-div {
+    background-color: bisque;
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* TIMELINE COMPONENT */
+
+.timeline-wrapper {
+    background-color: blue;
+    height: 70%;
+}
