@@ -1,9 +1,12 @@
 import React from "react"
+import { useEffect } from "react"
 import "./splash.css"
 import Timeline from "./timeline"
 
 
 const Splash = () => {
+
+    useEffect(() => window.scroll(0,0))
 
     return (
         <div className="splash-outer-div">

@@ -245,10 +245,52 @@
     gap: 1em;
 }
 
+.market-youtube-div {
+    /* background-color: aqua; */
+    position: absolute;
+    width: 45%;
+    height: 300px;
+    top: 40%;
+}
+
+.market-youtube-div h1 {
+    margin-left: 45px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.market-youtube-div a {
+    margin-left: 45px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    position: absolute;
+    cursor: pointer;
+}
+
+.market-youtube-div span {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.youtube-div {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+
+}
+
+
+
 .market-skills-list-div {
-    background-color: aliceblue;
-    margin-top: 10px;
+    background-color: #f4ebe5;
+    margin-top: 80px;
     width: 90%;
+    height: 650px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .samsung-logo {
@@ -257,5 +299,23 @@
 }
 
 .bullet-point {
-    font-size: 10px;
+    font-size: 8px;
 }
+
+.market-skills-list {
+    /* background-color: beige; */
+    width: 85%;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.market-skill {
+    line-height: 1.3;
+    display: flex;
+}
+
+.market-skill-text {
+    padding-left: 10px
+}
+
