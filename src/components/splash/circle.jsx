@@ -10,8 +10,8 @@ const Circle = () => {
  
     const transitions = useTransition(mounted, {
         from: { transform: `translate3d(0, 0%, 0)` },
-        enter: { transform: `translate3d(0, -180%, 0)` },
-        leave: { transform: `translate3d(0, -650%, 0)` },
+        enter: { transform: `translate3d(0, -175%, 0)` },
+        leave: { opacity: 0 },
         config: config.molasses,
         delay: 500
     })
