@@ -1,3 +1,8 @@
+.experience-wrapper {
+    position: relative;
+}
+
+
 /* DEVELOP COMPONENT */
 
 .develop-outer-div {
@@ -17,7 +22,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     gap: 5em;
 }
 
@@ -25,10 +29,12 @@
     width: 100%;
     height: 30%;
     display: flex;
+    position: relative;
+    margin-top: 30px
 }
 
 .develop-stage-div {
-    background-color: #f4ebe5;
+    background-color: #333161;
     width: 250px;
     height: 250px;
     position: absolute;
@@ -41,14 +47,6 @@
     flex-direction: column;
 }
 
-.develop-stage-time {
-    padding-left: 50px;
-    /* background-color: aqua; */
-    width: fit-content;
-    line-height: 1.3;
-    font-weight: 500;
-}
-
 .develop-stage {
    padding-left: 52px;
    padding-top: 10px;
@@ -57,7 +55,7 @@
    letter-spacing: 0.1em;
    width: 160px;
    line-height: 1.2;
-   color: #5552a1;
+   color: white;
 }
 
 .develop-stage-descrip-div {
@@ -68,10 +66,20 @@
     right: 55%;
     top: 6%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     line-height: 1.3;
     font-weight: 300;
+    gap: 1em;
+}
+
+.develop-stage-time {
+    /* background-color: aqua; */
+    width: fit-content;
+    line-height: 1.3;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.1em;
 }
 
 .develop-stage-skills-div {
@@ -79,8 +87,8 @@
     width: 600px;
     height: 100px;
     position: absolute;
-    right: 0;
-    top: 15%;
+    right: 5%;
+    top: 25%;
     /* border-left: 1px solid lightgray */
 }
 
@@ -117,6 +125,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.5em;
 }
 
 .skill-icon {
@@ -124,7 +133,7 @@
 }
 
 .develop-bottom-div {
-    width: 1400px;
+    width: 1300px;
     height: 70%;
     display: flex;
     align-items: center;
@@ -193,4 +202,60 @@
     background-color: #333161;
     border: none;
     color: white;
+}
+
+/*  MARKET COMPONENT  */
+
+.market-outer-div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.market-inner-div {
+    /* background-color: rgb(161, 214, 214); */
+    min-width: 1200px;
+    max-width: 1600px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 1em;
+}
+
+.market-left-div, .market-right-div {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 50%;
+}
+
+.market-stage-descrip-div {
+    /* background-color: blanchedalmond; */
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 55%;
+    top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.3;
+    font-weight: 300;
+    gap: 1em;
+}
+
+.market-skills-list-div {
+    background-color: aliceblue;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.samsung-logo {
+    font-size: 100px;
+    margin-bottom: -30px;
+}
+
+.bullet-point {
+    font-size: 10px;
 }
