@@ -68,7 +68,6 @@
     }
 
     .navbar-inner-div {
-        background-color: white;
         width: 85%;
         height: 70px;   
         display: flex;
@@ -123,7 +122,7 @@
         margin-left: 50px;
     }
 
-    .close-icon:active {
+    .close-icon:active, .nav-link:active, .nav-link:hover {
         background-color: #f4ebe5;
     }
 

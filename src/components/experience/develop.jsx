@@ -3,7 +3,7 @@ import { FaReact } from "react-icons/fa";
 import { SiRedux, SiRubyonrails, SiJavascript, SiPostgresql, SiMongodb, SiExpress, SiNodedotjs } from "react-icons/si";
 import { DiRuby, DiCss3 } from "react-icons/di";
 import { AiOutlineHtml5 } from "react-icons/ai"
-import "./experience.css";
+import "./develop.css";
 
 const Develop = () => {
 
