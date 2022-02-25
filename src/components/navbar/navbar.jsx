@@ -25,10 +25,8 @@ const Navbar = () => {
     }, [])
 
     const handleClick = () => setClick(true)
-
+    
     const closeMenu = () => setClick(false)
-
-    console.log("click", click)
 
     return (
         <div className='navbar-outer-div' >
