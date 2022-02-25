@@ -10,9 +10,7 @@ import Footer from './components/footer/footer';
 function App() {
   return (
     <div className="app-outer-div">
-      <header className='navbar-outer-div'>
-          <Navbar />
-      </header>
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Splash} />
           <Route path="/experience" component={Experience} />

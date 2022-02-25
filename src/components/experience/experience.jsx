@@ -1,8 +1,10 @@
 import React from "react"
 import { useEffect } from "react";
+import { Link } from "react-scroll";
 import Develop from "./develop";
 import Market from "./market";
 import Advertise from "./advertise";
+import Splash from "../splash/splash";
 
 const Experience = () => {
 

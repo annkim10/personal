@@ -1,0 +1,59 @@
+.contact-outer-div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px
+}
+
+.contact-inner-div {
+    min-width: 1200px;
+    max-width: 1600px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.contact-wrapper {
+    background-color: #f4ebe5;
+    width: 90%;
+    height: 500px;
+    border-radius: 40px;
+    display: flex;
+}
+
+.contact-header {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 180px;
+}
+
+.contact-email-div, .contact-call-div {
+    width: 280px;
+    margin-top: 20px;
+}
+
+.contact-icon {
+    font-size: 3em;
+}
+
+.contact {
+    margin-top: 20px;
+    font-size: 25px;
+}
