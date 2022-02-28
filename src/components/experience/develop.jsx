@@ -4,6 +4,7 @@ import { SiRedux, SiRubyonrails, SiJavascript, SiPostgresql, SiMongodb, SiExpres
 import { DiRuby, DiCss3 } from "react-icons/di";
 import { AiOutlineHtml5 } from "react-icons/ai"
 import "./develop.css";
+import code from "../../images/code.jpg"
 
 const Develop = () => {
 
@@ -26,6 +27,7 @@ const Develop = () => {
         <div className='develop-outer-div'>
             <div className='develop-inner-div'>
                 <div className='develop-top-div'>
+                    <img className='develop-img' src={code} />
                     <div className='develop-stage-div'>
                         <h2 className='develop-stage'>Learning to develop the product</h2>
                     </div>
@@ -33,7 +35,8 @@ const Develop = () => {
                         <h1 className='develop-stage-time'>OCT 2021 - PRESENT</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div className='develop-stage-skills-div'>
+                </div>
+                 <div className='develop-stage-skills-div'>
                         <h1 className='develop-stage-skills-header'>SKILLS</h1>
                         <ul className='develop-stage-skills-list'>
                             {skills.map((skill, idx) => (
@@ -44,7 +47,6 @@ const Develop = () => {
                             ))}
                         </ul>
                     </div>
-                </div>
                 <div className='develop-bottom-div'>
                     <div className='develop-projects-div'>
                         <div className='develop-projects-wrapper'>

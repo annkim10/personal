@@ -13,7 +13,7 @@
         /* background-color: rgb(161, 214, 214); */
         min-width: 1200px;
         max-width: 1600px;
-        height: 800px;
+        /* height: 800px; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,18 +21,25 @@
     }
 
     .develop-top-div {
-        width: 100%;
-        height: 30%;
+        background-color: #f5ece6;
+        width: 90%;
+        height: 240px;
         display: flex;
         position: relative;
         margin-top: 30px
     }
 
+    .develop-img {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+    }
+
     .develop-stage-div {
-        background-color: #333161;
+        /* background-color: #333161; */
         width: 250px;
         height: 250px;
-        position: absolute;
+        /* position: absolute; */
         right: 79%;
         top: 5%;
         border-radius: 50%;
@@ -43,21 +50,21 @@
     }
 
     .develop-stage {
-    padding-left: 52px;
-    padding-top: 10px;
-    font-weight: 700;
-    font-size: 22px;
-    letter-spacing: 0.1em;
-    width: 160px;
-    line-height: 1.2;
-    color: white;
+        padding-left: 52px;
+        padding-top: 10px;
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        width: 160px;
+        line-height: 1.2;
+        color: white;
     }
 
     .develop-stage-descrip-div {
         /* background-color: aliceblue; */
         width: 250px;
         height: 250px;
-        position: absolute;
+        /* position: absolute; */
         right: 55%;
         top: 6%;
         display: flex;
@@ -79,21 +86,15 @@
 
     .develop-stage-skills-div {
         /* background-color: aliceblue; */
-        width: 600px;
-        height: 100px;
-        position: absolute;
-        right: 5%;
-        top: 25%;
+        display: flex;
+        gap: 5em;
         /* border-left: 1px solid lightgray */
     }
 
     .develop-stage-skills-header {
-        position: absolute;
-        left: 2%;
-        top: 10%;
         font-weight: 700;
         letter-spacing: 0.1em;
-        background-color: #f4ebe5;
+        background-color: #f5ece6;
         border-radius: 40px;
         width: 85px;
         height: 25px;
@@ -104,14 +105,8 @@
 
     .develop-stage-skills-list {
         /* background-color: aqua; */
-        width: 70%;
-        height: 80%;
-        position: absolute;
-        flex-wrap: wrap;
-        left: 25%;
-        top: 5%;
         display: flex;
-        gap: 2em;
+        gap: 3em;
     }
 
     .skill {
@@ -136,7 +131,7 @@
     }
 
     .develop-projects-div {
-        background-color: #f4ebe5;
+        /* background-color: #f5ece6; */
         width: 98%;
         height: 80%;
         border-radius: 40px;
@@ -203,184 +198,5 @@
 
 
 @media screen and (max-width: 960px) {
-     .develop-outer-div {
-        position: relative;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 70px
-    }
-
-    .develop-inner-div {
-        /* background-color: rgb(161, 214, 214); */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5em;
-    }
-
-    .develop-top-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        margin-top: 30px
-    }
-
-    .develop-stage-div {
-        background-color: #333161;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        display: flex;
-        /* align-items: center; */
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .develop-stage {
-        padding-left: 52px;
-        padding-top: 10px;
-        font-weight: 700;
-        font-size: 22px;
-        letter-spacing: 0.1em;
-        width: 160px;
-        line-height: 1.2;
-        color: white;
-    }
-
-    .develop-stage-descrip-div {
-        /* background-color: aliceblue; */
-        width: 250px;
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        line-height: 1.3;
-        font-weight: 300;
-        gap: 1em;
-    }
-
-    .develop-stage-time {
-        /* background-color: aqua; */
-        width: fit-content;
-        line-height: 1.3;
-        font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 0.1em;
-    }
-
-    .develop-stage-skills-div {
-        /* background-color: aliceblue; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        /* border-left: 1px solid lightgray */
-    }
-
-    .develop-stage-skills-header {
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        background-color: #f4ebe5;
-        border-radius: 40px;
-        width: 85px;
-        height: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .develop-stage-skills-list {
-        /* background-color: aqua; */
-        width: 80%;
-        margin-top: 50px;
-        flex-wrap: wrap;
-        display: flex;
-        gap: 2em;
-    }
-
-    .skill {
-        font-size: 13px;
-        font-weight: 500;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5em;
-    }
-
-    .skill-icon {
-        font-size: 25px;
-    }
-
-    .develop-bottom-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .develop-projects-div {
-        background-color: #f4ebe5;
-        width: 90%;
-        padding: 30px 0;
-        border-radius: 40px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .develop-projects-wrapper {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: space-between; */
-        width: 80%;
-    }
-
-    .develop-project {
-        /* background-color: white; */
-        margin-top: 5%;
-    }
-
-    .project-title {
-        font-weight: 700;
-        font-size: 18px;
-        color: #5552a1
-    }
-
-    .project-descrip {
-        font-weight: 300;
-        line-height: 1.3;
-        font-size: 14px;
-        margin-top: 10px;
-    }
-
-    .project-links-wrapper {
-        width: 170px;
-        height: 30px;
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .project-link {
-        width: 70px;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #373a40;
-        border-radius: 40px;
-        font-weight: 500;
-        font-size: 14px;
-    }
-
-    .project-link:hover {
-        background-color: #333161;
-        border: none;
-        color: white;
-    }
+    
 }

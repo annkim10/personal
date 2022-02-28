@@ -48,7 +48,7 @@
     }
 
     .nav-link:hover {
-        background-color: #f4ebe5;
+        background-color: #f5ece6;
     }
 }
 
@@ -123,7 +123,7 @@
     }
 
     .close-icon:active, .nav-link:active, .nav-link:hover {
-        background-color: #f4ebe5;
+        background-color: #f5ece6;
     }
 
 
