@@ -13,8 +13,8 @@ const Experience = () => {
     return (
         <div className="experience-wrapper">
             <Develop />
-            <Market />
-            <Advertise />
+            {/* <Market />
+            <Advertise /> */}
         </div>
     )
 }

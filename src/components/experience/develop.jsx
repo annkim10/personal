@@ -2,9 +2,10 @@ import React from 'react';
 import { FaReact } from "react-icons/fa";
 import { SiRedux, SiRubyonrails, SiJavascript, SiPostgresql, SiMongodb, SiExpress, SiNodedotjs } from "react-icons/si";
 import { DiRuby, DiCss3 } from "react-icons/di";
-import { AiOutlineHtml5 } from "react-icons/ai"
+import { AiOutlineHtml5} from "react-icons/ai"
 import "./develop.css";
-import code from "../../images/code.jpg"
+import code from "../../images/code2.jpg"
+import aa from "../../images/aalogo.png"
 
 const Develop = () => {
 
@@ -27,14 +28,24 @@ const Develop = () => {
         <div className='develop-outer-div'>
             <div className='develop-inner-div'>
                 <div className='develop-top-div'>
-                    <img className='develop-img' src={code} />
-                    <div className='develop-stage-div'>
-                        <h2 className='develop-stage'>Learning to develop the product</h2>
+                    <div className='develop-img-div'>
+                        <img className="develop-img" src={code} />
+                        <div className='develop-circle'></div>
                     </div>
-                    <div className='develop-stage-descrip-div'>
+                    <div className='develop-stage-wrapper'>
+                        <p className='develop-tag'>#softwareengineer</p>
                         <h1 className='develop-stage-time'>OCT 2021 - PRESENT</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div className='develop-stage-div'>
+                            <h2 className='develop-stage'>Learning to <span>develop</span> the product</h2>
+                        </div>
+                        <div className='develop-stage-descrip-div'>
+                            <p className='develop-stage-descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div className='develop-logo-div'>
+                            <img className='aa-logo' src={aa} />
+                        </div>
                     </div>
+                  
                 </div>
                  <div className='develop-stage-skills-div'>
                         <h1 className='develop-stage-skills-header'>SKILLS</h1>

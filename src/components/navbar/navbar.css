@@ -1,7 +1,7 @@
 @media screen and (min-width: 961px) {
     .navbar-outer-div {
         background-color: white;
-        width: 100%;
+        width: 100vw;
         height: 70px;
         display: flex;
         position: fixed;
@@ -14,7 +14,7 @@
     .navbar-inner-div {
         background-color: white;
         min-width: 1200px;
-        max-width: 1600px;
+        max-width: 1800px;
         height: 70px;
         position: sticky;
         display: flex;

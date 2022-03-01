@@ -12,83 +12,67 @@
     .develop-inner-div {
         /* background-color: rgb(161, 214, 214); */
         min-width: 1200px;
-        max-width: 1600px;
-        /* height: 800px; */
+        max-width: 1800px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 5em;
+        margin-top: 30px;
+        position: relative;
     }
 
     .develop-top-div {
-        background-color: #f5ece6;
         width: 90%;
-        height: 240px;
         display: flex;
-        position: relative;
-        margin-top: 30px
+        border-radius: 80px;
     }
 
     .develop-img {
-        width: 240px;
-        height: 240px;
+        width: 600px;
+        height: 600px;
         object-fit: cover;
+        
     }
 
-    .develop-stage-div {
-        /* background-color: #333161; */
-        width: 250px;
-        height: 250px;
-        /* position: absolute; */
-        right: 79%;
-        top: 5%;
-        border-radius: 50%;
+    .develop-tag {
+        color: #c0b1a5;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .develop-stage-wrapper {
+        /* background-color: red; */
         display: flex;
-        /* align-items: center; */
-        justify-content: center;
+        margin-top: 130px;
         flex-direction: column;
+        width: 450px;
+        z-index: 20;
+        padding-left: 70px;
     }
 
     .develop-stage {
-        padding-left: 52px;
-        padding-top: 10px;
-        font-weight: 700;
-        font-size: 22px;
-        letter-spacing: 0.1em;
-        width: 160px;
-        line-height: 1.2;
-        color: white;
-    }
-
-    .develop-stage-descrip-div {
-        /* background-color: aliceblue; */
-        width: 250px;
-        height: 250px;
-        /* position: absolute; */
-        right: 55%;
-        top: 6%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        line-height: 1.3;
+        font-size: 45px;
         font-weight: 300;
-        gap: 1em;
+        padding: 20px 0;
+        line-height: 1.2;
     }
 
-    .develop-stage-time {
-        /* background-color: aqua; */
-        width: fit-content;
-        line-height: 1.3;
-        font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 0.1em;
+    .develop-stage span {
+        color: #5552a1;
+        font-weight: 600;
     }
+
+    .develop-stage-descrip {
+        font-weight: 300;
+        line-height: 1.3;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
 
     .develop-stage-skills-div {
-        /* background-color: aliceblue; */
         display: flex;
         gap: 5em;
-        /* border-left: 1px solid lightgray */
     }
 
     .develop-stage-skills-header {
@@ -101,6 +85,27 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .develop-logo-div {
+        margin-top: 40px;
+        height: 80px;
+        border-left: 3px solid #f5ece6;
+    }
+
+    .aa-logo {
+        width: 150px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+
+    .develop-stage-time {
+        font-weight: 300;
+        font-size: 13px;
+        margin-left: 20px;
+        letter-spacing: 0.1em;
+        padding: 10px 0;
     }
 
     .develop-stage-skills-list {
