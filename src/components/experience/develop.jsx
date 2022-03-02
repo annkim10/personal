@@ -5,8 +5,8 @@ import { DiRuby, DiCss3 } from "react-icons/di";
 import { AiOutlineHtml5} from "react-icons/ai"
 import "./develop.css";
 import line from "../../images/line.svg"
-import code from "../../images/code2.jpg"
-import aa from "../../images/aalogo.png"
+import ProjectCard from './projects';
+
 
 const Develop = () => {
 
@@ -34,7 +34,14 @@ const Develop = () => {
                         <h1 className='develop-header'>Learning to <span>develop</span> the product</h1>
                         <p className='develop-descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                  
+                    <div className='develop-projects-wrapper'>
+                        <div className='develop-projects-card-div'>
+                            <ProjectCard />
+                        </div>
+                        <div className='develop-projects-card-div'>
+                            <ProjectCard />
+                        </div>
+                    </div>
                 </div>
                 <div className='develop-stage-bottom-div'>
                     <h1 className='develop-stage-skills-header'>SKILLS</h1>

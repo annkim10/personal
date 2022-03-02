@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Splash />
         <Experience />
-      
+        <About />
         {/* <Switch>
           <Route exact path="/" component={Splash} />
           <Route path="/experience" component={Experience} />

@@ -1,6 +1,6 @@
 @media screen and (min-width: 961px) {
     .advertise-outer-div {
-        /* background-color: rgb(241, 241, 241); */
+        background-color: rgb(241, 241, 241);
         position: relative;
         width: 100vw;
         height: 100vh;
@@ -22,7 +22,6 @@
 
     .advertise-top-div {
         display: flex;
-        background-color: rgb(241, 241, 241);
     }
 
     .advertise-line {
@@ -38,7 +37,7 @@
         font-size: 15px;
         width: 180px;
         height: 50px;
-        background-color: rgb(241, 241, 241);
+        background-color: white;
         border-radius: 50px;
     }
 
