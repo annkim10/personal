@@ -4,6 +4,7 @@ import { SiRedux, SiRubyonrails, SiJavascript, SiPostgresql, SiMongodb, SiExpres
 import { DiRuby, DiCss3 } from "react-icons/di";
 import { AiOutlineHtml5} from "react-icons/ai"
 import "./develop.css";
+import line from "../../images/line.svg"
 import code from "../../images/code2.jpg"
 import aa from "../../images/aalogo.png"
 
@@ -23,73 +24,25 @@ const Develop = () => {
         {icon: <SiNodedotjs />, caption: 'Node'},
     ]
 
-
     return (
         <div className='develop-outer-div'>
             <div className='develop-inner-div'>
+                <h1 className='develop-time'>OCT 2020 - PRESENT</h1>
+                <img className='line' src={line} />
                 <div className='develop-top-div'>
-                    <div className='develop-left-div'>
-                        <div className='develop-tag-wrapper'>
-                            <p className='develop-tag'>#softwareengineer</p>
-                            <div className='develop-tag-line'></div>
-                            <h1 className='develop-stage-time'>OCT 2021 - PRESENT</h1>
-                        </div>
-                        <div className='develop-stage-wrapper'>
-                            <div className='develop-stage-div'>
-                                <h2 className='develop-stage'>Learning to <span>develop</span> the product</h2>
-                            </div>
-                            <div className='develop-stage-descrip-div'>
-                                <p className='develop-stage-descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                   
-                     <div className='develop-img-div'>
-                        <img className="develop-img" src={code} />
-                    </div>
+                    <h1 className='develop-header'>Learning to <span>develop</span> the product</h1>
                 </div>
-                 <div className='develop-stage-skills-div'>
-                        <h1 className='develop-stage-skills-header'>SKILLS</h1>
-                        <ul className='develop-stage-skills-list'>
-                            {skills.map((skill, idx) => (
-                                <li key={idx} className="skill">
-                                    <span className='skill-icon'>{skill.icon}</span>
-                                    {skill.caption}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                <div className='develop-bottom-div'>
-                    <div className='develop-projects-div'>
-                        <div className='develop-projects-wrapper'>
-                            <div className='develop-project'>
-                                <h1 className='project-title'>MEvert</h1>
-                                <p className='project-descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <div className='project-links-wrapper'>
-                                    <a className='project-link' href="#">LIVE</a>
-                                    <a className='project-link' href="#">CODE</a>
-                                </div>
-                            </div>
-                            <div className='develop-project'>
-                                <h1 className='project-title'>Pupfinder</h1>
-                                <p className='project-descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <div className='project-links-wrapper'>
-                                    <a className='project-link' href="#">LIVE</a>
-                                    <a className='project-link' href="#">CODE</a>
-                                </div>
-                            </div>
-                            <div className='develop-project'>
-                                <h1 className='project-title'>Sumo Poppers</h1>
-                                <p className='project-descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <div className='project-links-wrapper'>
-                                    <a className='project-link' href="#">LIVE</a>
-                                    <a className='project-link' href="#">CODE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+                {/* <div className='develop-stage-bottom-div'>
+                    <h1 className='develop-stage-skills-header'>SKILLS</h1>
+                    <ul className='develop-stage-skills-list'>
+                        {skills.map((skill, idx) => (
+                            <li key={idx} className="skill">
+                                <span className='skill-icon'>{skill.icon}</span>
+                                {skill.caption}
+                            </li>
+                        ))}
+                    </ul>
+                </div>                 */}
             </div>  
         </div>
     )

@@ -84,7 +84,7 @@
 @media screen and (max-width: 960px) {
 
     .splash-outer-div {
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -93,27 +93,20 @@
 
     .splash-inner-div {
         /* background-color: rgb(101, 206, 206); */
-        width: 90%;
         /* height: 700px; */
+        width: 90%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         position: relative;
-        overflow: hidden;
     }
 
     .copytag {
-        font-size: 10px;
-        font-weight: 200;
-        top: 10%;
-        left: 0;
-        position: absolute;
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
+        display: none;
     }
 
     .splash-top-div {
         margin-top: 70px;
-        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -121,7 +114,6 @@
 
     .splash-header {
         text-align: center;
-        margin-left: 15%;
         font-size: 50px;
         font-weight: 200;
         line-height: 1.2;
@@ -135,7 +127,6 @@
 
     .splash-descrip {
         text-align: center;
-        margin-left: 15%;
         margin-top: 10%;
         font-size: 16px;
         font-weight: 300;
