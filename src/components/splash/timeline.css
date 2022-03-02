@@ -24,6 +24,7 @@
         font-weight: 600;
         width: 170px;
         height: 40px;
+        letter-spacing: 0.1em;
         border-radius: 50px;
         border: 1px solid rgb(192, 192, 192);
         display: flex;
@@ -37,17 +38,23 @@
         cursor: pointer;
     }
 
-    .timeline-stage-img-div {
-        background-color: antiquewhite;
-        position: relative;
-        display: flex;
-        justify-content: center;
+    .timeline-stage-descrip {
+        text-align: center;
+        line-height: 1.2;
+        width: 100%;
+        font-size: 13px;
+        padding: 10px 0px;
+    }
+
+    .timeline-stage-descrip span {
+        font-weight: 600;
+        color: purple;
     }
 
     .timeline-stage-img {
         margin-top: 5%;
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         object-fit: cover;
         border-radius: 50%;
     }
@@ -55,14 +62,6 @@
    .timeline-stage-img:hover {
        cursor: pointer;
    }
-
-   .timeline-stage-reveal {
-        background-color: gray;
-        width: 50%;
-        position: absolute;
-        top: 0;
-    }
-   
 
  
 }

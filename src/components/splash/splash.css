@@ -13,6 +13,7 @@
         min-width: 1200px;
         max-width: 1900px;
         height: 100vh;
+        margin-top: 70px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,7 +24,6 @@
     .copytag {
         font-size: 10px;
         font-weight: 200;
-        top: 10%;
         left: 0;
         position: absolute;
         writing-mode: vertical-rl;
@@ -31,18 +31,25 @@
     }
 
     .splash-top-div {
-       margin-top: 10%;
        height: 30%;
        display: flex;
        flex-direction: column;
        align-items: center;
-       justify-content: center;
+       overflow: hidden;
+    }
+
+    .splash-top-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .splash-bottom-div {
         padding-top: 5%;
         height: 70%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .splash-header {
@@ -59,15 +66,16 @@
     }
 
     .splash-descrip {
-        display: flex;
+        margin-top: 3%;
         text-align: center;
-        justify-content: center;
-        margin-top: 5%;
         font-size: 14px;
         font-weight: 300;
-        width: 400px;
+        width: 55%;
+        /* width: 400px; */
         line-height: 1.4;
     }
+
+
 
 }
 
