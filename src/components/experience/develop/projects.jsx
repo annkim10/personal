@@ -1,5 +1,5 @@
 import React from "react"
-import gif from "../../images/pupfinder-splash.gif"
+import gif from "../../../images/pupfinder-splash.gif"
 import "./projects.css"
 
 const ProjectCard = () => {

@@ -4,7 +4,7 @@
         background-color: rgb(241, 241, 241);
         position: relative;
         width: 100vw;
-        height: 100vh;
+        height: 850px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -93,7 +93,7 @@
         width: 80%;
         height: 100px;
         position: relative;
-        margin-top: 150px;
+        margin-top: 80px;
     }
 
     .develop-stage-skills-header {

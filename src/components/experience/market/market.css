@@ -69,17 +69,17 @@
         width: 60%;
         display: flex;
         justify-content: right;
+        align-items: center;
+        margin-top: 50px;
     }
 
-    .market-details-wrapper {
-        margin-top: 50px;
-        background-color: white;
-        width: 70%;
-        height: 500px;
-        border-radius: 20px;
-        padding: 10%;
-        overflow-y: scroll;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    .youtube-header {
+        width: 80%;
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 20px;
     }
+
+ 
     
 }

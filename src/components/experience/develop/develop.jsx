@@ -4,7 +4,7 @@ import { SiRedux, SiRubyonrails, SiJavascript, SiPostgresql, SiMongodb, SiExpres
 import { DiRuby, DiCss3 } from "react-icons/di";
 import { AiOutlineHtml5} from "react-icons/ai"
 import "./develop.css";
-import line from "../../images/line.svg"
+import line from "../../../images/line.svg"
 import ProjectCard from './projects';
 
 
