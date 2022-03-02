@@ -27,22 +27,26 @@ const Develop = () => {
     return (
         <div className='develop-outer-div'>
             <div className='develop-inner-div'>
-                <h1 className='develop-time'>OCT 2020 - PRESENT</h1>
+                <h1 className='develop-time'>OCT 2021 - PRESENT</h1>
                 <img className='line' src={line} />
                 <div className='develop-top-div'>
-                    <h1 className='develop-header'>Learning to <span>develop</span> the product</h1>
+                    <div className='develop-text-wrapper'>
+                        <h1 className='develop-header'>Learning to <span>develop</span> the product</h1>
+                        <p className='develop-descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  
                 </div>
-                {/* <div className='develop-stage-bottom-div'>
+                <div className='develop-stage-bottom-div'>
                     <h1 className='develop-stage-skills-header'>SKILLS</h1>
                     <ul className='develop-stage-skills-list'>
                         {skills.map((skill, idx) => (
                             <li key={idx} className="skill">
-                                <span className='skill-icon'>{skill.icon}</span>
-                                {skill.caption}
+                                <span id='skill-icon'>{skill.icon}</span>
+                                <p>{skill.caption}</p>
                             </li>
                         ))}
                     </ul>
-                </div>                 */}
+                </div>                
             </div>  
         </div>
     )

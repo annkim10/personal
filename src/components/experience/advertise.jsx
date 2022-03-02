@@ -1,23 +1,17 @@
 import React from "react"
-
-
+import "./advertise.css"
+import line from "../../images/line.svg"
 const Advertise = () => {
 
     return (
-        <div className='market-outer-div'>
-            <div className='market-inner-div'>
-                <div className='market-left-div'>
-                    <div className='develop-stage-div'>
-                        <h2 className='develop-stage'>Learning to advertise the product</h2>
-                    </div>
-                    <div className='market-stage-descrip-div'>
-                        <h1 className='develop-stage-time'>JUN 2010 - OCT 2016</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div className='market-right-div'>
-                    <div className='market-skills-list-div'>
-                    
+        <div className='advertise-outer-div'>
+            <div className='advertise-inner-div'>
+               <h1 className='advertise-time'>OCT 2016 - SEP 2021</h1>
+                <img className='advertise-line' src={line} />
+                <div className='advertise-top-div'>
+                    <div className='advertise-text-wrapper'>
+                        <h1 className='advertise-header'>Learning to <span>market</span> the product</h1>
+                        <p className='advertise-descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
             </div>  

@@ -1,0 +1,70 @@
+@media screen and (min-width: 961px) {
+    .advertise-outer-div {
+        /* background-color: rgb(241, 241, 241); */
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px
+    }
+
+    .advertise-inner-div {
+        /* background-color: rgb(161, 214, 214); */
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        position: relative;
+        min-width: 1200px;
+        max-width: 1200px;
+    }
+
+    .advertise-top-div {
+        display: flex;
+        background-color: rgb(241, 241, 241);
+    }
+
+    .advertise-line {
+        width: 10px;
+        margin-left: 3%;
+        margin-top: 20px;
+    }
+
+    .advertise-time {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        width: 180px;
+        height: 50px;
+        background-color: rgb(241, 241, 241);
+        border-radius: 50px;
+    }
+
+    .advertise-text-wrapper {
+        width: 35%;
+        /* background-color: antiquewhite; */
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+
+    .advertise-header {
+        font-size: 50px;
+        font-weight: 200;
+        line-height: 1.2;
+    }
+
+    .advertise-header span {
+        font-weight: 600;
+        color: purple
+    }
+
+    .advertise-descrip {
+        margin-top: 50px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.3;
+    }
+    
+}

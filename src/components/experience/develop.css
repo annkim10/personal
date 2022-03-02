@@ -13,29 +13,17 @@
 
     .develop-inner-div {
         /* background-color: rgb(161, 214, 214); */
-        min-width: 1200px;
-        max-width: 1800px;
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 50px;
         position: relative;
+        min-width: 1200px;
+        max-width: 1200px;
     }
 
     .develop-top-div {
         display: flex;
-    }
-
-    .develop-header {
-        font-size: 40px;
-        font-weight: 200;
-        width: 35%;
-        line-height: 1.2;
-        margin-left: 30px;
-    }
-
-    .develop-header span {
-        font-weight: 600;
-        color: purple
+        
     }
 
     .line {
@@ -55,17 +43,79 @@
         border-radius: 50px;
     }
 
+    .develop-text-wrapper {
+        width: 35%;
+        /* background-color: antiquewhite; */
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+
+    .develop-header {
+        font-size: 50px;
+        font-weight: 200;
+        line-height: 1.2;
+    }
+
+    .develop-header span {
+        font-weight: 600;
+        color: purple
+    }
+
+    .develop-descrip {
+        margin-top: 50px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.3;
+    }
+
     .develop-stage-bottom-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background-color: white;
         border-radius: 50px;
-        width: 100%;
+        width: 80%;
         height: 100px;
+        position: relative;
+        margin-top: 150px;
+    }
+
+    .develop-stage-skills-header {
+        position: absolute;
+        top: -10%;
+        left: 3%;
+        background-color: purple;
+        color: white;
+        width: 100px;
+        height: 25px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .develop-stage-skills-list {
+        width: 90%;
+        margin-left: 40px;
         display: flex;
+        justify-content: space-between;
     }
-    
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skill-icon {
+        font-size: 1.5em;
+        color: rgb(75, 75, 75);
+    }
+
+    .skill p {
+        font-size: 13px;
+        font-weight: 300;
+    }
 
 }
 
