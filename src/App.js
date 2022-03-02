@@ -11,13 +11,16 @@ function App() {
   return (
     <div className="app-outer-div">
         <Navbar />
-        <Switch>
+        <Splash />
+        <Experience />
+      
+        {/* <Switch>
           <Route exact path="/" component={Splash} />
           <Route path="/experience" component={Experience} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
-        </Switch> 
-        <Footer /> 
+        </Switch>  */}
+     
     </div>
   );
 }

@@ -11,48 +11,63 @@
     .splash-inner-div {
         /* background-color: rgb(101, 206, 206); */
         min-width: 1200px;
-        max-width: 1600px;
-        height: 700px;
+        max-width: 1900px;
+        height: 100vh;
         display: flex;
-        position: relative
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
     }
 
     .copytag {
         font-size: 10px;
         font-weight: 200;
         top: 10%;
+        left: 0;
         position: absolute;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
     }
 
-    .splash-left-div {
-        /* background-color: aqua; */
-        position: relative;
-        overflow: hidden;
-        width: 100%;
+    .splash-top-div {
+       margin-top: 10%;
+       height: 30%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
     }
 
-    .headshot-img {
-        max-width: 650px;
-        position: absolute;
-        top: 35%
+    .splash-bottom-div {
+        padding-top: 5%;
+        height: 70%;
+        display: flex;
     }
 
-    .name-header {
+    .splash-header {
+        text-align: center;
         font-size: 50px;
         font-weight: 200;
         line-height: 1.2;
-        position: absolute;
-        top: 20%;
-        left: 10%
     }
 
-    .name-header span {
+    .splash-header span {
+        text-align: center;
         font-weight: 600;
         color: purple
     }
-   
+
+    .splash-descrip {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 5%;
+        font-size: 14px;
+        font-weight: 300;
+        width: 400px;
+        line-height: 1.4;
+    }
 
 }
 
@@ -61,33 +76,62 @@
 @media screen and (max-width: 960px) {
 
     .splash-outer-div {
-        position: relative;
-        width: 100vw;
-    }
-
-    .splash-inner-div {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 70px;
     }
 
-    .splash-left-div {
-        /* background-color: aqua; */
+    .splash-inner-div {
+        /* background-color: rgb(101, 206, 206); */
+        width: 90%;
+        /* height: 700px; */
+        display: flex;
+        flex-direction: column;
         position: relative;
         overflow: hidden;
-        width: 100%;
-        height: 300px;
+    }
+
+    .copytag {
+        font-size: 10px;
+        font-weight: 200;
+        top: 10%;
+        left: 0;
+        position: absolute;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+    .splash-top-div {
+        margin-top: 70px;
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .headshot-img {
-        max-width: 350px;
-        position: absolute;
-        top: 20%
+    .splash-header {
+        text-align: center;
+        margin-left: 15%;
+        font-size: 50px;
+        font-weight: 200;
+        line-height: 1.2;
     }
 
+    .splash-header span {
+        text-align: center;
+        font-weight: 600;
+        color: purple
+    }
 
+    .splash-descrip {
+        text-align: center;
+        margin-left: 15%;
+        margin-top: 10%;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+   
 }
