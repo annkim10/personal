@@ -2,6 +2,7 @@ import React from 'react';
 import Youtube from './youtube';
 import "./market.css";
 import line from "../../../images/line.svg"
+import { MdKeyboardArrowRight } from "react-icons/md"
 
 
 const Market = () => {
@@ -17,14 +18,29 @@ const Market = () => {
                         <p className='market-descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                
                 <div className='market-right-div'>
                     <div className='market-details-wrapper'>
-                        <h1 className='youtube-header'>Featured in Samsung's Unbox & Discover event</h1>
                         <Youtube />
+                        <h1 className='youtube-header'>Featured in Samsung's Unbox & Discover event</h1>
                     </div>
                 </div>
             </div>  
+            <div className='market-bottom-div'>
+                <div className='market-roles-wrapper'>
+                    <div className='market-role-div'>
+                        <h1 className='market-role'>B2C Desktop Monitors,</h1>
+                        <p>Product Marketing Manager</p>
+                    </div>
+                    <button className='market-button'>MORE DETAILS <span><MdKeyboardArrowRight /></span></button>
+                </div>
+                <div className='market-roles-wrapper'>
+                    <div className='market-role-div'>
+                        <h1 className='market-role'>B2B Hospitality TV,</h1>
+                        <p>Product Marketing Manager</p>
+                    </div>
+                    <button className='market-button'>MORE DETAILS <span><MdKeyboardArrowRight /></span></button>
+                </div>
+            </div>
         </div>
     )
 }
