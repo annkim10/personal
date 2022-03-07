@@ -27,6 +27,7 @@ const About = () => {
                     <h1 className="me-caption">This is me</h1>
                     <BsArrowDown className="me-arrow"/>
                     <h1 className="rollie-caption">This is Rollie</h1>
+                    <BsArrowDown className="rollie-arrow"/>
                     <h1 className="jojo-caption">This is Jojo</h1>
                     <BsArrowDown className="jojo-arrow"/>
                 </div>

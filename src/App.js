@@ -5,7 +5,6 @@ import Splash from './components/splash/splash';
 import Experience from './components/experience/experience';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
-import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -14,6 +13,7 @@ function App() {
         <Splash />
         <Experience />
         <About />
+        <Contact />
         {/* <Switch>
           <Route exact path="/" component={Splash} />
           <Route path="/experience" component={Experience} />
