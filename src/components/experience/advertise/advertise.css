@@ -121,6 +121,7 @@
     .agency-details-wrapper-active {
         background-color: white;
         position: absolute;
+        top: ;
         width: 450px;
         height: 450px;
         display: flex;
