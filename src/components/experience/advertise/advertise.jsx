@@ -34,33 +34,54 @@ const Advertise = () => {
                     </div>
                 </div>
                 <div className="advertise-right-div">
-                    <div className="advertise-agency-wrapper" 
-                        onClick={() => setUmDetails(true)}>
-                        <img className="um-logo" src={um} />
+                    <div className="agency-wrapper">
+                        <div className={ umDetails ? "um-wrapper-active" : "um-wrapper-inactive"}
+                            onClick={() => setUmDetails(true)}>
+                            <div className="agency-details-wrapper">
+                                <img className="um-logo" src={um} />
+                                <h2 className="agency-name">Universal McCann</h2>
+                                <h1 className="agency-details-header">POSITIONS HELD</h1>
+                                <p className="agency-details">title</p>
+                                <h1 className="agency-details-header">BRANDS WORKED ON</h1>
+                                <p className="agency-details">brands</p>
+                            </div>
+                        </div>
+                        <AiFillCloseCircle 
+                            onClick={closeDetails}
+                            className={umDetails ? "agency-close-button-active" : "agency-close-button-inactive"}/>
                     </div>
-                    <div className="advertise-agency-wrapper" 
-                        onClick={() => setMecDetails(true)}>
-                        <img className="mec-logo" src={mec} />
+                    <div className="agency-wrapper">
+                        <div className={ mecDetails ? "mec-wrapper-active" : "mec-wrapper-inactive"}
+                            onClick={() => setMecDetails(true)}>
+                            <div className="agency-details-wrapper">
+                                <img className="um-logo" src={um} />
+                                <h2 className="agency-name">Universal McCann</h2>
+                                <h1 className="agency-details-header">POSITIONS HELD</h1>
+                                <p className="agency-details">title</p>
+                                <h1 className="agency-details-header">BRANDS WORKED ON</h1>
+                                <p className="agency-details">brands</p>
+                            </div>
+                        </div>
+                        <AiFillCloseCircle 
+                            onClick={closeDetails}
+                            className={ mecDetails ? "agency-close-button-active" : "agency-close-button-inactive"}/>
                     </div>
-                    <div className="advertise-agency-wrapper" 
-                        onClick={() => setDraftDetails(true)} >
-                        <img className="draft-logo" src={draft} />
+                    <div className="agency-wrapper">
+                        <div className={ draftDetails ? "um-wrapper-active" : "um-wrapper-inactive"}
+                            onClick={() => setDraftDetails(true)}>
+                            <div className="agency-details-wrapper">
+                                <img className="um-logo" src={um} />
+                                <h2 className="agency-name">Universal McCann</h2>
+                                <h1 className="agency-details-header">POSITIONS HELD</h1>
+                                <p className="agency-details">title</p>
+                                <h1 className="agency-details-header">BRANDS WORKED ON</h1>
+                                <p className="agency-details">brands</p>
+                            </div>
+                        </div>
+                        <AiFillCloseCircle 
+                            onClick={closeDetails}
+                            className={ draftDetails ? "agency-close-button-active" : "agency-close-button-inactive"}/>
                     </div>
-                    <AiFillCloseCircle 
-                        onClick={closeDetails}
-                        className={umDetails || mecDetails || draftDetails ? "agency-close-button-active" : "agency-close-button-inactive"}/>
-                    <AgencyDetails 
-                        className={umDetails ? "agency-details-wrapper-active" : "agency-details-wrapper-inactive"} 
-                        title={'manager'} 
-                        brands={'heinz'} />
-                    <AgencyDetails 
-                        className={mecDetails ? "agency-details-wrapper-active" : "agency-details-wrapper-inactive"} 
-                        title={'manager'} 
-                        brands={'mec'} />
-                    <AgencyDetails 
-                        className={draftDetails ? "agency-details-wrapper-active" : "agency-details-wrapper-inactive"} 
-                        title={'manager'} 
-                        brands={'draftfcb'} />
                 </div>
             </div>  
         </div>

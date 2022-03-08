@@ -28,12 +28,12 @@
 
 
     .advertise-right-div {
+        /* background-color: aquamarine; */
         width: 60%;
         padding: 20px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 5rem;
+        gap: 4rem;
         position: relative;
     }
 
@@ -80,64 +80,79 @@
         line-height: 1.3;
     }
 
-    .advertise-agency-wrapper {
-        width: 130px;
-        height: 130px;
+    .um-wrapper-inactive, .mec-wrapper-inactive {
+        width: 200px;
+        height: 200px;
         background-color: white;
+        background-image: url("../../../images/code.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        content-visibility: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
+        border-radius: 30px;
         cursor: pointer;
     }
-    
-    .draft-logo {
-        width: 80px;
-        object-fit: cover;
+
+    .um-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        object-fit: contain;
+        padding-bottom: 20px;
     }
 
-    .mec-logo, .um-logo {
-        width: 50px;
-        object-fit: cover;
+    .um-wrapper-active, .mec-wrapper-active {
+        width: 200px;
+        height: 330px;
+        background-color: white;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        border-radius: 30px;
+        position: relative;
     }
 
-    .advertise-agency-wrapper:hover {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        outline: 4px solid purple;
-        outline-offset: 5px;
+    .agency-wrapper {
+        position: relative;
     }
 
     .agency-close-button-active {
-        font-size: 3em;
+        font-size: 2em;
         position: absolute; 
-        top: 0;
-        left: 70%;
+        top: 15px;
+        right: 0;
+        z-index: 50;
+        cursor: pointer;
     }
 
-    .agency-details-wrapper-inactive, .agency-close-button-inactive {
+   .agency-close-button-inactive {
         display: none;
     }
 
-    .agency-details-wrapper-active {
-        background-color: white;
-        position: absolute;
-        top: ;
-        width: 450px;
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    .agency-details-wrapper {
+        /* background-color: aqua; */
+        margin-top: 40px;
+    }
+
+    .agency-name {
+        padding-bottom: 20px;
     }
 
     .agency-details-header {
         font-weight: 600;
         letter-spacing: 0.1em;
-        font-size: 14px;
-        padding: 30px;
+        font-size: 12px;
+        padding-bottom: 20px;
+        color: purple;
     }
-    
+
+    .agency-details {
+        font-weight: 300;
+        padding-bottom: 20px;
+    }
+
     
 }
