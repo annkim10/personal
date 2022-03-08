@@ -6,7 +6,7 @@ import mec from "../../../images/logos/mec_logo.png"
 import draft from "../../../images/logos/draft_logo.png"
 import AgencyDetails from "./agency_details"
 import { useState } from "react"
-import { AiFillCloseCircle } from "react-icons/ai"
+
 
 const Advertise = () => {
 
@@ -35,20 +35,20 @@ const Advertise = () => {
                 </div>
                 <div className="advertise-right-div">
                     <div className="advertise-agency-wrapper" 
-                        onClick={() => setUmDetails(true)}>
+                        onMouseEnter={() => setUmDetails(true)}
+                        onMouseLeave={() => setUmDetails(false)}>
                         <img className="um-logo" src={um} />
                     </div>
                     <div className="advertise-agency-wrapper" 
-                        onClick={() => setMecDetails(true)}>
+                        onMouseEnter={() => setMecDetails(true)}
+                        onMouseLeave={() => setMecDetails(false)}>
                         <img className="mec-logo" src={mec} />
                     </div>
                     <div className="advertise-agency-wrapper" 
-                        onClick={() => setDraftDetails(true)} >
+                        onMouseEnter={() => setDraftDetails(true)}
+                        onMouseLeave={() => setDraftDetails(false)} >
                         <img className="draft-logo" src={draft} />
                     </div>
-                    <AiFillCloseCircle 
-                        onClick={closeDetails}
-                        className={umDetails || mecDetails || draftDetails ? "agency-close-button-active" : "agency-close-button-inactive"}/>
                     <AgencyDetails 
                         className={umDetails ? "agency-details-wrapper-active" : "agency-details-wrapper-inactive"} 
                         title={'manager'} 
@@ -61,7 +61,6 @@ const Advertise = () => {
                         className={draftDetails ? "agency-details-wrapper-active" : "agency-details-wrapper-inactive"} 
                         title={'manager'} 
                         brands={'draftfcb'} />
-
                 </div>
             </div>  
         </div>
