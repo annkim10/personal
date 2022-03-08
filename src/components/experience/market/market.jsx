@@ -26,6 +26,7 @@ const Market = () => {
                 </div>
             </div>  
             <div className='market-bottom-div'>
+                <h1>Positions held at Samsung</h1>
                 <div className='market-roles-wrapper'>
                     <div className='market-role-div'>
                         <h1 className='market-role'>B2C Desktop Monitors,</h1>

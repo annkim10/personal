@@ -28,12 +28,13 @@
 
 
     .advertise-right-div {
-        display: flex;
         width: 60%;
-        background-color: rgba(81, 255, 0, 0.507);
         padding: 20px;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        position: relative;
     }
 
 
@@ -80,8 +81,8 @@
     }
 
     .advertise-agency-wrapper {
-        width: 200px;
-        height: 200px;
+        width: 130px;
+        height: 130px;
         background-color: white;
         display: flex;
         align-items: center;
@@ -90,8 +91,44 @@
     }
 
     .um-logo, .mec-logo, .draft-logo {
-        width: 100px;
+        width: 80px;
         object-fit: cover;
     }
+
+    .advertise-agency-wrapper:hover {
+        background-color: purple;
+    }
+
+    .agency-close-button-active {
+        font-size: 3em;
+        position: absolute; 
+        top: 0;
+        left: 70%;
+    }
+
+    .agency-details-wrapper-inactive, .agency-close-button-inactive {
+        display: none;
+    }
+
+    .agency-details-wrapper-active {
+        background-color: white;
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .agency-details-header {
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        font-size: 14px;
+        padding: 30px;
+    }
+    
     
 }
