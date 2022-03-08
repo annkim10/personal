@@ -80,7 +80,7 @@
         line-height: 1.3;
     }
 
-    .um-wrapper-inactive, .mec-wrapper-inactive {
+    .um-wrapper-inactive, .mec-wrapper-inactive, .draft-wrapper-inactive {
         width: 200px;
         height: 200px;
         background-color: white;
@@ -91,28 +91,32 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 30px;
+        border-radius: 50%;
         cursor: pointer;
     }
 
-    .um-logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        object-fit: contain;
-        padding-bottom: 20px;
+
+
+    .um-wrapper-inactive:hover, .mec-wrapper-inactive:hover, .draft-wrapper-inactive:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        opacity: 0.8;
     }
 
-    .um-wrapper-active, .mec-wrapper-active {
+    .um-logo {
+        width: 40px;
+        object-fit: contain;
+    }
+
+    .um-wrapper-active, .mec-wrapper-active, .draft-wrapper-active {
         width: 200px;
         height: 330px;
         background-color: white;
         display: flex;
         /* align-items: center; */
         justify-content: center;
-        border-radius: 30px;
+        border-radius: 20px;
         position: relative;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     }
 
     .agency-wrapper {
@@ -122,8 +126,8 @@
     .agency-close-button-active {
         font-size: 2em;
         position: absolute; 
-        top: 15px;
-        right: 0;
+        top: 85%;
+        left: 85px;
         z-index: 50;
         cursor: pointer;
     }
@@ -134,23 +138,40 @@
 
     .agency-details-wrapper {
         /* background-color: aqua; */
-        margin-top: 40px;
+        margin-top: 100px;
+        position: relative;
+    }
+
+    .agency-logo-div {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: -20px;
+        left: 75px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
 
     .agency-name {
-        padding-bottom: 20px;
+        padding-bottom: 40px;
+        font-weight: 600;
     }
 
     .agency-details-header {
         font-weight: 600;
         letter-spacing: 0.1em;
-        font-size: 12px;
+        font-size: 11px;
         padding-bottom: 20px;
         color: purple;
     }
 
     .agency-details {
         font-weight: 300;
+        font-size: 14px;
         padding-bottom: 20px;
     }
 
