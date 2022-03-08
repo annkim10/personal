@@ -2,9 +2,9 @@ import React from "react"
 import "./timeline.css"
 import { useSpring, animated as a, config } from "react-spring";
 import line from "../../images/line.svg"
-import code from "../../images/code.jpg"
-import advertise from "../../images/advertise.jpeg"
-import market from "../../images/market.jpg"
+import code from "../../images/splash/code.jpg"
+import advertise from "../../images/splash/advertise.jpeg"
+import market from "../../images/splash/market.jpg"
 
 const Timeline = () => {
 

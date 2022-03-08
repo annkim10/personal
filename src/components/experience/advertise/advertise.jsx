@@ -1,10 +1,9 @@
 import React from "react"
 import "./advertise.css"
-import line from "../../../images/line.svg"
+import line from "../../../images/line-white.svg"
 import um from "../../../images/logos/um_logo.png"
 import mec from "../../../images/logos/mec_logo.png"
 import draft from "../../../images/logos/draft_logo.png"
-import AgencyDetails from "./agency_details"
 import { useState } from "react"
 import { AiFillCloseCircle } from "react-icons/ai"
 
