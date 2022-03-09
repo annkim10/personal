@@ -77,7 +77,40 @@ const Advertise = () => {
                             className={ draftDetails ? "agency-close-button-active" : "agency-close-button-inactive"}/>
                     </div>
                 </div>
-            </div>  
+                <div className="advertise-brands-wrapper">
+                        <h1 className="advertise-brands-header">BRANDS</h1>
+                        <ul className="advertise-brands">
+                            <li className="advertise-brand-logo">
+                                <img className="coke-logo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
+                            </li>
+                            <li className="advertise-brand-logo">
+                                <img className="coke-logo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
+                            </li>
+                            <li className="advertise-brand-logo">
+                                <img className="coke-logo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
+                            </li>
+                            <li className="advertise-brand-logo">
+                                <img className="coke-logo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
+                            </li>
+                            <li className="advertise-brand-logo">
+                                <img className="coke-logo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
+                            </li>
+                            <li className="advertise-brand-logo">
+                                <img className="coke-logo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
+                            </li>
+                            <li className="advertise-brand-logo">
+                                <img className="coke-logo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
+                            </li>
+                        </ul>
+                </div>
+            </div>        
         </div>
     )
 }

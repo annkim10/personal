@@ -36,10 +36,10 @@ const Develop = () => {
                     </div>
                     <div className='develop-projects-wrapper'>
                         <div className='develop-projects-card-div'>
-                            <ProjectCard />
+                            <ProjectCard title={'Pupfinder'}/>
                         </div>
                         <div className='develop-projects-card-div'>
-                            <ProjectCard />
+                            <ProjectCard title={'MEvert'}/>
                         </div>
                     </div>
                 </div>

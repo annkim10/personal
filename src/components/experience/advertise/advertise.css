@@ -16,6 +16,7 @@
         position: relative;
         min-width: 1200px;
         max-width: 1200px;
+        height: 85%;
     }
 
     .advertise-left-div {
@@ -27,7 +28,6 @@
 
     .advertise-right-div {
         width: 60%;
-        padding: 20px;
         display: flex;
         align-items: center;
         gap: 3rem;
@@ -100,6 +100,10 @@
 
     .mec-wrapper-inactive {
         background-image: url("../../../images/advertise/jeans.jpg");
+    }
+
+    .draft-wrapper-inactive {
+        background-image: url("../../../images/advertise/pharma.jpg");
     }
 
     .um-wrapper-inactive:hover, .mec-wrapper-inactive:hover, .draft-wrapper-inactive:hover {
@@ -179,6 +183,31 @@
         font-weight: 300;
         font-size: 14px;
         padding-bottom: 20px;
+    }
+
+    .advertise-brands-wrapper {
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+        width: 60%;
+        height: 100px;
+        border-radius: 50px;
+    }
+
+    .advertise-brands-header {
+        font-weight: 600;
+        color: #E263F2;
+        letter-spacing: 0.15em;
+    }
+
+    .advertise-brands {
+        display: flex;
+        gap: 2em;
+    }
+
+    .coke-logo {
+        width: 80px;
+        margin-top: 30px;
     }
 
     
