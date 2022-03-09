@@ -4,6 +4,7 @@ import line from "../../../images/line-white.svg"
 import um from "../../../images/logos/um_logo.png"
 import mec from "../../../images/logos/mec_logo.png"
 import draft from "../../../images/logos/draft_logo.png"
+import Logos from "./logos"
 import { useState } from "react"
 import { AiFillCloseCircle } from "react-icons/ai"
 
@@ -25,6 +26,7 @@ const Advertise = () => {
                     </div>
                 </div>
                 <div className="advertise-right-div">
+                    <h1 className="advertise-cta">CLICK FOR MORE DETAILS</h1>
                     <div className="agency-wrapper">
                         <div className={ umDetails ? "um-wrapper-active" : "um-wrapper-inactive"}
                             onClick={() => setUmDetails(true)}>
@@ -79,36 +81,7 @@ const Advertise = () => {
                 </div>
                 <div className="advertise-brands-wrapper">
                         <h1 className="advertise-brands-header">BRANDS</h1>
-                        <ul className="advertise-brands">
-                            <li className="advertise-brand-logo">
-                                <img className="coke-logo"
-                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
-                            </li>
-                            <li className="advertise-brand-logo">
-                                <img className="coke-logo"
-                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
-                            </li>
-                            <li className="advertise-brand-logo">
-                                <img className="coke-logo"
-                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
-                            </li>
-                            <li className="advertise-brand-logo">
-                                <img className="coke-logo"
-                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
-                            </li>
-                            <li className="advertise-brand-logo">
-                                <img className="coke-logo"
-                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
-                            </li>
-                            <li className="advertise-brand-logo">
-                                <img className="coke-logo"
-                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
-                            </li>
-                            <li className="advertise-brand-logo">
-                                <img className="coke-logo"
-                                src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Coca-Cola_logo_white.png"/>
-                            </li>
-                        </ul>
+                       <Logos />
                 </div>
             </div>        
         </div>
