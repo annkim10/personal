@@ -22,7 +22,7 @@
     .project-header {
         font-size: 14px;
         font-weight: 600;
-        color: purple;
+        color: #A649B3;
         display: flex;
         align-items: center;
         width: 100%;
@@ -51,7 +51,7 @@
     .projects-card-name {
         font-weight: 600;
         padding-bottom: 20px;
-        color: purple;
+        color: #A649B3;
     }
 
     .projects-description {

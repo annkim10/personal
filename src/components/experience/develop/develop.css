@@ -58,7 +58,7 @@
 
     .develop-header span {
         font-weight: 600;
-        color: purple
+        color: #A649B3
     }
 
     .develop-descrip {
@@ -100,7 +100,7 @@
         position: absolute;
         top: -10%;
         left: 3%;
-        background-color: purple;
+        background-color: #A649B3;
         color: white;
         width: 100px;
         height: 25px;

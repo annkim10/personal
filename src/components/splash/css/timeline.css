@@ -32,6 +32,16 @@
         align-items: center;
     }
 
+    .stage-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timeline-line {
+        height: 60px;
+        width: 12px;
+    }
+
     .timeline-stage-time:hover {
         background-color: rgb(228, 220, 228);
         border: none;
@@ -48,7 +58,7 @@
 
     .timeline-stage-descrip span {
         font-weight: 600;
-        color: purple;
+        color: #A649B3
     }
 
     .timeline-stage-img {
@@ -120,7 +130,7 @@
 
     .timeline-stage-descrip span {
         font-weight: 600;
-        color: purple;
+        color: #A649B3
     }
 
 
