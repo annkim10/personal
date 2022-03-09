@@ -11,12 +11,14 @@
         display: flex;
         justify-content: space-between;
         min-width: 80%;
+        overflow: hidden;
     }
 
     .timeline-stage-div {
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
     }
 
     .timeline-stage-time {
@@ -35,17 +37,13 @@
     .stage-wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        overflow: hidden;
     }
 
     .timeline-line {
-        height: 60px;
-        width: 12px;
-    }
-
-    .timeline-stage-time:hover {
-        background-color: rgb(228, 220, 228);
-        border: none;
-        cursor: pointer;
+        height: 50px;
+        width: 10px;
     }
 
     .timeline-stage-descrip {
@@ -58,7 +56,7 @@
 
     .timeline-stage-descrip span {
         font-weight: 600;
-        color: #A649B3
+        color: #952d95
     }
 
     .timeline-stage-img {
@@ -130,7 +128,7 @@
 
     .timeline-stage-descrip span {
         font-weight: 600;
-        color: #A649B3
+        color: #952d95
     }
 
 
