@@ -21,13 +21,49 @@
         overflow: hidden;
     }
 
-    .copytag {
-        font-size: 10px;
-        font-weight: 200;
+    .splash-footer-wrapper {
         left: 0;
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        justify-content: space-between;
+    }
+
+    .footer-links-wrapper {
+        /* background-color: bisque; */
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer-copytag {
+        font-size: 12px;
+        font-weight: 200;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
+    }
+
+    .footer-icon-wrapper {
+        background-color: rgb(241,241,241);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-icon-wrapper:hover, .footer-icon-wrapper:hover .footer-icon {
+       background-color: rgb(190, 190, 190);
+       fill: white;
+    }
+
+    .footer-icon {
+       font-size: 1.3em;
+       fill: gray;
     }
 
     .splash-top-div {
