@@ -8,7 +8,6 @@ import "../css/develop.css";
 import { useTrail, useSprings, config, animated as a } from "react-spring"
 
 
-
 const Skills = ( ) => {
 
     const [load, setLoad] = useState(false)

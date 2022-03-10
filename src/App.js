@@ -9,7 +9,7 @@ import Contact from './components/contact/contact';
 
 function App() {
 
-  useEffect(() => window.scroll(0,0))
+  // useEffect(() => window.scroll(0,0))
 
   return (
     <div className="app-outer-div">
