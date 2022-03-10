@@ -1,5 +1,5 @@
 import React from "react"
-import { useSpring, animated as a, config } from "react-spring";
+import { useSpring, animated as a, config, easings } from "react-spring";
 
 
 const Descrip = () => {
@@ -9,15 +9,22 @@ const Descrip = () => {
 
     React.useEffect(() => setLoad(true))
 
-    const animateDown = useSpring({
+    const animateUp= useSpring({
         opacity: load ? 1 : 0,
-        marginTop: load ? 15 : -500, 
-        config: config.slow
+        delay: 1500,
+        y: load ? 40 : 500, 
+        config: {
+            mass: 1,
+            tension: 280,
+            friction: 100,
+            duration: 5000,
+            easing: easings.easeInOutElastic
+        }
     })
  
 
     return (
-        <a.div className="splash-descrip" style={animateDown} >
+        <a.div className="splash-descrip" style={animateUp} >
            <p>I'm a product manager, coder, & dog lover. My career, thus far, has been learning about the product.</p>    
         </a.div>
     )

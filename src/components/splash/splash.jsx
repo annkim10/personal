@@ -33,7 +33,7 @@ const Splash = () => {
                     <Descrip />
                 </div>
                 <div className="splash-bottom-div">
-                   <Timeline />
+                   {/* <Timeline /> */}
                 </div>
                 
             </div>

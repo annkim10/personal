@@ -1,5 +1,5 @@
 import React from "react"
-import { useSpring, animated as a, config } from "react-spring";
+import { easings, useSpring, animated as a, config } from "react-spring";
 
 
 
@@ -9,14 +9,20 @@ const Header = () => {
 
     React.useEffect(() => setLoad(true))
 
-    const animateDown = useSpring({
+    const animateUpBounce = useSpring({
         opacity: load ? 1 : 0,
-        marginTop: load ? 0 : -500, 
-        config: config.slow
+        y: load ? 10 : 500, 
+        config: {
+            mass: 1,
+            tension: 280,
+            friction: 180,
+            duration: 3500,
+            easing: easings.easeInOutElastic
+        }
     })
  
     return (
-        <a.div className="splash-top-wrapper" style={animateDown} >
+        <a.div className="splash-top-wrapper" style={animateUpBounce} >
             <h1 className="splash-header">It's nice to meet you,</h1> 
             <h1 className="splash-header">I'm <span> Ann Kim.</span></h1>       
         </a.div>
