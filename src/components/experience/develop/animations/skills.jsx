@@ -33,7 +33,6 @@ const Skills = () => {
     const trail = useTrail(skills.length, {
         opacity: 1,
         fontSize: '1.5em',
-        // transform: 'rotateX(0deg)',
         marginTop: 0, 
         from: {opacity: 0, marginTop: -50, fontSize: '0em'}, 
         config: config.default

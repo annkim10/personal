@@ -1,7 +1,7 @@
 import React from 'react';
 import "./css/develop.css";
 import line from "../../../images/line.svg"
-import ProjectCard from './projects';
+import ProjectCard from './animations/projects';
 import Skills from './animations/skills';
 
 
