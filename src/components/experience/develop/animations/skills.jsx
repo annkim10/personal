@@ -5,7 +5,7 @@ import { SiRedux, SiRubyonrails, SiJavascript, SiPostgresql, SiMongodb, SiExpres
 import { DiRuby, DiCss3 } from "react-icons/di";
 import { AiOutlineHtml5} from "react-icons/ai"
 import "../css/develop.css";
-import { useTrail, useSprings, config, animated as a } from "react-spring"
+import { useTrail, useSprings, config, easings, animated as a } from "react-spring"
 
 
 const Skills = ( ) => {
@@ -35,8 +35,14 @@ const Skills = ( ) => {
         opacity: visible ? 1 : 0,
         fontSize: visible ? '1.5em' : '0em',
         marginTop: visible ? 0 : -50, 
-        from: {opacity: 0, marginTop: -50, fontSize: '0em'}, 
-        config: config.default
+        delay: 500,
+        config: {
+            mass: 1,
+            tension: 200,
+            friction: 180,
+            duration: 2500,
+            easing: easings.easeInOutElastic
+        }
     })
 
     return (

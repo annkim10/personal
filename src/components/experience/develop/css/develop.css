@@ -23,6 +23,14 @@
         overflow: hidden;
     }
 
+    .develop-circle {
+        position: absolute;
+        top: 25px;
+        right: 70px;
+        z-index: 5;
+        width: 750px;
+    }
+
     .develop-top-div {
         display: flex;
         justify-content: space-between;
@@ -74,6 +82,8 @@
         width: 50%;
         display: flex;
         gap: 1em;
+        overflow: hidden;
+        position: relative;
     }
 
     .develop-projects-card-div {
@@ -84,6 +94,7 @@
         grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
         gap: 2rem;
         justify-content: center;
+        z-index: 50;
     }
 
     .develop-stage-bottom-div {
@@ -96,6 +107,7 @@
         height: 100px;
         position: relative;
         margin-top: 80px;
+        z-index: 50;
     }
 
     .develop-stage-skills-header {

@@ -11,13 +11,14 @@ const Header = () => {
 
     const animateUpBounce = useSpring({
         opacity: load ? 1 : 0,
-        y: load ? 10 : 800, 
+        y: load ? 10 : 200, 
+        fontWeight: load ? 200 : 0,
         config: {
             mass: 1,
-            tension: 280,
-            friction: 80,
+            tension: 200,
+            friction: 180,
             duration: 1500,
-            easing: easings.easeOutQuad
+            easing: easings.easeInOutQuart
         }
     })
  

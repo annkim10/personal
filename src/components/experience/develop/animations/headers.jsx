@@ -1,5 +1,5 @@
 import useIntersection from "../../../_utils/useIntersection";
-import { config, useTrail, animated as a } from "react-spring";
+import { config, easings, useTrail, animated as a } from "react-spring";
 
 
 const DevelopHeaders = ( { visible } ) => {
@@ -13,8 +13,13 @@ const DevelopHeaders = ( { visible } ) => {
         opacity: visible ? 1 : 0,
         fontSize: visible ? '1.5em' : '0em',
         marginTop: visible ? 0 : -50, 
-        from: {opacity: 0, marginTop: -50, fontSize: '0em'}, 
-        config: config.slow
+        config: {
+            mass: 1,
+            tension: 50,
+            friction: 10,
+            duration: 1000,
+            easing: easings.easeInOutBack
+        }
     })
 
     return (

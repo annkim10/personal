@@ -1,4 +1,5 @@
 @media screen and (min-width: 961px) {
+
     .projects-card-wrapper {
         background-color: white;
         position: relative;
@@ -34,7 +35,7 @@
         object-fit: contain;
     }
 
-    .projects-card-text {
+    .projects-card-text-wrapper {
         /* background-color:rgba(50, 50, 93, 0.25); */
         width: 80%;
         margin-top: 30px;
@@ -51,6 +52,11 @@
         font-weight: 600;
         padding-bottom: 20px;
         color: #A649B3;
+    }
+
+    .projects-card-descrip {
+        font-size: 12px;
+        line-height: 1.3;
     }
 
     .projects-description {
@@ -124,7 +130,7 @@
         object-fit: contain;
     }
 
-    .projects-card-text {
+    .projects-card-text-wrapper {
         /* background-color:rgba(50, 50, 93, 0.25); */
         width: 80%;
         margin-top: 30px;
@@ -141,6 +147,11 @@
         font-weight: 600;
         padding-bottom: 20px;
         color: #A649B3;
+    }
+
+    .projects-card-descrip {
+        font-size: 12px;
+        line-height: 1.3;
     }
 
     .projects-description {
