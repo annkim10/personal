@@ -31,11 +31,6 @@ const Splash = () => {
                 <div className="splash-top-div">
                     <Header />
                     <Descrip />
-                    {/* <a.div className="splash-top-wrapper" style={animateDown} >
-                        <h1 className="splash-header">It's nice to meet you,</h1> 
-                        <h1 className="splash-header">I'm <span> Ann Kim.</span></h1>
-                        <p className="splash-descrip">I'm a product manager, coder, & dog lover. My career, thus far, has been learning about the product.</p>
-                    </a.div> */}
                 </div>
                 <div className="splash-bottom-div">
                    <Timeline />

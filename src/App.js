@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app-outer-div">
         <Navbar />
-        <Splash />
+        {/* <Splash /> */}
         <Experience />
         <About />
         <Contact />

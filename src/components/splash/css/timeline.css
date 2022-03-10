@@ -75,47 +75,54 @@
 }
 
 @media screen and  (max-width: 960px) {
-      .timeline-outer-div {
+    .timeline-outer-div {
         /* background-color: #f0f0f0; */
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .timeline-stages-wrapper {
-        margin-top: 50px;
         display: flex;
-        width: 80%;
+        margin-top: 50px;
+        padding-bottom: 50px;
         flex-direction: column;
-        align-items: center;
-        gap: 3em;
+        gap: 3rem;
+        min-width: 80%;
+        overflow: hidden;
     }
 
     .timeline-stage-div {
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
     }
 
-    .timeline-stage-img {
-        margin-top: 10%;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-
-   .timeline-stage-time {
+    .timeline-stage-time {
         font-size: 12px;
         font-weight: 600;
-        width: 180px;
-        height: 30px;
+        width: 170px;
+        height: 40px;
         letter-spacing: 0.1em;
         border-radius: 50px;
         border: 1px solid rgb(192, 192, 192);
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .stage-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .timeline-line {
+        height: 50px;
+        width: 10px;
     }
 
     .timeline-stage-descrip {
@@ -129,6 +136,14 @@
     .timeline-stage-descrip span {
         font-weight: 600;
         color: #952d95
+    }
+
+    .timeline-stage-img {
+        margin-top: 5%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
     }
 
 

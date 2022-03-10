@@ -1,6 +1,6 @@
 import React from "react"
 import gif from "../../../images/pupfinder-splash.gif"
-import "./projects.css"
+import "./css/projects.css"
 
 const ProjectCard = ({title}) => {
 
