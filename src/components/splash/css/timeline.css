@@ -11,14 +11,14 @@
         display: flex;
         justify-content: space-between;
         min-width: 80%;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .timeline-stage-div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .timeline-stage-time {
@@ -38,7 +38,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
     }
 
     .timeline-line {

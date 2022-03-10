@@ -11,14 +11,14 @@ const Descrip = () => {
 
     const animateUp= useSpring({
         opacity: load ? 1 : 0,
-        delay: 1500,
+        // delay: 1500,
         y: load ? 40 : 500, 
         config: {
             mass: 1,
-            tension: 280,
-            friction: 100,
-            duration: 5000,
-            easing: easings.easeInOutElastic
+            tension: 200,
+            friction: 80,
+            duration: 2000,
+            easing: easings.easeOutQuad
         }
     })
  
