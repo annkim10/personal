@@ -1,4 +1,5 @@
-import React from 'react';
+import { useRef, useState, useEffect } from 'react';
+import useIntersection from '../../../_utils/useIntersection';
 import { FaReact } from "react-icons/fa";
 import { SiRedux, SiRubyonrails, SiJavascript, SiPostgresql, SiMongodb, SiExpress, SiNodedotjs } from "react-icons/si";
 import { DiRuby, DiCss3 } from "react-icons/di";
@@ -8,13 +9,14 @@ import { useTrail, useSprings, config, animated as a } from "react-spring"
 
 
 
-const Skills = () => {
+const Skills = ( ) => {
 
-    const [load, setLoad] = React.useState(false)
+    const [load, setLoad] = useState(false)
 
-    React.useEffect(() => setLoad(true))
+    const ref = useRef();
+    const visible = useIntersection(ref, '50px'); // Trigger as soon as the element becomes visible
 
-    console.log("skills", load)
+    useEffect(() => visible ? setLoad(true) : "")
 
      const skills = [
         {icon: <FaReact />, caption: 'React'},
@@ -31,16 +33,16 @@ const Skills = () => {
     ]
 
     const trail = useTrail(skills.length, {
-        opacity: 1,
-        fontSize: '1.5em',
-        marginTop: 0, 
+        opacity: visible ? 1 : 0,
+        fontSize: visible ? '1.5em' : '0em',
+        marginTop: visible ? 0 : -50, 
         from: {opacity: 0, marginTop: -50, fontSize: '0em'}, 
         config: config.default
     })
 
     return (
         <a.div className='develop-stage-bottom-div'>
-            <h1 className='develop-stage-skills-header'>SKILLS</h1>
+            <h1 className='develop-stage-skills-header' ref={ref}>SKILLS</h1>
             <ul className='develop-stage-skills-list'>
                 {trail.map((styles, idx) => {
                     return (
@@ -52,12 +54,6 @@ const Skills = () => {
                         </a.div>
                     )
                 })}
-                {/* {skills.map((skill, idx) => (
-                    <li key={idx} className="skill">
-                        <span id='skill-icon'>{skill.icon}</span>
-                        <p>{skill.caption}</p>
-                    </li>
-                ))} */}
             </ul>
         </a.div>     
     )

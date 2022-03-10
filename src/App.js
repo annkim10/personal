@@ -1,4 +1,5 @@
 import './App.css';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Navbar from './components/navbar/navbar';
 import Splash from './components/splash/splash';
@@ -7,10 +8,13 @@ import About from './components/about/about';
 import Contact from './components/contact/contact';
 
 function App() {
+
+  useEffect(() => window.scroll(0,0))
+
   return (
     <div className="app-outer-div">
         <Navbar />
-        {/* <Splash /> */}
+        <Splash />
         <Experience />
         <About />
         <Contact />

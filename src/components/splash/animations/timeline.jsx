@@ -13,7 +13,7 @@ const Timeline = () => {
     React.useEffect(() => setLoad(true))
 
     const animateDown = useSpring({
-        marginTop: load ? 0 : -500, 
+        marginTop: load ? 10 : -500, 
         config: config.slow
     })
 
