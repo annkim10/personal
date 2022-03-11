@@ -11,30 +11,15 @@ const Logos = ( { visible }) => {
 
     const logos = [ coke, heinz, usps, leejeans, fisherprice, gallo, merck ]
 
-    const animate = useSpring({
-        opacity: visible ? 1 : 0,
-        y: visible ? 10 : 200, 
-        config: {
-            mass: 1,
-            tension: 200,
-            friction: 180,
-            duration: 2500,
-            easing: easings.easeInOutQuad
-        }
-    })
-
     const trail = useTrail(logos.length, {
         opacity: visible ? 1 : 0,
         y: visible ? 10 : 200, 
         config: {
             mass: 1,
-            tension: 200,
-            friction: 80,
-            duration: 2500,
-            easing: easings.easeInOutElastic
+            tension: 170,
+            friction: 26
         }
     })
-
 
     return (
         <ul className="advertise-brands">

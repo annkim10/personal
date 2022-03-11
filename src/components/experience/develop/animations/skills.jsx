@@ -8,14 +8,7 @@ import "../css/develop.css";
 import { useTrail, useSprings, config, easings, animated as a } from "react-spring"
 
 
-const Skills = ( ) => {
-
-    const [load, setLoad] = useState(false)
-
-    const ref = useRef();
-    const visible = useIntersection(ref, '50px'); // Trigger as soon as the element becomes visible
-
-    useEffect(() => visible ? setLoad(true) : "")
+const Skills = ( { visible } ) => {
 
      const skills = [
         {icon: <FaReact />, caption: 'React'},
@@ -47,7 +40,7 @@ const Skills = ( ) => {
 
     return (
         <a.div className='develop-stage-bottom-div'>
-            <h1 className='develop-stage-skills-header' ref={ref}>SKILLS</h1>
+            <h1 className='develop-stage-skills-header'>SKILLS</h1>
             <ul className='develop-stage-skills-list'>
                 {trail.map((styles, idx) => {
                     return (

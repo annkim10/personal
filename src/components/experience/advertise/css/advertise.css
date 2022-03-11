@@ -31,9 +31,11 @@
     .advertise-right-div {
         width: 60%;
         display: flex;
-        align-items: center;
+        justify-content: center;
         gap: 3rem;
         position: relative;
+        overflow: hidden;
+        height: 500px;
     }
 
 
@@ -58,7 +60,6 @@
         width: 80%;
         margin-left: 15px;
         margin-top: 20px;
-       
     }
 
     .advertise-header {
@@ -84,7 +85,7 @@
     .advertise-cta {
         color: white;
         position: absolute;
-        top: 150px;
+        top: 80px;
         left: 250px;
         font-weight: 600;
         letter-spacing: 0.15em;
@@ -133,20 +134,30 @@
         width: 200px;
         height: 330px;
         background-color: white;
-        display: flex;
+        /* display: flex; */
         border-radius: 20px;
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     }
 
-    .agency-wrapper {
+    .agency-outer-wrapper {
+        display: flex;
+        gap: 3em;
         position: relative;
+        height: 200px;
+        margin-top: 160px;
+    }
+
+    .agency-wrapper {
+        display: flex;
+        position: relative;
+        height: 330px;
     }
 
     .agency-close-button-active {
         font-size: 2em;
         position: absolute; 
-        top: 85%;
+        bottom: 30px;
         left: 85px;
         z-index: 50;
         cursor: pointer;
@@ -249,14 +260,14 @@
         align-items: center;
         justify-content: center;
         margin-top: 20px;
-        width: 100px;
-        height: 40px;
+        width: 130px;
+        height: 50px;
         background-color: rgb(59, 59, 59);
         border-radius: 50px;
     }
 
     .brand-logo {
-        width: 60px;
+        width: 80px;
     }
 
     .leejeans-logo {

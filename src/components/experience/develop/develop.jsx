@@ -35,7 +35,7 @@ const Develop = () => {
                         </div>
                     </div>
                 </div>
-                <Skills />
+                <Skills visible={visible} />
             </div>  
         </div>
     )

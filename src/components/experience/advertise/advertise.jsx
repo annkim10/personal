@@ -9,6 +9,7 @@ import Logos from "./animations/logos"
 import { AiFillCloseCircle } from "react-icons/ai"
 import { BsFillSquareFill } from "react-icons/bs"
 import AdvertiseHeaders from "./animations/advertiseheaders"
+import Agencies from "./animations/agency-wrapper"
 
 const Advertise = () => {
 
@@ -33,7 +34,8 @@ const Advertise = () => {
                 </div>
                 <div className="advertise-right-div">
                     <h1 className="advertise-cta">CLICK FOR MORE DETAILS</h1>
-                    <div className="agency-wrapper">
+                    <Agencies visible={visible} />
+                    {/* <div className="agency-wrapper">
                         <div className={ umDetails ? "um-wrapper-active" : "um-wrapper-inactive"}
                             onClick={() => setUmDetails(true)}>
                             <div className="agency-details-wrapper">
@@ -107,7 +109,7 @@ const Advertise = () => {
                         <AiFillCloseCircle 
                             onClick={() => setDraftDetails(false)}
                             className={ draftDetails ? "agency-close-button-active" : "agency-close-button-inactive"}/>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="advertise-brands-wrapper">
                         <h1 className="advertise-brands-header">BRANDS</h1>
