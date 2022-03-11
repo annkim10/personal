@@ -8,6 +8,7 @@
         flex-direction: column;
         align-items: center;
         margin-top: 70px;
+        overflow: hidden;
     }
 
     .advertise-inner-div {
@@ -17,6 +18,7 @@
         min-width: 1200px;
         max-width: 1200px;
         height: 85%;
+        overflow: hidden;
     }
 
     .advertise-left-div {
@@ -105,15 +107,15 @@
     }
 
     .um-wrapper-inactive {
-        background-image: url("../../../images/splash/advertise.jpeg");  
+        background-image: url("../../../../images/splash/advertise.jpeg");  
     }
 
     .mec-wrapper-inactive {
-        background-image: url("../../../images/advertise/jeans.jpg");
+        background-image: url("../../../../images/advertise/jeans.jpg");
     }
 
     .draft-wrapper-inactive {
-        background-image: url("../../../images/advertise/pharma.jpg");
+        background-image: url("../../../../images/advertise/pharma.jpg");
     }
 
     .um-wrapper-inactive:hover, .mec-wrapper-inactive:hover, .draft-wrapper-inactive:hover {

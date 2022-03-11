@@ -26,7 +26,7 @@ const DevelopHeaders = ( { visible } ) => {
         <a.div className='develop-text-wrapper'>
             {trail.map((styles, idx) => {
                 return (
-                    <a.div  style={styles}>
+                    <a.div key={idx} style={styles}>
                         <h1 className={headers[idx].class}>{headers[idx].text1}<span>{headers[idx].span}</span>{headers[idx].text2}</h1>
                     </a.div>
                 )

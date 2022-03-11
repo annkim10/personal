@@ -1,15 +1,23 @@
-import React from "react"
-import "./advertise.css"
+import { useState, useRef, useEffect} from "react"
+import useIntersection from "../../_utils/useIntersection"
+import "./css/advertise.css"
 import line from "../../../images/line-white.svg"
 import um from "../../../images/logos/um_logo.png"
 import mec from "../../../images/logos/mec_logo.png"
 import draft from "../../../images/logos/draft_logo.png"
-import Logos from "./logos"
-import { useState } from "react"
+import Logos from "./animations/logos"
 import { AiFillCloseCircle } from "react-icons/ai"
 import { BsFillSquareFill } from "react-icons/bs"
+import AdvertiseHeaders from "./animations/advertiseheaders"
 
 const Advertise = () => {
+
+    const [load, setLoad] = useState(false)
+
+    const ref = useRef();
+    const visible = useIntersection(ref, '0px');
+
+    useEffect(() => visible ? setLoad(true) : "")
 
     const [umDetails, setUmDetails] = useState(false)
     const [mecDetails, setMecDetails] = useState(false)
@@ -19,12 +27,9 @@ const Advertise = () => {
         <div className='advertise-outer-div'>
             <div className='advertise-inner-div'>
                 <div className='advertise-left-div'>
-                    <h1 className='advertise-time'>JUN 2020 - OCT 2016</h1>
+                    <h1 className='advertise-time' ref={ref}>JUN 2020 - OCT 2016</h1>
                     <img className='advertise-line' src={line} />
-                    <div className='advertise-text-wrapper'>
-                        <h1 className='advertise-header'>Learning to <span>advertise</span> the product</h1>
-                        <p className='advertise-descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
+                    <AdvertiseHeaders visible={visible}/>
                 </div>
                 <div className="advertise-right-div">
                     <h1 className="advertise-cta">CLICK FOR MORE DETAILS</h1>
@@ -106,7 +111,7 @@ const Advertise = () => {
                 </div>
                 <div className="advertise-brands-wrapper">
                         <h1 className="advertise-brands-header">BRANDS</h1>
-                       <Logos />
+                       <Logos visible={visible} />
                 </div>
             </div>        
         </div>
