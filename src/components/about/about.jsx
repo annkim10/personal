@@ -7,6 +7,7 @@ import { BsArrowDown } from "react-icons/bs"
 import AboutMe from "./animations/descrip-wrapper";
 import AboutHeader from "./animations/about-header";
 import circle from "../../images/svg/gray-circle.svg"
+import AboutImgs from "./animations/about-imgs";
 
 const About = () => {
 
@@ -20,8 +21,9 @@ const About = () => {
     return (
         <div className="about-outer-div">
                 <div className="about-img-wrapper">
-                    <img className="about-pic" src={pic} />
-                    <img className="jojo-pic" src={jojo} />
+                    <AboutImgs visible={visible} />
+                    {/* <img className="about-pic" src={pic} />
+                    <img className="jojo-pic" src={jojo} /> */}
                     {/* <h1 className="me-caption">This is me</h1>
                     <BsArrowDown className="me-arrow"/> */}
                     {/* <h1 className="rollie-caption">This is Rollie</h1>

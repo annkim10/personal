@@ -86,21 +86,20 @@
 
     .about-img-wrapper {
         /* background-color: #A649B3; */
-        width: 50%;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        width: 1000px;
+        height: 450px;
+        margin-top: 10px;
         position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .about-pic {
-        position: absolute;
         width: 300px;
         height: 300px;
         object-fit: cover;
-        left: 40%;
         border-radius: 50%;
         border: 8px solid rgb(241, 241, 241);
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -108,7 +107,8 @@
 
     .jojo-pic {
         position: absolute;
-        left: 20%;
+        top: 120px;
+        left: 570px;
         width: 200px;
         height: 200px;
         object-fit: cover;
@@ -117,23 +117,26 @@
         border: 8px solid rgb(241, 241, 241);
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
-    
-    .me-caption, .rollie-caption, .jojo-caption {
-        font-family: 'Shadows Into Light Two', cursive;
-    }
 
+    .about-captions-wrapper {
+        font-family: 'Shadows Into Light Two', cursive; 
+        /* display: flex;
+        align-items: center; */
+    }
+    
     .me-caption {
         position: absolute;
-        top: 10%;
-        right: 20%;
+        top: 16%;
+        right: 11%;
         font-size: 25px;
     }
 
     .me-arrow {
         font-size: 40px;
         position: absolute;
-        top: 15%;
+        /* top: 15%; */
         right: 25%;
+        transform: rotate(90deg)
     }
     
     .jojo-caption {
