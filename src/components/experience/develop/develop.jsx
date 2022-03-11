@@ -1,13 +1,13 @@
 import { useState, useRef, useEffect } from 'react';
 import { useSpring, config, animated as a } from "react-spring"
 import "./css/develop.css";
-import line from "../../../images/line.svg"
-import circle from "../../../images/circle.svg"
+import line from "../../../images/svg/line.svg"
+import circle from "../../../images/svg/purple-circle.svg"
 import ProjectCard from './animations/projects';
 import Skills from './animations/skills';
 import useIntersection from '../../_utils/useIntersection';
 import DevelopHeaders from './animations/developheaders';
-import DevelopCircle from './animations/circle';
+import DevelopCircle from './animations/developcircle';
 
 const Develop = () => {
 

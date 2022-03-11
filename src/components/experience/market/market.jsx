@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import Youtube from './animations/youtube';
 import useIntersection from '../../_utils/useIntersection';
 import "./css/market.css";
-import line from "../../../images/line.svg"
+import line from "../../../images/svg/line.svg"
 import { MdKeyboardArrowRight } from "react-icons/md"
 import MarketHeaders from './animations/marketheaders';
 import VideoWrapper from './animations/videowrapper';

@@ -13,8 +13,8 @@ function App() {
 
   return (
     <div className="app-outer-div">
-        {/* <Navbar />
-        <Splash />
+        <Navbar />
+        {/* <Splash />
         <Experience /> */}
         <About />
         <Contact />

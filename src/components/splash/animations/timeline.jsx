@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react"
 import "../css/timeline.css"
 import { useSpring, animated as a, config, easings } from "react-spring";
-import line from "../../../images/line.svg"
+import line from "../../../images/svg/line.svg"
 import code from "../../../images/splash/code.jpg"
 import advertise from "../../../images/splash/advertise.jpeg"
 import market from "../../../images/splash/market.jpg"

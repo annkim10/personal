@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useSpring, easings, config, animated as a } from "react-spring"
-import circle from "../../../../images/circle.svg"
+import circle from "../../../../images/svg/purple-circle.svg"
 
 
 const DevelopCircle = ( {visible}) => {
