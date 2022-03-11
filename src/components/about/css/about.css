@@ -2,6 +2,7 @@
     .about-outer-div {
         position: relative;
         width: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -54,6 +55,14 @@
         background-color: white;
         border-radius: 40px;
         margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .about-descrip-text-wrapper { 
+        display: flex;
+    }
+
+    .about-descrip-text {
         font-size: 18px;
         color: #A649B3;
         letter-spacing: 0.1em;

@@ -3,7 +3,7 @@
         background-color: rgb(44, 44, 44);
         position: relative;
         width: 100vw;
-        height: 800px;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -17,7 +17,7 @@
         position: relative;
         min-width: 1200px;
         max-width: 1200px;
-        height: 85%;
+        height: 800px;
         overflow: hidden;
     }
 
@@ -121,8 +121,10 @@
 
     .um-wrapper-inactive:hover, .mec-wrapper-inactive:hover, .draft-wrapper-inactive:hover {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        outline: 4px solid #ca5bca;
+        outline: 6px solid #ca5bca;
         outline-offset: 4px;
+        transition: all 0.2s;
+        transition-timing-function: ease-in-out;
     }
 
     .um-logo {
@@ -238,7 +240,7 @@
 
     .advertise-brands-wrapper {
         position: absolute;
-        bottom: 10px;
+        top: 75%;
         left: 15px;
         height: 100px;
         border-radius: 50px;

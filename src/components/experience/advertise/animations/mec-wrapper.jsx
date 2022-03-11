@@ -13,12 +13,12 @@ const MecDetails = ( { visible }) => {
     const [mecDetails, setMecDetails] = useState(false)
 
     const animate = useSpring({
-        height: mecDetails ? 330 : 200,
+        height: mecDetails ? 350 : 300,
         config: {
             mass: 1,
             tension: 100,
             friction: 80,
-            duration: 500,
+            duration: 1000,
             easing: easings.easeOutCubic
         }
     })

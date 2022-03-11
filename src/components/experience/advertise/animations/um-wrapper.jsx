@@ -13,13 +13,13 @@ const UmDetails = ( { visible }) => {
     const [umDetails, setUmDetails] = useState(false)
 
     const animate = useSpring({
-        height: umDetails ? 350 : 200,
+        height: umDetails ? 350 : 300,
         config: {
             mass: 1,
             tension: 100,
             friction: 80,
-            duration: 500,
-            easing: easings.easeOutCubic
+            duration: 1000,
+            easing: easings.easeOutQuad
         }
     })
  

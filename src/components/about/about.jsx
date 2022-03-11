@@ -1,25 +1,26 @@
-import React from "react"
-import "./about.css"
+import { useState, useRef, useEffect} from "react"
+import "./css/about.css"
+import useIntersection from "../_utils/useIntersection";
 import pic from "../../images/about.jpg"
 import jojo from "../../images/jojo.jpg"
 import { BsArrowDown } from "react-icons/bs"
+import AboutMe from "./animations/descrip-wrapper";
 
 const About = () => {
+
+    const [load, setLoad] = useState(false)
+
+    const ref = useRef();
+    const visible = useIntersection(ref, '0px');
+
+    useEffect(() => visible ? setLoad(true) : "")
 
     return (
         <div className="about-outer-div">
             <div className="about-inner-div">
                 <div className="about-descrip-wrapper">
-                    <h1 className="about-header">About Me</h1>
-                    <div className="about-descrip-div">
-                       <h1 className="about-descrip">My Interests</h1>
-                       <p className="about-descrip-answer">Dogs, technology, movies and tv series</p>
-                        <h1 className="about-descrip">Location</h1>
-                       <p className="about-descrip-answer">Long Island City, NY</p>
-                        <h1 className="about-descrip">Education</h1>
-                       <p className="about-descrip-answer">Northwestern University, Bachelors Degree</p>
-                        <p className="about-descrip-answer">Psychology, Integrated Marketing Communications</p>
-                    </div>
+                    <h1 className="about-header" ref={ref} >About Me</h1>
+                    <AboutMe visible={visible}/>
                 </div>
                 <div className="about-img-wrapper">
                     <img className="about-pic" src={pic} />
