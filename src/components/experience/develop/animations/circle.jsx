@@ -6,7 +6,7 @@ import circle from "../../../../images/circle.svg"
 const DevelopCircle = ( {visible}) => {
 
     const animate = useSpring({
-        opacity: visible ? 0.2 : 0,
+        opacity: visible ? 0.1 : 0,
         transform: visible ? 'scale(1)' : 'scale(0)',
         config: {
             mass: 1,

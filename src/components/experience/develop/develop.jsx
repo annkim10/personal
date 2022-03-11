@@ -6,7 +6,7 @@ import circle from "../../../images/circle.svg"
 import ProjectCard from './animations/projects';
 import Skills from './animations/skills';
 import useIntersection from '../../_utils/useIntersection';
-import DevelopHeaders from './animations/headers';
+import DevelopHeaders from './animations/developheaders';
 import DevelopCircle from './animations/circle';
 
 const Develop = () => {
@@ -20,9 +20,8 @@ const Develop = () => {
 
     return (
         <div className='develop-outer-div'>
-            <DevelopCircle visible={visible} />
-            {/* <img className="develop-circle" src={circle} /> */}
             <div className='develop-inner-div'>
+                <DevelopCircle visible={visible} />
                 <h1 className='develop-time' ref={ref} >OCT 2021 - PRESENT</h1>
                 <img className='line' src={line} />
                 <div className='develop-top-div'>

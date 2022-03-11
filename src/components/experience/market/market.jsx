@@ -1,32 +1,38 @@
-import React from 'react';
-import Youtube from './youtube';
-import "./market.css";
+import { useState, useRef, useEffect } from 'react';
+import Youtube from './animations/youtube';
+import useIntersection from '../../_utils/useIntersection';
+import "./css/market.css";
 import line from "../../../images/line.svg"
 import { MdKeyboardArrowRight } from "react-icons/md"
+import MarketHeaders from './animations/marketheaders';
+import VideoWrapper from './animations/videowrapper';
+import Samsung from './animations/samsung';
 
 
 const Market = () => {
+
+    const [load, setLoad] = useState(false)
+
+    const ref = useRef();
+    const visible = useIntersection(ref, '0px');
+
+    useEffect(() => visible ? setLoad(true) : "")
 
     return (
         <div className='market-outer-div'>
             <div className='market-inner-div'>
                 <div className='market-left-div'>
-                    <h1 className='market-time'>OCT 2016 - SEP 2021</h1>
+                    <h1 className='market-time' ref={ref}>OCT 2016 - SEP 2021</h1>
                     <img className='market-line' src={line} />
-                    <div className='market-text-wrapper'>
-                        <h1 className='market-header'>Learning to <span>market</span> the product</h1>
-                        <p className='market-descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
+                    <MarketHeaders visible={visible}/>
                 </div>
                 <div className='market-right-div'>
-                    <div className='market-details-wrapper'>
-                        <Youtube />
-                        <h1 className='youtube-header'>Featured in Samsung's Unbox & Discover event</h1>
-                    </div>
+                    <VideoWrapper visible={visible}/>
                 </div>
             </div>  
             <div className='market-bottom-div'>
-                <h1 className='market-roles-header'>Positions at Samsung</h1>
+                <Samsung visible={visible} />
+                {/* <h1 className='market-roles-header'>Positions at Samsung</h1>
                 <div className='market-roles-wrapper'>
                     <div className='market-role-div'>
                         <h1 className='market-division'>B2C Desktop Monitors,</h1>
@@ -40,7 +46,7 @@ const Market = () => {
                         <p className='market-role'>Product Marketing Manager</p>
                     </div>
                     <button className='market-button'>MORE DETAILS <span><MdKeyboardArrowRight /></span></button>
-                </div>
+                </div> */}
             </div>
         </div>
     )

@@ -27,6 +27,10 @@
         max-width: 1200px;
     }
 
+    .market-bottom-wrapper {
+        display: flex;
+    }
+
     .market-left-div {
         /* background-color: aqua; */
         width: 40%;
@@ -50,6 +54,7 @@
     }
 
     .market-text-wrapper {
+        width: 80%;
         margin-left: 35px;
         margin-top: 20px;
     }
@@ -78,6 +83,7 @@
         display: flex;
         justify-content: right;
         margin-top: 100px;
+        overflow: hidden;
         /* align-items: center; */
     }
 
@@ -137,6 +143,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
 
     .market-button span {
