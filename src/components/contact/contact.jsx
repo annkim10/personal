@@ -1,6 +1,7 @@
 import React from "react"
 import "./contact.css"
 import { MdOutlineEmail, MdOutlinePhoneInTalk } from "react-icons/md"
+import { FaLinkedinIn, FaGithub } from "react-icons/fa"
 
 const Contact = () => {
 
@@ -21,7 +22,18 @@ const Contact = () => {
                             <h1 className="contact">646.884.3600</h1>
                         </div>
                     </div>
-                 
+                    <div className="contact-links-wrapper">
+                        <div className="footer-icon-wrapper">
+                            <a href="https://www.linkedin.com/in/ann-kim" target="_blank">
+                                <FaLinkedinIn className="footer-icon"/>
+                            </a>
+                        </div>
+                        <div className="footer-icon-wrapper">
+                            <a href="https://github.com/annkim10" target="_blank">
+                                <FaGithub className="footer-icon"/>
+                            </a>
+                        </div>
+                    </div>
                 </div>      
             </div>    
         </div>

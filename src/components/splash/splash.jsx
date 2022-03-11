@@ -1,5 +1,4 @@
-import React, { useEffect } from "react"
-import { useSpring, animated as a, config } from "react-spring";
+import { useEffect } from "react"
 import { FaLinkedinIn, FaGithub } from "react-icons/fa"
 import "./css/splash.css"
 import Timeline from "./animations/timeline"

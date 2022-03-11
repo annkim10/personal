@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="app-outer-div">
         <Navbar />
-        {/* <Splash />
-        <Experience /> */}
+        <Splash />
+        <Experience />
         <About />
         <Contact />
         {/* <Switch>
