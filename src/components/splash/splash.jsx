@@ -8,7 +8,7 @@ import Descrip from "./animations/descrip";
 const Splash = () => {
 
     return (
-        <div className="splash-outer-div">
+        <div className="splash-outer-div" id="splash-container">
             <div className="splash-inner-div">
                 <div className="splash-footer-wrapper">
                     <h1 className="footer-copytag">© 2022 built by Ann Kim with React</h1>

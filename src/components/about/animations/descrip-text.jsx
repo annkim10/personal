@@ -9,8 +9,6 @@ const DescripText = ( { visible, text } ) => {
 
     words.forEach(word => wordsArr.push(word + " "))
 
-    console.log(wordsArr)
-
     const trail = useTrail(wordsArr.length, {
         opacity: visible ? 1 : 0,
         delay: 1500,

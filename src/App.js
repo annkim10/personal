@@ -5,6 +5,7 @@ import Splash from './components/splash/splash';
 import Experience from './components/experience/experience';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
+import NavBar from './components/navbar/nav-bar';
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
 
   return (
     <div className="app-outer-div">
-        <Navbar />
+        {/* <Navbar /> */}
+        <NavBar />
         <Splash />
         <Experience />
         <About />

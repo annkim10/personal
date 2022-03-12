@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react"
+import NavLink, { navLinks } from "./nav-link"
 import { Link } from "react-router-dom"
 import "./navbar.css"
 import { AiOutlineMenu, AiOutlineCloseCircle } from "react-icons/ai"
 
 
-const Navbar = () => {
+const NavBar = () => {
 
     const [click, setClick] = useState(false)
     const [mobile, setMobile] = useState(false)
+    const [activeNavLinkId, setActiveNavLinkId] = useState('');
 
     const showMobileMenu = () => {
         if (window.innerWidth <= 960) {
@@ -27,11 +29,18 @@ const Navbar = () => {
     
     const closeMenu = () => setClick(false)
 
+
     return (
         <div className='navbar-outer-div' >
             <div className="navbar-inner-div">
                 <div className="logo-div">
-                    <Link className="logo" to="/">ANN KIM</Link>
+                    <NavLink 
+                        name={'ANN KIM'}
+                        navLinkId={'logo'} 
+                        scrollToId={'splash-container'} 
+                        activeNavLinkId={activeNavLinkId}
+                        setActiveNavLinkId={setActiveNavLinkId} 
+                    />
                 </div>
                 {mobile ? <AiOutlineMenu className="menu-icon" onClick={handleClick}/> : ""}
                 <div className={mobile && click ? "links-mobile-div" : "links-div"}>
@@ -47,4 +56,4 @@ const Navbar = () => {
 
 }
 
-export default Navbar
+export default NavBar
