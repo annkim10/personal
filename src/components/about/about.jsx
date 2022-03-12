@@ -19,17 +19,9 @@ const About = () => {
     useEffect(() => visible ? setLoad(true) : "")
 
     return (
-        <div className="about-outer-div">
+        <div className="about-outer-div" id="about-container">
                 <div className="about-img-wrapper">
                     <AboutImgs visible={visible} />
-                    {/* <img className="about-pic" src={pic} />
-                    <img className="jojo-pic" src={jojo} /> */}
-                    {/* <h1 className="me-caption">This is me</h1>
-                    <BsArrowDown className="me-arrow"/> */}
-                    {/* <h1 className="rollie-caption">This is Rollie</h1>
-                    <BsArrowDown className="rollie-arrow"/>
-                    <h1 className="jojo-caption">This is Jojo</h1>
-                    <BsArrowDown className="jojo-arrow"/> */}
                 </div>
             <div className="about-inner-div">
                 <img className="about-circle" src={circle} ref={ref}  />

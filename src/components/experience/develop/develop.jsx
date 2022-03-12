@@ -19,7 +19,7 @@ const Develop = () => {
     useEffect(() => visible ? setLoad(true) : "")
 
     return (
-        <div className='develop-outer-div'>
+        <div className='develop-outer-div' id="develop-container">
             <div className='develop-inner-div'>
                 <DevelopCircle visible={visible} />
                 <h1 className='develop-time'> OCT 2021 - PRESENT</h1>
