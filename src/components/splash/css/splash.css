@@ -2,6 +2,7 @@
 
     .splash-outer-div {
         width: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -12,7 +13,6 @@
         /* background-color: rgb(101, 206, 206); */
         min-width: 1200px;
         max-width: 1900px;
-        height: 100vh;
         margin-top: 70px;
         display: flex;
         flex-direction: column;

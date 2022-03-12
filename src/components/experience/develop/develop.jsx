@@ -14,7 +14,7 @@ const Develop = () => {
     const [load, setLoad] = useState(false)
 
     const ref = useRef();
-    const visible = useIntersection(ref, '0px');
+    const visible = useIntersection(ref, '0px', '1.0');
 
     useEffect(() => visible ? setLoad(true) : "")
 
@@ -22,8 +22,8 @@ const Develop = () => {
         <div className='develop-outer-div'>
             <div className='develop-inner-div'>
                 <DevelopCircle visible={visible} />
-                <h1 className='develop-time' ref={ref} >OCT 2021 - PRESENT</h1>
-                <img className='line' src={line} />
+                <h1 className='develop-time'> OCT 2021 - PRESENT</h1>
+                <img className='line' src={line} ref={ref} />
                 <div className='develop-top-div'>
                     <DevelopHeaders visible={visible}/>
                     <div className='develop-projects-wrapper' >

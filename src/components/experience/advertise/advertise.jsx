@@ -11,7 +11,7 @@ const Advertise = () => {
     const [load, setLoad] = useState(false)
 
     const ref = useRef();
-    const visible = useIntersection(ref, '0px');
+    const visible = useIntersection(ref, '0px', '1.0');
 
     useEffect(() => visible ? setLoad(true) : "")
 
@@ -19,8 +19,8 @@ const Advertise = () => {
         <div className='advertise-outer-div'>
             <div className='advertise-inner-div'>
                 <div className='advertise-left-div'>
-                    <h1 className='advertise-time' ref={ref}>JUN 2020 - OCT 2016</h1>
-                    <img className='advertise-line' src={line} />
+                    <h1 className='advertise-time'>JUN 2020 - OCT 2016</h1>
+                    <img className='advertise-line' src={line} ref={ref}/>
                     <AdvertiseHeaders visible={visible}/>
                 </div>
                 <div className="advertise-right-div">

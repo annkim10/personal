@@ -14,7 +14,7 @@ const Market = () => {
     const [load, setLoad] = useState(false)
 
     const ref = useRef();
-    const visible = useIntersection(ref, '0px');
+    const visible = useIntersection(ref, '0px', '1.0');
 
     useEffect(() => visible ? setLoad(true) : "")
 
