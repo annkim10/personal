@@ -20,7 +20,7 @@ const Timeline = () => {
             mass: 1,
             tension: 280,
             friction: 80,
-            duration: 4500,
+            duration: 3000,
             easing: easings.easeInOutElastic
         }
     })

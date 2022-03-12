@@ -1,0 +1,41 @@
+@media screen and (min-width: 961px) {
+    #splash-scroll {
+        /* background-color: aqua; */
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    #splash-scroll h1 {
+        font-size: 12px;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+
+    #scroll-icon-wrapper {
+        background-color: rgb(241, 241, 241);
+        border: 7px double white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    #scroll-down-icon {
+        font-size: 1.5em;
+        fill: #952d95;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+   
+}
+

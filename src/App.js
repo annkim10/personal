@@ -1,6 +1,5 @@
 import './App.css';
 import { useEffect } from 'react';
-import Navbar from './components/navbar/navbar';
 import Splash from './components/splash/splash';
 import Experience from './components/experience/experience';
 import About from './components/about/about';
@@ -13,7 +12,6 @@ function App() {
 
   return (
     <div className="app-outer-div">
-        {/* <Navbar /> */}
         <NavBar />
         <Splash />
         <Experience />

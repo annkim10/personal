@@ -45,7 +45,13 @@ const NavBar = () => {
                 {mobile ? <AiOutlineMenu className="menu-icon" onClick={handleClick}/> : ""}
                 <div className={mobile && click ? "links-mobile-div" : "links-div"}>
                     {mobile ? <AiOutlineCloseCircle className="close-icon" onClick={closeMenu}/> : ""}
-                    {mobile ?  <Link className="nav-link" onClick={closeMenu} to="/">HOME</Link> : ""}
+                    {mobile ? <NavLink 
+                        name={'HOME'}
+                        navLinkId={'nav-link'} 
+                        scrollToId={'splash-container'} 
+                        activeNavLinkId={activeNavLinkId}
+                        setActiveNavLinkId={setActiveNavLinkId} 
+                        /> : ""}
                     <NavLink 
                         name={'EXPERIENCE'}
                         navLinkId={'nav-link'} 

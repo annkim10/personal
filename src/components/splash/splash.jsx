@@ -1,11 +1,16 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { FaLinkedinIn, FaGithub } from "react-icons/fa"
 import "./css/splash.css"
 import Timeline from "./animations/timeline"
 import Header from "./animations/header";
 import Descrip from "./animations/descrip";
+import ScrollDown from "../_utils/scrolldown";
 
 const Splash = () => {
+
+    const [visible, setVisible] = useState(false)
+
+    useEffect(() => setVisible(true))
 
     return (
         <div className="splash-outer-div" id="splash-container">
@@ -24,9 +29,7 @@ const Splash = () => {
                             </a>
                         </div>
                     </div>
-                    
                 </div>
-              
                 <div className="splash-top-div">
                     <Header />
                     <Descrip />
@@ -34,8 +37,8 @@ const Splash = () => {
                 <div className="splash-bottom-div">
                    <Timeline />
                 </div>
-                
             </div>
+            <ScrollDown idName={'splash-scroll'} visible={visible} />
         </div>
     )
 }

@@ -81,7 +81,7 @@
         cursor: pointer;
     }
 
-    .logo {
+    #logo {
         letter-spacing: 0.2em;
         font-weight: 700;
         font-size: 16px;
@@ -104,7 +104,7 @@
        display: none;
     }
 
-    .nav-link {
+    #nav-link {
         display: flex;
         margin-left: 50px;
         margin-top: 50px;
