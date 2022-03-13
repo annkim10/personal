@@ -278,3 +278,289 @@
 
     
 }
+
+@media screen and (max-width: 960px) {
+    .advertise-outer-div {
+        background-color: rgb(44, 44, 44);
+        width: 100vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+    .advertise-inner-div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        position: relative;
+        width: 90%;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .advertise-left-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .advertise-right-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .advertise-line {
+        width: 10px;
+        margin-top: 20px;
+    }
+
+    .advertise-time {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        width: 180px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50px;
+    }
+
+    .advertise-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 80%; */
+        margin-top: 20px;
+    }
+
+    .advertise-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 50px;
+        font-weight: 200;
+        line-height: 1.2;
+        color: white;
+    }
+
+    .advertise-header span {
+        font-weight: 600;
+        color: #E263F2
+    }
+
+    .advertise-descrip {
+        margin-top: 50px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.3;
+        color: white;
+    }
+
+    .advertise-cta {
+        color: white;
+        position: absolute;
+        top: 80px;
+        left: 250px;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        font-size: 12px;
+    }
+
+    .um-wrapper-inactive, .mec-wrapper-inactive, .draft-wrapper-inactive {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        content-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .um-wrapper-inactive {
+        background-image: url("../../../../images/splash/advertise.jpeg");  
+    }
+
+    .mec-wrapper-inactive {
+        background-image: url("../../../../images/advertise/jeans.jpg");
+    }
+
+    .draft-wrapper-inactive {
+        background-image: url("../../../../images/advertise/pharma.jpg");
+    }
+
+    .um-wrapper-inactive:hover, .mec-wrapper-inactive:hover, .draft-wrapper-inactive:hover {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        outline: 6px solid #ca5bca;
+        outline-offset: 4px;
+        transition: all 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .um-logo {
+        width: 40px;
+        object-fit: contain;
+    }
+
+    .um-wrapper-active, .mec-wrapper-active, .draft-wrapper-active {
+        width: 200px;
+        height: 330px;
+        background-color: white;
+        /* display: flex; */
+        border-radius: 20px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    }
+
+    .agency-outer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .agency-wrapper {
+        display: flex;
+        position: relative;
+        /* height: 330px; */
+    }
+
+    .agency-close-button-active {
+        font-size: 2em;
+        position: absolute; 
+        bottom: 30px;
+        left: 85px;
+        z-index: 50;
+        cursor: pointer;
+    }
+
+   .agency-close-button-inactive {
+        display: none;
+    }
+
+    .agency-details-wrapper {
+        /* background-color: aqua; */
+        margin-top: 50px;
+        margin-left: 20px;
+        position: relative;
+        width: 80%;
+    }
+
+    .bullet-point {
+        font-size: 8px;
+        margin-top: 5px;
+    }
+
+    .agency-role-wrapper {
+        /* background-color: #ca5bca; */
+        display: flex;
+        gap: 1rem;
+        line-height: 1.3;
+        padding-bottom: 10px;
+    }
+
+    .agency-role-wrapper h1 {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .agency-role-wrapper span {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .agency-logo-div {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: -20px;
+        left: 75px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+
+    .agency-name {
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+
+    .agency-time {
+        font-size: 12px;
+        padding-bottom: 30px;
+    }
+
+    .agency-details-header {
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        font-size: 11px;
+        padding-bottom: 20px;
+        color: #A649B3
+    }
+
+    .agency-details {
+        font-weight: 300;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+
+    .advertise-brands-wrapper {
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .advertise-brands-header {
+        font-weight: 600;
+        color: #E263F2;
+        letter-spacing: 0.15em;
+    }
+
+    .advertise-brands {
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: 50px; */
+        column-gap: 20px;
+        display: grid;
+    }
+
+    .advertise-brand-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 130px;
+        height: 50px;
+        background-color: rgb(59, 59, 59);
+        border-radius: 50px;
+    }
+
+    .brand-logo {
+        width: 80px;
+    }
+
+    .leejeans-logo {
+        width: 30px;
+    }
+
+    
+}

@@ -53,7 +53,7 @@
         overflow: hidden;
     }
 
-    #develop-scroll {
+    #develop-scroll, #advertise-scroll {
         margin: 40px 0;
     }
 
