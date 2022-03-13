@@ -174,3 +174,178 @@
 }
 
 
+@media screen and (max-width: 960px) {
+    .about-outer-div {
+        position: relative;
+        width: 100vw;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+    .about-inner-div {
+        position: relative;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        gap: 2em;
+        z-index: 50;
+    }
+
+    .about-circle {
+        position: absolute;
+        top: 20px;
+        width: 1600px;
+        height: 1600px;
+        z-index: -5;
+    }
+
+    .about-descrip-wrapper {
+        /* background-color: #A649B3; */
+        /* position: absolute;
+        top: 10px; */
+        width: 90%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-header {
+        font-size: 35px;
+        font-weight: 200;
+    }
+
+    .about-descrip-div {
+        margin-top: 50px;
+        padding: 0 30px;
+        width: 90%;
+        height: 500px;
+    }
+
+    .about-descrip {
+        font-size: 17px;
+        font-weight: 400;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+
+    .about-descrip-answer {
+        padding: 0 30px;
+        width: 80%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 40px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .about-descrip-text-wrapper { 
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-descrip-text {
+        font-size: 17px;
+        color: #A649B3;
+        letter-spacing: 0.1em;
+        font-family: 'Shadows Into Light Two', cursive;
+    }
+
+    .about-img-wrapper {
+        /* background-color: #A649B3; */
+        margin-top: 10px;
+        width: 90%;
+        height: 400px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-pic {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 8px solid rgb(241, 241, 241);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    .jojo-pic {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        background-color: rgb(241, 241, 241);
+        border: 8px solid rgb(241, 241, 241);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    .about-captions-wrapper {
+        font-family: 'Shadows Into Light Two', cursive; 
+        /* display: flex;
+        align-items: center; */
+    }
+    
+    .me-caption {
+        position: absolute;
+        top: 16%;
+        right: 11%;
+        font-size: 25px;
+    }
+
+    .me-arrow {
+        font-size: 40px;
+        position: absolute;
+        /* top: 15%; */
+        right: 25%;
+        transform: rotate(90deg)
+    }
+    
+    .jojo-caption {
+        position: absolute;
+        top: 25%;
+        font-size: 25px;
+        left: 20%;
+    }
+
+    .jojo-arrow {
+        font-size: 40px;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+    }
+
+    .rollie-caption {
+        width: 20%;
+        line-height: 1.2;
+        text-align: center;
+        position: absolute;
+        top: 65%;
+        right: -20%;
+        font-size: 25px;
+    }
+    
+    .rollie-arrow {
+        font-size: 40px;
+        position: absolute;
+        top: 65%;
+        right: -5%;
+        transform: rotate(90deg);
+    }
+
+}

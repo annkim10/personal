@@ -11,7 +11,7 @@ const VideoWrapper = ({visible, mobile}) => {
             mass: 1,
             tension: 280,
             friction: 180,
-            duration: 1200,
+            duration: 2000,
             easing: easings.easeOutQuad
         }
     })
