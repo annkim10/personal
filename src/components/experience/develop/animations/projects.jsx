@@ -13,7 +13,7 @@ const ProjectCard = ({title, visible, descrip, live, code}) => {
             mass: 1,
             tension: 50,
             friction: 10,
-            duration: 2000,
+            duration: 1500,
             easing: easings.easeInBack
         }
     })

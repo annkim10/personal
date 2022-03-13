@@ -7,7 +7,7 @@ import { MdKeyboardArrowRight } from "react-icons/md"
 import MarketHeaders from './animations/marketheaders';
 import VideoWrapper from './animations/videowrapper';
 import Samsung from './animations/samsung';
-
+import ScrollDown from "../../_utils/scrolldown";
 
 const Market = () => {
 
@@ -33,6 +33,7 @@ const Market = () => {
             <div className='market-bottom-div'>
                 <Samsung visible={visible} />
             </div>
+            <ScrollDown idName={'market-scroll'} visible={visible} />
         </div>
     )
 }

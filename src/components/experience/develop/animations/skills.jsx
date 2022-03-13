@@ -33,7 +33,7 @@ const Skills = ( { visible } ) => {
             mass: 1,
             tension: 200,
             friction: 180,
-            duration: 2500,
+            duration: 1500,
             easing: easings.easeInOutElastic
         }
     })

@@ -12,7 +12,7 @@ const DevelopCircle = ( {visible}) => {
             mass: 1,
             tension: 200,
             friction: 80,
-            duration: 3000,
+            duration: 2000,
             easing: easings.easeInOutElastic
         }
     })

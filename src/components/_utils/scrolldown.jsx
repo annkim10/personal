@@ -14,7 +14,7 @@ const ScrollDown = ( { idName, visible } ) => {
     
     return (
         <a.div id={idName} style={animate}>
-            <h1>SCROLL</h1>
+            <h1 className="scroll-header">SCROLL</h1>
             <div id="scroll-icon-wrapper" >
                 <VscFoldDown id="scroll-down-icon" />
             </div>

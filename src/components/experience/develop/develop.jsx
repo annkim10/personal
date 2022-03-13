@@ -1,13 +1,12 @@
 import { useState, useRef, useEffect } from 'react';
-import { useSpring, config, animated as a } from "react-spring"
 import "./css/develop.css";
 import line from "../../../images/svg/line.svg"
-import circle from "../../../images/svg/purple-circle.svg"
 import ProjectCard from './animations/projects';
 import Skills from './animations/skills';
 import useIntersection from '../../_utils/useIntersection';
 import DevelopHeaders from './animations/developheaders';
 import DevelopCircle from './animations/developcircle';
+import ScrollDown from "../../_utils/scrolldown";
 
 const Develop = () => {
 
@@ -48,6 +47,7 @@ const Develop = () => {
                     </div>
                 </div>
                 <Skills visible={visible} />
+                <ScrollDown visible={visible} idName={'develop-scroll'}/>
             </div>  
         </div>
     )
