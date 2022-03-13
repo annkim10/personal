@@ -28,10 +28,22 @@ const Develop = () => {
                     <DevelopHeaders visible={visible}/>
                     <div className='develop-projects-wrapper' >
                         <div className='develop-projects-card-div'>
-                            <ProjectCard title={'Pupfinder'} visible={visible}/>
+                            <ProjectCard 
+                                title={'Pupfinder'} 
+                                visible={visible}
+                                descrip={'Reimagination of Petfinder.com as a dynamic new way to connect prospective dog owners with adoptable pups.'}
+                                live={'https://pupfinderapp.herokuapp.com/#/'}
+                                code={'https://github.com/annkim10/pupfinder'}
+                            />
                         </div>
                         <div className='develop-projects-card-div'>
-                            <ProjectCard title={'MEvert'} visible={visible}/>
+                            <ProjectCard 
+                                title={'MEvert'} 
+                                visible={visible}
+                                descrip={'Platform for users to carpe diem, their way, with curated activity suggestions, resources and planning tools '}
+                                live={'https://mevert.herokuapp.com/#/'}
+                                code={'https://github.com/annkim10/mevert'}
+                            />
                         </div>
                     </div>
                 </div>

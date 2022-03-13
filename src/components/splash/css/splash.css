@@ -6,23 +6,25 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 70px;
+        /* margin-top: 30px; */
     }
 
     .splash-inner-div {
         /* background-color: rgb(101, 206, 206); */
         min-width: 1200px;
         max-width: 1900px;
-        margin-top: 70px;
+        height: 100%;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .splash-footer-wrapper {
         left: 0;
+        top: 50px;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -68,7 +70,8 @@
     }
 
     .splash-top-div {
-       height: 30%;
+       height: 35%;
+       padding: 4% 0;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -82,8 +85,8 @@
     }
 
     .splash-bottom-div {
-        padding-top: 5%;
-        height: 70%;
+        padding: 5% 0;
+        height: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -105,12 +108,16 @@
     .splash-descrip {
         /* margin-top: 10%; */
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 300;
         width: 55%;
         line-height: 1.4;
     }
 
+    .splash-descrip span {
+        font-weight: 600;
+        color: #952d95
+    }
 
 
 }
@@ -124,11 +131,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     .splash-inner-div {
-        margin-top: 70px;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -214,4 +221,10 @@
         width: 55%;
         line-height: 1.4;
     }
+
+    .splash-descrip span {
+        font-weight: 600;
+        color: #952d95
+    }
+
 }

@@ -5,8 +5,19 @@ import { config, easings, useTrail, animated as a } from "react-spring";
 const DevelopHeaders = ( { visible } ) => {
 
     const headers = [
-        {class:'develop-header', text1: 'Learning to', span: ' develop ', text2:'the product',}, 
-        {class:'develop-descrip', text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',}
+        { 
+            class:'develop-header', 
+            text1: 'Learning to', 
+            span: ' develop ', 
+            text2:'the product'
+        }, 
+        {
+            class:'develop-descrip',
+            text1: 'To transition from hardware to software, I enrolled into ',
+            link: 'App Academy\'s',
+            url: 'https://www.appacademy.io/',
+            text2: ' full-stack software engineering program in Oct 2021. As a graduate, I\'ve not only gained a comprehensive set of technical skills but also an understanding of the development process - from just an idea to a live site.',
+        }
     ]
 
     const trail = useTrail(headers.length, {
@@ -27,7 +38,12 @@ const DevelopHeaders = ( { visible } ) => {
             {trail.map((styles, idx) => {
                 return (
                     <a.div key={idx} style={styles}>
-                        <h1 className={headers[idx].class}>{headers[idx].text1}<span>{headers[idx].span}</span>{headers[idx].text2}</h1>
+                        <h1 className={headers[idx].class}>
+                            {headers[idx].text1}
+                            <span>{headers[idx].span}</span>
+                            <a href={headers[idx].url} target="_blank">{headers[idx].link}</a>
+                            {headers[idx].text2}
+                        </h1>
                     </a.div>
                 )
             })}

@@ -32,21 +32,6 @@ const Market = () => {
             </div>  
             <div className='market-bottom-div'>
                 <Samsung visible={visible} />
-                {/* <h1 className='market-roles-header'>Positions at Samsung</h1>
-                <div className='market-roles-wrapper'>
-                    <div className='market-role-div'>
-                        <h1 className='market-division'>B2C Desktop Monitors,</h1>
-                        <p className='market-role'>Product Marketing Manager</p>
-                    </div>
-                    <button className='market-button'>MORE DETAILS <span><MdKeyboardArrowRight /></span></button>
-                </div>
-                <div className='market-roles-wrapper'>
-                    <div className='market-role-div'>
-                        <h1 className='market-division'>B2B Hospitality TV,</h1>
-                        <p className='market-role'>Product Marketing Manager</p>
-                    </div>
-                    <button className='market-button'>MORE DETAILS <span><MdKeyboardArrowRight /></span></button>
-                </div> */}
             </div>
         </div>
     )

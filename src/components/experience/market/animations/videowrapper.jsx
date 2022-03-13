@@ -6,14 +6,13 @@ const VideoWrapper = ({visible}) => {
 
     const animate = useSpring({
         opacity: visible ? 1 : 0,
-        // x: visible ? 0 : 1000,
         transform: visible ? 'translate3d(0px, 0px, 0px)' : 'translate3d(1000px, 0px , -224px)',
         config: {
             mass: 1,
             tension: 280,
             friction: 180,
-            duration: 2000,
-            easing: easings.easeInOutCubic
+            duration: 1200,
+            easing: easings.easeOutQuad
         }
     })
 

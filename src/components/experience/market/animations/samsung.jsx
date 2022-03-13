@@ -9,9 +9,9 @@ const Samsung = ( {visible}) => {
         config: {
             mass: 1,
             tension: 200,
-            friction: 180,
-            duration: 2500,
-            easing: easings.easeInOutQuad
+            friction: 80,
+            duration: 2000,
+            easing: easings.easeInOutElastic
         }
     })
 
@@ -23,14 +23,20 @@ const Samsung = ( {visible}) => {
                     <h1 className='market-division'>B2C Desktop Monitors,</h1>
                     <p className='market-role'>Product Marketing Manager</p>
                 </div>
-                <button className='market-button'>MORE DETAILS <span><MdKeyboardArrowRight /></span></button>
+                <a className='market-button' target="_blank" href="https://drive.google.com/file/d/1IwkLDUzsc7yL3jfRpFT_yTYMNKDksjgS/view?usp=sharing">
+                    MORE DETAILS 
+                    <span><MdKeyboardArrowRight /></span>
+                </a>
             </div>
             <div className='market-roles-wrapper'>
                 <div className='market-role-div'>
                     <h1 className='market-division'>B2B Hospitality TV,</h1>
                     <p className='market-role'>Product Marketing Manager</p>
                 </div>
-                <button className='market-button'>MORE DETAILS <span><MdKeyboardArrowRight /></span></button>
+                <a className='market-button' target="_blank" href="https://drive.google.com/file/d/1IwkLDUzsc7yL3jfRpFT_yTYMNKDksjgS/view?usp=sharing">
+                    MORE DETAILS 
+                    <span><MdKeyboardArrowRight /></span>
+                </a>
             </div>
         </a.div>
     )

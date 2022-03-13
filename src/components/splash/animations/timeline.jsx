@@ -30,7 +30,7 @@ const Timeline = () => {
             <div className="timeline-stages-wrapper">
                 <div className="timeline-stage-div">
                     <a.div className="stage-wrapper" style={animate}>
-                        <h1 className="timeline-stage-time">OCT 2020 - PRESENT</h1>
+                        <h1 className="timeline-stage-time">OCT 2021 - PRESENT</h1>
                         <h2 className="timeline-stage-descrip">How to <span>develop</span> the product</h2>
                         <img className="timeline-line" src={line} />
                         <a.div style={animate}>
@@ -40,7 +40,7 @@ const Timeline = () => {
                 </div>
                 <div className="timeline-stage-div">
                     <a.div className="stage-wrapper" style={animate}>
-                        <h1 className="timeline-stage-time">OCT 2016 - SEP 2020</h1>
+                        <h1 className="timeline-stage-time">OCT 2016 - SEP 2021</h1>
                         <h2 className="timeline-stage-descrip">How to <span>market</span> the product</h2>
                         <img className="timeline-line" src={line} />
                         <a.div style={animate}>
