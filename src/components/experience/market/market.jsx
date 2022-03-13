@@ -9,7 +9,7 @@ import VideoWrapper from './animations/videowrapper';
 import Samsung from './animations/samsung';
 import ScrollDown from "../../_utils/scrolldown";
 
-const Market = () => {
+const Market = ( { mobile }) => {
 
     const [load, setLoad] = useState(false)
 
@@ -27,7 +27,7 @@ const Market = () => {
                     <MarketHeaders visible={visible}/>
                 </div>
                 <div className='market-right-div'>
-                    <VideoWrapper visible={visible}/>
+                    <VideoWrapper mobile={mobile} visible={visible}/>
                 </div>
             </div>  
             <div className='market-bottom-div'>

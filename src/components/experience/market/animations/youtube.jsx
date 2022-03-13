@@ -4,9 +4,10 @@ import YouTube from 'react-youtube';
 class Youtube extends React.Component {
 
   render() {
+
     const opts = {
-      height: '394',
-      width: '700',
+      height: this.props.mobile ? '197' : '394',
+      width: this.props.mobile ? '350' : '700',
     };
 
     return <YouTube videoId="NixC6V51_Xo" opts={opts} onReady={this._onReady} />;

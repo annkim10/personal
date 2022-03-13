@@ -5,7 +5,7 @@ import "./navbar.css"
 import { AiOutlineMenu, AiOutlineCloseCircle } from "react-icons/ai"
 
 
-const NavBar = () => {
+const NavBar = ( ) => {
 
     const [click, setClick] = useState(false)
     const [mobile, setMobile] = useState(false)

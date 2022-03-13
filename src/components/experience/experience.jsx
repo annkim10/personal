@@ -7,14 +7,12 @@ import Market from "./market/market";
 import Advertise from "./advertise/advertise";
 
 
-const Experience = () => {
-
-    useEffect(() => window.scroll(0,0))
+const Experience = ( {mobile} ) => {
 
     return (
         <div className="experience-wrapper">
             <Develop />
-            <Market />
+            <Market mobile={ mobile } />
             <Advertise />
         </div>
     )

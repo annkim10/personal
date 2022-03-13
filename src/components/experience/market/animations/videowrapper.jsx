@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { config, easings, useSpring, animated as a } from "react-spring"
 import Youtube from './youtube';
 
-const VideoWrapper = ({visible}) => {
+const VideoWrapper = ({visible, mobile}) => {
 
     const animate = useSpring({
         opacity: visible ? 1 : 0,
@@ -18,7 +18,7 @@ const VideoWrapper = ({visible}) => {
 
     return (
         <a.div className='market-details-wrapper' style={animate}>
-            <Youtube />
+            <Youtube mobile={mobile} />
             <h1 className='youtube-header'>
                 Featured in Samsung's  
                 <a href="https://news.samsung.com/global/video-replay-unbox-and-discover-2021" target="_blank">
