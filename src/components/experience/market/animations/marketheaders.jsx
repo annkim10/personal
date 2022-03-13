@@ -13,7 +13,7 @@ const MarketHeaders = ( { visible } ) => {
         }, 
         {
             class:'develop-descrip', 
-            text1: 'I .'
+            text1: 'As a product marketing manager at Samsung, I gained both B2B and B2C experience on marketing a wide portfolio of technology products. See below for more details.'
         }
     ]
 

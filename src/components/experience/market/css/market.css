@@ -90,8 +90,15 @@
     .youtube-header {
         width: 80%;
         font-size: 15px;
-        font-weight: 600;
+        font-weight: 300;
         padding: 20px 0;
+    }
+
+    .youtube-header a {
+        font-weight: 600;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        padding: 0 5px;
     }
 
     .market-roles-wrapper {
