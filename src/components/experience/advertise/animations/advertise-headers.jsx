@@ -34,7 +34,7 @@ const AdvertiseHeaders = ( { visible } ) => {
         <a.div className='advertise-text-wrapper'>
             {trail.map((styles, idx) => {
                 return (
-                    <a.div key={idx} style={styles}>
+                    <a.div key={idx} style={styles} className='advertise-text-inner-wrapper'>
                         <h1 className={headers[idx].class}>
                             {headers[idx].text1}
                             <span>{headers[idx].span}</span>
