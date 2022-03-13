@@ -76,7 +76,7 @@
 @media screen and  (max-width: 960px) {
     .timeline-outer-div {
         /* background-color: #f0f0f0; */
-        width: 80%;
+        /* width: 80%; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -88,15 +88,15 @@
         padding-bottom: 50px;
         flex-direction: column;
         gap: 3rem;
-        min-width: 80%;
-        overflow: hidden;
+        /* min-width: 80%; */
+        /* overflow: hidden; */
     }
 
     .timeline-stage-div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .timeline-stage-time {
@@ -116,7 +116,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .timeline-line {
