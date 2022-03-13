@@ -44,38 +44,37 @@ const NavBar = ( ) => {
                 </div>
                 {mobile ? <AiOutlineMenu className="menu-icon" onClick={handleClick}/> : ""}
                 <div className={mobile && click ? "links-mobile-div" : "links-div"}>
-                    {mobile ? <AiOutlineCloseCircle className="close-icon" onClick={closeMenu}/> : ""}
-                    {mobile ? <NavLink 
-                        name={'HOME'}
-                        navLinkId={'nav-link'} 
-                        scrollToId={'splash-container'} 
-                        activeNavLinkId={activeNavLinkId}
-                        setActiveNavLinkId={setActiveNavLinkId} 
-                        /> : ""}
-                    <NavLink 
-                        name={'EXPERIENCE'}
-                        navLinkId={'nav-link'} 
-                        scrollToId={'develop-container'} 
-                        activeNavLinkId={activeNavLinkId}
-                        setActiveNavLinkId={setActiveNavLinkId} 
-                    />
-                    <NavLink 
-                        name={'ABOUT'}
-                        navLinkId={'nav-link'} 
-                        scrollToId={'about-container'} 
-                        activeNavLinkId={activeNavLinkId}
-                        setActiveNavLinkId={setActiveNavLinkId} 
-                    />
-                    <NavLink 
-                        name={'CONTACT'}
-                        navLinkId={'nav-link'} 
-                        scrollToId={'contact-container'} 
-                        activeNavLinkId={activeNavLinkId}
-                        setActiveNavLinkId={setActiveNavLinkId} 
-                    />
-                    {/* <Link className="nav-link" onClick={closeMenu} to="/experience">EXPERIENCE</Link>
-                    <Link className="nav-link" onClick={closeMenu} to="/about">ABOUT</Link>
-                    <Link className="nav-link" onClick={closeMenu} to="/contact">CONTACT</Link> */}
+                    <div className={mobile && click ? "links-inner-mobile-div" : "links-div"}>
+                        {mobile ? <AiOutlineCloseCircle className="close-icon" onClick={closeMenu}/> : ""}
+                        {mobile ? <NavLink 
+                            name={'HOME'}
+                            navLinkId={'nav-link'} 
+                            scrollToId={'splash-container'} 
+                            activeNavLinkId={activeNavLinkId}
+                            setActiveNavLinkId={setActiveNavLinkId} 
+                            /> : ""}
+                            <NavLink 
+                                name={'EXPERIENCE'}
+                                navLinkId={'nav-link'} 
+                                scrollToId={'develop-container'} 
+                                activeNavLinkId={activeNavLinkId}
+                                setActiveNavLinkId={setActiveNavLinkId} 
+                            />
+                            <NavLink 
+                                name={'ABOUT'}
+                                navLinkId={'nav-link'} 
+                                scrollToId={'about-container'} 
+                                activeNavLinkId={activeNavLinkId}
+                                setActiveNavLinkId={setActiveNavLinkId} 
+                            />
+                            <NavLink 
+                                name={'CONTACT'}
+                                navLinkId={'nav-link'} 
+                                scrollToId={'contact-container'} 
+                                activeNavLinkId={activeNavLinkId}
+                                setActiveNavLinkId={setActiveNavLinkId} 
+                            />
+                    </div>
                 </div>
             </div> 
         </div>    

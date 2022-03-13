@@ -13,7 +13,7 @@ const AdvertiseHeaders = ( { visible } ) => {
         }, 
         {
             class:'advertise-descrip', 
-            text1: 'Af.'
+            text1: 'My experience in media planning/buying traverses across three different agencies and a multitude of industries including food & beverage, shipping, and pharma.'
         }
     ]
 
