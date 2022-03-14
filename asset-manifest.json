@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.51eff632.css",
+    "main.js": "/static/js/main.2396fe5b.js",
+    "static/media/pupfinder-splash.gif": "/static/media/pupfinder-splash.7d6f72c8ea499e809117.gif",
+    "static/media/calendar.gif": "/static/media/calendar.b10745bc2c256e887b65.gif",
+    "static/media/advertise.jpeg": "/static/media/advertise.07e28431ce59cfe39b15.jpeg",
+    "static/media/jeans.jpg": "/static/media/jeans.6b726b2effcc5bec16f9.jpg",
+    "static/media/code.jpg": "/static/media/code.fe69d62ad4d9bd9cc51d.jpg",
+    "static/media/pharma.jpg": "/static/media/pharma.708604c9f460271e807c.jpg",
+    "static/media/jojo.jpg": "/static/media/jojo.43c8efa3637d7a342461.jpg",
+    "static/media/market.jpg": "/static/media/market.e50eacad53fc3afac4fc.jpg",
+    "static/media/about.jpg": "/static/media/about.cbb70f148668c45098e8.jpg",
+    "static/media/gallo.png": "/static/media/gallo.483af0224ca07a1a6651.png",
+    "static/media/coke.png": "/static/media/coke.1721a7d382034e6f1236.png",
+    "static/media/usps.png": "/static/media/usps.93c7b92aa2402302fc65.png",
+    "static/media/mec_logo.png": "/static/media/mec_logo.1a59f8c1552002c15d2c.png",
+    "static/media/um_logo.png": "/static/media/um_logo.aa7bcec2e9d0c38d5d77.png",
+    "static/media/draft_logo.png": "/static/media/draft_logo.4dd3632c7549029cfda5.png",
+    "static/media/heinz.png": "/static/media/heinz.493371cef003dcecb356.png",
+    "static/media/merck.png": "/static/media/merck.f7da9f07d746d345c13a.png",
+    "static/media/leejeans.png": "/static/media/leejeans.057f669a993649026705.png",
+    "static/media/fisherprice.png": "/static/media/fisherprice.58b41aa72b1cf19138da.png",
+    "index.html": "/index.html",
+    "static/media/line-white.svg": "/static/media/line-white.cb5d389152f3f6f54f0925b10c3edf10.svg",
+    "static/media/line.svg": "/static/media/line.fd21b62058cee38289135e75e3105efe.svg",
+    "static/media/purple-circle.svg": "/static/media/purple-circle.199b1b0e9fa87b71abd6e55c9dac1371.svg",
+    "static/media/gray-circle.svg": "/static/media/gray-circle.6501dc2aa9534d61726b50c43bdbf7aa.svg",
+    "main.51eff632.css.map": "/static/css/main.51eff632.css.map",
+    "main.2396fe5b.js.map": "/static/js/main.2396fe5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51eff632.css",
+    "static/js/main.2396fe5b.js"
+  ]
+}
