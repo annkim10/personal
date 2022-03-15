@@ -28,8 +28,8 @@ const DevelopHeaders = ( { visible } ) => {
             mass: 1,
             tension: 50,
             friction: 10,
-            duration: 1000,
-            easing: easings.easeInOutBack
+            // duration: 1000,
+            easing: easings.easeInOutElastic
         }
     })
 

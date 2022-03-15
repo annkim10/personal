@@ -2,7 +2,7 @@
     .market-outer-div {
         /* background-color: rgb(241, 241, 241); */
         position: relative;
-        width: 100vw;
+        min-width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -16,6 +16,7 @@
         position: relative;
         min-width: 1200px;
         max-width: 1200px;
+        height: 550px;
     }
 
     .market-bottom-div {
@@ -105,6 +106,7 @@
         margin-top: 50px;
         margin-left: 35px;
         height: 100px;
+        width: 450px;
         /* width: 80%; */
         display: flex;
         align-items: center;
@@ -115,10 +117,10 @@
     .market-roles-header {
         /* background-color: rgb(36, 36, 36); */
         display: flex;
-        width: 100px;
+        width: 150px;
         height: 100px;
         margin-top: 54px;
-        margin-left: 100px;
+        margin-left: 50px;
         align-items: center;
         font-weight: 700;
         text-align: right;
@@ -134,7 +136,7 @@
     }
 
     .market-role {
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 300;
         margin-left: 30px;
     }

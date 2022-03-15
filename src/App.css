@@ -6,7 +6,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Poppins', Helvetica, sans-serif;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    
   }
 
 }
@@ -21,6 +22,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-family: 'Poppins', Helvetica, sans-serif;
+      font-family: 'Raleway', Helvetica, sans-serif;
     }
 }

@@ -17,7 +17,7 @@ const Samsung = ( {visible}) => {
 
     return (
         <a.div className="market-bottom-wrapper" style={animate}>
-            <h1 className='market-roles-header'>Positions at Samsung</h1>
+            <h1 className='market-roles-header'>MY EXPERIENCE AT SAMSUNG</h1>
             <div className='market-roles-wrapper'>
                 <div className='market-role-div'>
                     <h1 className='market-division'>B2C Desktop Monitors,</h1>

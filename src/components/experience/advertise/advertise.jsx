@@ -29,7 +29,7 @@ const Advertise = () => {
                     <Agencies visible={visible} />
                 </div>
                 <div className="advertise-brands-wrapper">
-                        <h1 className="advertise-brands-header">BRANDS</h1>
+                        <h1 className="advertise-brands-header">BRANDS I'VE WORKED WITH</h1>
                        <Logos visible={visible} />
                 </div>
             </div>      

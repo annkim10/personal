@@ -3,8 +3,8 @@
     .develop-outer-div {
         background-color: rgb(241, 241, 241);
         position: relative;
-        width: 100vw;
-        height: 100vh;
+        min-width: 100vw;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -20,6 +20,7 @@
         position: relative;
         min-width: 1200px;
         max-width: 1200px;
+        min-height: 830px;
     }
 
     .develop-circle {
@@ -74,14 +75,17 @@
     }
 
     .develop-header {
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 200;
         line-height: 1.2;
+        /* text-transform: uppercase; */
     }
 
     .develop-header span {
         font-weight: 600;
-        color: #952d95
+        color: #952d95;
+        font-family: 'Poppins', sans-serif;
+        font-size: 55px;
     }
 
     .develop-descrip {

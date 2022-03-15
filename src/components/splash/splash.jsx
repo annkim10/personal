@@ -34,9 +34,9 @@ const Splash = () => {
                     <Header />
                     <Descrip />
                 </div>
-                <div className="splash-bottom-div">
+                {/* <div className="splash-bottom-div">
                    <Timeline />
-                </div>
+                </div> */}
                 <ScrollDown idName={'splash-scroll'} visible={visible} />
             </div>
            

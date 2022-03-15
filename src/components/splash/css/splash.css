@@ -1,8 +1,8 @@
 @media screen and (min-width: 961px) {
 
     .splash-outer-div {
-        width: 100%;
-        height: 100vh;
+        min-width: 100%;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -13,12 +13,13 @@
         /* background-color: rgb(101, 206, 206); */
         min-width: 1200px;
         max-width: 1900px;
-        height: 100%;
-        margin-top: 50px;
+        height: 760px;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
+        
         /* overflow: hidden; */
     }
 
@@ -94,7 +95,7 @@
 
     .splash-header {
         text-align: center;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 200;
         line-height: 1.2;
     }
@@ -102,7 +103,9 @@
     .splash-header span {
         text-align: center;
         font-weight: 600;
-        color: #952d95
+        color: #952d95;
+        font-size: 65px;
+        font-family: 'Poppins', sans-serif;
     }
 
     .splash-descrip {
@@ -112,6 +115,7 @@
         font-weight: 300;
         width: 55%;
         line-height: 1.4;
+        font-family: 'Poppins', Helvetica, sans-serif;
     }
 
     .splash-descrip span {
@@ -126,106 +130,5 @@
 
 @media screen and (max-width: 960px) {
 
-    .splash-outer-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-    }
-
-    .splash-inner-div {
-        width: 90%;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-    }
-
-    .splash-footer-wrapper {
-        display: none;
-    }
-
-    .footer-links-wrapper {
-        /* background-color: bisque; */
-        display: flex;
-        gap: 1em;
-        margin-left: 40px;
-    }
-
-    .footer-copytag {
-        font-size: 12px;
-        font-weight: 200;
-    }
-
-    .footer-icon-wrapper {
-        background-color: rgb(241,241,241);
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer-icon-wrapper:hover, .footer-icon-wrapper:hover .footer-icon {
-       background-color: rgb(190, 190, 190);
-       fill: white;
-       cursor: pointer;
-    }
-
-    .footer-icon {
-       font-size: 1.3em;
-       fill: gray;
-    }
-
-    .splash-top-div {
-       display: flex;
-       height: 250px;
-       flex-direction: column;
-       align-items: center;
-       overflow: hidden;
-    }
-
-    .splash-top-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .splash-bottom-div {
-        padding-top: 5%;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .splash-header {
-        text-align: center;
-        font-size: 35px;
-        font-weight: 200;
-        line-height: 1.2;
-    }
-
-    .splash-header span {
-        text-align: center;
-        font-weight: 600;
-        color: #952d95
-    }
-
-    .splash-descrip {
-        margin-top: 10%;
-        text-align: center;
-        font-size: 14px;
-        font-weight: 300;
-        width: 55%;
-        line-height: 1.4;
-    }
-
-    .splash-descrip span {
-        font-weight: 600;
-        color: #952d95
-    }
-
+   
 }
