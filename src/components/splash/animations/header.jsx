@@ -24,8 +24,10 @@ const Header = () => {
  
     return (
         <a.div className="splash-top-wrapper" style={animateUpBounce} >
-            <h1 className="splash-header">It's nice to meet you,</h1> 
-            <h1 className="splash-header">I'm <span> Ann Kim.</span></h1>       
+            <h1 className="splash-header">It's nice to meet you,
+                <br/>
+                <span> I'm Ann Kim.</span>   
+            </h1>  
         </a.div>
     )
 }

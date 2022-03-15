@@ -35,7 +35,7 @@ const NavBar = ( ) => {
             <div className="navbar-inner-div">
                 <div className="logo-div">
                     <NavLink 
-                        name={'ANN KIM'}
+                        name={'Ann Kim'}
                         navLinkId={'logo'} 
                         scrollToId={'splash-container'} 
                         activeNavLinkId={activeNavLinkId}
@@ -47,28 +47,28 @@ const NavBar = ( ) => {
                     <div className={mobile && click ? "links-inner-mobile-div" : "links-div"}>
                         {mobile ? <AiOutlineCloseCircle className="close-icon" onClick={closeMenu}/> : ""}
                         {mobile ? <NavLink 
-                            name={'HOME'}
+                            name={'Home'}
                             navLinkId={'nav-link'} 
                             scrollToId={'splash-container'} 
                             activeNavLinkId={activeNavLinkId}
                             setActiveNavLinkId={setActiveNavLinkId} 
                             /> : ""}
                             <NavLink 
-                                name={'EXPERIENCE'}
+                                name={'Experience'}
                                 navLinkId={'nav-link'} 
                                 scrollToId={'develop-container'} 
                                 activeNavLinkId={activeNavLinkId}
                                 setActiveNavLinkId={setActiveNavLinkId} 
                             />
                             <NavLink 
-                                name={'ABOUT'}
+                                name={'About'}
                                 navLinkId={'nav-link'} 
                                 scrollToId={'about-container'} 
                                 activeNavLinkId={activeNavLinkId}
                                 setActiveNavLinkId={setActiveNavLinkId} 
                             />
                             <NavLink 
-                                name={'CONTACT'}
+                                name={'Contact'}
                                 navLinkId={'nav-link'} 
                                 scrollToId={'contact-container'} 
                                 activeNavLinkId={activeNavLinkId}

@@ -6,6 +6,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         /* margin-top: 30px; */
     }
 
@@ -13,8 +14,9 @@
         /* background-color: rgb(101, 206, 206); */
         min-width: 1200px;
         max-width: 1900px;
-        height: 760px;
-        margin-top: 40px;
+        border-bottom: 3px solid black;
+        /* height: 500px; */
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -25,12 +27,12 @@
 
     .splash-footer-wrapper {
         left: 0;
-        top: 50px;
+        top: 40px;
+        height: 400px;
         position: absolute;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 70%;
         justify-content: space-between;
     }
 
@@ -71,8 +73,8 @@
     }
 
     .splash-top-div {
-       height: 35%;
-       padding: 4% 0;
+       /* height: 35%; */
+       padding: 5% 0;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -85,37 +87,30 @@
         align-items: center;
     }
 
-    .splash-bottom-div {
-        padding: 5% 0;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .splash-header {
         text-align: center;
-        font-size: 40px;
-        font-weight: 200;
+        font-size: 50px;
+        font-weight: 700;
         line-height: 1.2;
     }
 
     .splash-header span {
         text-align: center;
-        font-weight: 600;
-        color: #952d95;
-        font-size: 65px;
-        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+        color: #389CF4;
+        font-size: 155px;
+        /* font-family: 'Poppins', sans-serif; */
     }
 
     .splash-descrip {
+        /* background-color: #389CF4; */
         /* margin-top: 10%; */
+        height: 200px;
         text-align: center;
-        font-size: 13px;
+        font-size: 22px;
         font-weight: 300;
-        width: 55%;
+        /* width: 55%; */
         line-height: 1.4;
-        font-family: 'Poppins', Helvetica, sans-serif;
     }
 
     .splash-descrip span {

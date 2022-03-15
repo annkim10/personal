@@ -24,8 +24,8 @@ const Descrip = () => {
 
     return (
         <a.div className="splash-descrip" style={animate} >
-           <p>I'm a product manager, coder, & dog lover. My career, thus far, has been 
-               <span> learning about the product.</span>
+           <p>I'm a product manager, coder, & dog mom of two. 
+               {/* <span> learning about the product.</span> */}
             </p>    
         </a.div>
     )
