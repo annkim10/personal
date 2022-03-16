@@ -9,24 +9,21 @@ const TimelineHeader = () => {
 
     React.useEffect(() => setLoad(true))
 
-    const animateUpBounce = useSpring({
+    const up = useSpring({
         opacity: load ? 1 : 0,
         y: load ? 10 : 800, 
-        fontWeight: load ? 200 : 0,
         config: {
             mass: 1,
             tension: 200,
             friction: 180,
-            duration: 2200,
-            easing: easings.easeOutElastic
+            duration: 2000,
+            easing: easings.easeOutQuart
         }
     })
  
     return (
-        <a.div className="timeline-left-wrapper" style={animateUpBounce} >
-            <h1 className="timeline-header">My career has revolved around learning about
-                <br/>
-                <span> THE PRODUCT </span>   
+        <a.div className="timeline-text-wrapper" style={up} >
+            <h1 className="timeline-header">My career has revolved around learning about  
             </h1>  
         </a.div>
     )
