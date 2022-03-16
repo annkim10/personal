@@ -44,7 +44,7 @@ const Skills = ( { visible } ) => {
             <ul className='develop-stage-skills-list'>
                 {trail.map((styles, idx) => {
                     return (
-                        <a.div key={idx} style={styles}>
+                        <a.div className='develop-skill-wrapper' key={idx} style={styles}>
                             <li key={idx} className="skill">
                                 <span id='skill-icon'>{skills[idx].icon}</span>
                                 <p>{skills[idx].caption}</p>

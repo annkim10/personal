@@ -21,8 +21,8 @@ const Develop = () => {
         <div className='develop-outer-div' id="develop-container">
             <div className='develop-inner-div'>
                 <DevelopCircle visible={visible} />
-                <h1 className='develop-time'> OCT 2021 - PRESENT</h1>
-                <img className='line' src={line} ref={ref} />
+                <h1 className='develop-time' ref={ref}> OCT 2021 - PRESENT</h1>
+                {/* <img className='line' src={line}  /> */}
                 <div className='develop-top-div'>
                     <DevelopHeaders visible={visible}/>
                     <div className='develop-projects-wrapper' >
