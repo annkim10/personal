@@ -1,11 +1,12 @@
 @media screen and  (min-width: 961px) {
     .timeline-outer-div {
-        /* background-color: #389CF4; */
         min-width: 1200px;
         max-width: 1900px;
-        min-height: 700px;
+        min-height: 800px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
         overflow: hidden;
     }
 
@@ -13,17 +14,14 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        background-color: antiquewhite;
+        width: 100%;
+        gap: 25px;
         height: 200px;
         overflow: hidden;
+        margin-top: 50px;
     }
 
     .timeline-header {
-        /* position: absolute;
-        top: 20px;
-        left: 15px; */
-        /* background-color: aquamarine; */
         font-size: 45px;
         font-weight: 100;
         width: 500px;
@@ -31,39 +29,38 @@
     }
 
     .timeline-main-header {
+        background-color: white;
         font-weight: 700;
         font-size: 40px;
         color: #389CF4;
         font-style: italic;
-        height: 100px;
+        height: 150px;
         display: flex;
-        align-items: center;
         z-index: 50;
     }
 
     .timeline-stages-wrapper {
-        background-color: rgb(241, 241, 241);
+        /* background-color: rgb(241, 241, 241); */
         display: flex;
         gap: 3.5em;
     }
 
     .timeline-stages-inner-wrapper {
-        background-color: aquamarine;
         height: 250px;
-        margin-top: 200px;
+        margin-top: 90px;
         display: flex;
         position: relative;
         overflow: hidden;
     }
 
     .timeline-stage-time {
-        font-size: 75px;
+        font-size: 55px;
         font-weight: 100;
         margin-top: 180px;
+        padding-right: 20px;
     }
 
     .timeline-stage-div {
-        background-color: antiquewhite;
         height: 260px;
         display: flex;
         /* border: 1px solid black; */

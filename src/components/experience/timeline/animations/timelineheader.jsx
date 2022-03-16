@@ -3,20 +3,16 @@ import { easings, useSpring, animated as a, config } from "react-spring";
 
 
 
-const TimelineHeader = () => {
-
-    const [load, setLoad] = React.useState(false)
-
-    React.useEffect(() => setLoad(true))
+const TimelineHeader = ( { visible} ) => {
 
     const up = useSpring({
-        opacity: load ? 1 : 0,
-        y: load ? 10 : 800, 
+        opacity: visible ? 1 : 0,
+        y: visible ? 10 : 800, 
         config: {
             mass: 1,
             tension: 200,
             friction: 180,
-            duration: 2000,
+            duration: 1000,
             easing: easings.easeOutQuart
         }
     })

@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react"
+import {useEffect, useState, useRef } from "react"
 import "../css/timeline.css"
 import { useSpring, animated as a, config, easings } from "react-spring";
 import line from "../../../../images/svg/line.svg"
@@ -7,25 +7,16 @@ import advertise from "../../../../images/splash/advertise.jpeg"
 import market from "../../../../images/splash/market.jpg"
 import TimelineHeader from "./timelineheader";
 import ScrollDown from "../../../_utils/scrolldown";
+import useIntersection from "../../../_utils/useIntersection";
 
-const Timeline = ( {visible} ) => {
+const Timeline = (  ) => {
 
     const [load, setLoad] = useState(false)
 
-    useEffect(() => setLoad(true))
+    const ref = useRef();
+    const visible = useIntersection(ref, '0px', '0.5');
 
-    const animate = useSpring({
-        y: load ? 0 : 200,
-        opacity: load ? 1 : 0,
-        transform: load ? 'scale(1,1)' : 'scale(0.2, 0.2)',
-        config: {
-            mass: 1,
-            tension: 280,
-            friction: 80,
-            duration: 2000,
-            easing: easings.easeInOutElastic
-        }
-    })
+    useEffect(() => visible ? setLoad(true) : "")
 
     const up = useSpring({
         y: load ? 0 : 200,
@@ -35,21 +26,34 @@ const Timeline = ( {visible} ) => {
             mass: 1,
             tension: 280,
             friction: 80,
-            duration: 2000,
-            easing: easings.easeInOutElastic
+            duration: 1500,
+            easing: easings.easeOutQuad
+        }
+    })
+
+    const side = useSpring({
+        x: load ? 0 : 1200,
+        opacity: load ? 1 : 0,
+        // transform: load ? 'scale(1,1)' : 'scale(0.2, 0.2)',
+        config: {
+            mass: 1,
+            tension: 280,
+            friction: 80,
+            duration: 1000,
+            easing: easings.easeOutQuad
         }
     })
 
     return (
         <div className="timeline-outer-div">
             <div className="timeline-left-wrapper">     
-                <TimelineHeader />
-                <h1 className="timeline-main-header"> THE PRODUCT </h1> 
+                <TimelineHeader visible={visible} />
+                <h1 className="timeline-main-header" ref={ref}> THE PRODUCT </h1> 
             </div>
             <div className="timeline-stages-wrapper">
                 <div className="timeline-stages-inner-wrapper">
-                    <a.div className="time-wrapper" style={animate}>
-                       <h1 className="timeline-stage-time">now</h1> 
+                    <a.div className="time-wrapper" style={side}>
+                       <h1 className="timeline-stage-time">Now</h1> 
                     </a.div>
                     <div className="timeline-stage-div">
                         <a.div className="timeline-stage-descrip-wrapper" style={up}>
@@ -58,33 +62,32 @@ const Timeline = ( {visible} ) => {
                         <img className="timeline-stage-img" src={code} />
                     </div >
                 </div>
-                <ScrollDown  idName="timeline-scroll" visible={visible}/>
+                <div className="timeline-stages-inner-wrapper">
+                    <a.div className="time-wrapper" style={side}>
+                       <h1 className="timeline-stage-time">Then</h1> 
+                    </a.div>
+                    <div className="timeline-stage-div">
+                        <a.div className="timeline-stage-descrip-wrapper" style={up}>
+                            <h2 className="timeline-stage-descrip">MARKETING</h2>
+                        </a.div>
+                        <img className="timeline-stage-img" src={market} />
+                    </div >
+                </div>
+                <div className="timeline-stages-inner-wrapper">
+                    <a.div className="time-wrapper" style={side}>
+                       <h1 className="timeline-stage-time">Before</h1> 
+                    </a.div>
+                    <div className="timeline-stage-div">
+                        <a.div className="timeline-stage-descrip-wrapper" style={up}>
+                            <h2 className="timeline-stage-descrip">ADVERTISING</h2>
+                        </a.div>
+                        <img className="timeline-stage-img" src={advertise} />
+                    </div >
+                </div>
             </div>
+             <ScrollDown  idName="timeline-scroll" visible={visible}/>
         </div>
     )
 }
 
 export default Timeline
-
-//  <div className="timeline-stage-div">
-//                     <a.div className="stage-wrapper" style={animate}>
-//                         {/* <h1 className="timeline-stage-time">OCT 2016 - SEP 2021</h1> */}
-                        
-//                         {/* <img className="timeline-line" src={line} /> */}
-//                     </a.div>
-//                       <a.div style={animate}>
-//                             <h2 className="timeline-stage-descrip">Marketing</h2>
-//                     </a.div>
-//                           <img className="timeline-stage-img" src={market} /> 
-//                 </div>
-//                 <div className="timeline-stage-div">
-//                       <a.div className="stage-wrapper" style={animate}>
-//                         {/* <h1 className="timeline-stage-time">JUN 2010 - OCT 2016</h1> */}
-                       
-//                         {/* <img className="timeline-line" src={line} /> */}
-//                     </a.div>
-//                      <a.div style={animate}>
-//                           <h2 className="timeline-stage-descrip">ADVERTISING</h2>
-//                     </a.div>
-//                        <img className="timeline-stage-img" src={advertise} /> 
-//                 </div>

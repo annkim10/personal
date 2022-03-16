@@ -64,9 +64,17 @@
     #nav-link:hover, #logo:hover {
         font-weight: 600;
         color: #389CF4;
-        text-transform: uppercase;
-        
+        font-family: 'Oleo Script', cursive;
    }
+
+   #nav-link:hover {
+       font-size: 20px;
+   }
+
+   #logo:hover {
+       font-size: 30px;
+   }
+
 }
 
 

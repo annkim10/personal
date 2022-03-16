@@ -31,9 +31,9 @@ const Skills = ( { visible } ) => {
         delay: 500,
         config: {
             mass: 1,
-            tension: 200,
-            friction: 180,
-            duration: 1500,
+            tension: 100,
+            friction: 80,
+            duration: 500,
             easing: easings.easeInOutElastic
         }
     })

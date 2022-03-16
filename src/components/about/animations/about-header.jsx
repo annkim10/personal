@@ -1,5 +1,3 @@
-import circle from "../../../images/svg/gray-circle.svg"
-import { useState, useRef, useEffect} from "react"
 import { config, easings, useSpring, animated as a } from "react-spring";
 
 const AboutHeader = ( {visible}) => {
