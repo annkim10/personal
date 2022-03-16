@@ -20,8 +20,8 @@ const Advertise = () => {
         <div className='advertise-outer-div'>
             <div className='advertise-inner-div'>
                 <div className='advertise-left-div'>
-                    <h1 className='advertise-time'>JUN 2010 - OCT 2016</h1>
-                    <img className='advertise-line' src={line} ref={ref}/>
+                    <h1 className='advertise-time' ref={ref}>JUN 2010 - OCT 2016</h1>
+                    {/* <img className='advertise-line' src={line} /> */}
                     <AdvertiseHeaders visible={visible}/>
                 </div>
                 <div className="advertise-right-div">

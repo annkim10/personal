@@ -8,6 +8,7 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        border-bottom: 1px solid black;
         /* margin-top: 30px; */
     }
 
@@ -15,7 +16,6 @@
         /* background-color: rgb(101, 206, 206); */
         min-width: 1200px;
         max-width: 1900px;
-        border-bottom: 3px solid black;
         /* height: 500px; */
         margin-top: 50px;
         display: flex;

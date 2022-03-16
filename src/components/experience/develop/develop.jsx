@@ -20,7 +20,7 @@ const Develop = () => {
     return (
         <div className='develop-outer-div' id="develop-container">
             <div className='develop-inner-div'>
-                <DevelopCircle visible={visible} />
+                {/* <DevelopCircle visible={visible} /> */}
                 <h1 className='develop-time' ref={ref}> OCT 2021 - PRESENT</h1>
                 {/* <img className='line' src={line}  /> */}
                 <div className='develop-top-div'>

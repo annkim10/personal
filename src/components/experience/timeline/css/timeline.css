@@ -3,11 +3,10 @@
         /* background-color: #389CF4; */
         min-width: 1200px;
         max-width: 1900px;
-        height: 100vh;
+        min-height: 700px;
         display: flex;
         justify-content: space-between;
         overflow: hidden;
-        border-bottom: 3px solid black
     }
 
     .timeline-left-wrapper {
@@ -17,7 +16,7 @@
     .timeline-header {
         position: absolute;
         top: 20px;
-        left: 50px;
+        left: 15px;
         /* background-color: aquamarine; */
         font-size: 55px;
         width: 500px;
