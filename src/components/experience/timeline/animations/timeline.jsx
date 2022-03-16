@@ -1,10 +1,11 @@
 import {useEffect, useState} from "react"
 import "../css/timeline.css"
 import { useSpring, animated as a, config, easings } from "react-spring";
-import line from "../../../images/svg/line.svg"
-import code from "../../../images/splash/code.jpg"
-import advertise from "../../../images/splash/advertise.jpeg"
-import market from "../../../images/splash/market.jpg"
+import line from "../../../../images/svg/line.svg"
+import code from "../../../../images/splash/code.jpg"
+import advertise from "../../../../images/splash/advertise.jpeg"
+import market from "../../../../images/splash/market.jpg"
+import TimelineHeader from "./timelineheader";
 
 const Timeline = () => {
 
@@ -27,12 +28,13 @@ const Timeline = () => {
 
     return (
         <div className="timeline-outer-div">
+            <TimelineHeader />
             <div className="timeline-stages-wrapper">
                 <div className="timeline-stage-div">
                     <a.div className="stage-wrapper" style={animate}>
                         <h1 className="timeline-stage-time">OCT 2021 - PRESENT</h1>
                         <h2 className="timeline-stage-descrip">How to <span>develop</span> the product</h2>
-                        <img className="timeline-line" src={line} />
+                        {/* <img className="timeline-line" src={line} /> */}
                         <a.div style={animate}>
                             <img className="timeline-stage-img" src={code} /> 
                         </a.div>
@@ -42,7 +44,7 @@ const Timeline = () => {
                     <a.div className="stage-wrapper" style={animate}>
                         <h1 className="timeline-stage-time">OCT 2016 - SEP 2021</h1>
                         <h2 className="timeline-stage-descrip">How to <span>market</span> the product</h2>
-                        <img className="timeline-line" src={line} />
+                        {/* <img className="timeline-line" src={line} /> */}
                         <a.div style={animate}>
                             <img className="timeline-stage-img" src={market} /> 
                         </a.div>
@@ -52,7 +54,7 @@ const Timeline = () => {
                       <a.div className="stage-wrapper" style={animate}>
                         <h1 className="timeline-stage-time">JUN 2010 - OCT 2016</h1>
                         <h2 className="timeline-stage-descrip">How to <span>advertise</span> the product</h2>
-                        <img className="timeline-line" src={line} />
+                        {/* <img className="timeline-line" src={line} /> */}
                         <a.div style={animate}>
                             <img className="timeline-stage-img" src={advertise} /> 
                         </a.div>

@@ -7,7 +7,7 @@ const ScrollDown = ( { idName, visible } ) => {
 
     const animate = useSpring({
         opacity: visible ? 1 : 0,
-        delay: 1500,
+        // delay: 1200,
         y: visible ? 0 : 500,
         config: config.slow
     })

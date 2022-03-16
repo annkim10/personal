@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { FaLinkedinIn, FaGithub } from "react-icons/fa"
 import "./css/splash.css"
-import Timeline from "./animations/timeline"
+import Timeline from "../experience/timeline/animations/timeline"
 import Header from "./animations/header";
 import Descrip from "./animations/descrip";
 import ScrollDown from "../_utils/scrolldown";

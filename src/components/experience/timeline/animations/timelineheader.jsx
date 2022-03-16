@@ -3,7 +3,7 @@ import { easings, useSpring, animated as a, config } from "react-spring";
 
 
 
-const Header = () => {
+const TimelineHeader = () => {
 
     const [load, setLoad] = React.useState(false)
 
@@ -23,13 +23,13 @@ const Header = () => {
     })
  
     return (
-        <a.div className="splash-top-wrapper" style={animateUpBounce} >
-            <h1 className="splash-header">It's nice to meet you,
+        <a.div className="timeline-left-wrapper" style={animateUpBounce} >
+            <h1 className="timeline-header">My career has revolved around learning about
                 <br/>
-                <span> I'm Ann Kim.</span>   
+                <span> THE PRODUCT </span>   
             </h1>  
         </a.div>
     )
 }
 
-export default Header
+export default TimelineHeader

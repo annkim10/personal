@@ -5,7 +5,7 @@ import "./experience.css"
 import Develop from "./develop/develop";
 import Market from "./market/market";
 import Advertise from "./advertise/advertise";
-import Timeline from "../splash/animations/timeline";
+import Timeline from "./timeline/animations/timeline";
 
 const Experience = ( {mobile} ) => {
 
