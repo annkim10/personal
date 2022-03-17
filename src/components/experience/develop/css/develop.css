@@ -10,18 +10,21 @@
         align-items: center;
         /* margin-top: 50px; */
         overflow: hidden;
-        border-top: 4px solid black;
+        border-top: 2px solid black;
     }
 
     .develop-inner-div {
-        /* background-color: rgb(161, 214, 214); */
+        background-color: white;
+        min-width: 1200px;
+        max-width: 1600px;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        min-width: 1200px;
-        max-width: 1600px;
-        /* min-height: 600px; */
+        /* justify-content: space-between; */
+        overflow: hidden;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
     }
 
     .develop-time {
@@ -38,19 +41,21 @@
 
 
     .develop-top-div {
-        /* background-color: rebeccapurple; */
+        width: 100%;
+        height: 400px;
+        /* background-color: gray; */
         display: flex;
+        /* flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        margin-top: 100px;
+        justify-content: space-between; */
+        /* margin-top: 100px; */
+        border-bottom: 2px solid black;
     }
 
     .develop-text-wrapper {
-        width: 100%;
+        /* background-color: antiquewhite; */
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5em;
+        max-width: 1200px;
     }
 
     .develop-text-wrapper a {
@@ -58,30 +63,39 @@
         font-weight: 500;
     }
 
-    .develop-header-div {
-        width: 700px;
+    .develop-header-div, .develop-descrip-div {
+        display: inline-block;
         position: relative;
-        text-align: center;
+        padding: 50px;
+    }
+
+    .develop-header-div {
+        /* background-color: aliceblue; */
+        width: 40%;
+        height: 100%;
+      
     }
 
     .develop-header, .develop-header span {
-        font-size: 75px;
-        font-weight: 100;
+        font-size: 55px;
+        font-weight: 600;
         line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    .develop-header-second {
         color: #389CF4;
-        /* text-transform: uppercase; */
+        margin-top: 10px;
+        font-size: 30px;
     }
 
     .develop-descrip-div {
-        display: flex;
-        width: 850px;
-        position: relative;
-        text-align: center;
+        width: 60%;
     }
 
     .develop-descrip {
-        font-size: 25px;
-        font-weight: 200;
+        font-size: 20px;
+        font-weight: 400;
         line-height: 1.5;
     }
 
@@ -106,23 +120,23 @@
     .develop-stage-bottom-div {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        height: 200px;
+        height: 300px;
         width: 100%;
         position: relative;
-        margin-top: 150px;
         z-index: 50;
     }
 
     .develop-stage-skills-header, .develop-stage-project-header {
-        color: #389CF4;
+        /* color: #389CF4; */
         font-weight: 700;
-        height: 100%;
+        height: 100px;
+        width: 100%;
         display: flex;
         align-items: center;
         letter-spacing: 0.1em;
-        font-size: 20px;
+        font-size: 40px;
+        margin-left: 50px;
     }
 
     .develop-stage-project-header  {
@@ -131,11 +145,12 @@
 
     .develop-stage-skills-list {
         width: 100%;
-        height: 100%;
+        height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid black;
+        border-top: 1px solid black;
+        border-bottom: 2px solid black;
     }
 
     .develop-skill-wrapper {
@@ -143,6 +158,10 @@
         width: 10%;
         height: 100%;
         border-right: 1px solid black;
+    }
+
+    .develop-skill-wrapper:last-child {
+       border: none;
     }
 
     .skill {

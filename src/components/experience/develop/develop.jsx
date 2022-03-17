@@ -18,15 +18,14 @@ const Develop = () => {
     useEffect(() => visible ? setLoad(true) : "")
 
     return (
-        <div className='develop-outer-div' id="develop-container">
-            <div className='develop-inner-div'>
-              
-                <div className='develop-top-div'>
-                    <h1 className='develop-time' ref={ref}> OCT 2021 - PRESENT</h1>
+        <div className='develop-outer-div' id="develop-container" >
+            <div className='develop-inner-div' >
+                <div className='develop-top-div' ref={ref}>
+                    {/* <h1 className='develop-time' > OCT 2021 - PRESENT</h1> */}
                     <DevelopHeaders visible={visible}/>      
                 </div>
                 <Skills visible={visible} />
-                <h1 className='develop-stage-project-header'>PROJECTS I'VE DONE</h1>
+                {/* <h1 className='develop-stage-project-header'>PROJECTS I'VE DONE</h1>
                 <div className='develop-projects-wrapper' >
                     <div className='develop-projects-card-div'>
                        <ProjectCard 
@@ -46,7 +45,7 @@ const Develop = () => {
                             code={'https://github.com/annkim10/mevert'}
                         />
                     </div>
-                </div>
+                </div> */}
                 {/* <ScrollDown visible={visible} idName={'develop-scroll'}/> */}
             </div>  
         </div>

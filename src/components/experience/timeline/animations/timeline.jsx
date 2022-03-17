@@ -56,7 +56,7 @@ const Timeline = (  ) => {
                         <img className="timeline-stage-img" src={code} />
                         <div className="timeline-stage-div">
                             <a.div className="timeline-stage-descrip-wrapper" style={up}>
-                                <h1 className="timeline-stage-time-main">Now</h1> 
+                                <h1 className="timeline-stage-time-main">now</h1> 
                                 <p className="timeline-stage-time">OCT 2021 - PRESENT</p>
                                 <h2 className="timeline-stage-descrip">How to develop the product</h2>
                             </a.div>
@@ -66,7 +66,7 @@ const Timeline = (  ) => {
                         <img className="timeline-stage-img" src={market} />
                         <div className="timeline-stage-div">
                             <a.div className="timeline-stage-descrip-wrapper" style={up}>
-                                <h1 className="timeline-stage-time-main">Then</h1> 
+                                <h1 className="timeline-stage-time-main">then</h1> 
                                 <p className="timeline-stage-time">OCT 2021 - PRESENT</p>
                                 <h2 className="timeline-stage-descrip">How to develop the product</h2>
                             </a.div>
@@ -76,7 +76,7 @@ const Timeline = (  ) => {
                         <img className="timeline-stage-img" src={advertise} />
                         <div className="timeline-stage-div">
                             <a.div className="timeline-stage-descrip-wrapper" style={up}>
-                                <h1 className="timeline-stage-time-main">Before</h1> 
+                                <h1 className="timeline-stage-time-main">before</h1> 
                                 <p className="timeline-stage-time">OCT 2021 - PRESENT</p>
                                 <h2 className="timeline-stage-descrip">How to develop the product</h2>
                             </a.div>
