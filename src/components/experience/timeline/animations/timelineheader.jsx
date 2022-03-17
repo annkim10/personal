@@ -21,7 +21,7 @@ const TimelineHeader = ( { visible} ) => {
         <a.div className="timeline-text-wrapper" style={up} >
             <h1 className="timeline-header">My career has revolved around learning about the product
             </h1>  
-            <h1 className="timeline-main-header">three stages across 10+ years </h1> 
+            <h1 className="timeline-main-header">three different stages across 10+ years </h1> 
         </a.div>
     )
 }

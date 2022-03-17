@@ -24,10 +24,10 @@ const Contact = () => {
                                 <MdOutlinePhoneInTalk className="contact-icon" />
                                 <h1 className="contact">646.884.3600</h1>
                             </div>
-                            <div className="contact-info-div">
+                            {/* <div className="contact-info-div">
                                 <FaRegFilePdf className="contact-icon" />
                                 <a href="https://drive.google.com/file/d/1IwkLDUzsc7yL3jfRpFT_yTYMNKDksjgS/view?usp=sharing" target="_blank" className="contact-resume">Resume</a>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="contact-info-right">
                             <div className="contact-links-wrapper">
