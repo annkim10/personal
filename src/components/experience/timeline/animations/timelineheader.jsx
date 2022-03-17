@@ -19,7 +19,7 @@ const TimelineHeader = ( { visible} ) => {
  
     return (
         <a.div className="timeline-text-wrapper" style={up} >
-            <h1 className="timeline-header">My career has revolved around learning about  
+            <h1 className="timeline-header">My career has revolved around learning  
             </h1>  
         </a.div>
     )

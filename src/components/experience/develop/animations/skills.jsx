@@ -40,7 +40,7 @@ const Skills = ( { visible } ) => {
 
     return (
         <a.div className='develop-stage-bottom-div'>
-            <h1 className='develop-stage-skills-header'>SKILLS</h1>
+            <h1 className='develop-stage-skills-header'>SKILLS I'VE LEARNED</h1>
             <ul className='develop-stage-skills-list'>
                 {trail.map((styles, idx) => {
                     return (

@@ -20,16 +20,8 @@
         /* margin-top: 50px; */
         position: relative;
         min-width: 1200px;
-        max-width: 1200px;
-        min-height: 600px;
-    }
-
-    .develop-circle {
-        position: absolute;
-        top: -20px;
-        left: 533px;
-        z-index: 5;
-        width: 750px;
+        max-width: 1600px;
+        /* min-height: 600px; */
     }
 
     .projects-cta {
@@ -39,11 +31,6 @@
         font-weight: 600;
         font-size: 12px;
         letter-spacing: 0.1em;
-    }
-
-    .develop-top-div {
-        display: flex;
-        justify-content: space-between;
     }
 
     .develop-time {
@@ -57,11 +44,20 @@
         font-family: 'Poppins', Helvetica, sans-serif;
     }
 
+
+    .develop-top-div {
+        /* background-color: rebeccapurple; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
     .develop-text-wrapper {
-        width: 40%;
-        /* background-color: antiquewhite; */
-        margin-left: 15px;
-        margin-top: 20px;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        gap: 8em;
     }
 
     .develop-text-wrapper a {
@@ -69,30 +65,43 @@
         font-weight: 500;
     }
 
+    .develop-header-div {
+        width: 400px;
+        position: relative;
+    }
+
     .develop-header {
-        font-size: 45px;
-        font-weight: 200;
+        font-size: 75px;
+        font-weight: 100;
         line-height: 1.2;
+        position: absolute;
+        bottom: 0;
         /* text-transform: uppercase; */
     }
 
     .develop-header span {
-        font-weight: 200;
+        font-weight: 600;
         color: #389CF4;
         text-transform: uppercase;
-        font-size: 55px;
+        font-size: 70px;
+    }
+
+    .develop-descrip-div {
+        display: flex;
+        width: 700px;
+        position: relative;
     }
 
     .develop-descrip {
-        margin-top: 50px;
-        font-size: 16px;
+        position: absolute;
+        bottom: 0;
+        font-size: 18px;
         font-weight: 300;
         line-height: 1.5;
-        width: 80%;
     }
 
     .develop-projects-wrapper {
-        width: 50%;
+        width: 100%;
         display: flex;
         gap: 1em;
         overflow: hidden;
@@ -100,37 +109,36 @@
     }
 
     .develop-projects-card-div {
-        margin-top: 20px;
-        min-width: 50%;
+        /* background-color: aqua; */
+        margin-top: 40px;
         min-height: 400px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-        gap: 2rem;
-        justify-content: center;
+        /* grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem)); */
+        gap: 3rem;
+        /* justify-content: center; */
         z-index: 50;
     }
 
     .develop-stage-bottom-div {
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        border: 1px solid rgb(0, 0, 0);
-        height: 80px;
+        height: 200px;
         position: relative;
-        margin-top: 80px;
+        margin-top: 150px;
         z-index: 50;
     }
 
-    .develop-stage-skills-header {
+    .develop-stage-skills-header, .develop-stage-project-header {
         color: #389CF4;
         font-weight: 700;
-        width: 100px;
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
-        border-right: 1px solid black;
+        letter-spacing: 0.1em;
+    }
+
+    .develop-stage-project-header  {
+        margin-top: 150px;
     }
 
     .develop-stage-skills-list {
@@ -139,6 +147,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 1px solid black;
     }
 
     .develop-skill-wrapper {
@@ -161,7 +170,7 @@
     }
 
     .skill p {
-        font-size: 13px;
+        font-size: 15px;
         padding-top: 10px;
         font-weight: 300;
     }

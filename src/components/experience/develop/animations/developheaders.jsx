@@ -23,7 +23,7 @@ const DevelopHeaders = ( { visible } ) => {
     const trail = useTrail(headers.length, {
         opacity: visible ? 1 : 0,
         fontSize: visible ? '1.5em' : '0em',
-        marginTop: visible ? 0 : -50, 
+        y: visible ? 0 : 500, 
         config: {
             mass: 1,
             tension: 50,
@@ -37,7 +37,7 @@ const DevelopHeaders = ( { visible } ) => {
         <a.div className='develop-text-wrapper'>
             {trail.map((styles, idx) => {
                 return (
-                    <a.div key={idx} style={styles}>
+                    <a.div key={idx} style={styles} className={headers[idx].class + "-div"}>
                         <h1 className={headers[idx].class}>
                             {headers[idx].text1}
                             <span>{headers[idx].span}</span>

@@ -1,7 +1,7 @@
 @media screen and (min-width: 961px) {
 
     .splash-outer-div {
-        min-width: 100%;
+        min-width: 100vw;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -15,7 +15,7 @@
     .splash-inner-div {
         /* background-color: rgb(101, 206, 206); */
         min-width: 1200px;
-        max-width: 1900px;
+        max-width: 1600px;
         /* height: 500px; */
         margin-top: 50px;
         display: flex;

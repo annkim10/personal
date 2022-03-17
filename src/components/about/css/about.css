@@ -36,11 +36,11 @@
     
     .header-wrapper {
         overflow: hidden;
-        height: 90px;
+        height: 110px;
     }
 
     .about-header {
-        font-size: 65px;
+        font-size: 75px;
         font-weight: 100;
         color:  #389CF4;
     }
@@ -65,7 +65,6 @@
     }
 
     .about-img-wrapper {
-      
         height: 100%;
         position: relative;
         display: flex;

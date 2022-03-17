@@ -20,33 +20,32 @@ const Develop = () => {
     return (
         <div className='develop-outer-div' id="develop-container">
             <div className='develop-inner-div'>
-                {/* <DevelopCircle visible={visible} /> */}
                 <h1 className='develop-time' ref={ref}> OCT 2021 - PRESENT</h1>
-                {/* <img className='line' src={line}  /> */}
                 <div className='develop-top-div'>
-                    <DevelopHeaders visible={visible}/>
-                    <div className='develop-projects-wrapper' >
-                        <div className='develop-projects-card-div'>
-                            <ProjectCard 
-                                title={'Pupfinder'} 
-                                visible={visible}
-                                descrip={'Reimagination of Petfinder.com as a dynamic new way to connect prospective dog owners with adoptable pups.'}
-                                live={'https://pupfinderapp.herokuapp.com/#/'}
-                                code={'https://github.com/annkim10/pupfinder'}
-                            />
-                        </div>
-                        <div className='develop-projects-card-div'>
-                            <ProjectCard 
-                                title={'MEvert'} 
-                                visible={visible}
-                                descrip={'Platform for users to carpe diem, their way, with curated activity suggestions, resources and planning tools '}
-                                live={'https://mevert.herokuapp.com/#/'}
-                                code={'https://github.com/annkim10/mevert'}
-                            />
-                        </div>
-                    </div>
+                    <DevelopHeaders visible={visible}/>      
                 </div>
                 <Skills visible={visible} />
+                <h1 className='develop-stage-project-header'>PROJECTS I'VE DONE</h1>
+                <div className='develop-projects-wrapper' >
+                    <div className='develop-projects-card-div'>
+                       <ProjectCard 
+                        title={'Pupfinder'} 
+                        visible={visible}
+                        descrip={'Reimagination of Petfinder.com as a dynamic new way to connect prospective dog owners with adoptable pups.'}
+                        live={'https://pupfinderapp.herokuapp.com/#/'}
+                        code={'https://github.com/annkim10/pupfinder'}
+                        />
+                        </div>
+                    <div className='develop-projects-card-div'>
+                        <ProjectCard 
+                            title={'MEvert'} 
+                            visible={visible}
+                            descrip={'Platform for users to carpe diem, their way, with curated activity suggestions, resources and planning tools '}
+                            live={'https://mevert.herokuapp.com/#/'}
+                            code={'https://github.com/annkim10/mevert'}
+                        />
+                    </div>
+                </div>
                 <ScrollDown visible={visible} idName={'develop-scroll'}/>
             </div>  
         </div>
