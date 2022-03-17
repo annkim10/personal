@@ -4,6 +4,7 @@
         position: relative;
         width: 100%;
         height: 500px;
+        border-bottom: 10px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -24,14 +25,14 @@
         width: 100%;
         flex-direction: column;
         align-items: center;
-        border: 1px solid black;
+        border: 2px solid black;
     }
 
     .contact-header-div {
         font-weight: 100;
         line-height: 1.3;
         font-size: 45px;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
         width: 100%;
         height: 90px;
         display: flex;
@@ -62,7 +63,7 @@
 
     .contact-info-div {
         /* background-color: antiquewhite; */
-        border-right: 1px solid black;
+        border-right: 2px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;

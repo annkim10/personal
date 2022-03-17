@@ -19,21 +19,20 @@ const Advertise = () => {
     return (
         <div className='advertise-outer-div'>
             <div className='advertise-inner-div'>
-                <div className='advertise-left-div'>
-                    <h1 className='advertise-time' ref={ref}>JUN 2010 - OCT 2016</h1>
-                    {/* <img className='advertise-line' src={line} /> */}
+                <div className='advertise-top-div' ref={ref}>
                     <AdvertiseHeaders visible={visible}/>
                 </div>
                 <div className="advertise-right-div">
                     <h1 className="advertise-cta">CLICK FOR MORE DETAILS</h1>
                     <Agencies visible={visible} />
                 </div>
-                <div className="advertise-brands-wrapper">
+                {/* <div className="advertise-brands-wrapper">
                         <h1 className="advertise-brands-header">BRANDS I'VE WORKED WITH</h1>
                        <Logos visible={visible} />
-                </div>
+                </div> */}
+                <ScrollDown idName={'advertise-scroll'} visible={visible} /> 
             </div>      
-            <ScrollDown idName={'advertise-scroll'} visible={visible} />  
+         
         </div>
     )
 }

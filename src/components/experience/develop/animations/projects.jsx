@@ -21,8 +21,10 @@ const ProjectCard = ({title, visible, descrip, live, code}) => {
     return (
         <div className="projects-card-outer-wrapper">
             <a.div className="projects-card-wrapper" style={animate}>
-                <div className="projects-card-body"> 
+                <div className="projects-card-left">
                     <img src={ title === 'Pupfinder' ? pupfinder : mevert } className="projects-gif"/>
+                </div>
+                <div className="projects-card-right"> 
                     <div className="projects-card-text-wrapper">
                         <h1 className="projects-card-header">PROJECT</h1>
                         <h1 className="projects-card-name">{title}</h1>

@@ -7,9 +7,8 @@ const AdvertiseHeaders = ( { visible } ) => {
     const headers = [
         {
             class:'advertise-header', 
-            text1: 'Learning to', 
-            span: ' advertise ', 
-            text2:'the product'
+            text1: 'Learning to advertise the product', 
+            text2: 'Honing'
         }, 
         {
             class:'advertise-descrip', 
@@ -34,11 +33,14 @@ const AdvertiseHeaders = ( { visible } ) => {
         <a.div className='advertise-text-wrapper'>
             {trail.map((styles, idx) => {
                 return (
-                    <a.div key={idx} style={styles} className='advertise-text-inner-wrapper'>
+                    <a.div key={idx} style={styles} className={headers[idx].class + "-div"}>
                         <h1 className={headers[idx].class}>
                             {headers[idx].text1}
-                            <span>{headers[idx].span}</span>
-                            {headers[idx].text2}
+                            {/* <span>{headers[idx].span}</span>
+                            {headers[idx].text2} */}
+                        </h1>
+                        <h1 className={headers[idx].class + "-second"}>
+                            {idx === 0 ? headers[idx].text2 : ""}
                         </h1>
                     </a.div>
                 )

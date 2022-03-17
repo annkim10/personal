@@ -8,7 +8,7 @@ const DevelopHeaders = ( { visible } ) => {
         { 
             class:'develop-header', 
             text1: 'Learning to develop the product ', 
-            text2:'From hardware to software'
+            text2: 'From hardware to software'
         }, 
         {
             class:'develop-descrip',

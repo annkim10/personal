@@ -72,8 +72,7 @@
     .develop-header-div {
         /* background-color: aliceblue; */
         width: 40%;
-        height: 100%;
-      
+        height: 100%; 
     }
 
     .develop-header, .develop-header span {
@@ -102,19 +101,14 @@
     .develop-projects-wrapper {
         width: 100%;
         display: flex;
-        gap: 1em;
+        flex-direction: column;
         overflow: hidden;
         position: relative;
     }
 
     .develop-projects-card-div {
         /* background-color: aqua; */
-        margin-top: 40px;
         min-height: 400px;
-        /* grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem)); */
-        gap: 3rem;
-        /* justify-content: center; */
-        z-index: 50;
     }
 
     .develop-stage-bottom-div {
@@ -140,7 +134,7 @@
     }
 
     .develop-stage-project-header  {
-        margin-top: 150px;
+        margin-left: 100px;
     }
 
     .develop-stage-skills-list {

@@ -7,8 +7,7 @@ const MarketHeaders = ( { visible } ) => {
     const headers = [
         {
             class:'develop-header', 
-            text1: 'Learning to', 
-            span: ' market ', 
+            text1: 'Learning to market the product', 
             text2:'the product'
         }, 
         {
@@ -38,7 +37,10 @@ const MarketHeaders = ( { visible } ) => {
                         <h1 className={headers[idx].class}>
                             {headers[idx].text1}
                             <span>{headers[idx].span}</span>
-                            {headers[idx].text2}
+                            {headers[idx].text3}
+                        </h1>
+                        <h1 className={headers[idx].class + "-second"}>
+                            {idx === 0 ? headers[idx].text2 : ""}
                         </h1>
                     </a.div>
                 )

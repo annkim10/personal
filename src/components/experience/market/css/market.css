@@ -6,19 +6,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* border-top: 1px solid black; */
-        /* margin-top: 50px */
+        overflow: hidden;
+        border-top: 2px solid black;
     }
 
     .market-inner-div {
-        /* background-color: rgb(161, 214, 214); */
+        background-color: white;
+        min-width: 1200px;
+        max-width: 1600px;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 150px;
-        position: relative;
-        min-width: 1200px;
-        max-width: 1600px;
+        /* justify-content: space-between; */
+        overflow: hidden;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
     }
 
     .market-bottom-div {
@@ -59,30 +62,10 @@
     }
 
     .market-text-wrapper {
-        width: 100%;
+        max-width: 1200px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5em;
-        margin-top: 100px;
     }
 
-    .market-header-div {
-        width: 700px;
-        position: relative;
-        text-align: center;
-    }
-
-    .market-header {
-        font-size: 50px;
-        font-weight: 200;
-        line-height: 1.2;
-    }
-
-    .market-header span {
-        font-weight: 600;
-        color: #389CF4;
-    }
 
     .market-descrip-div {
         width: 80%;
@@ -92,19 +75,25 @@
     }
 
     .market-right-div {
-        width: 60%;
+        border-bottom: 2px solid black;
+    }
+
+    .market-right-div, .market-details-wrapper {
+        background-color: aliceblue;
+        width: 100%;
+        max-height: 450px;
         display: flex;
-        justify-content: right;
-        margin-top: 100px;
-        overflow: hidden;
+        overflow: hidden
         /* align-items: center; */
     }
 
     .youtube-header {
-        width: 80%;
-        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        font-size: 25px;
         font-weight: 300;
-        padding: 20px 0;
     }
 
     .youtube-header a {

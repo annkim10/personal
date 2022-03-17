@@ -7,7 +7,7 @@ class Youtube extends React.Component {
 
     const opts = {
       height: this.props.mobile ? '197' : '394',
-      width: this.props.mobile ? '350' : '700',
+      width: this.props.mobile ? '450' : '700',
     };
 
     return <YouTube videoId="NixC6V51_Xo" opts={opts} onReady={this._onReady} />;

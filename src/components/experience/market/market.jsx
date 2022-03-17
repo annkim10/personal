@@ -21,19 +21,17 @@ const Market = ( { mobile }) => {
     return (
         <div className='market-outer-div'>
             <div className='market-inner-div'>
-                <div className='market-left-div'>
-                    <h1 className='market-time' ref={ref}>OCT 2016 - SEP 2021</h1>
-                    {/* <img className='market-line' src={line} /> */}
-                    <MarketHeaders visible={visible}/>
+               <div className='develop-top-div' ref={ref}>
+                    <MarketHeaders visible={visible}/>      
                 </div>
                 <div className='market-right-div'>
                     <VideoWrapper mobile={mobile} visible={visible}/>
                 </div>
-            </div>  
-            <div className='market-bottom-div'>
-                <Samsung visible={visible} />
-            </div>
-            <ScrollDown idName={'market-scroll'} visible={visible} />
+                <div className='market-bottom-div'>
+                    <Samsung visible={visible} />
+                </div>
+            </div> 
+            {/* <ScrollDown idName={'market-scroll'} visible={visible} /> */}
         </div>
     )
 }
