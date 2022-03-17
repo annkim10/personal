@@ -7,7 +7,7 @@
         position: fixed;
         top: 0;
         justify-content: center;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
         z-index: 100;
     }
 
@@ -15,8 +15,8 @@
         background-color: white;
         min-width: 1200px;
         max-width: 1600px;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
         /* border-bottom: 5px solid black; */
         height: 50px;
         position: sticky;
@@ -27,9 +27,9 @@
     }
 
     .logo-div {
-        border-right: 1px solid black;
+        border-right: 2px solid black;
         height: 100%;
-        min-width: 150px;
+        min-width: 180px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -37,7 +37,7 @@
 
     #logo {
         /* letter-spacing: 0.1em; */
-        font-weight: 200;
+        font-weight: 400;
         font-size: 25px;
         cursor: pointer;
     }
@@ -53,12 +53,12 @@
         align-items: center;
         justify-content: center;
         height: 100%;
-        width: 130px;
-        font-weight: 300;
-        font-size: 15px;
+        width: 150px;
+        font-weight: 400;
+        font-size: 20px;
         /* border-radius: 40px; */
         cursor: pointer;
-        border-left: 1px solid black;
+        border-left: 2px solid black;
     }
 
     #nav-link:hover, #logo:hover {
@@ -68,7 +68,7 @@
    }
 
    #nav-link:hover {
-       font-size: 20px;
+       font-size: 25px;
    }
 
    #logo:hover {

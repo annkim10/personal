@@ -34,7 +34,7 @@ const MarketHeaders = ( { visible } ) => {
         <a.div className='market-text-wrapper'>
             {trail.map((styles, idx) => {
                 return (
-                    <a.div key={idx} style={styles}>
+                    <a.div className={headers[idx].class + "-div"}  key={idx} style={styles}>
                         <h1 className={headers[idx].class}>
                             {headers[idx].text1}
                             <span>{headers[idx].span}</span>

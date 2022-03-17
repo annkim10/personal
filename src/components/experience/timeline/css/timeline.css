@@ -1,6 +1,6 @@
 @media screen and  (min-width: 961px) {
     .timeline-outer-div {
-        /* background-color: antiquewhite; */
+        /* background-color: aliceblue; */
         position: relative;
         min-width: 100vw;
         min-height: 100vh;
@@ -8,109 +8,142 @@
         flex-direction: column;
         overflow: hidden;
         align-items: center;
+        border-top: 2px solid black;
     }
 
     .timeline-inner-div {
+        background-color: white;
         min-width: 1200px;
         max-width: 1600px;
-        min-height: 800px;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         /* justify-content: space-between; */
         overflow: hidden;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+     
     }
 
     .timeline-left-wrapper {
         position: relative;
+        border-bottom: 3px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        gap: 25px;
-        height: 200px;
+        min-height: 30%;
         overflow: hidden;
-        margin-top: 150px;
+    }
+
+    .timeline-text-wrapper {
+        height: 100%;
+        width: 100%;
+        display: block;
     }
 
     .timeline-header {
         font-size: 30px;
         font-weight: 600;
-        width: 100%;
+        text-transform: uppercase;
+        /* width: 100%; */
         line-height: 1.3;
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
     }
 
     .timeline-main-header {
         background-color: white;
+        margin-top: 5px;
         font-weight: 100;
-        font-size: 65px;
+        font-size: 75px;
         color: #389CF4;
         /* font-style: italic; */
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        z-index: 50;
         width: 100%;
+        height: 180px;
+        text-align: center;
     }
 
     .timeline-stages-wrapper {
         /* background-color: rgb(241, 241, 241); */
         display: flex;
-        gap: 3.5em;
+        justify-content: space-between;
+        width: 100%;
+        /* min-height: 60%; */
+        border-bottom: 2px solid black;
+    }
+
+    .timeline-stages-inner-wrapper:last-child {
+        border: none;
     }
 
     .timeline-stages-inner-wrapper {
-        height: 250px;
-        margin-top: 90px;
+        /* background-color: antiquewhite; */
+        min-height: 500px;
+        width: 33%;
+        /* max-width: 33.22%; */
         display: flex;
+        flex-direction: column;
+        align-items: center;
         position: relative;
         overflow: hidden;
+        border-right: 2px solid black;
+    }
+
+    .timeline-stage-time-main {
+        margin-top: 20px;
+        font-size: 70px;
+        font-weight: 100;
+        color: #389CF4;
+        /* transform: rotate(270deg); */
     }
 
     .timeline-stage-time {
-        font-size: 55px;
-        font-weight: 100;
-        margin-top: 180px;
-        padding-right: 20px;
+        margin-top: 10px;
+        font-family: 'Poppins', Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
     }
 
     .timeline-stage-div {
-        height: 260px;
         display: flex;
-        /* border: 1px solid black; */
         flex-direction: column;
-        overflow: hidden;
+        align-items: center;
+        position: relative;
     }
 
     .timeline-stage-descrip-wrapper {
-        position: relative
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        /* margin-left: 50px; */
+        /* background-color: rgb(241, 241, 241) */
     }
 
     .timeline-stage-descrip {
-        text-align: right;
+        margin-top: 20px;
         line-height: 1.2;
-        width: 100%;
+        /* width: 100%; */
         font-size: 25px;
-        padding: 10px 0px;
-        /* position: absolute;
-        top: 0; */
-        font-weight: 600;
-        color: #389CF4;
-        /* text-transform: uppercase; */
-        font-style: italic;
+        font-weight: 400;
+        width: 60%;
+        text-align: center;
     }
 
     .timeline-stage-img {
+        display: inline-block;
         width: 200px;
         height: 200px;
+        border-radius: 50%;
         object-fit: cover;
         z-index: 50;
+        margin-top: 50px;
         /* border-radius: 50%; */
     }
 
-   .timeline-stage-img:hover {
-       cursor: pointer;
-   }
 
  
 }

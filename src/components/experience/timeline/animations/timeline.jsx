@@ -46,49 +46,50 @@ const Timeline = (  ) => {
 
     return (
         <div className="timeline-outer-div" id="timeline-container">
-            <div className="timeline-inner-div">
+            <div className="timeline-inner-div" ref={ref}>
                 <div className="timeline-left-wrapper">     
                     <TimelineHeader visible={visible} />
-                    <h1 className="timeline-main-header" ref={ref}> about the product </h1> 
+                    {/* <h1 className="timeline-main-header" ref={ref}> about the product </h1>  */}
                 </div>
                 <div className="timeline-stages-wrapper">
                     <div className="timeline-stages-inner-wrapper">
-                        <a.div className="time-wrapper" style={side}>
-                        <h1 className="timeline-stage-time">Now</h1> 
-                        </a.div>
+                        <img className="timeline-stage-img" src={code} />
                         <div className="timeline-stage-div">
                             <a.div className="timeline-stage-descrip-wrapper" style={up}>
-                                <h2 className="timeline-stage-descrip">Developing</h2>
+                                <h1 className="timeline-stage-time-main">Now</h1> 
+                                <p className="timeline-stage-time">OCT 2021 - PRESENT</p>
+                                <h2 className="timeline-stage-descrip">How to develop the product</h2>
                             </a.div>
-                            <img className="timeline-stage-img" src={code} />
                         </div >
                     </div>
-                    <div className="timeline-stages-inner-wrapper">
-                        <a.div className="time-wrapper" style={side}>
-                        <h1 className="timeline-stage-time">Then</h1> 
-                        </a.div>
+                     <div className="timeline-stages-inner-wrapper">
+                        <img className="timeline-stage-img" src={market} />
                         <div className="timeline-stage-div">
                             <a.div className="timeline-stage-descrip-wrapper" style={up}>
-                                <h2 className="timeline-stage-descrip">Marketing</h2>
+                                <h1 className="timeline-stage-time-main">Then</h1> 
+                                <p className="timeline-stage-time">OCT 2021 - PRESENT</p>
+                                <h2 className="timeline-stage-descrip">How to develop the product</h2>
                             </a.div>
-                            <img className="timeline-stage-img" src={market} />
                         </div >
                     </div>
-                    <div className="timeline-stages-inner-wrapper">
-                        <a.div className="time-wrapper" style={side}>
-                        <h1 className="timeline-stage-time">Before</h1> 
-                        </a.div>
+                     <div className="timeline-stages-inner-wrapper">
+                        <img className="timeline-stage-img" src={advertise} />
                         <div className="timeline-stage-div">
                             <a.div className="timeline-stage-descrip-wrapper" style={up}>
-                                <h2 className="timeline-stage-descrip">Advertising</h2>
+                                <h1 className="timeline-stage-time-main">Before</h1> 
+                                <p className="timeline-stage-time">OCT 2021 - PRESENT</p>
+                                <h2 className="timeline-stage-descrip">How to develop the product</h2>
                             </a.div>
-                            <img className="timeline-stage-img" src={advertise} />
                         </div >
                     </div>
+                   
+                     
+        
                 </div>
+                  <ScrollDown  idName="timeline-scroll" visible={visible}/>
             </div>
            
-             <ScrollDown  idName="timeline-scroll" visible={visible}/>
+           
         </div>
     )
 }

@@ -16,7 +16,7 @@ const Contact = () => {
                         <div className="contact-info-left">
                             <div className="contact-info-div">
                                 <MdOutlineEmail className="contact-icon" />
-                                <a className="contact-email" href = "mailto:ann.sun.kim@gmail.com?subject = Let's Chat!">
+                                <a className="contact-email" target="_blank" href = "mailto:ann.sun.kim@gmail.com">
                                     ann.sun.kim@gmail.com
                                 </a>
                             </div>

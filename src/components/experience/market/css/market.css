@@ -3,7 +3,6 @@
         /* background-color: rgb(241, 241, 241); */
         position: relative;
         min-width: 100vw;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -57,14 +56,21 @@
         height: 50px;
         background-color: rgb(241, 241, 241);
         font-family: 'Poppins', Helvetica, sans-serif;
-        
-
     }
 
     .market-text-wrapper {
-        width: 80%;
-        margin-left: 15px;
-        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5em;
+        margin-top: 100px;
+    }
+
+    .market-header-div {
+        width: 700px;
+        position: relative;
+        text-align: center;
     }
 
     .market-header {
@@ -78,9 +84,8 @@
         color: #389CF4;
     }
 
-    .market-descrip {
+    .market-descrip-div {
         width: 80%;
-        margin-top: 50px;
         font-size: 15px;
         font-weight: 300;
         line-height: 1.3;

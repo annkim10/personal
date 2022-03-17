@@ -29,6 +29,7 @@
         align-items: center;
         justify-content: center;
         font-size: 18px;
+        font-weight: 600;
         width: 200px;
         height: 50px;
         background-color: rgb(241, 241, 241);
@@ -73,13 +74,13 @@
 
     .develop-descrip-div {
         display: flex;
-        width: 800px;
+        width: 850px;
         position: relative;
         text-align: center;
     }
 
     .develop-descrip {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 200;
         line-height: 1.5;
     }

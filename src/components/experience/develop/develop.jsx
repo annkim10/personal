@@ -20,8 +20,9 @@ const Develop = () => {
     return (
         <div className='develop-outer-div' id="develop-container">
             <div className='develop-inner-div'>
-                <h1 className='develop-time' ref={ref}> OCT 2021 - PRESENT</h1>
+              
                 <div className='develop-top-div'>
+                    <h1 className='develop-time' ref={ref}> OCT 2021 - PRESENT</h1>
                     <DevelopHeaders visible={visible}/>      
                 </div>
                 <Skills visible={visible} />
