@@ -46,7 +46,7 @@ const Develop = () => {
                         />
                     </div>
                 </div>
-                <ScrollDown visible={visible} idName={'develop-scroll'}/>
+                {/* <ScrollDown visible={visible} idName={'develop-scroll'}/> */}
             </div>  
         </div>
     )

@@ -45,7 +45,7 @@ const Timeline = (  ) => {
     })
 
     return (
-        <div className="timeline-outer-div">
+        <div className="timeline-outer-div" id="timeline-container">
             <div className="timeline-inner-div">
                 <div className="timeline-left-wrapper">     
                     <TimelineHeader visible={visible} />

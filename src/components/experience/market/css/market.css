@@ -7,18 +7,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-top: 1px solid black;
+        /* border-top: 1px solid black; */
         /* margin-top: 50px */
     }
 
     .market-inner-div {
         /* background-color: rgb(161, 214, 214); */
         display: flex;
-        /* margin-top: 50px; */
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
         position: relative;
         min-width: 1200px;
-        max-width: 1200px;
-        min-height: 300px;
+        max-width: 1600px;
     }
 
     .market-bottom-div {
@@ -35,7 +36,10 @@
 
     .market-left-div {
         /* background-color: aqua; */
-        width: 40%;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
     }
 
     .market-line {
