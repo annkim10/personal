@@ -20,15 +20,17 @@ const About = () => {
     return (
         <div className="about-outer-div" id="about-container" ref={ref} >
             <div className="about-inner-div">
-            <div className="about-img-wrapper">
-                            <AboutImgs visible={visible} />
-                        </div>
-                    <div className="about-text-div">
-                        <div className="about-descrip-wrapper">
-                            <AboutHeader visible={visible} />
-                            <AboutMe visible={visible}/>
-                        </div>
-                    </div>        
+                <div className="about-left-div">
+                    <div className="header-wrapper">
+                        <AboutHeader visible={visible} />
+                    </div>
+                  <AboutMe visible={visible}/>
+                </div>
+                <div className="about-right-div">
+                    <AboutImgs visible={visible} />
+                </div>
+             
+               
             </div>
            
         </div>

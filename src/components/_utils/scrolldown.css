@@ -14,7 +14,6 @@
      #splash-scroll:hover, #develop-scroll:hover, #advertise-scroll:hover, #timeline-scroll:hover {
         font-weight: 600;
         color: #389CF4;
-        border: 1px solid black;
         transition: all 0.3s;
         cursor: pointer;
      }

@@ -4,7 +4,7 @@ const AboutHeader = ( {visible}) => {
 
     const animate = useSpring({
         opacity: visible ? 1 : 0,
-        y: visible ? 0 : 500,
+        y: visible ? 30 : 500,
         config: {
             mass: 1,
             tension: 120,

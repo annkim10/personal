@@ -26,7 +26,7 @@ const Timeline = (  ) => {
             mass: 1,
             tension: 280,
             friction: 80,
-            duration: 1500,
+            duration: 1000,
             easing: easings.easeOutQuad
         }
     })

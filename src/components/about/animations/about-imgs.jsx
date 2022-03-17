@@ -19,6 +19,7 @@ const AboutImgs = ( {visible}) => {
 
     return (
         <a.div className="about-img-wrapper" style={animate}>
+            {/* <h1 className="me-caption">This is Me</h1> */}
             <img className="about-pic" src={pic} />
             <img className="jojo-pic" src={jojo} />
         </a.div>
