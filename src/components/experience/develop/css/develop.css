@@ -98,19 +98,6 @@
         line-height: 1.5;
     }
 
-    .develop-projects-wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .develop-projects-card-div {
-        /* background-color: aqua; */
-        min-height: 400px;
-    }
-
     .develop-stage-bottom-div {
         display: flex;
         flex-direction: column;

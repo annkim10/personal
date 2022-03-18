@@ -6,6 +6,8 @@ import "../css/projects.css"
 
 const ProjectCard = ({title, visible, descrip, live, code}) => {
 
+    console.log("card", visible)
+    
     const animate = useSpring({
         opacity: visible ? 1 : 0,
         delay: 800,

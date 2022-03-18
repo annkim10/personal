@@ -6,6 +6,7 @@ import Develop from "./develop/develop";
 import Market from "./market/market";
 import Advertise from "./advertise/advertise";
 import Timeline from "./timeline/animations/timeline";
+import Projects from "./develop/projects";
 
 const Experience = ( {mobile} ) => {
 
@@ -13,6 +14,7 @@ const Experience = ( {mobile} ) => {
         <div className="experience-wrapper">
             <Timeline />
             <Develop />
+            <Projects />
             <Market mobile={ mobile } />
             <Advertise />
         </div>

@@ -81,11 +81,8 @@ const Timeline = (  ) => {
                             </a.div>
                         </div >
                     </div>
-                   
-                     
-        
                 </div>
-                  <ScrollDown  idName="timeline-scroll" visible={visible}/>
+                  {/* <ScrollDown  idName="timeline-scroll" visible={visible}/> */}
             </div>
            
            

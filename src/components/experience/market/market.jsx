@@ -27,9 +27,9 @@ const Market = ( { mobile }) => {
                 <div className='market-right-div'>
                     <VideoWrapper mobile={mobile} visible={visible}/>
                 </div>
-                <div className='market-bottom-div'>
+                {/* <div className='market-bottom-div'>
                     <Samsung visible={visible} />
-                </div>
+                </div> */}
             </div> 
             {/* <ScrollDown idName={'market-scroll'} visible={visible} /> */}
         </div>
