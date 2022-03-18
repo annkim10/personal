@@ -38,23 +38,37 @@
         background-color: rgb(241, 241, 241);
         font-family: 'Poppins', Helvetica, sans-serif;
     }
-
-
+    
     .develop-top-div {
-        width: 100%;
-        height: 400px;
-        /* background-color: gray; */
-        display: flex;
-        /* flex-direction: column;
-        align-items: center;
-        justify-content: space-between; */
-        /* margin-top: 100px; */
         border-bottom: 2px solid black;
+    }
+
+    .develop-top-div, .develop-bottom-div {
+        /* background-color: antiquewhite; */
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+    }
+
+    .develop-bottom-left-div, .develop-bottom-right-div {
+        width: 50%;
+        display: block;
+        height: 50vh;
+        overflow: hidden;
+    }
+
+    .develop-bottom-left-div {
+        background-color: #389CF4;
+        background-image: url("../../../../images/splash/code.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 130%;
     }
 
     .develop-text-wrapper {
         /* background-color: antiquewhite; */
         display: flex;
+        margin-top: 50px;
         max-width: 1200px;
     }
 
@@ -98,11 +112,12 @@
         line-height: 1.5;
     }
 
-    .develop-stage-bottom-div {
+    .develop-stage-skills-wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        height: 300px;
+        height: 100%;
         width: 100%;
         position: relative;
         z-index: 50;
@@ -116,8 +131,12 @@
         display: flex;
         align-items: center;
         letter-spacing: 0.1em;
-        font-size: 40px;
-        margin-left: 50px;
+        font-size: 30px;
+        /* margin-left: 50px; */
+    }
+
+    .develop-stage-skills-header {
+        justify-content: center;
     }
 
     .develop-stage-project-header  {
@@ -125,20 +144,18 @@
     }
 
     .develop-stage-skills-list {
-        width: 100%;
-        height: 150px;
-        display: flex;
+        width: 90%;
         align-items: center;
-        justify-content: center;
-        border-top: 1px solid black;
-        border-bottom: 2px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        /* border-top: 1px solid black;
+        border-bottom: 2px solid black; */
     }
 
     .develop-skill-wrapper {
         /* background-color: #389CF4; */
-        width: 10%;
-        height: 100%;
-        border-right: 1px solid black;
+        width: 20%;
+        height: 80px;
     }
 
     .develop-skill-wrapper:last-child {

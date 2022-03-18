@@ -56,7 +56,7 @@ const NavBar = ( ) => {
                             <NavLink 
                                 name={'Experience'}
                                 navLinkId={'nav-link'} 
-                                scrollToId={'timeline-container'} 
+                                scrollToId={'develop-container'} 
                                 activeNavLinkId={activeNavLinkId}
                                 setActiveNavLinkId={setActiveNavLinkId} 
                             />

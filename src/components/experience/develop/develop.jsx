@@ -1,10 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import "./css/develop.css";
-import line from "../../../images/svg/line.svg"
 import Skills from './animations/skills';
 import useIntersection from '../../_utils/useIntersection';
 import DevelopHeaders from './animations/developheaders';
-import DevelopCircle from './animations/developcircle';
+import code from "../../../images/splash/code.jpg"
 import ScrollDown from "../../_utils/scrolldown";
 
 const Develop = () => {
@@ -22,7 +21,15 @@ const Develop = () => {
                 <div className='develop-top-div' ref={ref}>
                     <DevelopHeaders visible={visible}/>      
                 </div>
-                <Skills visible={visible} />
+                <div className='develop-bottom-div' ref={ref}>
+                    <div className='develop-bottom-left-div'>
+                    
+                    </div>
+                    <div className='develop-bottom-right-div'>
+                        <Skills visible={visible} />
+                    </div>
+                </div>
+                
             </div>  
         </div>
     )
