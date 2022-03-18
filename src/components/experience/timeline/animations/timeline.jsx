@@ -19,38 +19,25 @@ const Timeline = (  ) => {
     useEffect(() => visible ? setLoad(true) : "")
 
     const up = useSpring({
-        y: load ? 0 : 200,
+        // y: load ? 0 : 500,
         opacity: load ? 1 : 0,
-        transform: load ? 'scale(1,1)' : 'scale(0.2, 0.2)',
+        // transform: load ? 'scale(1,1)' : 'scale(5, 5)',
         config: {
             mass: 1,
             tension: 280,
-            friction: 80,
-            duration: 1000,
-            easing: easings.easeOutQuad
-        }
-    })
-
-    const side = useSpring({
-        x: load ? 0 : 1200,
-        opacity: load ? 1 : 0,
-        // transform: load ? 'scale(1,1)' : 'scale(0.2, 0.2)',
-        config: {
-            mass: 1,
-            tension: 280,
-            friction: 80,
-            duration: 1000,
-            easing: easings.easeOutQuad
+            friction: 280,
+            duration: 3500,
+            easing: easings.easeOutQuart
         }
     })
 
     return (
         <div className="timeline-outer-div" id="timeline-container">
             <div className="timeline-inner-div" ref={ref}>
-                <div className="timeline-left-wrapper">     
+                <div className="timeline-inner-top">     
                     <TimelineHeader visible={visible} />
                 </div>
-                <div className="timeline-stages-wrapper">
+                <div className="timeline-inner-bottom">
                     <div className="timeline-stages-inner-wrapper">
                         <img className="timeline-stage-img" src={code} />
                         <div className="timeline-stage-div">

@@ -6,14 +6,14 @@ import { easings, useSpring, animated as a, config } from "react-spring";
 const TimelineHeader = ( { visible} ) => {
 
     const up = useSpring({
-        opacity: visible ? 1 : 0,
-        y: visible ? 10 : 800, 
+        opacity: visible ? 1 : 0.1,
+        y: visible ? 0 : 500, 
         config: {
             mass: 1,
             tension: 200,
             friction: 180,
-            duration: 1000,
-            easing: easings.easeOutQuart
+            duration: 1500,
+            easing: easings.easeInOutBack
         }
     })
  

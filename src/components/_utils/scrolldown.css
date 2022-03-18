@@ -1,40 +1,20 @@
 @media screen and (min-width: 961px) {
-    #splash-scroll, #develop-scroll, #advertise-scroll, #timeline-scroll {
-        /* background-color: aqua; */
-        width: 70px;
-        height: 70px;
-        /* height: 15%; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
 
-     #splash-scroll:hover, #develop-scroll:hover, #advertise-scroll:hover, #timeline-scroll:hover {
+    #scroll-header {
         font-weight: 600;
-        color: #389CF4;
-        transition: all 0.3s;
         cursor: pointer;
-     }
-
-    #timeline-scroll {
-        /* margin-top: 80px; */
+        font-size: 20px;
+        font-weight: 300;
+        color: gray;    
+        opacity: 0.5;
+        font-family: 'Oleo Script', cursive;
     }
 
-    #develop-scroll {
-        margin-top: 40px;
-    }
-
-    #market-scroll {
-        height: 100px;
-        margin-top: 80px;
-    }
-
-    .scroll-header {
-        font-size: 12px;
-        font-weight: 600;
-        padding-bottom: 10px;
+    #scroll-header:hover {
+        opacity: 1;
+        color: #389CF4;
+        font-size: 30px;
+        transition: all 0.2s ease-in-out;
     }
 
     #scroll-icon-wrapper {
@@ -44,9 +24,17 @@
     }
 
     #scroll-down-icon {
-        font-size: 20px;
-        fill: #389CF4;
+        font-size: 1.2em;
+        padding-top: 10px;
+        opacity: 0.8;
     }
+
+    #scroll-down-icon:hover {
+        font-size: 1.3em;
+        fill: #389CF4;
+        opacity: 1;
+    }
+
 }
 
 

@@ -10,22 +10,21 @@ const Descrip = () => {
 
     const animate = useSpring({
         opacity: load ? 1 : 0,
-        y: load ? 30 : 500, 
+        y: load ? 0 : 500, 
+        // delay: 500,
         config: {
             mass: 1,
             tension: 200,
             friction: 180,
-            duration: 2200,
-            easing: easings.easeOutElastic
+            duration: 1500,
+            easing: easings.easeInOutBack
         }
     })
  
 
     return (
         <a.div className="splash-descrip" style={animate} >
-           <p>I'm a product manager, coder, & dog mom of two. 
-               {/* <span> learning about the product.</span> */}
-            </p>    
+           <p>I'm a product manager, coder, & dog mom of two</p>    
         </a.div>
     )
 }
