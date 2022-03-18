@@ -8,7 +8,7 @@
         flex-direction: column;
         align-items: center;
         overflow: hidden;
-        border-top: 2px solid black;
+        border-top: 1px solid black;
     }
 
     .advertise-inner-div {
@@ -21,12 +21,12 @@
         align-items: center;
         /* justify-content: space-between; */
         overflow: hidden;
-        border-right: 2px solid black;
-        border-left: 2px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
     }
 
     .advertise-top-div {
-        border-bottom: 2px solid black;
+        border-bottom: 1px solid black;
     }
 
     .advertise-top-div, .advertise-bottom-div {
@@ -93,7 +93,7 @@
     }
 
     .agency-slide-wrapper-inactive {
-        border-right: 2px solid black;
+        border-right: 1px solid black;
         /* width: 100px; */
         height: 50vh;
         position: relative;
@@ -104,6 +104,11 @@
     .agency-slide-wrapper-active {
         flex: 5;
         z-index: 50;
+        border-right: 1px solid black;
+    }
+
+    .agency-slide-wrapper-inactive:last-child, .agency-slide-wrapper-active:last-child {
+        border-right: none;
     }
 
     .agency-slide-inner-div {
@@ -118,7 +123,7 @@
     }
 
     .agency-slider-inner-left {
-        width: 700px;
+        width: 500px;
     }
 
     .agency-slider-inner-mid {
@@ -136,19 +141,58 @@
     }
 
     .agency-name {
-        /* background-color: #389CF4; */
         font-size: 25px;
         font-weight: 600;
         letter-spacing: 0.1em;
-        margin-top: 20px;
+        margin-top: 40px;
         padding: 0 10px;
         writing-mode: vertical-rl
-        /* transform: rotate(270deg); */
     }
 
-    /* .agency-slide:hover {
-        flex: 5;
-    } */
+    .agency-close-button {
+        background-color: #389cf400;
+        border: none;
+        width: 100px;
+        height: 25px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        cursor: pointer;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+
+    .agency-close-button:hover {
+        background-color: #389CF4;
+        color: white;
+    }
+
+    .agency-details-outer-wrapper {
+        /* background-color: antiquewhite; */
+        position: relative;
+        height: 100%;
+        margin-left: 30px;
+    }
+
+    .details-header {
+        padding: 40px 0 20px 0;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .details-role {
+        padding-bottom: 20px;
+        line-height: 1.3;
+    }
+
+    .role-name {
+        font-weight: 600;
+    }
+
+    .role-name span {
+        font-weight: 300;
+    }
 
 
 }

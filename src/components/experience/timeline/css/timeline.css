@@ -8,7 +8,7 @@
         flex-direction: column;
         overflow: hidden;
         align-items: center;
-        border-top: 2px solid black;
+        border-top: 1px solid black;
     }
 
     .timeline-inner-div {
@@ -21,8 +21,8 @@
         align-items: center;
         justify-content: space-between;
         overflow: hidden;
-        border-right: 2px solid black;
-        border-left: 2px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
     }
 
     .timeline-left-wrapper {
@@ -48,11 +48,10 @@
         /* width: 100%; */
         line-height: 1.3;
         width: 80%;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .timeline-main-header {
-        background-color: white;
         margin-top: 10px;
         font-weight: 300;
         font-size: 35px;
@@ -63,7 +62,8 @@
         display: flex;
         max-width: 1200px;
         min-height: 70%;
-        border-top: 2px solid black;
+        border-top: 1px solid black;
+        z-index: 10;
     }
 
     .timeline-stages-inner-wrapper:last-child {
@@ -83,13 +83,13 @@
         align-items: center;
         position: relative;
         overflow: hidden;
-        border-right: 2px solid black;
+        border-right: 1px solid black;
     }
 
     .timeline-stages-inner-top {
         /* min-height: 250px; */
         width: 100%;
-        border: 2px solid black;
+        border: 1px solid black;
         
     }
 
@@ -142,7 +142,7 @@
         width: 100%;
         height: 50%;
         object-fit: cover;
-        border-bottom: 2px solid black;
+        border-bottom: 1px solid black;
     }
 
 

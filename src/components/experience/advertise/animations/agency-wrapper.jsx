@@ -24,19 +24,9 @@ const Agencies = ( { visible }) => {
  
     return (
         <a.div style={animate} className="agency-outer-wrapper">
-            {/* <div className="agency-slide"> */}
-                <AgencySlide visible={true} />
-            {/* </div> */}
-            {/* <div className="agency-slide"> */}
-                <AgencySlide visible={true} />
-            {/* </div> */}
-            {/* <div className="agency-slide"> */}
-                <AgencySlide visible={true} />
-            {/* </div> */}
-
-            {/* <UmDetails />
-            <MecDetails />
-            <DraftDetails /> */}
+            <AgencySlide visible={true} />
+            <AgencySlide visible={true} />
+            <AgencySlide visible={true} />
         </a.div>
 
     )

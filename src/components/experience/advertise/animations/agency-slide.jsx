@@ -21,7 +21,7 @@ const AgencySlide = ( { visible }) => {
        e.preventDefault()
        clicked ? setClicked(false) : setClicked(true)
     }
-
+    
     return (
         <a.div style={animate} className={ clicked ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
                 onClick={handleClick}>
@@ -31,27 +31,35 @@ const AgencySlide = ( { visible }) => {
                     <h1 className="agency-name">AGENCY NAME</h1>
                 </div>
                 <div className={ clicked ? "agency-slider-inner-right-active" : "agency-slider-inner-right-inactive" }>
-                    <div className="agency-details-wrapper">
-                        <h1>AGENCY NAME</h1>
-                        <ul>
-                            <li>
-                                <h1>Position</h1>
-                                <p>Brand</p>
-                                <p>Time</p>
-                            </li>
-                            <li>
-                                <h1>Position</h1>
-                                <p>Brand</p>
-                                <p>Time</p>
-                            </li>
-                            <li>
-                                <h1>Position</h1>
-                                <p>Brand</p>
-                                <p>Time</p>
-                            </li>
-                        </ul>
+                    <div className="agency-details-outer-wrapper">
+                        <div className="agency-details-inner-wrapper">
+                            <h1 className="details-header">POSITIONS HELD</h1>
+                                <ul>
+                                    <li className="details-role">
+                                        <h1 className="role-name">
+                                            Position,
+                                            <span> timing</span>
+                                        </h1>
+                                        <p className="role-brands">Brand</p>
+                                    </li>
+                                    <li className="details-role">
+                                        <h1 className="role-name">
+                                            Position,
+                                            <span> timing</span>
+                                        </h1>
+                                        <p className="role-brands">Brand</p>
+                                    </li>
+                                    <li className="details-role">
+                                        <h1 className="role-name">
+                                            Position,
+                                            <span> timing</span>
+                                        </h1>
+                                        <p className="role-brands">Brand</p>
+                                    </li>
+                                </ul>
+                            </div>
                         <button  
-                            className={ clicked ? "agency-close-button-active" : "agency-close-button-inactive"} 
+                            className="agency-close-button"
                             onClick={handleClick}>
                             CLOSE
                         </button>
