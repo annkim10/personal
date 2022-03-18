@@ -21,17 +21,16 @@ const Market = ( { mobile }) => {
     return (
         <div className='market-outer-div'>
             <div className='market-inner-div'>
-               <div className='develop-top-div' ref={ref}>
+               <div className='market-top-div' ref={ref}>
                     <MarketHeaders visible={visible}/>      
                 </div>
-                <div className='market-right-div'>
+                <div className='market-bottom-div'>
                     <VideoWrapper mobile={mobile} visible={visible}/>
                 </div>
                 {/* <div className='market-bottom-div'>
                     <Samsung visible={visible} />
                 </div> */}
             </div> 
-            {/* <ScrollDown idName={'market-scroll'} visible={visible} /> */}
         </div>
     )
 }

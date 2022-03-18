@@ -4,6 +4,7 @@ import { config, easings, useSpring, useTrail, animated as a } from "react-sprin
 import UmDetails from "./um-wrapper";
 import MecDetails from "./mec-wrapper";
 import DraftDetails from "./draft-wrapper";
+import AgencySlide from "./agency-slide";
 
 
 
@@ -23,9 +24,19 @@ const Agencies = ( { visible }) => {
  
     return (
         <a.div style={animate} className="agency-outer-wrapper">
-            <UmDetails />
+            {/* <div className="agency-slide"> */}
+                <AgencySlide visible={true} />
+            {/* </div> */}
+            {/* <div className="agency-slide"> */}
+                <AgencySlide visible={true} />
+            {/* </div> */}
+            {/* <div className="agency-slide"> */}
+                <AgencySlide visible={true} />
+            {/* </div> */}
+
+            {/* <UmDetails />
             <MecDetails />
-            <DraftDetails />
+            <DraftDetails /> */}
         </a.div>
 
     )

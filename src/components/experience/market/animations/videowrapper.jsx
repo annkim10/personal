@@ -18,7 +18,6 @@ const VideoWrapper = ({visible, mobile}) => {
 
     return (
         <a.div className='market-details-wrapper' style={animate}>
-            <Youtube mobile={mobile} />
             <h1 className='youtube-header'>
                 Featured in Samsung's  
                 <a href="https://news.samsung.com/global/video-replay-unbox-and-discover-2021" target="_blank">
@@ -26,6 +25,7 @@ const VideoWrapper = ({visible, mobile}) => {
                 </a>
                 event, March 2, 2021
             </h1>
+            <Youtube mobile={mobile} />
         </a.div>
     )
 

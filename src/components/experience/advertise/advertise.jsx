@@ -17,20 +17,19 @@ const Advertise = () => {
     useEffect(() => visible ? setLoad(true) : "")
 
     return (
-        <div className='advertise-outer-div'>
+        <div className='advertise-outer-div' id="advertise-container">
             <div className='advertise-inner-div'>
                 <div className='advertise-top-div' ref={ref}>
                     <AdvertiseHeaders visible={visible}/>
                 </div>
-                <div className="advertise-right-div">
-                    <h1 className="advertise-cta">CLICK FOR MORE DETAILS</h1>
+                <div className="advertise-bottom-div">
+                    {/* <h1 className="advertise-cta">CLICK FOR MORE DETAILS</h1> */}
                     <Agencies visible={visible} />
                 </div>
                 {/* <div className="advertise-brands-wrapper">
                         <h1 className="advertise-brands-header">BRANDS I'VE WORKED WITH</h1>
                        <Logos visible={visible} />
                 </div> */}
-                <ScrollDown idName={'advertise-scroll'} visible={visible} /> 
             </div>      
          
         </div>

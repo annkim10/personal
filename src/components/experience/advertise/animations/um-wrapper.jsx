@@ -48,35 +48,13 @@ const UmDetails = ( { visible }) => {
                 </div>
             </div>
             <div className="agency-logo-div">
-                <img className="um-logo" src={um} />
+                <h1>hello</h1>
+                {/* <img className="um-logo" src={um} /> */}
             </div>
             <AiFillCloseCircle 
                 onClick={() => setUmDetails(false)}
                 className={umDetails ? "agency-close-button-active" : "agency-close-button-inactive"}/>
         </a.div>
-   
-                    // <div className="agency-wrapper">
-                    //     <div className={ draftDetails ? "draft-wrapper-active" : "draft-wrapper-inactive"}
-                    //         onClick={() => setDraftDetails(true)}>
-                    //         <div className="agency-details-wrapper">
-                    //             <h2 className="agency-name">DraftFCB</h2>
-                    //             <p className="agency-time">JUN 2010 - JUL 2011</p>
-                    //             <h1 className="agency-details-header">POSITIONS HELD</h1>
-                    //             <ul>
-                    //                 <li className="agency-role-wrapper">
-                    //                     <BsFillSquareFill className="bullet-point" />
-                    //                     <h1>Associate <span>Merck</span></h1>
-                    //                 </li>                                   
-                    //             </ul>
-                    //         </div>
-                    //     </div>
-                    //     <div className="agency-logo-div">
-                    //         <img className="um-logo" src={draft} />
-                    //     </div>
-                    //     <AiFillCloseCircle 
-                    //         onClick={() => setDraftDetails(false)}
-                    //         className={ draftDetails ? "agency-close-button-active" : "agency-close-button-inactive"}/>
-                    // </div> */}
 
     )
 

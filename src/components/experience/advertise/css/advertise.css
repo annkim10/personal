@@ -26,16 +26,18 @@
     }
 
     .advertise-top-div {
-        display: flex;
-        position: relative;
-        min-width: 1200px;
-        max-width: 1200px;
-        height: 400px;
         border-bottom: 2px solid black;
     }
 
+    .advertise-top-div, .advertise-bottom-div {
+        /* background-color: antiquewhite; */
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+    }
 
     .advertise-text-wrapper {
+        margin-top: 50px;
         max-width: 1200px;
         display: flex;
     }
@@ -65,7 +67,6 @@
     }
 
     .advertise-descrip {
-
         font-size: 18px;
         font-weight: 300;
         line-height: 1.3;
@@ -82,204 +83,74 @@
         height: 500px;
     }
 
-
-
-
-    .advertise-cta {
-        position: absolute;
-        top: 80px;
-        left: 250px;
-        font-weight: 600;
-        letter-spacing: 0.15em;
-        font-size: 12px;
-    }
-
-    .um-wrapper-inactive, .mec-wrapper-inactive, .draft-wrapper-inactive {
-        width: 200px;
-        height: 200px;
-        background-color: white;
-        content-visibility: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        outline: 1px solid rgb(34, 34, 34);
-        outline-offset: 5px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-    }
-
-    .um-wrapper-inactive {
-        background-image: url("../../../../images/splash/advertise.jpeg");  
-    }
-
-    .mec-wrapper-inactive {
-        background-image: url("../../../../images/advertise/jeans.jpg");
-    }
-
-    .draft-wrapper-inactive {
-        background-image: url("../../../../images/advertise/pharma.jpg");
-    }
-
-    .um-wrapper-inactive:hover, .mec-wrapper-inactive:hover, .draft-wrapper-inactive:hover {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        outline: 6px solid #389CF4;
-        outline-offset: 4px;
-        transition: all 0.2s;
-        transition-timing-function: ease-in-out;
-    }
-
-    .um-logo {
-        width: 40px;
-        object-fit: contain;
-    }
-
-    .um-wrapper-active, .mec-wrapper-active, .draft-wrapper-active {
-        width: 200px;
-        height: 330px;
-        background-color: white;
-        /* display: flex; */
-        border: 2px solid black;
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-    }
-
     .agency-outer-wrapper {
-        display: flex;
-        gap: 3em;
-        position: relative;
-        height: 200px;
-        margin-top: 160px;
-    }
-
-    .agency-wrapper {
+        /* background-color: antiquewhite; */
+        max-width: 1200px;
+        height: 100%;
         display: flex;
         position: relative;
-        height: 330px;
+        overflow: hidden;
     }
 
-    .agency-close-button-active {
-        font-size: 2em;
-        position: absolute; 
-        bottom: 30px;
-        left: 85px;
+    .agency-slide-wrapper-inactive {
+        border-right: 2px solid black;
+        /* width: 100px; */
+        height: 50vh;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .agency-slide-wrapper-active {
+        flex: 5;
         z-index: 50;
-        cursor: pointer;
     }
 
-   .agency-close-button-inactive {
+    .agency-slide-inner-div {
+       display: flex;
+       height: 100%;
+       overflow: hidden;
+    }
+
+    .agency-slider-inner-left {
+       background-image: url("../../../../images/splash/advertise.jpeg");
+       background-size: 800px;
+    }
+
+    .agency-slider-inner-left {
+        width: 700px;
+    }
+
+    .agency-slider-inner-mid {
+        max-width: 120px;
+        overflow: hidden;
+    }
+
+    .agency-slider-inner-right-inactive {
         display: none;
     }
 
-    .agency-details-wrapper {
-        /* background-color: aqua; */
-        margin-top: 50px;
-        margin-left: 20px;
-        position: relative;
-        width: 80%;
-    }
-
-    .bullet-point {
-        font-size: 8px;
-        margin-top: 5px;
-    }
-
-    .agency-role-wrapper {
-        /* background-color: #ca5bca; */
-        display: flex;
-        gap: 1rem;
-        line-height: 1.3;
-        padding-bottom: 10px;
-    }
-
-    .agency-role-wrapper h1 {
-        font-size: 13px;
-        font-weight: 300;
-    }
-
-    .agency-role-wrapper span {
-        font-size: 13px;
-        font-weight: 600;
-    }
-
-    .agency-logo-div {
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        position: absolute;
-        top: -20px;
-        left: 75px;
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    .agency-slider-inner-right-active {
+        width: 300px;
+        background-color: white;
     }
 
     .agency-name {
-        font-weight: 600;
-        padding-bottom: 10px;
-    }
-
-    .agency-time {
-        font-size: 12px;
-        padding-bottom: 30px;
-        font-family: 'Poppins', Helvetica, sans-serif;
-    }
-
-    .agency-details-header {
+        /* background-color: #389CF4; */
+        font-size: 25px;
         font-weight: 600;
         letter-spacing: 0.1em;
-        font-size: 11px;
-        padding-bottom: 20px;
-        color: #389CF4
-    }
-
-    .agency-details {
-        font-weight: 300;
-        font-size: 14px;
-        padding-bottom: 20px;
-    }
-
-    .advertise-brands-wrapper {
-        position: absolute;
-        top: 75%;
-        left: 15px;
-        height: 100px;
-    }
-
-    .advertise-brands-header {
-        font-weight: 600;
-        color: #389CF4;
-        letter-spacing: 0.15em;
-    }
-
-    .advertise-brands {
-        display: flex;
-        gap: 2em;
-    }
-
-    .advertise-brand-logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-top: 20px;
-        width: 130px;
-        height: 50px;
-        background-color: rgb(241, 241, 241);
-        border: 1px solid black;
+        padding: 0 10px;
+        writing-mode: vertical-rl
+        /* transform: rotate(270deg); */
     }
 
-    .brand-logo {
-        width: 80px;
-    }
+    /* .agency-slide:hover {
+        flex: 5;
+    } */
 
-    .leejeans-logo {
-        width: 30px;
-    }
 
-    
 }
 
 @media screen and (max-width: 960px) {
