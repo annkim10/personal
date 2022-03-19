@@ -2,8 +2,7 @@ import { useState, useRef, useEffect} from "react"
 import useIntersection from "../../_utils/useIntersection"
 import "./css/advertise.css"
 import AdvertiseHeaders from "./animations/advertise-headers"
-import Agencies from "./animations/agency-wrapper"
-import ScrollDown from "../../_utils/scrolldown";
+import AgencyWrapper from "./animations/agency-wrapper"
 
 const Advertise = () => {
 
@@ -22,7 +21,7 @@ const Advertise = () => {
                     {/* <h1 className="advertise-cta">CLICK FOR MORE DETAILS</h1> */}
                 </div>
                 <div className="advertise-bottom-div">
-                    <Agencies visible={visible} />
+                    <AgencyWrapper visible={visible}/>
                 </div>
             </div>      
          

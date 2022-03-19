@@ -1,36 +1,29 @@
 import { useState, useRef, useEffect} from "react"
 import { config, easings, useSpring, useTrail, animated as a } from "react-spring";
+import { BiArrowBack } from "react-icons/bi"
+import AgencySlideInner from "./agency-slide-inner";
 
-
-import AgencySlide from "./agency-slide";
-
-
-
-const Agencies = ( { visible }) => {
+const AgencyWrapper = ( { visible }) => {
 
     const agencyDetails = [
         { 
-            name: 'UNIVERSAL MCCANN',
+            agency: 'UNIVERSAL MCCANN',
             timing: 'JUL 2013 - OCT 2016',
-            position1: 'VP Group Partner', 
-            brand1: 'Coca-Cola',
-            position2: 'Partner',
-            brand2: 'Coca-Cola & Kraft Heinz',
-            position3: 'Manager',
-            brand3: 'USPS'
+            positions: ['VP Group Partner', 'Partner', 'Manager' ],
+            brands: ['Coca-Cola', 'Coca-Cola & Kraft Heinz', 'USPS']
         },
         { 
-            name: 'MEC GLOBAL',
+            agency: 'MEC GLOBAL',
             timing: 'AUG 2011 - JUN 2013',
-            position1: 'Sr. Associate to Manager', 
-            brand1: 'Lee Jeans, Fisher Price, & Gallo Wines',
+            positions: ['Sr. Associate to Manager'],
+            brands: ['Lee Jeans, Fisher Price, & Gallo Wines']
         },
         { 
-            name: 'DRAFTFCB',
+            agency: 'DRAFTFCB',
             timing: 'JUN 2010 - JUN 2011',
-            position1: 'Associate', 
-            brand1: 'Merck NuvaRing',
-        },
+            positions: ['Associate' ],
+            brands: ['Merck NuvaRing']
+        }
     ]
 
     const animate = useSpring({
@@ -43,38 +36,82 @@ const Agencies = ( { visible }) => {
             easing: easings.easeOutElastic
         }
     })
+
+    const [um, setUm] = useState(false)
+    const [mec, setMec] = useState(false)
+    const [draft, setDraft] = useState(false)
+
+    const handleUm = (e) => {
+       e.preventDefault()
+       !um && (!mec && !draft) ? setUm(true) : setUm(false)
+    }
+
+    const handleMec = (e) => {
+       e.preventDefault()
+       !mec && (!um && !draft) ? setMec(true) : setMec(false)
+    }
+
+    const handleDraft = (e) => {
+       e.preventDefault()
+       !draft && (!mec && !um) ? setDraft(true) : setDraft(false)
+    }
+
+    console.log("um, mec, draft", um, mec, draft)
  
     return (
         <a.div style={animate} className="agency-outer-wrapper">
-
-            {agencyDetails.map((agency, idx) => {
-                return (
-                    <AgencySlide 
-                        visible={true}
-                        name={agency.name} 
-                        timing={agency.timing}
-                        
+            <a.div style={animate} className={ um ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
+                onClick={handleUm}>
+                <div className="agency-slide-inner-div">
+                    <div className="agency-slider-inner-left"></div>
+                    <div className="agency-slide-inner-mid">
+                        <h1 className="agency-name">
+                            UNIVERSAL MCCANN
+                            { um ? "" : <span><BiArrowBack /></span> }
+                        </h1>
+                    </div>
+                    <AgencySlideInner 
+                        timing={agencyDetails[0].timing} 
+                        clicked={um}
                     />
-                )
-            })}
-
-            {/* <AgencySlide 
-                visible={true}
-                name={'UNIVERSAL MCCANN'} 
-
-            />
-            <AgencySlide 
-                visible={true} 
-                name={'MEC GLOBAL'} 
-            />
-            <AgencySlide 
-                visible={true}
-                name={'DRAFTFCB'}  
-            /> */}
+                 </div>
+            </a.div>
+            <a.div style={animate} className={ mec ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
+                onClick={handleMec}>
+                <div className="agency-slide-inner-div">
+                    <div className="agency-slider-inner-left"></div>
+                    <div className="agency-slide-inner-mid">
+                        <h1 className="agency-name">
+                            MEC GLOBAL
+                            { mec ? "" : <span><BiArrowBack /></span> }
+                        </h1>
+                    </div>
+                    <AgencySlideInner 
+                        timing={agencyDetails[1].timing} 
+                        clicked={mec}
+                    />
+                 </div>
+            </a.div>
+            <a.div style={animate} className={ draft ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
+                onClick={handleDraft}>
+                <div className="agency-slide-inner-div">
+                    <div className="agency-slider-inner-left"></div>
+                    <div className="agency-slide-inner-mid">
+                        <h1 className="agency-name">
+                            DRAFTFCB
+                            { draft ? "" : <span><BiArrowBack /></span> }
+                        </h1>
+                    </div>
+                    <AgencySlideInner 
+                        timing={agencyDetails[2].timing} 
+                        clicked={draft}
+                    />
+                 </div>
+            </a.div>
         </a.div>
 
     )
 
 }
 
-export default Agencies
+export default AgencyWrapper
