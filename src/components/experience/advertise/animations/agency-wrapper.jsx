@@ -12,31 +12,37 @@ const AgencyWrapper = ( { visible }) => {
         { 
             agency: 'UNIVERSAL MCCANN',
             timing: 'JUL 2013 - OCT 2016',
-            positions: ['VP Group Partner', 'Partner', 'Manager' ],
-            brands: ['Coca-Cola', 'Coca-Cola & Kraft Heinz', 'USPS']
+            positions: [
+                {title: 'VP Group Partner', brand:'Coca-Cola'},
+                {title: 'Partner', brand:'Coca-Cola & Kraft Heinz'},
+                {title: 'Manager', brand:'USPS'}
+            ]
         },
         { 
             agency: 'MEC GLOBAL',
             timing: 'AUG 2011 - JUN 2013',
-            positions: ['Sr. Associate to Manager'],
-            brands: ['Lee Jeans, Fisher Price, & Gallo Wines']
+            positions: [
+                {title: 'Sr. Associate to Manager', brand:'Lee Jeans, Fisher Price, & Gallo Wines'}
+            ]
         },
         { 
             agency: 'DRAFTFCB',
             timing: 'JUN 2010 - JUN 2011',
-            positions: ['Associate' ],
-            brands: ['Merck NuvaRing']
+            positions: [
+                {title: 'Associate', brand:'Merck NuvaRing'}
+            ]
         }
     ]
 
     const animate = useSpring({
         opacity: visible ? 1 : 0,
-        // y: visible ? 0 : 100,
+        y: visible ? 0 : 800,
         config: {
             mass: 1,
             tension: 100,
             friction: 80,
-            easing: easings.easeOutElastic
+            duration: 1000,
+            easing: easings.easeInOutBack
         }
     })
 
@@ -63,7 +69,7 @@ const AgencyWrapper = ( { visible }) => {
  
     return (
         <a.div style={animate} className="agency-outer-wrapper">
-            <a.div style={animate} className={ um ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
+            <div className={ um ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
                 onClick={handleUm}>
                 <div className="agency-slide-inner-div">
                     <div className="agency-slider-inner-left">
@@ -78,10 +84,11 @@ const AgencyWrapper = ( { visible }) => {
                     <AgencySlideInner 
                         timing={agencyDetails[0].timing} 
                         clicked={um}
+                        positions={agencyDetails[0].positions}
                     />
                  </div>
-            </a.div>
-            <a.div style={animate} className={ mec ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
+            </div>
+            <div className={ mec ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
                 onClick={handleMec}>
                 <div className="agency-slide-inner-div">
                     <div className="agency-slider-inner-left">
@@ -96,10 +103,11 @@ const AgencyWrapper = ( { visible }) => {
                     <AgencySlideInner 
                         timing={agencyDetails[1].timing} 
                         clicked={mec}
+                        positions={agencyDetails[1].positions}
                     />
                  </div>
-            </a.div>
-            <a.div style={animate} className={ draft ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
+            </div>
+            <div className={ draft ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
                 onClick={handleDraft}>
                 <div className="agency-slide-inner-div">
                     <div className="agency-slider-inner-left">
@@ -114,9 +122,10 @@ const AgencyWrapper = ( { visible }) => {
                     <AgencySlideInner 
                         timing={agencyDetails[2].timing} 
                         clicked={draft}
+                        positions={agencyDetails[2].positions}
                     />
                  </div>
-            </a.div>
+            </div>
         </a.div>
 
     )

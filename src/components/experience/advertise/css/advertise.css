@@ -32,8 +32,9 @@
     .advertise-top-div, .advertise-bottom-div {
         /* background-color: antiquewhite; */
         width: 100%;
-        min-height: 50vh;
+        height: 50vh;
         display: block;
+        overflow: hidden;
     }
 
     .advertise-text-wrapper {
@@ -95,7 +96,7 @@
     .agency-slide-wrapper-inactive {
         border-right: 2px solid black;
         /* width: 100px; */
-        height: 50vh;
+        /* height: 50vh; */
         position: relative;
         overflow: hidden;
         transition: all 0.5s ease-in-out;
@@ -123,7 +124,7 @@
        /* background-image: url("../../../../images/splash/advertise.jpeg");
        background-size: 800px; */
        width: 500px;
-       height: 50vh;
+       /* height: 50vh; */
        overflow: hidden;
        display: block;
     }
@@ -144,10 +145,10 @@
         overflow: hidden;
     }
 
-    .agency-img:hover {
+    /* .agency-img:hover, .draft-img:hover  {
         transform: scale(1.1);
-        transition: all 0.2s ease-in-out;
-    }
+        transition: all 0.3s ease-in-out;
+    } */
 
 
     .agency-slider-inner-mid {
@@ -205,10 +206,14 @@
         margin-left: 30px;
     }
 
-    .details-header {
+    .details-header, .details-header-timing {
         padding: 40px 0 20px 0;
         font-size: 15px;
         font-weight: 600;
+    }
+
+    .details-header-timing {
+        font-family: 'Poppins', Helvetica, sans-serif;
     }
 
     .details-role {
