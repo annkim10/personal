@@ -69,20 +69,24 @@
     #nav-link:last-child:hover {
        font-family: 'Koulen', cursive;
         color: white;
+        transition: all 0.2s ease-in-out ;
     }
 
     #nav-link:hover, #logo:hover {
         font-weight: 600;
         color: #389CF4;
-      font-family: 'Koulen', cursive;
+        font-family: 'Koulen', cursive;
+        transition: all 0.2s ease-in-out ;
    }
 
    #nav-link:hover {
        font-size: 25px;
+       transition: all 0.2s ease-in-out ;
    }
 
    #logo:hover {
        font-size: 30px;
+        transition: all 0.2s ease-in-out ;
    }
 
 }
