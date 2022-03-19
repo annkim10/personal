@@ -2,6 +2,9 @@ import { useState, useRef, useEffect} from "react"
 import { config, easings, useSpring, useTrail, animated as a } from "react-spring";
 import { BiArrowBack } from "react-icons/bi"
 import AgencySlideInner from "./agency-slide-inner";
+import umImg from "../../../../images/splash/advertise.jpeg"
+import mecImg from "../../../../images/advertise/jeans.jpg"
+import draftImg from "../../../../images/advertise/pharma.jpg"
 
 const AgencyWrapper = ( { visible }) => {
 
@@ -63,7 +66,9 @@ const AgencyWrapper = ( { visible }) => {
             <a.div style={animate} className={ um ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
                 onClick={handleUm}>
                 <div className="agency-slide-inner-div">
-                    <div className="agency-slider-inner-left"></div>
+                    <div className="agency-slider-inner-left">
+                        <img className="agency-img" src={umImg} />
+                    </div>
                     <div className="agency-slide-inner-mid">
                         <h1 className="agency-name">
                             UNIVERSAL MCCANN
@@ -79,7 +84,9 @@ const AgencyWrapper = ( { visible }) => {
             <a.div style={animate} className={ mec ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
                 onClick={handleMec}>
                 <div className="agency-slide-inner-div">
-                    <div className="agency-slider-inner-left"></div>
+                    <div className="agency-slider-inner-left">
+                        <img className="agency-img" src={mecImg} />
+                    </div>
                     <div className="agency-slide-inner-mid">
                         <h1 className="agency-name">
                             MEC GLOBAL
@@ -95,7 +102,9 @@ const AgencyWrapper = ( { visible }) => {
             <a.div style={animate} className={ draft ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
                 onClick={handleDraft}>
                 <div className="agency-slide-inner-div">
-                    <div className="agency-slider-inner-left"></div>
+                    <div className="agency-slider-inner-left">
+                        <img className="draft-img" src={draftImg} />
+                    </div>
                     <div className="agency-slide-inner-mid">
                         <h1 className="agency-name">
                             DRAFTFCB
