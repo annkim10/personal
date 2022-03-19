@@ -57,13 +57,9 @@
 
     .contact-info-left {
         display: flex;
-        width: 70%;
+        width: 100%;
     }
 
-    .contact-info-right {
-        width: 30%;
-        border-bottom: 1px solid black;
-    }
 
     .contact-info-div {
         /* background-color: antiquewhite; */
@@ -75,6 +71,10 @@
         justify-content: center;
         gap: 1em;
         width: 50%;
+    }
+
+    .contact-info-div:last-child {
+        border-right: none;
     }
 
     .contact-icon {

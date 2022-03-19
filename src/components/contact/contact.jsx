@@ -16,16 +16,24 @@ const Contact = () => {
                         <div className="contact-info-left">
                             <div className="contact-info-div">
                                 <MdOutlineEmail className="contact-icon" />
+                                <h1>Send me an email</h1>
                                 <a className="contact-email" target="_blank" href = "mailto:ann.sun.kim@gmail.com">
                                     ann.sun.kim@gmail.com
                                 </a>
                             </div>
                             <div className="contact-info-div">
                                 <MdOutlinePhoneInTalk className="contact-icon" />
+                                <h1>Give me a ring</h1>
                                 <h1 className="contact">646.884.3600</h1>
                             </div>
+                            <div className="contact-info-div">
+                                <MdOutlinePhoneInTalk className="contact-icon" />
+                                <h1>Connect with me</h1>
+                                <h1 className="contact">LinkedIn</h1>
+                            </div>
                         </div>
-                        <div className="contact-info-right">
+                        {/* <div className="contact-info-right">
+                            <h1>Connect with me</h1>
                             <div className="contact-links-wrapper">
                                 <div className="footer-icon-wrapper">
                                     <a href="https://www.linkedin.com/in/ann-kim" target="_blank">
@@ -38,7 +46,7 @@ const Contact = () => {
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                    
                     </div>
                    
