@@ -67,14 +67,14 @@
     }
 
     #nav-link:last-child:hover {
-        font-family: 'Oleo Script', cursive;
+       font-family: 'Koulen', cursive;
         color: white;
     }
 
     #nav-link:hover, #logo:hover {
         font-weight: 600;
         color: #389CF4;
-        font-family: 'Oleo Script', cursive;
+      font-family: 'Koulen', cursive;
    }
 
    #nav-link:hover {
