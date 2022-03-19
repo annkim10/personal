@@ -7,7 +7,7 @@
         flex-direction: column;
         align-items: center;
         overflow: hidden;
-        border-top: 1px solid black;
+        border-top: 2px solid black;
     }
 
     .market-inner-div {
@@ -20,12 +20,12 @@
         align-items: center;
         /* justify-content: space-between; */
         overflow: hidden;
-        border-right: 1px solid black;
-        border-left: 1px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
     }
 
     .market-top-div {
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
     }
 
     .market-top-div, .market-bottom-div {
@@ -49,9 +49,9 @@
     }
 
     .market-details-wrapper {
-        /* background-color: black; */
+        background-color: rgb(34, 34, 34);
         width: 100%;
-        max-height: 450px;
+        max-height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -62,22 +62,24 @@
 
     .youtube-header {
         /* background-color: red; */
-        width: 380px;
+        display: inline-block;
+        color: white;
+        width: 400px;
         padding-right: 20px;
-        font-size: 20px;
+        font-size: 28px;
         font-weight: 300;
-        line-height: 1.5;
+        line-height: 1.3;
     }
 
     .youtube-header a {
         font-weight: 600;
         text-decoration: underline;
         text-decoration-thickness: 3px;
-        padding: 0 5px;
+        color: white;
     }
 
     .market-bottom-wrapper {
-        border: 1px solid black;
+        border: 2px solid black;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -85,7 +87,7 @@
 
     .market-roles-wrapper {
         /* background-color: rgb(241, 241, 241); */
-        border-left: 1px solid black;
+        border-left: 2px solid black;
         height: 100px;
         width: 500px;
         /* width: 80%; */

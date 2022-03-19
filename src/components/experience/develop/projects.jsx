@@ -19,8 +19,10 @@ const Projects = () => {
 
     return (
         <div className='projects-outer-div' id="projects-container" >
-            <div className='projects-inner-div'>
-                <h1 className='develop-stage-project-header' ref={ref} >PROJECTS I'VE DONE</h1>
+            <div className='projects-inner-div' ref={ref}>
+                <div className='develop-stage-project-header-wrapper'>
+                    <h1 className='develop-stage-project-header' >PROJECTS I'VE DONE</h1>
+                </div>      
                 <div className='develop-projects-wrapper'>
                     <div className='develop-projects-card-div'>
                        <ProjectCard 

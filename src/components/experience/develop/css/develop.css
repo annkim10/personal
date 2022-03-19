@@ -10,7 +10,7 @@
         align-items: center;
         /* margin-top: 50px; */
         overflow: hidden;
-        border-top: 1px solid black;
+        border-top: 2px solid black;
     }
 
     .develop-inner-div {
@@ -23,8 +23,8 @@
         align-items: center;
         /* justify-content: space-between; */
         overflow: hidden;
-        border-right: 1px solid black;
-        border-left: 1px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
     }
 
     .develop-time {
@@ -40,7 +40,7 @@
     }
     
     .develop-top-div {
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
     }
 
     .develop-top-div, .develop-bottom-div {
@@ -48,6 +48,7 @@
         width: 100%;
         min-height: 50vh;
         display: flex;
+        overflow: hidden;
     }
 
     .develop-bottom-left-div, .develop-bottom-right-div {
@@ -172,10 +173,11 @@
 
     #skill-icon {
         color: rgb(75, 75, 75);
+        font-size: 1.2em;
     }
 
     .skill p {
-        font-size: 15px;
+        font-size: 17px;
         padding-top: 10px;
         font-weight: 300;
     }

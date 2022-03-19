@@ -3,7 +3,7 @@
     #scroll-header {
         font-weight: 600;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 300;
         color: gray;    
         opacity: 0.5;
@@ -13,7 +13,7 @@
     #scroll-header:hover {
         opacity: 1;
         color: #389CF4;
-        font-size: 30px;
+        font-size: 35px;
         transition: all 0.2s ease-in-out;
     }
 
@@ -21,12 +21,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+       
     }
 
     #scroll-down-icon {
-        font-size: 1.2em;
+        font-size: 1.3em;
         padding-top: 10px;
-        opacity: 0.8;
+        z-index: 50;
     }
 
     #scroll-down-icon:hover {

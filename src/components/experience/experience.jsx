@@ -8,14 +8,14 @@ import Advertise from "./advertise/advertise";
 import Timeline from "./timeline/animations/timeline";
 import Projects from "./develop/projects";
 
-const Experience = ( {mobile} ) => {
+const Experience = ( ) => {
 
     return (
         <div className="experience-wrapper">
             <Timeline />
             <Develop />
             <Projects />
-            <Market mobile={ mobile } />
+            <Market />
             <Advertise />
         </div>
     )

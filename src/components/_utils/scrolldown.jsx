@@ -26,9 +26,9 @@ const ScrollDown = ( { idName, visible, name, container } ) => {
                 activeNavLinkId={activeNavLinkId}
                 setActiveNavLinkId={setActiveNavLinkId} 
             />
-            <div id="scroll-icon-wrapper" >
+            {/* <div id="scroll-icon-wrapper" >
                 <GrLinkDown id="scroll-down-icon" />
-            </div>
+            </div> */}
         </a.div>
         
     )

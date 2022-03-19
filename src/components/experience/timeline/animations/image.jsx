@@ -1,13 +1,14 @@
 import React from "react"
 import { easings, useSpring, animated as a, config } from "react-spring";
+import code from "../../../../images/splash/code.jpg"
+import advertise from "../../../../images/splash/advertise.jpeg"
+import market from "../../../../images/splash/market.jpg"
 
 
-
-const TimelineHeader = ( { visible} ) => {
+const TimelineImage = ( { visible, img } ) => {
 
     const up = useSpring({
         opacity: visible ? 1 : 0,
-        // y: visible ? 0 : 500, 
         transform: visible ? 'translateY(0%)' : 'translateY(50%)',
         config: {
             mass: 1,
@@ -19,12 +20,10 @@ const TimelineHeader = ( { visible} ) => {
     })
  
     return (
-        <a.div className="timeline-text-wrapper" style={up} >
-            <h1 className="timeline-header">My career has revolved around learning about the product
-            </h1>  
-            <h1 className="timeline-main-header">three different stages across 10+ years </h1> 
+        <a.div className="img-wrapper" style={up} >
+            <img className="timeline-stage-img" src={img} />
         </a.div>
     )
 }
 
-export default TimelineHeader
+export default TimelineImage

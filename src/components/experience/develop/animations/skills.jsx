@@ -5,7 +5,7 @@ import { SiRedux, SiRubyonrails, SiJavascript, SiPostgresql, SiMongodb, SiExpres
 import { DiRuby, DiCss3 } from "react-icons/di";
 import { AiOutlineHtml5} from "react-icons/ai"
 import "../css/develop.css";
-import { useTrail, useSprings, config, easings, animated as a } from "react-spring"
+import { useTrail, useSpring, config, easings, animated as a } from "react-spring"
 
 
 const Skills = ( { visible } ) => {
@@ -26,21 +26,25 @@ const Skills = ( { visible } ) => {
 
     const trail = useTrail(skills.length, {
         opacity: visible ? 1 : 0,
-        fontSize: visible ? '1.5em' : '0em',
-        marginTop: visible ? 0 : -50, 
-        delay: 500,
+    })
+
+    const up = useSpring({
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'translateY(0%)' : 'translateY(50%)',
         config: {
             mass: 1,
-            tension: 100,
-            friction: 80,
-            duration: 500,
-            easing: easings.easeInOutElastic
+            tension: 200,
+            friction: 180,
+            duration: 1000,
+            easing: easings.easeInOutBack
         }
     })
 
     return (
         <a.div className='develop-stage-skills-wrapper'>
-            <h1 className='develop-stage-skills-header'>SKILLS I'VE LEARNED</h1>
+            <a.div style={up}>
+                <h1 className='develop-stage-skills-header'>SKILLS I'VE LEARNED</h1>
+            </a.div>
             <ul className='develop-stage-skills-list'>
                 {trail.map((styles, idx) => {
                     return (
