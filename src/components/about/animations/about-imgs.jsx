@@ -6,22 +6,24 @@ const AboutImgs = ( {visible}) => {
 
     const animate = useSpring({
         opacity: visible ? 1 : 0,
-        y: visible ? 20 : 200,
-        // transform: visible ? 'scale(1)' : 'scale(0)',
+        transform: visible ? 'scale(1)' : 'scale(0)',
         config: {
             mass: 1,
             tension: 120,
             friction: 80,
-            duration: 3500,
-            easing: easings.easeOutElastic
+            duration: 1000,
+            easing: easings.easeOutBack
         }
     })
 
     return (
         <a.div className="about-img-wrapper" style={animate}>
-            {/* <h1 className="me-caption">This is Me</h1> */}
-            <img className="about-pic" src={pic} />
-            <img className="jojo-pic" src={jojo} />
+            <div className="about-me-wrapper" >
+                <img className="about-pic" src={pic} />
+            </div>
+            <div className="about-me-wrapper" >
+                <img className="jojo-pic" src={jojo} />
+            </div>
         </a.div>
     )
 }

@@ -9,7 +9,7 @@ const AboutHeader = ( {visible}) => {
             mass: 1,
             tension: 120,
             friction: 80,
-            duration: 1500,
+            duration: 1000,
             easing: easings.easeInOutQuad
         }
     })

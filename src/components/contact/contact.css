@@ -40,6 +40,7 @@
         height: 90px;
         display: flex;
         align-items: center;
+        overflow: hidden;
     }
 
     .contact-header {
@@ -59,7 +60,6 @@
         display: flex;
         width: 100%;
     }
-
 
     .contact-info-div {
         /* background-color: antiquewhite; */

@@ -14,7 +14,7 @@
     }
 
     .projects-inner-div {
-        background-color: rgb(241, 241, 241);
+        /* background-color: rgb(241, 241, 241); */
         min-width: 1200px;
         max-width: 1600px;
         min-height: 100vh;

@@ -7,6 +7,7 @@ import Descrip from "./animations/descrip";
 import ScrollDown from "../_utils/scrolldown";
 import { useSpring, easings, config, animated as a } from "react-spring"
 
+
 const Splash = ( { visible }) => {
 
     const animate = useSpring({
@@ -31,12 +32,12 @@ const Splash = ( { visible }) => {
                     <Name visible={visible} />
                     <Descrip visible={visible} />
                 </div>
-                <ScrollDown 
+                   <ScrollDown 
                     idName={'splash-scroll'} 
                     visible={visible} 
                     name={'Let me tell you more'}
                     container={'timeline-container'}
-                />
+                    />         
             </a.div>
            
         </div>

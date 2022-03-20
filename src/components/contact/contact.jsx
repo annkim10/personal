@@ -1,55 +1,63 @@
-import React from "react"
+import React, { useEffect, useRef, useState } from "react"
 import "./contact.css"
-import { MdOutlineEmail, MdOutlinePhoneInTalk } from "react-icons/md"
-import { FaLinkedinIn, FaGithub, FaRegFilePdf } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
+import { FaLinkedinIn, FaPhoneAlt } from "react-icons/fa"
+import { useSpring, config, easings, animated as a}  from "react-spring"
+import useIntersection from "../_utils/useIntersection"
 
-const Contact = () => {
+const Contact = ( ) => {
+
+    const [load, setLoad] = useState(false)
+
+    const ref = useRef();
+    const visible = useIntersection(ref, '0px', '0.5');
+
+    useEffect(() => visible ? setLoad(true) : "")
+
+    const animate = useSpring({
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'translateY(0%)' : 'translateY(80%)',
+        config: {
+            mass: 1,
+            tension: 120,
+            friction: 80,
+            duration: 1000,
+            easing: easings.easeInOutQuad
+        }
+    })
 
     return (
         <div className="contact-outer-div" id="contact-container">
-            <div className="contact-inner-div">
+            <div className="contact-inner-div" ref={ref}>
                 <div className="contact-wrapper">
-                    <div className="contact-header-div">
-                        <h1 className="contact-header">I'd love to chat with you!</h1>
+                    <div className="contact-header-div" >
+                        <a.h1 className="contact-header" style={animate}>I'd love to chat with you!</a.h1>
                     </div>
                     <div className="contact-info-wrapper">
                         <div className="contact-info-left">
-                            <div className="contact-info-div">
-                                <MdOutlineEmail className="contact-icon" />
+                            <a.div className="contact-info-div" style={animate}>
+                                <MdEmail className="contact-icon" />
                                 <h1>Send me an email</h1>
                                 <a className="contact-email" target="_blank" href = "mailto:ann.sun.kim@gmail.com">
                                     ann.sun.kim@gmail.com
                                 </a>
-                            </div>
-                            <div className="contact-info-div">
-                                <MdOutlinePhoneInTalk className="contact-icon" />
+                            </a.div>
+                            <a.div className="contact-info-div" style={animate}>
+                                <FaPhoneAlt className="contact-icon" />
                                 <h1>Give me a ring</h1>
                                 <h1 className="contact">646.884.3600</h1>
-                            </div>
-                            <div className="contact-info-div">
-                                <MdOutlinePhoneInTalk className="contact-icon" />
+                            </a.div>
+                            <a.div className="contact-info-div" style={animate}>
+                                <FaLinkedinIn className="contact-icon" />
                                 <h1>Connect with me</h1>
-                                <h1 className="contact">LinkedIn</h1>
-                            </div>
+                                 <a className="contact-email" 
+                                    target="_blank" 
+                                    href = "https://www.linkedin.com/in/ann-kim">
+                                    LinkedIn
+                                </a>
+                            </a.div>
                         </div>
-                        {/* <div className="contact-info-right">
-                            <h1>Connect with me</h1>
-                            <div className="contact-links-wrapper">
-                                <div className="footer-icon-wrapper">
-                                    <a href="https://www.linkedin.com/in/ann-kim" target="_blank">
-                                        <FaLinkedinIn className="footer-icon"/>
-                                    </a>
-                                </div>
-                                <div className="footer-icon-wrapper">
-                                    <a href="https://github.com/annkim10" target="_blank">
-                                        <FaGithub className="footer-icon"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div> */}
-                   
-                    </div>
-                   
+                    </div>            
                 </div>      
             </div>    
         </div>

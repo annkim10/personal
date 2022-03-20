@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect} from "react"
 import { config, easings, useSpring, animated as a } from "react-spring";
-import DescripText from "./descrip-text";
 import { GrLocation } from "react-icons/gr"
 import { BsEmojiHeartEyes } from "react-icons/bs"
 import { MdOutlineSchool } from "react-icons/md"
@@ -10,14 +9,13 @@ const AboutMe = ( { visible } ) => {
 
     const animate = useSpring({
         opacity: visible ? 1 : 0,
-        // delay: 1500,
-        y: visible ? 0 : 50, 
+        transform: visible ? 'translateY(0%)' : 'translateY(50%)',
         config: {
             mass: 1,
             tension: 200,
-            friction: 80,
-            duration: 2000,
-            easing: easings.easeOutQuad
+            friction: 180,
+            duration: 1000,
+            easing: easings.easeInOutBack
         }
     })
  
@@ -30,7 +28,7 @@ const AboutMe = ( { visible } ) => {
             </h1>
             <h1 className="about-descrip-text"> 
                 <span><BsEmojiHeartEyes /></span>
-                I love dogs, technology and 
+                I am a big dog lover and pet parent to Rollie & Jojo
             </h1>
             <h1 className="about-descrip-text"> 
                 <span><MdOutlineSchool /></span>

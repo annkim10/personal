@@ -8,11 +8,11 @@ const MarketHeaders = ( { visible } ) => {
         {
             class:'develop-header', 
             text1: 'Learning to market the product', 
-            text2:'the product'
+            text2:'launching innovative tech'
         }, 
         {
             class:'develop-descrip', 
-            text1: 'As a product marketing manager at Samsung, I gained both B2B and B2C experience on marketing a wide portfolio of technology products. See below for more details.'
+            text1: 'As a product marketing manager at Samsung, I gained both B2B and B2C experience on marketing a wide portfolio of technology products.'
         }
     ]
 
@@ -47,9 +47,11 @@ const MarketHeaders = ( { visible } ) => {
                     {headers[1].text1}
                     <span><a href={headers[1].url} target="_blank">{headers[1].link}</a>
                     {headers[1].text3}</span>
-                </h1>
-                <h1 className={headers[1].class + "-second"}>
-                    {headers[1].text2}
+                    <span>
+                        <a className="resume-email" target="_blank" href = "mailto:ann.sun.kim@gmail.com">
+                            Ask me for my resume!
+                        </a>
+                    </span>
                 </h1>
             </a.div>
         </div>

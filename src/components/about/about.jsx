@@ -28,8 +28,7 @@ const About = () => {
                 </div>
                 <div className="about-right-div">
                     <div className="about-img-wrapper">
-                        hello
-                        <img className="about-pic" src={pic} />
+                        <AboutImgs visible={visible} />
                     </div>
                 </div>
              
