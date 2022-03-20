@@ -35,9 +35,10 @@
     }
 
     .about-right-div {
-        max-width: 50%;
-        display: flex;
-        justify-content: center;
+        width: 50%;
+        height: 100%;
+        display: block;
+        overflow: hidden;
     }
 
     .header-wrapper {
@@ -84,21 +85,18 @@
     }
 
     .about-img-wrapper {
+        background-color: #389CF4;
+        width: 100%;
         height: 100%;
         position: relative;
-        display: flex;
-        gap: 3rem;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
+        display: block;
+        overflow: hidden;
     }
 
     .about-pic {
         width: 200px;
         height: 200px;
         object-fit: cover;
-        outline: 1px solid black;
-        outline-offset: 5px;
     }
 
     .jojo-pic {
@@ -108,34 +106,6 @@
         outline: 1px solid black;
         outline-offset: 5px;
     }
-
-
-    .me-caption {
-        position: absolute;
-        top: 80px;
-        left: 165px;
-        font-size: 40px;
-    }
-
-
-    .jojo-caption {
-        position: absolute;
-        top: 25%;
-        font-size: 25px;
-        left: 20%;
-    }
-
-
-    .rollie-caption {
-        width: 20%;
-        line-height: 1.2;
-        text-align: center;
-        position: absolute;
-        top: 65%;
-        right: -20%;
-        font-size: 25px;
-    }
-
 
 }
 

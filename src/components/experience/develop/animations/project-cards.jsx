@@ -1,8 +1,7 @@
 import React from "react"
-import pupfinder from "../../../../images/pupfinder-splash.gif"
-import mevert from "../../../../images/calendar.gif"
 import { useSpring, config, easings, animated as a, useTransition, useSpringRef } from "react-spring"
 import "../css/projects.css"
+import ProjectImgs from "./project-imgs"
 
 const ProjectCard = ({title, visible, descrip, live, code}) => {
 
@@ -22,7 +21,7 @@ const ProjectCard = ({title, visible, descrip, live, code}) => {
         <div className="projects-card-outer-wrapper">
             <a.div className="projects-card-wrapper" style={animate}>
                 <div className="projects-card-left">
-                    {/* <img src={ title === 'Pupfinder' ? pupfinder : mevert } className="projects-gif"/> */}
+                    <ProjectImgs title={title} />
                 </div>
                 <div className="projects-card-right">
                     <div className="projects-card-text-wrapper">

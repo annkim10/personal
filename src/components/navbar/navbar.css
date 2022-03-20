@@ -27,6 +27,7 @@
     }
 
     .logo-div {
+        /* background-color: #389CF4; */
         border-right: 2px solid black;
         height: 100%;
         min-width: 180px;
@@ -38,7 +39,7 @@
     #logo {
         /* letter-spacing: 0.1em; */
         font-weight: 400;
-        font-size: 25px;
+        font-size: 20px;
         cursor: pointer;
     }
 
@@ -55,7 +56,7 @@
         height: 100%;
         width: 150px;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 17px;
         /* border-radius: 40px; */
         cursor: pointer;
         border-left: 2px solid black;
@@ -67,7 +68,7 @@
     }
 
     #nav-link:last-child:hover {
-       font-family: 'Koulen', cursive;
+        font-family: 'Staatliches', cursive;
         color: white;
         transition: all 0.2s ease-in-out ;
     }
@@ -75,18 +76,16 @@
     #nav-link:hover, #logo:hover {
         font-weight: 600;
         color: #389CF4;
-        font-family: 'Koulen', cursive;
+        font-family: 'Staatliches', cursive;
         transition: all 0.2s ease-in-out ;
    }
 
    #nav-link:hover {
        font-size: 25px;
-       transition: all 0.2s ease-in-out ;
    }
 
    #logo:hover {
-       font-size: 30px;
-        transition: all 0.2s ease-in-out ;
+       font-size: 35px;
    }
 
 }

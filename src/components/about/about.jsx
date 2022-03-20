@@ -27,7 +27,10 @@ const About = () => {
                   <AboutMe visible={visible}/>
                 </div>
                 <div className="about-right-div">
-                    <h2>gallery</h2>
+                    <div className="about-img-wrapper">
+                        hello
+                        <img className="about-pic" src={pic} />
+                    </div>
                 </div>
              
                

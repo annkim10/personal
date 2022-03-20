@@ -7,9 +7,7 @@
         font-weight: 300;
         color: gray;    
         opacity: 0.5;
-        /* font-family: 'Oleo Script', cursive; */
-        /* font-family: 'Ramaraja', serif; */
-        font-family: 'Koulen', cursive;
+        font-family: 'Staatliches', cursive;
     }
 
     #scroll-header:hover {
