@@ -8,10 +8,15 @@ import NavLink from "../navbar/nav-link"
 const ScrollDown = ( { idName, visible, name, container } ) => {
 
     const animate = useSpring({
-        opacity: visible ? 1 : 0,
-        // delay: 1200,
-        y: visible ? 0 : 500,
-        config: config.slow
+        y: visible ? 0 : 500, 
+        // delay: 500,
+        config: {
+            mass: 1,
+            tension: 200,
+            friction: 180,
+            duration: 1500,
+            easing: easings.easeInOutBack
+        }
     })
 
     const [activeNavLinkId, setActiveNavLinkId] = useState('');

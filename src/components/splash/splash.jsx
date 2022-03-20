@@ -5,22 +5,31 @@ import Timeline from "../experience/timeline/animations/timeline"
 import Name from "./animations/name";
 import Descrip from "./animations/descrip";
 import ScrollDown from "../_utils/scrolldown";
+import { useSpring, easings, config, animated as a } from "react-spring"
 
-const Splash = () => {
+const Splash = ( { visible }) => {
 
-    const [visible, setVisible] = useState(false)
+    const animate = useSpring({
+        opacity: visible ? 1 : 0,
+        config: {
+            mass: 1,
+            tension: 200,
+            friction: 180,
+            duration: 1500,
+            easing: easings.easeInOutBack
+        }
+    })
 
-    useEffect(() => setVisible(true))
 
     return (
         <div className="splash-outer-div" id="splash-container">
-            <div className="splash-inner-div">
+            <a.div className="splash-inner-div" style={animate} >
                 <div className="splash-footer-wrapper">
                     <h1 className="footer-copytag">© 2022 built by Ann Kim</h1>
                 </div>
                 <div className="splash-top-div">
-                    <Name />
-                    <Descrip />
+                    <Name visible={visible} />
+                    <Descrip visible={visible} />
                 </div>
                 <ScrollDown 
                     idName={'splash-scroll'} 
@@ -28,7 +37,7 @@ const Splash = () => {
                     name={'Let me tell you more'}
                     container={'timeline-container'}
                 />
-            </div>
+            </a.div>
            
         </div>
     )

@@ -3,9 +3,9 @@ import NavLink, { navLinks } from "./nav-link"
 import { Link } from "react-router-dom"
 import "./navbar.css"
 import { AiOutlineMenu, AiOutlineCloseCircle } from "react-icons/ai"
+import { useSpring, config, easings, animated as a } from "react-spring"
 
-
-const NavBar = ( ) => {
+const NavBar = ( { visible } ) => {
 
     const [click, setClick] = useState(false)
     const [mobile, setMobile] = useState(false)
@@ -29,9 +29,22 @@ const NavBar = ( ) => {
     
     const closeMenu = () => setClick(false)
 
+    const down = useSpring({
+        opacity: visible ? 1 : 0,
+        y: visible ? 0 : -50,
+        // transform: visible ? 'translateY(50%)' : 'translateY(0%)',
+        config: {
+            mass: 1,
+            tension: 200,
+            friction: 180,
+            duration: 1000,
+            easing: easings.easeInOutBack
+        }
+    })
+ 
 
     return (
-        <div className='navbar-outer-div' >
+        <a.div className='navbar-outer-div' style={down} >
             <div className="navbar-inner-div">
                 <div className="logo-div">
                     <NavLink 
@@ -77,7 +90,7 @@ const NavBar = ( ) => {
                     </div>
                 </div>
             </div> 
-        </div>    
+        </a.div>    
     )
 
 }

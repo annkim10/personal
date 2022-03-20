@@ -2,15 +2,13 @@ import React from "react"
 import { useSpring, animated as a, config, easings } from "react-spring";
 
 
-const Descrip = () => {
+const Descrip = ( { visible } ) => {
 
-    const [load, setLoad] = React.useState(false)
-
-    React.useEffect(() => setLoad(true))
 
     const animate = useSpring({
-        opacity: load ? 1 : 0,
-        y: load ? 0 : 500, 
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'translateY(0%)' : 'translateY(80%)',
+        // y: visible ? 0 : 500, 
         // delay: 500,
         config: {
             mass: 1,

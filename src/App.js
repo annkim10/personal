@@ -10,6 +10,8 @@ function App() {
 
   const [mobile, setMobile] = useState(false)
 
+  const [visible, setVisible] = useState(false)
+
   const showMobileMenu = () => {
       if (window.innerWidth <= 960) {
           setMobile(true)
@@ -19,7 +21,8 @@ function App() {
   }
 
   useEffect(() => {
-      showMobileMenu();
+      showMobileMenu()
+      setVisible(true)
       window.addEventListener('resize', showMobileMenu);
       // return window.removeEventListener('resize', showMobileMenu)     
   }, [])
@@ -28,8 +31,8 @@ function App() {
 
   return (
     <div className="app-outer-div">
-        <NavBar />
-        <Splash />
+        <NavBar visible={visible} />
+        <Splash visible={visible} />
         <Experience mobile={mobile}/>
         <About />
         <Contact />
