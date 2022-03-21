@@ -4,7 +4,7 @@ import "./css/splash.css"
 import Timeline from "../experience/timeline/animations/timeline"
 import Name from "./animations/name";
 import Descrip from "./animations/descrip";
-import ScrollDown from "../_utils/scrolldown";
+import ScrollDown from "./animations/scrolldown.jsx"
 import { useSpring, easings, config, animated as a } from "react-spring"
 
 
@@ -33,12 +33,6 @@ const Splash = ( { visible }) => {
                     <Name visible={visible} />
                     <Descrip visible={visible} />
                 </div>
-                   {/* <ScrollDown 
-                    idName={'splash-scroll'} 
-                    visible={visible} 
-                    name={'Let me tell you more'}
-                    container={'timeline-container'}
-                    />          */}
             </a.div>
            
         </div>

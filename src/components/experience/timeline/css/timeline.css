@@ -88,6 +88,11 @@
         border-right: 2px solid black;
     }
 
+    .timeline-stages-inner-wrapper h1 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
     .img-wrapper {
         display: inline-block;
         width: 100%;

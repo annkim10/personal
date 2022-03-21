@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { config, easings, useSpring, animated as a } from "react-spring"
-import "./scrolldown.css"
-import NavLink from "../navbar/nav-link"
+import "../css/scrolldown.css"
+import NavLink from "../../navbar/nav-link"
 
 
 const ScrollDown = ( { idName, visible, name, container } ) => {
@@ -19,13 +19,28 @@ const ScrollDown = ( { idName, visible, name, container } ) => {
     })
 
     const [activeNavLinkId, setActiveNavLinkId] = useState('');
+
+    const letters = name.split("")
+
+    // console.log("letters", letters)
     
     return (
         <a.div id={idName} style={animate}>
+            <h1 id="scroll-header">
+               { letters.map((letter, idx) => {
+                    return (
+                        <span 
+                            key={idx}
+                            style={{transform: `rotate(${idx * 10.7}deg)`}}>
+                                {letter}
+                        </span>
+                    )
+                })}
+            </h1>
             <div className="scrolldown-link-div">
                 <NavLink 
-                    name={name}
-                    navLinkId={'scroll-header'} 
+                    name={'down'}
+                    navLinkId={'scroll-icon'} 
                     scrollToId={container} 
                     activeNavLinkId={activeNavLinkId}
                     setActiveNavLinkId={setActiveNavLinkId} 

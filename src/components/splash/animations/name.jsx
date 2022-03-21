@@ -34,7 +34,7 @@ const Name = ( { visible }) => {
            </div>
            <div className="splash-header-name-wrapper">
               <a.div className="splash-header-name" style={animate}>
-                    Kim.
+                    Kim<span>.</span>
               </a.div>
            </div>
         </div>

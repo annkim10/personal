@@ -1,19 +1,46 @@
 @media screen and (min-width: 961px) {
 
+
+    #splash-scroll {
+        width: 50%;
+        height: 300px;
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     #scroll-header {
         font-weight: 600;
-        cursor: pointer;
         font-size: 30px;
         font-weight: 300;
         color: #389CF4;    
         font-family: 'Staatliches', cursive;
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        animation: animate 7.5s linear infinite;
     }
 
-    #scroll-header:hover {
-        opacity: 1;
-        color: #389CF4;
-        font-size: 35px;
-        transition: all 0.2s ease-in-out;
+    @keyframes animate {
+       from {
+            transform: rotate(360deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    #scroll-header span {
+        display: inline-block;
+        position: absolute;
+        transform-origin: 0 140px;
+        font-size: 1.2em;
+        top: -140px;
     }
 
     #scroll-icon-wrapper {

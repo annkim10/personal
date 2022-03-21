@@ -50,7 +50,7 @@ const NavBar = ( { visible } ) => {
             <div className="navbar-inner-div">
                 <div className="logo-div">
                     <NavLink 
-                        name={'A.K.'}
+                        name={'ANN KIM'}
                         navLinkId={'logo'} 
                         scrollToId={'splash-container'} 
                         activeNavLinkId={activeNavLinkId}
@@ -74,7 +74,7 @@ const NavBar = ( { visible } ) => {
                             <NavLink 
                                 name={'Experience'}
                                 navLinkId={'nav-link'} 
-                                scrollToId={'advertise-container'} 
+                                scrollToId={'timeline-container'} 
                                 activeNavLinkId={activeNavLinkId}
                                 setActiveNavLinkId={setActiveNavLinkId} 
                             />

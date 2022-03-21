@@ -37,19 +37,18 @@ const Timeline = (  ) => {
                     <TimelineHeader visible={visible} />
                 </div>
                 <div className="timeline-inner-bottom">
-                    <div className="timeline-stages-inner-wrapper">
+                    <a.div className="timeline-stages-inner-wrapper" style={up}>
                         <h1>DEVELOPING</h1>
                         <TimelineImage visible={visible} img={code} />
-                    </div>
-                     <div className="timeline-stages-inner-wrapper">
+                    </a.div>
+                     <a.div className="timeline-stages-inner-wrapper" style={up}>
                          <h1>MARKETING</h1>
                         <TimelineImage visible={visible} img={market} />
-
-                    </div>
-                     <div className="timeline-stages-inner-wrapper">
+                    </a.div>
+                     <a.div className="timeline-stages-inner-wrapper" style={up}>
                           <h1>ADVERTISING</h1>
                         <TimelineImage visible={visible} img={advertise} />
-                    </div>
+                    </a.div>
                 </div>
             </div>
            
