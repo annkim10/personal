@@ -13,7 +13,7 @@ const Timeline = (  ) => {
     const [load, setLoad] = useState(false)
 
     const ref = useRef();
-    const visible = useIntersection(ref, '0px', '0.5');
+    const visible = useIntersection(ref, '0px', '0.2');
 
     useEffect(() => visible ? setLoad(true) : "")
 
@@ -38,15 +38,18 @@ const Timeline = (  ) => {
                 </div>
                 <div className="timeline-inner-bottom">
                     <a.div className="timeline-stages-inner-wrapper" style={up}>
-                        <h1>DEVELOPING</h1>
+                        <h1>• 2021 - NOW •</h1>
+                        <h2>Developing</h2>
                         <TimelineImage visible={visible} img={code} />
                     </a.div>
                      <a.div className="timeline-stages-inner-wrapper" style={up}>
-                         <h1>MARKETING</h1>
+                        <h1>• 2016 - 2021 •</h1>
+                        <h2>Marketing</h2>
                         <TimelineImage visible={visible} img={market} />
                     </a.div>
                      <a.div className="timeline-stages-inner-wrapper" style={up}>
-                          <h1>ADVERTISING</h1>
+                        <h1>• 2010 - 2016 •</h1>
+                        <h2>Advertising</h2>
                         <TimelineImage visible={visible} img={advertise} />
                     </a.div>
                 </div>

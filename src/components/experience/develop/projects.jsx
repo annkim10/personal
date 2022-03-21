@@ -11,7 +11,7 @@ const Projects = () => {
 
     const ref = useRef(null);
 
-    const visible = useIntersection(ref, '0px', '0.2');
+    const visible = useIntersection(ref, '0px', '0.3');
 
     useEffect(() => visible ? setLoad(true) : "")
 
@@ -31,7 +31,9 @@ const Projects = () => {
         <div className='projects-outer-div' id="projects-container" >
             <div className='projects-inner-div' ref={ref}>
                 <a.div className='develop-stage-project-header-wrapper' style={up}>
-                    <h1 className='develop-stage-project-header' >PROJECTS I'VE DONE</h1>
+                    <h1 className='develop-stage-project-header'>
+                       <span>PROJECTS I'VE DONE • PROJECTS I'VE DONE • PROJECTS I'VE DONE </span>
+                    </h1>
                 </a.div>      
                 <div className='develop-projects-wrapper' >
                     <a.div className='develop-projects-card-div' style={up}>
@@ -52,17 +54,6 @@ const Projects = () => {
                             code={'https://github.com/annkim10/mevert'}
                         />
                     </a.div>
-                    {/* <a.div className='develop-projects-card-div' style={up}>
-                        <h1 className='develop-personal-header'>
-                            (Oh and this website too. 
-                            <span>
-                                <a className='develop-personal-link' href='https://github.com/annkim10/personal' target="_blank">
-                                    See my code
-                                </a>
-                            </span>
-                            )
-                        </h1> 
-                    </a.div> */}
                 </div>
             </div>  
         </div>

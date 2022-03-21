@@ -8,7 +8,6 @@ const AdvertiseHeaders = ( { visible } ) => {
         {
             class:'advertise-header', 
             text1: 'Learning to advertise the product', 
-            text2: 'from pharma to soft drinks'
         }, 
         {
             class:'advertise-descrip', 

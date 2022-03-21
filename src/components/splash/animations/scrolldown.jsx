@@ -2,7 +2,7 @@ import { useState } from "react"
 import { config, easings, useSpring, animated as a } from "react-spring"
 import "../css/scrolldown.css"
 import NavLink from "../../navbar/nav-link"
-
+import { MdKeyboardArrowDown } from "react-icons/md"
 
 const ScrollDown = ( { idName, visible, name, container } ) => {
 
@@ -39,12 +39,13 @@ const ScrollDown = ( { idName, visible, name, container } ) => {
             </h1>
             <div className="scrolldown-link-div">
                 <NavLink 
-                    name={'down'}
+                    name={'SCROLL'}
                     navLinkId={'scroll-icon'} 
                     scrollToId={container} 
                     activeNavLinkId={activeNavLinkId}
                     setActiveNavLinkId={setActiveNavLinkId} 
                 />
+                <MdKeyboardArrowDown className="arrow" />
             </div>
            
         </a.div>

@@ -2,6 +2,7 @@ import React from "react"
 import { useSpring, config, easings, animated as a, useTransition, useSpringRef } from "react-spring"
 import "../css/projects.css"
 import ProjectImgs from "./project-imgs"
+import { FiArrowUpRight } from "react-icons/fi"
 
 const ProjectCard = ({title, visible, descrip, live, code}) => {
 
@@ -30,8 +31,12 @@ const ProjectCard = ({title, visible, descrip, live, code}) => {
                         <p className="projects-card-descrip">{descrip}</p>
                     </div>
                     <div className="projects-links-wrapper">
-                        <a className="projects-link" href={live} target="_blank">Live Site</a>
-                        <a className="projects-link" href={code} target="_blank">Code</a>
+                        <a className="projects-link" href={live} target="_blank">
+                            Live Site <span><FiArrowUpRight /></span>
+                        </a>
+                        <a className="projects-link" href={code} target="_blank">
+                            Code <span><FiArrowUpRight /></span>
+                        </a>
                     </div>
                 </div>
             </a.div>

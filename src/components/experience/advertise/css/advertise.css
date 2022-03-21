@@ -25,12 +25,17 @@
         border-left: 2px solid black;
     }
 
+
     .advertise-top-div {
+        /* background-color: antiquewhite; */
+        width: 100%;
+        height: 70vh;
+        display: block;
+        overflow: hidden;
         border-bottom: 2px solid black;
     }
 
-    .advertise-top-div, .advertise-bottom-div {
-        /* background-color: antiquewhite; */
+    .advertise-bottom-div {
         width: 100%;
         height: 50vh;
         display: block;

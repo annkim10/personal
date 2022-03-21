@@ -22,16 +22,76 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        animation: animate 7.5s linear infinite;
+        animation: animate 8s linear infinite;
     }
 
     @keyframes animate {
        from {
-            transform: rotate(360deg);
+            transform: rotate(0deg);
         }
 
         to {
+            transform: rotate(360deg);
+        }
+    }
+
+    #scroll-header span {
+        display: inline-block;
+        position: absolute;
+        transform-origin: 0 140px;
+        font-size: 1.2em;
+        top: -140px;
+    }
+
+    .scrolldown-link-div {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .arrow {
+        font-size: 1.5em;
+        margin-top: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 960px) {
+    
+    #splash-scroll {
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #scroll-header {
+        font-weight: 600;
+        font-size: 30px;
+        font-weight: 300;
+        color: #389CF4;    
+        font-family: 'Staatliches', cursive;
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        animation: animate 8s linear infinite;
+    }
+
+    @keyframes animate {
+       from {
             transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
         }
     }
 
@@ -63,39 +123,21 @@
         opacity: 1;
     }
 
-}
-
-
-@media screen and (max-width: 960px) {
-    
-    #scroll-header {
-        font-weight: 600;
-        cursor: pointer;
-        font-size: 30px;
-        font-weight: 300;
-        color: #389CF4;    
-        font-family: 'Staatliches', cursive;
-    }
-
-    #scroll-icon-wrapper {
+    .scrolldown-link-div {
+        /* border: 1px solid black; */
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        position: relative;
+        cursor: pointer;
     }
 
-    #scroll-down-icon {
-        font-size: 1.3em;
-        padding-top: 10px;
-        z-index: 50;
+    .arrow {
+        font-size: 1.5em;
+        margin-top: 5px;
     }
 
-    #scroll-down-icon:hover {
-        font-size: 1.3em;
-        fill: #389CF4;
-        opacity: 1;
-    }
 
+   
   
 }
 
