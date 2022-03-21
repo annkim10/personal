@@ -103,6 +103,104 @@
 
 
 @media screen and (max-width: 960px) {
-   
+    .contact-outer-div {
+        /* background-color: #389CF4; */
+        position: relative;
+        width: 100vw;
+        height: 500px;
+        border-bottom: 10px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border-top: 1px solid black; */
+    }
+
+    .contact-inner-div {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        width: 90vw;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid black; */
+    }
+
+    .contact-header-div {
+        font-weight: 100;
+        line-height: 1.3;
+        font-size: 45px;
+        font-weight: 600;
+        border-bottom: 2px solid black;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .contact-header {
+        margin-left: 30px;
+    }
+
+    .contact-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* flex-direction: column; */
+        /* align-items: center; */
+    }
+
+    .contact-info-left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-info-div {
+        /* background-color: antiquewhite; */
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        width: 100%;
+        height: 200px;
+    }
+
+    .contact-info-div:last-child {
+        border-right: none;
+    }
+
+    .contact-icon {
+        font-size: 2em;
+    }
+
+    .contact, .contact-resume, .contact-email {
+        font-size: 25px;
+        font-weight: 600;
+        color:#389CF4 ;
+    }
+
+    .contact-resume, .contact-email {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .contact-links-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
 
 }

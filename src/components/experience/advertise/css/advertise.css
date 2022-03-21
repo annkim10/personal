@@ -245,7 +245,245 @@
 }
 
 @media screen and (max-width: 960px) {
-   
+    .advertise-outer-div {
+        /* background-color: rgb(44, 44, 44); */
+        position: relative;
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        border-top: 2px solid black;
+    }
+
+    .advertise-inner-div {
+        background-color: white;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+        overflow: hidden;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    .advertise-top-div {
+        border-bottom: 2px solid black;
+    }
+
+    .advertise-top-div, .advertise-bottom-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .advertise-text-wrapper {
+        margin-top: 50px;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .advertise-header-div, .advertise-descrip-div {
+        display: inline-block;
+        position: relative;
+        padding: 50px;
+    }
+
+    .advertise-header-div {
+        width: 100%;
+        position: relative;
+    }
+
+    .advertise-header {
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    .advertise-header-second {
+        color: #389CF4;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .advertise-descrip {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.3;
+    }
+
+
+    .advertise-right-div {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        position: relative;
+        overflow: hidden;
+        height: 500px;
+    }
+
+    .agency-outer-wrapper {
+        /* background-color: antiquewhite; */
+        max-width: 1200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .agency-slide-wrapper-inactive {
+        border-right: 2px solid black;
+        /* width: 100px; */
+        /* height: 50vh; */
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .agency-slide-wrapper-active {
+        flex: 5;
+        z-index: 50;
+        border-right: 2px solid black;
+    }
+
+    .agency-slide-wrapper-inactive:last-child, .agency-slide-wrapper-active:last-child {
+        border-right: none;
+    }
+
+    .agency-slide-inner-div {
+       display: flex;
+       height: 100%;
+       overflow: hidden;
+    }
+
+    .agency-slider-inner-left {
+        background-color: black;
+       /* background-image: url("../../../../images/splash/advertise.jpeg");
+       background-size: 800px; */
+       width: 500px;
+       /* height: 50vh; */
+       overflow: hidden;
+       display: block;
+    }
+
+    /* .advertise-descrip-div {
+        width: 60%;
+    } */
+
+    .advertise-descrip {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+
+    .agency-img {
+        width: 100%;
+        height: 100%;
+        object-position: 0px 0px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .draft-img {
+        width: 100%;
+        height: 100%;
+        object-position: 50%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    /* .agency-img:hover, .draft-img:hover  {
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    } */
+
+
+    .agency-slider-inner-mid {
+        z-index: 100;
+        max-width: 120px;
+        overflow: hidden;
+    }
+
+    .agency-slider-inner-right-inactive {
+        display: none;
+    }
+
+    .agency-slider-inner-right-active {
+        width: 300px;
+        background-color: white;
+    }
+
+    .agency-name {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        margin-top: 20px;
+        padding: 0 10px;
+        writing-mode: vertical-rl;
+    }
+
+    .agency-name svg {
+        transform: rotate(180deg);
+        margin-top: 20px
+    }
+
+    .agency-close-button {
+        background-color: #389cf400;
+        border: none;
+        width: 100px;
+        height: 25px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        cursor: pointer;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    .agency-close-button:hover {
+        background-color: #389CF4;
+        color: white;
+    }
+
+    .agency-details-outer-wrapper {
+        /* background-color: antiquewhite; */
+        position: relative;
+        height: 100%;
+        margin-left: 30px;
+    }
+
+    .details-header, .details-header-timing {
+        padding: 40px 0 20px 0;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .details-header-timing {
+        font-family: 'Poppins', Helvetica, sans-serif;
+    }
+
+    .details-role {
+        padding-bottom: 20px;
+        line-height: 1.3;
+    }
+
+    .role-name {
+        font-weight: 600;
+    }
+
+    .role-name span {
+        font-weight: 300;
+    }
+
 
     
 }

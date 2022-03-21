@@ -19,6 +19,8 @@ const NavBar = ( { visible } ) => {
         }
     }
 
+    console.log("nav", mobile)
+
     useEffect(() => {
         showMobileMenu();
         window.addEventListener('resize', showMobileMenu);
@@ -55,10 +57,13 @@ const NavBar = ( { visible } ) => {
                         setActiveNavLinkId={setActiveNavLinkId} 
                     />
                 </div>
-                {mobile ? <AiOutlineMenu className="menu-icon" onClick={handleClick}/> : ""}
+                <div className="mobile-menu-icon-div">
+                    {mobile ? <AiOutlineMenu className="menu-icon" onClick={handleClick}/> : ""}
+                </div>
+               
                 <div className={mobile && click ? "links-mobile-div" : "links-div"}>
                     <div className={mobile && click ? "links-inner-mobile-div" : "links-div"}>
-                        {mobile ? <AiOutlineCloseCircle className="close-icon" onClick={closeMenu}/> : ""}
+                        {/* {mobile ? <AiOutlineCloseCircle className="close-icon" onClick={closeMenu}/> : ""} */}
                         {mobile ? <NavLink 
                             name={'Home'}
                             navLinkId={'nav-link'} 
@@ -86,7 +91,8 @@ const NavBar = ( { visible } ) => {
                                 scrollToId={'contact-container'} 
                                 activeNavLinkId={activeNavLinkId}
                                 setActiveNavLinkId={setActiveNavLinkId} 
-                            />
+                            /> 
+                            {mobile ? <div onClick={closeMenu} id="nav-link">Close</div> : ""}
                     </div>
                 </div>
             </div> 

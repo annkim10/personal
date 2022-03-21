@@ -63,7 +63,7 @@ const Timeline = (  ) => {
                             <h1 className="timeline-stage-time-main">before</h1> 
                             <div className="timeline-stage-descrip-wrapper" >
                                 <p className="timeline-stage-time">JUN 2010 - OCT 2016</p>
-                                <h2 className="timeline-stage-descrip">Advertising the product</h2>
+                                <h2 className="timeline-stage-descrip" id="ad" >Advertising the product</h2>
                             </div>
                         </a.div >
                     </div>
