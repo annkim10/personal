@@ -38,34 +38,17 @@ const Timeline = (  ) => {
                 </div>
                 <div className="timeline-inner-bottom">
                     <div className="timeline-stages-inner-wrapper">
+                        <h1>DEVELOPING</h1>
                         <TimelineImage visible={visible} img={code} />
-                        <a.div className="timeline-stage-div" style={up}>
-                            <h1 className="timeline-stage-time-main">now</h1> 
-                            <div className="timeline-stage-descrip-wrapper">
-                                <p className="timeline-stage-time">OCT 2021 - PRESENT</p>
-                                <h2 className="timeline-stage-descrip">Developing the product</h2>
-                            </div>
-                        </a.div >
                     </div>
                      <div className="timeline-stages-inner-wrapper">
+                         <h1>MARKETING</h1>
                         <TimelineImage visible={visible} img={market} />
-                        <a.div className="timeline-stage-div" style={up}>
-                            <h1 className="timeline-stage-time-main">then</h1> 
-                            <div className="timeline-stage-descrip-wrapper" >
-                                <p className="timeline-stage-time">OCT 2016 - SEP 2021</p>
-                                <h2 className="timeline-stage-descrip">Marketing the product</h2>
-                            </div>
-                        </a.div >
+
                     </div>
                      <div className="timeline-stages-inner-wrapper">
+                          <h1>ADVERTISING</h1>
                         <TimelineImage visible={visible} img={advertise} />
-                        <a.div className="timeline-stage-div" style={up}>
-                            <h1 className="timeline-stage-time-main">before</h1> 
-                            <div className="timeline-stage-descrip-wrapper" >
-                                <p className="timeline-stage-time">JUN 2010 - OCT 2016</p>
-                                <h2 className="timeline-stage-descrip" id="ad" >Advertising the product</h2>
-                            </div>
-                        </a.div >
                     </div>
                 </div>
             </div>

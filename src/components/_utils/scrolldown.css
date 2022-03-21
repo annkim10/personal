@@ -5,8 +5,7 @@
         cursor: pointer;
         font-size: 30px;
         font-weight: 300;
-        color: gray;    
-        opacity: 0.5;
+        color: #389CF4;    
         font-family: 'Staatliches', cursive;
     }
 
@@ -41,6 +40,35 @@
 
 
 @media screen and (max-width: 960px) {
+    
+    #scroll-header {
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: 300;
+        color: #389CF4;    
+        font-family: 'Staatliches', cursive;
+    }
+
+    #scroll-icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    #scroll-down-icon {
+        font-size: 1.3em;
+        padding-top: 10px;
+        z-index: 50;
+    }
+
+    #scroll-down-icon:hover {
+        font-size: 1.3em;
+        fill: #389CF4;
+        opacity: 1;
+    }
+
   
 }
 

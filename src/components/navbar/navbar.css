@@ -39,8 +39,10 @@
     #logo {
         /* letter-spacing: 0.1em; */
         font-weight: 400;
-        font-size: 20px;
+        font-size: 40px;
         cursor: pointer;
+        font-family: 'Staatliches', cursive;
+        color: #389CF4;
     }
 
     .links-div {
@@ -63,7 +65,7 @@
     }
 
     #nav-link:last-child {
-        background-color: #404040;
+        background-color:#389CF4;
         color: white;
     }
 
@@ -74,7 +76,7 @@
     }
 
     #nav-link:hover, #logo:hover {
-        font-weight: 600;
+        /* font-weight: 600; */
         color: #389CF4;
         font-family: 'Staatliches', cursive;
         transition: all 0.2s ease-in-out ;
@@ -84,9 +86,9 @@
        font-size: 25px;
    }
 
-   #logo:hover {
+   /* #logo:hover {
        font-size: 35px;
-   }
+   } */
 
 }
 
@@ -121,7 +123,7 @@
     }
 
     .logo-div {
-        /* background-color: #389CF4; */
+        /* background-color: #404040; */
         border-right: 2px solid black;
         height: 100%;
         min-width: 180px;
@@ -133,8 +135,10 @@
     #logo {
         /* letter-spacing: 0.1em; */
         font-weight: 400;
-        font-size: 20px;
+        font-size: 40px;
         cursor: pointer;
+        font-family: 'Staatliches', cursive;
+        color: #389CF4;
     }
 
     .links-div {

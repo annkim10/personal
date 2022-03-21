@@ -50,7 +50,7 @@ const NavBar = ( { visible } ) => {
             <div className="navbar-inner-div">
                 <div className="logo-div">
                     <NavLink 
-                        name={'Ann Kim'}
+                        name={'A.K.'}
                         navLinkId={'logo'} 
                         scrollToId={'splash-container'} 
                         activeNavLinkId={activeNavLinkId}

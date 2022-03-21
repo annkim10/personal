@@ -1,6 +1,6 @@
 import React from "react"
 import { useSpring, animated as a, config, easings } from "react-spring";
-
+import ScrollDown from "../../_utils/scrolldown";
 
 const Descrip = ( { visible } ) => {
 
@@ -22,7 +22,13 @@ const Descrip = ( { visible } ) => {
 
     return (
         <a.div className="splash-descrip" style={animate} >
-           <p>I'm a product manager, coder, & dog mom of two</p>    
+           <p>It's nice to meet you! I'm a product manager, coder, & dog mom of two based in NY.</p>  
+            <ScrollDown 
+                idName={'splash-scroll'} 
+                visible={visible} 
+                name={'Let me tell you more'}
+                container={'timeline-container'}
+                />     
         </a.div>
     )
 }

@@ -28,16 +28,17 @@ const Splash = ( { visible }) => {
                 <div className="splash-footer-wrapper">
                     <h1 className="footer-copytag">© 2022 built by Ann Kim</h1>
                 </div>
+                
                 <div className="splash-top-div">
                     <Name visible={visible} />
                     <Descrip visible={visible} />
                 </div>
-                   <ScrollDown 
+                   {/* <ScrollDown 
                     idName={'splash-scroll'} 
                     visible={visible} 
                     name={'Let me tell you more'}
                     container={'timeline-container'}
-                    />         
+                    />          */}
             </a.div>
            
         </div>

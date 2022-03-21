@@ -52,7 +52,7 @@ const Projects = () => {
                             code={'https://github.com/annkim10/mevert'}
                         />
                     </a.div>
-                    <a.div className='develop-projects-card-div' style={up}>
+                    {/* <a.div className='develop-projects-card-div' style={up}>
                         <h1 className='develop-personal-header'>
                             (Oh and this website too. 
                             <span>
@@ -62,7 +62,7 @@ const Projects = () => {
                             </span>
                             )
                         </h1> 
-                    </a.div>
+                    </a.div> */}
                 </div>
             </div>  
         </div>

@@ -43,10 +43,16 @@
         border-bottom: 2px solid black;
     }
 
-    .develop-top-div, .develop-bottom-div {
+    .develop-top-div {
         /* background-color: antiquewhite; */
         width: 100%;
-        min-height: 50vh;
+        min-height: 80vh;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .develop-bottom-div {
+        width: 100%;
         display: flex;
         overflow: hidden;
     }
@@ -69,6 +75,7 @@
     .develop-text-wrapper {
         /* background-color: antiquewhite; */
         display: flex;
+        flex-direction: column;
         margin-top: 50px;
         max-width: 1200px;
     }
@@ -86,15 +93,14 @@
 
     .develop-header-div {
         /* background-color: aliceblue; */
-        width: 40%;
+        width: 70%;
         height: 100%; 
     }
 
-    .develop-header, .develop-header span {
-        font-size: 55px;
+    .develop-header {
+        font-size: 5em;
         font-weight: 600;
         line-height: 1.2;
-        text-transform: uppercase;
     }
 
     .develop-header-second {
@@ -104,7 +110,7 @@
     }
 
     .develop-descrip-div {
-        width: 60%;
+        width: 70%;
     }
 
     .develop-descrip {
