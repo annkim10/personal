@@ -28,32 +28,31 @@
         /* background-color: antiquewhite; */
         border-right: 2px solid black;
         height: 100%;
-        display: flex;
+        display: inline-block;
         flex-direction: column;
-        max-width: 50%;
+        max-width: 600px;
         gap: 3rem;
     }
 
     .about-right-div {
         width: 50%;
         height: 100%;
-        display: block;
+        display: inline-block;
         overflow: hidden;
     }
 
-    .header-wrapper {
+    .about-text-wrapper {
         /* border-bottom: 2px solid black; */
-        display: block;
-        align-items: center;
-        width: 100%;
-        height: 180px;
+        display: flex;
+        flex-direction: column;
+        gap: 6em;
+        width: 90%;
         overflow: hidden;
-        margin-left: 5px;
         margin-top: 50px;
+        margin-left: 2.5em;
     }
 
     .about-header {
-        margin-left: 30px;
         font-size: 65px;
         font-weight: 600;
     }
@@ -66,15 +65,15 @@
     }
 
     .about-descrip-div {
-        max-width: 700px;
-        display: block;
-        line-height: 1.3;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        line-height: 1.5;
     }
 
     .about-descrip-text {
-        width: 75%;
+        width: 95%;
         display: flex;
-        margin-left: 30px;
         line-height: 1.5;
         font-size: 20px;
         padding-bottom: 20px;
@@ -102,6 +101,8 @@
         object-fit: cover;
         border-radius: 50%;
         margin-left: 80px;
+        outline: 2px solid #404040;
+        outline-offset: 10px;
     }
 
     .jojo-pic {
@@ -112,6 +113,8 @@
         position: absolute;
         top: 50%;
         left: 350px;
+        outline: 2px solid #404040;
+        outline-offset: 10px;
     }
 
 }
@@ -143,60 +146,58 @@
         border-right: 2px solid black;
     }
 
+  
     .about-left-div {
         /* background-color: antiquewhite; */
-        height: 100%;
         display: flex;
         flex-direction: column;
-        max-width: 50%;
-        /* gap: 3rem; */
+        align-items: center;
+        gap: 3rem;
     }
 
     .about-right-div {
+        border-top: 2px solid black;
         width: 100%;
-        height: 100%;
-        display: flex;
+        height: 70vh;
         overflow: hidden;
     }
 
-    .header-wrapper {
+    .about-text-wrapper {
         /* border-bottom: 2px solid black; */
-        display: block;
-        align-items: center;
-        width: 100%;
-        height: 180px;
+        display: flex;
+        flex-direction: column;
+        gap: 6em;
+        width: 90%;
         overflow: hidden;
-        margin-left: 5px;
         margin-top: 50px;
     }
 
     .about-header {
-        margin-left: 30px;
-        font-size: 65px;
+        font-size: 45px;
         font-weight: 600;
     }
 
     .about-header-second {
         color: #389CF4;
         font-weight: 300;
-        font-size: 35px;
+        font-size: 30px;
         margin-top: 10px;
     }
 
     .about-descrip-div {
-        max-width: 700px;
-        display: block;
-        line-height: 1.3;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        line-height: 1.5;
+        padding-bottom: 5em;
     }
 
     .about-descrip-text {
-        width: 75%;
+        width: 90%;
         display: flex;
-        margin-left: 30px;
         line-height: 1.5;
-        font-size: 20px;
+        font-size: 17px;
         padding-bottom: 20px;
-        font-weight: 100;
     }
 
     .about-descrip-div span {
@@ -216,11 +217,12 @@
     }
 
     .about-pic {
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 200px;
         object-fit: cover;
         border-radius: 50%;
-        margin-left: 80px;
+        outline: 2px solid #404040;
+        outline-offset: 5px;
     }
 
     .jojo-pic {
@@ -228,10 +230,10 @@
         height: 200px;
         object-fit: cover;
         border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 350px;
+        outline: 2px solid #404040;
+        outline-offset: 10px;
     }
+
 
 
 }

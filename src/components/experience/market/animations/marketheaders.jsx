@@ -18,9 +18,9 @@ const MarketHeaders = ( { visible } ) => {
 
 
     return (
-        <div className='develop-text-wrapper'>
-            <a.div style={up} className="develop-header-div">
-                <h1 className="develop-header">
+        <div className='market-text-wrapper'>
+            <a.div style={up} className="market-header-div">
+                <h1 className="market-header">
                     Learning to market the product
                 </h1>
             </a.div>

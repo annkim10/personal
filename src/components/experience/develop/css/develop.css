@@ -69,11 +69,11 @@
         display: inline-block;
         position: relative;
         padding: 3em 4em;
-        width: 90%; 
+        width: 80%; 
     }
 
     .develop-header {
-        font-size: 6em;
+        font-size: 5.5em;
         font-weight: 600;
         line-height: 1.2;
     }
@@ -236,16 +236,13 @@
         margin-top: 50px;
     }
 
-    .develop-header-div, .develop-descrip-div {
-        display: inline-block;
-        position: relative;
-        padding: 1.5em;
-    }
-
     .develop-header-div {
         /* background-color: aliceblue; */
         width: 100%;
         height: 100%; 
+        display: inline-block;
+        position: relative;
+        padding: 1.5em;
     }
 
     .develop-header {
@@ -256,6 +253,9 @@
 
     .develop-descrip-div {
         width: 85%; 
+        display: inline-block;
+        position: relative;
+        padding: 1.5em;
     }
 
     .develop-descrip {
