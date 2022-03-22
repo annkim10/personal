@@ -1,35 +1,29 @@
 import React, { useEffect, useState } from "react"
 import NavLink, { navLinks } from "./nav-link"
-import { Link } from "react-router-dom"
 import "./navbar.css"
-import { AiOutlineMenu, AiOutlineCloseCircle } from "react-icons/ai"
+import { AiOutlineMenu, AiFillCloseSquare} from "react-icons/ai"
 import { useSpring, config, easings, animated as a } from "react-spring"
 
-const NavBar = ( { visible } ) => {
+const NavBar = ( { mobile, visible } ) => {
 
     const [click, setClick] = useState(false)
-    const [mobile, setMobile] = useState(false)
     const [activeNavLinkId, setActiveNavLinkId] = useState('');
-
-    const showMobileMenu = () => {
-        if (window.innerWidth <= 960) {
-            setMobile(true)
-        } else {
-            setMobile(false)
-        }
-    }
-
-    console.log("nav", mobile)
-
-    useEffect(() => {
-        showMobileMenu();
-        window.addEventListener('resize', showMobileMenu);
-        // return window.removeEventListener('resize', showMobileMenu)     
-    }, [])
-
+    
     const handleClick = () => setClick(true)
     
     const closeMenu = () => setClick(false)
+
+    console.log("nav", mobile)
+
+    const handleMobileIcon = () => {
+        if (mobile && !click) {
+            return <AiOutlineMenu className="menu-icon" onClick={handleClick}/>
+        } else if (mobile && click) {
+            return <AiFillCloseSquare className="menu-icon" onClick={closeMenu}/>
+        } else {
+            return ""
+        }
+    }
 
     const down = useSpring({
         opacity: visible ? 1 : 0,
@@ -43,7 +37,12 @@ const NavBar = ( { visible } ) => {
             easing: easings.easeInOutBack
         }
     })
- 
+
+    const animate = useSpring ({
+        height: click ? '100%' : "0%",
+        config: config.molasses,
+    })
+
 
     return (
         <a.div className='navbar-outer-div' style={down} >
@@ -58,11 +57,10 @@ const NavBar = ( { visible } ) => {
                     />
                 </div>
                 <div className="mobile-menu-icon-div">
-                    {mobile ? <AiOutlineMenu className="menu-icon" onClick={handleClick}/> : ""}
+                    {handleMobileIcon()}
                 </div>
-               
-                <div className={mobile && click ? "links-mobile-div" : "links-div"}>
-                    <div className={mobile && click ? "links-inner-mobile-div" : "links-div"}>
+                <div className={mobile && click ? "links-mobile-div" : "links-div"} >
+                    <a.div className={mobile && click ? "links-inner-mobile-div" : "links-div"} style={animate}>
                         {/* {mobile ? <AiOutlineCloseCircle className="close-icon" onClick={closeMenu}/> : ""} */}
                         {mobile ? <NavLink 
                             name={'Home'}
@@ -92,8 +90,8 @@ const NavBar = ( { visible } ) => {
                                 activeNavLinkId={activeNavLinkId}
                                 setActiveNavLinkId={setActiveNavLinkId} 
                             /> 
-                            {mobile ? <div onClick={closeMenu} id="nav-link">Close</div> : ""}
-                    </div>
+                            {/* {mobile ? <div onClick={closeMenu} id="nav-link">Close</div> : ""} */}
+                    </a.div>
                 </div>
             </div> 
         </a.div>    

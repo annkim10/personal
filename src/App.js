@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="app-outer-div">
-        <NavBar visible={visible} />
+        <NavBar visible={visible} mobile={mobile} />
         <Splash visible={visible} />
         <Experience mobile={mobile}/>
         <About />
