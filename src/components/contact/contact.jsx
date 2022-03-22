@@ -43,11 +43,6 @@ const Contact = ( ) => {
                                 </a>
                             </a.div>
                             <a.div className="contact-info-div" style={animate}>
-                                <FaPhoneAlt className="contact-icon" />
-                                <h1>Give me a ring</h1>
-                                <h1 className="contact">646.884.3600</h1>
-                            </a.div>
-                            <a.div className="contact-info-div" style={animate}>
                                 <FaLinkedinIn className="contact-icon" />
                                 <h1>Connect with me</h1>
                                  <a className="contact-email" 

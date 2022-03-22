@@ -2,7 +2,7 @@ import { useState, useRef, useEffect} from "react"
 import { config, easings, useSpring, useTrail, animated as a } from "react-spring";
 import { BiArrowBack } from "react-icons/bi"
 
-const AgencySlideInner = ( { timing, clicked, positions }) => {
+const AgencySlideInner = ( { timing, clicked, positions, mobile }) => {
 
     const [innerClick, setInnerClick] = useState(false)
 
@@ -32,8 +32,8 @@ const AgencySlideInner = ( { timing, clicked, positions }) => {
                     <h1 className="details-header">POSITIONS HELD</h1>
                     
                         <ul>
-                            {positions.map((pos) => 
-                                <li className="details-role">
+                            {positions.map((pos, idx) => 
+                                <li key={idx} className="details-role">
                                         <h1 className="role-name">
                                             {pos.title},
                                         </h1>

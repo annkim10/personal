@@ -6,7 +6,7 @@ import umImg from "../../../../images/splash/advertise.jpeg"
 import mecImg from "../../../../images/advertise/jeans.jpg"
 import draftImg from "../../../../images/advertise/pharma.jpg"
 
-const AgencyWrapper = ( { visible }) => {
+const AgencyWrapper = ( { visible, mobile }) => {
 
     const agencyDetails = [
         { 
@@ -65,14 +65,14 @@ const AgencyWrapper = ( { visible }) => {
        !draft && (!mec && !um) ? setDraft(true) : setDraft(false)
     }
 
-    console.log("um, mec, draft", um, mec, draft)
+    console.log(mobile)
  
     return (
         <a.div style={animate} className="agency-outer-wrapper">
             <div className={ um ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
                 onClick={handleUm}>
                 <div className="agency-slide-inner-div">
-                    <div className="agency-slider-inner-left">
+                    <div className={ um && mobile ? "agency-slider-inner-left-mobile" : "agency-slider-inner-left"} >
                         <img className="agency-img" src={umImg} />
                     </div>
                     <div className="agency-slide-inner-mid">
@@ -91,7 +91,7 @@ const AgencyWrapper = ( { visible }) => {
             <div className={ mec ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
                 onClick={handleMec}>
                 <div className="agency-slide-inner-div">
-                    <div className="agency-slider-inner-left">
+                    <div className={ mec && mobile ? "agency-slider-inner-left-mobile" : "agency-slider-inner-left"}>
                         <img className="agency-img" src={mecImg} />
                     </div>
                     <div className="agency-slide-inner-mid">
@@ -110,7 +110,7 @@ const AgencyWrapper = ( { visible }) => {
             <div className={ draft ? "agency-slide-wrapper-active" : "agency-slide-wrapper-inactive"}
                 onClick={handleDraft}>
                 <div className="agency-slide-inner-div">
-                    <div className="agency-slider-inner-left">
+                    <div className={ draft && mobile ? "agency-slider-inner-left-mobile" : "agency-slider-inner-left"}>
                         <img className="draft-img" src={draftImg} />
                     </div>
                     <div className="agency-slide-inner-mid">

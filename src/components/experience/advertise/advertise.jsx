@@ -4,7 +4,7 @@ import "./css/advertise.css"
 import AdvertiseHeaders from "./animations/advertise-headers"
 import AgencyWrapper from "./animations/agency-wrapper"
 
-const Advertise = () => {
+const Advertise = ( { mobile }) => {
 
     const [load, setLoad] = useState(false)
 
@@ -21,7 +21,7 @@ const Advertise = () => {
                     {/* <h1 className="advertise-cta">CLICK FOR MORE DETAILS</h1> */}
                 </div>
                 <div className="advertise-bottom-div">
-                    <AgencyWrapper visible={visible}/>
+                    <AgencyWrapper visible={visible} mobile={mobile}/>
                 </div>
             </div>      
          

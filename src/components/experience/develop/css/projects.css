@@ -265,7 +265,7 @@
         border-left: 2px solid black;
     }
 
-        @keyframes text-scrolling {
+    @keyframes text-scrolling {
         0% { transform: translate3d(0%, 0, 0); }
         100% { transform: translate3d(-100%, 0, 0); }
     }
@@ -312,7 +312,6 @@
 
     .develop-projects-card-div:last-child {
         display: flex;
-        border-top: 2px solid black;
         min-height: 100px;
     }
 

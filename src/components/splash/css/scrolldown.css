@@ -51,9 +51,17 @@
         cursor: pointer;
     }
 
+    .scrolldown-link-div > span {
+        font-size: 1em;
+    }
+
+    .scrolldown-link-div > span:hover {
+        font-size: 1.5em;
+        transition: all 0.2s ease-in-out;
+    }
+
     .arrow {
         font-size: 1.5em;
-        margin-top: 5px;
     }
 
 }
@@ -131,13 +139,14 @@
         cursor: pointer;
     }
 
-    .arrow {
-        font-size: 1.5em;
-        margin-top: 5px;
+    .scrolldown-link-div > span {
+        font-size: 1.3em;
     }
 
+    .arrow {
+        font-size: 2em;
+    }
 
-   
   
 }
 

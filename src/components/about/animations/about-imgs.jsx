@@ -1,6 +1,6 @@
 import { config, easings, useSpring, animated as a } from "react-spring";
 import pic from "../../../images/about.jpg"
-import jojo from "../../../images/jojo.jpg"
+import jojo from "../../../images/jojo.jpeg"
 
 const AboutImgs = ( {visible}) => {
 
@@ -18,10 +18,13 @@ const AboutImgs = ( {visible}) => {
 
     return (
         <a.div className="about-img-wrapper" style={animate}>
-            <div className="about-me-wrapper" >
+            <div className="circle-outline">
+                
+            </div>
+            <div className="rollie-wrapper" >
                 <img className="about-pic" src={pic} />
             </div>
-            <div className="about-me-wrapper" >
+            <div className="jojo-wrapper" >
                 <img className="jojo-pic" src={jojo} />
             </div>
         </a.div>

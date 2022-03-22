@@ -258,6 +258,7 @@
 
     .advertise-top-div {
         border-bottom: 2px solid black;
+        height: 85vh;
     }
 
     .advertise-top-div, .advertise-bottom-div {
@@ -304,20 +305,9 @@
     }
 
 
-    .advertise-right-div {
-        width: 60%;
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-        position: relative;
-        overflow: hidden;
-        height: 500px;
-    }
-
     .agency-outer-wrapper {
         /* background-color: antiquewhite; */
-        max-width: 1200px;
-        height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -325,7 +315,7 @@
     }
 
     .agency-slide-wrapper-inactive {
-        border-right: 2px solid black;
+        border-bottom: 2px solid black;
         /* width: 100px; */
         /* height: 50vh; */
         position: relative;
@@ -337,27 +327,33 @@
     .agency-slide-wrapper-active {
         flex: 5;
         z-index: 50;
-        border-right: 2px solid black;
     }
 
     .agency-slide-wrapper-inactive:last-child, .agency-slide-wrapper-active:last-child {
-        border-right: none;
+        border-bottom: none;
     }
 
     .agency-slide-inner-div {
        display: flex;
-       height: 100%;
+       height: 400px;
        overflow: hidden;
     }
 
     .agency-slider-inner-left {
-        background-color: black;
-       /* background-image: url("../../../../images/splash/advertise.jpeg");
-       background-size: 800px; */
        width: 500px;
+       height: 100%;
        /* height: 50vh; */
        overflow: hidden;
        display: block;
+    }
+
+    .agency-slider-inner-left-mobile {
+       width: 40px;
+       height: 100%;
+       /* height: 50vh; */
+       overflow: hidden;
+       display: block;
+       z-index: 1;
     }
 
     .agency-img {
@@ -376,12 +372,6 @@
         overflow: hidden;
     }
 
-    /* .agency-img:hover, .draft-img:hover  {
-        transform: scale(1.1);
-        transition: all 0.3s ease-in-out;
-    } */
-
-
     .agency-slider-inner-mid {
         z-index: 100;
         max-width: 120px;
@@ -393,15 +383,16 @@
     }
 
     .agency-slider-inner-right-active {
-        width: 300px;
+        width: 500px;
         background-color: white;
+        z-index: 100;
     }
 
     .agency-name {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
         letter-spacing: 0.1em;
-        margin-top: 20px;
+        margin-top: 15px;
         padding: 0 10px;
         writing-mode: vertical-rl;
     }
@@ -430,11 +421,10 @@
         color: white;
     }
 
-    .agency-details-outer-wrapper {
-        /* background-color: antiquewhite; */
+    .agency-details-inner-wrapper, .agency-details-outer-wrapper {
         position: relative;
-        height: 100%;
-        margin-left: 30px;
+        height: 50%;
+        margin-left: 15px;
     }
 
     .details-header, .details-header-timing {

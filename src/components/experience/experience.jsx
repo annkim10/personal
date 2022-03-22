@@ -16,7 +16,7 @@ const Experience = ( { mobile } ) => {
             <Develop />
             <Projects />
             <Market mobile={mobile}/>
-            <Advertise />
+            <Advertise mobile={mobile}/>
         </div>
     )
 }
