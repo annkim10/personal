@@ -15,8 +15,10 @@
 
     .develop-inner-div {
         background-color: white;
-        min-width: 1200px;
-        max-width: 1600px;
+        /* min-width: 1200px;
+        max-width: 1600px; */
+        min-width: 85vw;
+        max-width: 85vw;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -62,7 +64,8 @@
         display: flex;
         flex-direction: column;
         margin-top: 50px;
-        max-width: 1200px;
+        min-width: 85vw;
+        max-width: 85vw;
     }
 
     .develop-header-div {

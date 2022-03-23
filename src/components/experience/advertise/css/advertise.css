@@ -13,8 +13,10 @@
 
     .advertise-inner-div {
         background-color: white;
-        min-width: 1200px;
-        max-width: 1600px;
+        /* min-width: 1200px;
+        max-width: 1600px; */
+        min-width: 85vw;
+        max-width: 85vw;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -47,7 +49,8 @@
         display: flex;
         flex-direction: column;
         margin-top: 50px;
-        max-width: 1200px;
+        min-width: 85vw;
+        max-width: 85vw;
     }
 
     .advertise-header-div {
@@ -78,6 +81,7 @@
         font-weight: 600;
         margin-top: 50px;
         color: #389CF4;
+        padding-bottom: 50px;
     }
 
     .advertise-right-div {
@@ -92,7 +96,8 @@
 
     .agency-outer-wrapper {
         /* background-color: antiquewhite; */
-        max-width: 1200px;
+        min-width: 85vw;
+        max-width: 85vw;
         height: 100%;
         display: flex;
         position: relative;
@@ -126,11 +131,8 @@
     }
 
     .agency-slider-inner-left {
-        background-color: black;
-       /* background-image: url("../../../../images/splash/advertise.jpeg");
-       background-size: 800px; */
+       background-color: black;
        width: 500px;
-       /* height: 50vh; */
        overflow: hidden;
        display: block;
     }

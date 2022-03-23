@@ -15,8 +15,10 @@
 
     .projects-inner-div {
         /* background-color: rgb(241, 241, 241); */
-        min-width: 1200px;
-        max-width: 1600px;
+        /* min-width: 1200px;
+        max-width: 1600px; */
+        min-width: 85vw;
+        max-width: 85vw;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -44,7 +46,8 @@
         height: 2em;
         display: flex;
         align-items: center;
-        max-width: 1200px;
+        min-width: 85vw;
+        max-width: 85vw;
     }
 
     .develop-stage-project-header {
@@ -81,7 +84,8 @@
     }
 
     .projects-card-outer-wrapper {
-        max-width: 1200px;
+        min-width: 85vw;
+        max-width: 85vw;
         height: 100%;
         display: flex;
         flex-direction: column;

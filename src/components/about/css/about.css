@@ -13,8 +13,8 @@
 
     .about-inner-div {
         position: relative;
-        min-width: 1200px;
-        max-width: 1600px;
+        min-width: 85vw;
+        max-width: 85vw;
         height: 650px;
         display: flex;
         align-items: center;
@@ -105,7 +105,7 @@
         border-radius: 50%;
         outline: 2px dotted black;
         outline-offset: 10px;
-        margin-left: 80px;
+        margin-left: 2.5em;
         
     }
 
@@ -117,7 +117,7 @@
         border-radius: 50%;
         position: absolute;
         top: 50%;
-        left: 350px;
+        left: 55%;
         outline: 2px dotted black;
         outline-offset: 10px;
     }

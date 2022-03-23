@@ -13,8 +13,10 @@
 
     .timeline-inner-div {
         background-color: white;
-        min-width: 1200px;
-        max-width: 1600px;
+        /* min-width: 1200px;
+        max-width: 1600px; */
+        min-width: 85vw;
+        max-width: 85vw;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -27,7 +29,8 @@
 
     .timeline-inner-top {
         position: relative;
-        max-width: 1200px;
+        min-width: 85vw;
+        max-width: 85vw;
         min-height: 70vh;
         display: flex;
         align-items: center;
@@ -61,7 +64,8 @@
 
     .timeline-inner-bottom {
         display: flex;
-        max-width: 1200px;
+        min-width: 85vw;
+        max-width: 85vw;
         /* min-height: 50vh; */
         border-top: 2px solid black;
         z-index: 10;
