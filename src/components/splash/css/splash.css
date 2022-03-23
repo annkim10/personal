@@ -14,8 +14,10 @@
 
     .splash-inner-div {
         /* background-color: rgb(101, 206, 206); */
-        min-width: 1200px;
-        max-width: 1600px;
+        /* min-width: 1200px;
+        max-width: 1600px; */
+        min-width: 85vw;
+        max-width: 85vw;
         height: 100vh;
         margin-top: 50px;
         display: flex;
@@ -48,18 +50,22 @@
     }
 
     .splash-top-div {
+       /* background-color: antiquewhite; */
        height: fit-content;
        margin-top: 5vh;
        display: flex;
-       max-width: 1600px;
+       min-width: 85vw;
+       max-width: 85vw;
        align-items:flex-end;
-       gap: 10em;
+       gap: 7.5em;
     }
 
     .splash-header-wrapper {
         display: inline-block;
         /* background-color: cadetblue; */
-        max-width: 800px;
+        /* max-width: 800px; */
+        min-width: 50%;
+        max-width: 50%;
         height: 100%;
         overflow: hidden;
         margin-left: 50px;
@@ -78,10 +84,10 @@
 
 
     .splash-descrip {
-        /* background-color: antiquewhite; */
+        /* background-color: red; */
         display: block;
-        width: 450px;
-        height: 450px;
+        width: 100%;
+        height: 70%;
         /* border-bottom: 2px solid black; */
     }
 
@@ -89,7 +95,7 @@
         display: block;
         width: 90%;
         font-size: 22px;
-        line-height: 1.3;
+        line-height: 1.4;
         font-weight: 300;
     }
 

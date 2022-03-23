@@ -13,8 +13,10 @@
 
     .navbar-inner-div {
         background-color: white;
-        min-width: 1200px;
-        max-width: 1600px;
+        /* min-width: 1200px;
+        max-width: 1600px; */
+        min-width: 85vw;
+        max-width: 85vw;
         border-left: 2px solid black;
         border-right: 2px solid black;
         /* border-bottom: 5px solid black; */
