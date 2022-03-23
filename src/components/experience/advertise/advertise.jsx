@@ -18,7 +18,6 @@ const Advertise = ( { mobile }) => {
             <div className='advertise-inner-div' ref={ref}>
                 <div className='advertise-top-div'>
                     <AdvertiseHeaders visible={visible}/>
-                    {/* <h1 className="advertise-cta">CLICK FOR MORE DETAILS</h1> */}
                 </div>
                 <div className="advertise-bottom-div">
                     <AgencyWrapper visible={visible} mobile={mobile}/>

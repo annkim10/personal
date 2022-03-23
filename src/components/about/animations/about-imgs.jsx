@@ -18,9 +18,6 @@ const AboutImgs = ( {visible}) => {
 
     return (
         <a.div className="about-img-wrapper" style={animate}>
-            <div className="circle-outline">
-                
-            </div>
             <div className="rollie-wrapper" >
                 <img className="about-pic" src={pic} />
             </div>

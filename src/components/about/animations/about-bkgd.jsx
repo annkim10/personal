@@ -19,7 +19,6 @@ const AboutBkgd = ( {visible}) => {
 
     return (
         <a.div className="about-bkgd-wrapper" style={animate}>
-            {/* <img src={circle} id="circle-svg" /> */}
             
         </a.div>
     )

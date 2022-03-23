@@ -14,7 +14,7 @@ const Experience = ( { mobile } ) => {
         <div className="experience-wrapper">
             <Timeline />
             <Develop />
-            <Projects />
+            <Projects mobile={mobile} />
             <Market mobile={mobile}/>
             <Advertise mobile={mobile}/>
         </div>

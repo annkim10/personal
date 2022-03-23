@@ -5,7 +5,7 @@ import useIntersection from '../../_utils/useIntersection';
 import DevelopHeaders from './animations/developheaders';
 import { useSpring, animated as a, easings, config } from "react-spring"
 
-const Develop = () => {
+const Develop = ( {mobile}) => {
 
     const [load, setLoad] = useState(false)
 

@@ -31,6 +31,7 @@
         width: 100%;
         min-height: 70vh;
         display: flex;
+        flex-direction: column;
         overflow: hidden;
         border-bottom: 2px solid black;
     }
@@ -71,6 +72,12 @@
         font-size: 1.3em;
         font-weight: 300;
         line-height: 1.5;
+    }
+
+    .advertise-cta {
+        font-weight: 600;
+        margin-top: 50px;
+        color: #389CF4;
     }
 
     .advertise-right-div {
@@ -151,7 +158,6 @@
 
 
     .agency-slider-inner-mid {
-        z-index: 100;
         max-width: 120px;
         overflow: hidden;
     }
@@ -174,9 +180,16 @@
         writing-mode: vertical-rl;
     }
 
+    .agency-name:hover {
+        color: #389CF4;
+        transition: all 0.2s ease-in-out;
+    }
+
     .agency-name svg {
         transform: rotate(180deg);
-        margin-top: 20px
+        margin-top: 20px;
+        fill: #389CF4;
+        font-size: 1em;
     }
 
     .agency-close-button {
@@ -258,7 +271,7 @@
 
     .advertise-top-div {
         border-bottom: 2px solid black;
-        height: 85vh;
+        height: 70vh;
     }
 
     .advertise-top-div, .advertise-bottom-div {
@@ -304,6 +317,11 @@
         line-height: 1.5;
     }
 
+    .advertise-cta {
+        font-weight: 600;
+        margin-top: 50px;
+        color: #389CF4;
+    }
 
     .agency-outer-wrapper {
         /* background-color: antiquewhite; */

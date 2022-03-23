@@ -5,7 +5,7 @@ import useIntersection from '../../_utils/useIntersection';
 import { useSpring, config, easings, animated as a } from "react-spring"
 import { BsArrowRight } from "react-icons/bs"
 
-const Projects = () => {
+const Projects = ( {mobile}) => {
 
     const [load, setLoad] = useState(false)
 
@@ -32,7 +32,7 @@ const Projects = () => {
             <div className='projects-inner-div' ref={ref}>
                 <a.div className='develop-stage-project-header-wrapper' style={up}>
                     <h1 className='develop-stage-project-header'>
-                       <span>PROJECTS I'VE DONE • PROJECTS I'VE DONE • PROJECTS I'VE DONE </span>
+                       { mobile ? <span>PROJECTS I'VE DONE </span> : <span>PROJECTS I'VE DONE • PROJECTS I'VE DONE • PROJECTS I'VE DONE • PROJECTS I'VE DONE • PROJECTS I'VE DONE </span>}
                     </h1>
                 </a.div>      
                 <div className='develop-projects-wrapper' >

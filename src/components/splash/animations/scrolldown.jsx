@@ -18,6 +18,8 @@ const ScrollDown = ( { idName, visible, name, container } ) => {
         }
     })
 
+    
+
     const [activeNavLinkId, setActiveNavLinkId] = useState('');
 
     const letters = name.split("")

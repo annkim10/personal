@@ -52,7 +52,7 @@
     }
 
     .develop-stage-project-header span {
-        animation: text-scrolling 20s linear infinite;
+        animation: text-scrolling 25s linear infinite;
         display: inline-block;
         padding-left: 100%;
     }
@@ -265,22 +265,17 @@
         border-left: 2px solid black;
     }
 
-    @keyframes text-scrolling {
-        0% { transform: translate3d(0%, 0, 0); }
-        100% { transform: translate3d(-100%, 0, 0); }
-    }
-
     .develop-stage-project-header-wrapper {
         color: rgb(184, 184, 184);
-        letter-spacing: 0.1em;
-        font-size: 50px;
-        font-weight: 700;
-        white-space: nowrap;
+        letter-spacing: 0.15em;
+        font-size: 3rem;
+        font-weight: 600;
+        width: 90%;
         overflow: hidden;
-        margin: 0 auto;
-        height: 3em;
+        height: 4em;
         display: flex;
         align-items: center;
+        text-align: center;
     }
 
     .develop-stage-project-header {
@@ -288,9 +283,7 @@
     }
 
     .develop-stage-project-header span {
-        animation: text-scrolling 20s linear infinite;
         display: inline-block;
-        padding-left: 100%;
     }
 
 
@@ -322,7 +315,6 @@
     }
 
     .projects-card-wrapper {
-        background-color: white;
         position: relative;
         overflow: hidden;
         width: 100%;
