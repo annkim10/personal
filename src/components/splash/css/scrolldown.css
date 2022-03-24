@@ -1,11 +1,13 @@
-@media screen and (min-width: 961px) {
-
+@media screen and (min-width: 1300px) {
 
     #splash-scroll {
-        width: 50%;
-        height: 300px;
-        margin-top: 50px;
-        position: relative;
+        /* border: 1px solid black; */
+        height: 40vh;
+        width: 300px;
+        position: absolute;
+        top: 30%;
+        left: 63%;
+        transform: translate(-50%, -50%);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -13,7 +15,7 @@
 
     #scroll-header {
         font-weight: 600;
-        font-size: 30px;
+        font-size: 2rem;
         font-weight: 300;
         color: #389CF4;    
         font-family: 'Staatliches', cursive;
@@ -22,7 +24,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        animation: animate 8s linear infinite;
+        animation: animate 20s linear infinite;
     }
 
     @keyframes animate {
@@ -38,9 +40,9 @@
     #scroll-header span {
         display: inline-block;
         position: absolute;
-        transform-origin: 0 140px;
-        font-size: 1.2em;
-        top: -140px;
+        transform-origin: 0 250px;
+        font-size: 1.4em;
+        top: -250px;
     }
 
     .scrolldown-link-div {
@@ -53,10 +55,12 @@
 
     .scrolldown-link-div > span {
         font-size: 1em;
+        font-weight: 600;
     }
 
     .scrolldown-link-div > span:hover {
-        font-size: 1.5em;
+        color: #389CF4;
+        font-weight: 600;
         transition: all 0.2s ease-in-out;
     }
 
@@ -67,12 +71,85 @@
 }
 
 
-@media screen and (max-width: 960px) {
-    
+@media screen and (min-width: 961px) and (max-width: 1299px) {
+
+    #splash-scroll {
+        /* border: 1px solid black; */
+        height: 30vh;
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        left: 63%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #scroll-header {
+        font-weight: 600;
+        font-size: 2rem;
+        font-weight: 300;
+        color: #389CF4;    
+        font-family: 'Staatliches', cursive;
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        animation: animate 20s linear infinite;
+    }
+
+    @keyframes animate {
+       from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    #scroll-header span {
+        display: inline-block;
+        position: absolute;
+        transform-origin: 0 180px;
+        font-size: 1.1em;
+        top: -180px;
+    }
+
+    .scrolldown-link-div {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .scrolldown-link-div > span {
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .scrolldown-link-div > span:hover {
+        color: #389CF4;
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .arrow {
+        font-size: 1.5em;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) and  (max-width: 960px) {
+   
     #splash-scroll {
         width: 100%;
-        height: 300px;
-        margin-top: 50px;
+        height: 30vh;
+        margin-top: 10vh;
         position: relative;
         display: flex;
         align-items: center;
@@ -81,7 +158,7 @@
 
     #scroll-header {
         font-weight: 600;
-        font-size: 30px;
+        font-size: 2rem;
         font-weight: 300;
         color: #389CF4;    
         font-family: 'Staatliches', cursive;
@@ -106,29 +183,9 @@
     #scroll-header span {
         display: inline-block;
         position: absolute;
-        transform-origin: 0 140px;
-        font-size: 1.2em;
-        top: -140px;
-    }
-
-    #scroll-icon-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-       
-    }
-
-    #scroll-down-icon {
-        font-size: 1.3em;
-        padding-top: 10px;
-        z-index: 50;
-    }
-
-    #scroll-down-icon:hover {
-        font-size: 1.3em;
-        fill: #389CF4;
-        opacity: 1;
+        transform-origin: 0 180px;
+        font-size: 1em;
+        top: -180px;
     }
 
     .scrolldown-link-div {
@@ -140,13 +197,86 @@
     }
 
     .scrolldown-link-div > span {
-        font-size: 1.3em;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .scrolldown-link-div > span:hover {
+        font-size: 1.5em;
+        transition: all 0.2s ease-in-out;
     }
 
     .arrow {
-        font-size: 2em;
+        font-size: 1.5em;
+    }
+  
+}
+
+@media screen and (max-width: 599px) {
+   
+    #splash-scroll {
+        width: 100%;
+        height: 30vh;
+        margin-top: 15vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
+    #scroll-header {
+        font-weight: 600;
+        font-size: 2rem;
+        font-weight: 300;
+        color: #389CF4;    
+        font-family: 'Staatliches', cursive;
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        animation: animate 8s linear infinite;
+    }
+
+    @keyframes animate {
+       from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    #scroll-header span {
+        display: inline-block;
+        position: absolute;
+        transform-origin: 0 180px;
+        font-size: 1em;
+        top: -180px;
+    }
+
+    .scrolldown-link-div {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .scrolldown-link-div > span {
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .scrolldown-link-div > span:hover {
+        font-size: 1.5em;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .arrow {
+        font-size: 1.5em;
+    }
   
 }
 

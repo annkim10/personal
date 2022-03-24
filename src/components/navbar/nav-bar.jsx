@@ -49,7 +49,7 @@ const NavBar = ( { mobile, visible } ) => {
             <div className="navbar-inner-div">
                 <div className="logo-div">
                     <NavLink 
-                        name={'ANN KIM'}
+                        name={'Ann Kim'}
                         navLinkId={'logo'} 
                         scrollToId={'splash-container'} 
                         activeNavLinkId={activeNavLinkId}

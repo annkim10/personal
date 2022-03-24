@@ -4,7 +4,7 @@ import "../css/scrolldown.css"
 import NavLink from "../../navbar/nav-link"
 import { MdKeyboardArrowDown } from "react-icons/md"
 
-const ScrollDown = ( { idName, visible, name, container } ) => {
+const ScrollDown = ( { idName, visible, name, container, mobile } ) => {
 
     const animate = useSpring({
         y: visible ? 0 : 500, 
@@ -18,13 +18,10 @@ const ScrollDown = ( { idName, visible, name, container } ) => {
         }
     })
 
-    
-
     const [activeNavLinkId, setActiveNavLinkId] = useState('');
 
     const letters = name.split("")
 
-    // console.log("letters", letters)
     
     return (
         <a.div id={idName} style={animate}>
@@ -40,6 +37,7 @@ const ScrollDown = ( { idName, visible, name, container } ) => {
                 })}
             </h1>
             <div className="scrolldown-link-div">
+                <p className="splash-descrip-text">I'm a product manager, coder, & dog mom of two based in NYC.</p>
                 <NavLink 
                     name={'SCROLL'}
                     navLinkId={'scroll-icon'} 

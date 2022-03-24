@@ -22,13 +22,7 @@ const Descrip = ( { visible } ) => {
 
     return (
         <a.div className="splash-descrip" style={animate} > 
-           <p>It's nice to meet you! I'm a product manager, coder, & dog mom of two based in NY.</p>   
-           <ScrollDown 
-                idName={'splash-scroll'} 
-                visible={visible} 
-                name={'Let•me•tell•you•more•about•myself•'}
-                container={'timeline-container'}
-                />   
+           <p>I'm a product manager, coder, & dog mom of two based in NY.</p>   
         </a.div>
     )
 }

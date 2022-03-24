@@ -5,7 +5,6 @@ import useIntersection from "../_utils/useIntersection";
 import AboutMe from "./animations/descrip-wrapper";
 import AboutHeader from "./animations/about-header";
 import AboutImgs from "./animations/about-imgs";
-import AboutBkgd from "./animations/about-bkgd";
 
 const About = () => {
 
@@ -28,12 +27,10 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about-right-div">
-                    <AboutBkgd visible={visible} />
                     <div className="about-img-wrapper">
                         <AboutImgs visible={visible} />
                     </div>
                 </div>
-             
                
             </div>
            

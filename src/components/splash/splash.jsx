@@ -8,7 +8,7 @@ import ScrollDown from "./animations/scrolldown.jsx"
 import { useSpring, easings, config, animated as a } from "react-spring"
 
 
-const Splash = ( { visible }) => {
+const Splash = ( { visible, mobile }) => {
 
     const animate = useSpring({
         opacity: visible ? 1 : 0,
@@ -28,13 +28,17 @@ const Splash = ( { visible }) => {
                 <div className="splash-footer-wrapper">
                     <h1 className="footer-copytag">© 2022 built by Ann Kim</h1>
                 </div>
-                
                 <div className="splash-top-div">
-                    <Name visible={visible} />
-                    <Descrip visible={visible} />
+                        <Name visible={visible} />  
                 </div>
-            </a.div>
-           
+                <ScrollDown 
+                        idName={'splash-scroll'} 
+                        visible={visible} 
+                        name={'Let•me•tell•you•more•about•myself•'}
+                        container={'timeline-container'}
+                        mobile={mobile}
+                    /> 
+            </a.div>    
         </div>
     )
 }

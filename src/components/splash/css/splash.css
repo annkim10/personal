@@ -1,6 +1,117 @@
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1300px) {
 
     .splash-outer-div {
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .splash-inner-div {
+        /* background-color: rgb(101, 206, 206); */
+        min-width: 1200px;
+        max-width: 1200px;
+        min-height: 100vh;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    .splash-footer-wrapper {
+        /* background-color: red; */
+        left: 0;
+        top: 16vh;
+        height: 400px;
+        width: 50px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-copytag {
+        font-size: 13px;
+        font-weight: 200;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+    .splash-top-div {
+       /* background-color: antiquewhite; */
+       display: flex;
+       width: 100%;
+       height: 100%;
+       margin-left: 10vw;
+    }
+
+
+    .splash-header-wrapper {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin-top: 15vh;
+    }
+
+    .splash-header-name-wrapper-1 {
+        /* border: 1px solid black; */
+        overflow: hidden;
+        height: 100px;
+    }
+
+    .splash-header-name-wrapper-2 {
+        /* border: 1px solid black; */
+        overflow: hidden;
+        height: 220px;
+    }
+
+    .splash-header-name-1 {
+        font-size: 7em;
+        font-weight: 400;
+        font-family: 'Bodoni Moda', serif;
+        font-style: italic;
+    }
+
+    .splash-header-name-2 {
+        font-size: 14em;
+        font-weight: 600;
+    }
+
+    .splash-descrip {
+        /* background-color: red; */
+        display: flex;
+        align-items: flex-end;
+        width: 400px;
+        height: 100%;
+        /* border-bottom: 2px solid black; */
+    }
+
+    .splash-descrip-text {
+        display: block;
+        width: 250px;
+        text-align: center;
+        padding-bottom: 1em;
+        font-size: 1.2rem;
+        padding-top: 2em;
+        line-height: 1.3;
+        font-weight: 300;
+    }
+
+}
+
+@media screen and (min-width: 961px) and (max-width: 1299px) {
+
+   .splash-outer-div {
         min-width: 100vw;
         min-height: 100vh;
         display: flex;
@@ -13,9 +124,6 @@
     }
 
     .splash-inner-div {
-        /* background-color: rgb(101, 206, 206); */
-        /* min-width: 1200px;
-        max-width: 1600px; */
         min-width: 85vw;
         max-width: 85vw;
         height: 100vh;
@@ -32,7 +140,7 @@
     .splash-footer-wrapper {
         /* background-color: red; */
         left: 0;
-        top: 10vh;
+        top: 16vh;
         height: 400px;
         width: 50px;
         position: absolute;
@@ -43,7 +151,7 @@
     }
 
     .footer-copytag {
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 200;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
@@ -51,62 +159,64 @@
 
     .splash-top-div {
        /* background-color: antiquewhite; */
-       height: fit-content;
-       margin-top: 5vh;
        display: flex;
-       min-width: 85vw;
-       max-width: 85vw;
-       align-items:flex-end;
-       gap: 7.5em;
+       width: 90vw;
+       flex-direction: column;
+       margin-left: 10em;
     }
 
     .splash-header-wrapper {
         display: inline-block;
-        /* background-color: cadetblue; */
-        /* max-width: 800px; */
-        min-width: 50%;
-        max-width: 50%;
+        min-width: 470px;
+        max-width: 470px;
         height: 100%;
         overflow: hidden;
-        margin-left: 50px;
+        margin-top: 15vh;
     }
 
-    .splash-header-name-wrapper {
+    .splash-header-name-wrapper-1 {
         /* border: 1px solid black; */
+        overflow: hidden;
+        height: 100px;
+    }
+
+    .splash-header-name-wrapper-2 {
         overflow: hidden;
         height: 200px;
     }
 
-    .splash-header-name {
-        font-size: 14em;
+    .splash-header-name-1 {
+        font-size: 7em;
+        font-weight: 400;
+        font-family: 'Bodoni Moda', serif;
+        font-style: italic;
+    }
+
+    .splash-header-name-2 {
+        font-size: 13em;
         font-weight: 600;
     }
 
-
-    .splash-descrip {
-        /* background-color: red; */
+    .splash-descrip-text {
         display: block;
-        width: 100%;
-        height: 70%;
-        /* border-bottom: 2px solid black; */
-    }
-
-    .splash-descrip p {
-        display: block;
-        width: 90%;
-        font-size: 22px;
-        line-height: 1.4;
+        width: 200px;
+        text-align: center;
+        padding-bottom: 1em;
+        font-size: 1rem;
+        padding-top: 2em;
+        line-height: 1.3;
         font-weight: 300;
     }
 
+
 }
+
 
 /* MOBILE */
 
-@media screen and (max-width: 960px) {
+@media screen and  (min-width: 600px) and  (max-width: 960px) {
     .splash-outer-div {
         min-width: 100vw;
-        /* min-height: 100vh; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -120,6 +230,107 @@
         /* background-color: rgb(101, 206, 206); */
         width: 90vw;
         margin-top: 50px;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    .splash-footer-wrapper {
+        /* background-color: red; */
+        left: 0;
+        top: 11vh;
+        height: 400px;
+        width: 50px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-copytag {
+        font-size: 12px;
+        font-weight: 200;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+    .splash-top-div {
+       /* height: 35%; */
+       display: flex;
+       flex-direction: column;
+       gap: 1em;
+       width: 90vw;
+       margin-left: 6em;
+    }
+
+    .splash-header-wrapper {
+        display: inline-block;
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin-top: 10vh;
+    }
+
+    .splash-header-name-wrapper-1 {
+        /* border: 1px solid black; */
+        overflow: hidden;
+        height: 90px;
+    }
+
+    .splash-header-name-wrapper-2 {
+        /* border: 1px solid black; */
+        overflow: hidden;
+        height: 200px;
+    }
+
+    .splash-header-name-1 {
+        font-size: 6em;
+        font-weight: 400;
+        font-family: 'Bodoni Moda', serif;
+        font-style: italic;
+    }
+
+    .splash-header-name-2 {
+        font-size: 13em;
+        font-weight: 600;
+    }
+
+    
+    .splash-descrip-text {
+        display: block;
+        width: 200px;
+        text-align: center;
+        padding-bottom: 1em;
+        font-size: 1rem;
+        padding-top: 2em;
+        line-height: 1.3;
+        font-weight: 300;
+    }
+
+}
+
+@media screen and (max-width: 599px) {
+    .splash-outer-div {
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .splash-inner-div {
+        /* background-color: rgb(101, 206, 206); */
+        width: 90vw;
+        margin-top: 50px;
+        height: 950px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -135,42 +346,57 @@
 
     .splash-top-div {
        /* height: 35%; */
-       margin-top: 10vh;
        display: flex;
        flex-direction: column;
+       align-items: center;
        gap: 1em;
        width: 90vw;
+       margin-left: 3em;
     }
 
+    
     .splash-header-wrapper {
         display: inline-block;
-        /* background-color: cadetblue; */
+        min-width: 100%;
+        max-width: 100%;
         height: 100%;
         overflow: hidden;
-        margin-left: 5%;
+        margin-top: 10vh;
     }
 
-    .splash-header-name-wrapper {
+
+    .splash-header-name-wrapper-1 {
+        overflow: hidden;
+        height: 90px;
+    }
+
+    .splash-header-name-wrapper-2 {
         /* border: 1px solid black; */
         overflow: hidden;
-        height: 150px;
+        height: 8em;
     }
 
-    .splash-header-name {
+    .splash-header-name-1 {
+        font-size: 5.2em;
+        font-weight: 400;
+        font-family: 'Bodoni Moda', serif;
+        font-style: italic;
+    }
+
+    .splash-header-name-2 {
         font-size: 8em;
         font-weight: 600;
     }
 
-    .splash-descrip {
-        /* background-color: antiquewhite; */
+    .splash-descrip-text {
         display: block;
-        width: 75vw;
-        /* height: 300px; */
-        font-size: 20px;
-        line-height: 1.5;
+        width: 200px;
+        text-align: center;
+        padding-bottom: 1em;
+        font-size: 1rem;
+        padding-top: 2em;
+        line-height: 1.3;
         font-weight: 300;
-        padding-bottom: 100px;
-        margin-left: 8%;
     }
    
 }

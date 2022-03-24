@@ -20,7 +20,8 @@ const DevelopHeaders = ( { visible } ) => {
         <div className='develop-text-wrapper'>
             <a.div style={up} className="develop-header-div">
                 <h1 className='develop-header'>
-                    Learning to develop the product
+                    Learning to develop
+                    <br/> the product
                 </h1>
             </a.div>
             <a.div style={up} className="develop-descrip-div">

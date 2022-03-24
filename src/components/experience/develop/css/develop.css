@@ -1,4 +1,4 @@
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1300px) {
     /* DEVELOP COMPONENT */
     .develop-outer-div {
         /* background-color: rgb(241, 241, 241); */
@@ -15,10 +15,8 @@
 
     .develop-inner-div {
         background-color: white;
-        /* min-width: 1200px;
-        max-width: 1600px; */
-        min-width: 85vw;
-        max-width: 85vw;
+        min-width: 1200px;
+        max-width: 1200px;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -32,7 +30,7 @@
     .develop-top-div {
         /* background-color: antiquewhite; */
         width: 100%;
-        min-height: 70vh;
+        min-height: 60vh;
         display: flex;
         overflow: hidden;
         border-bottom: 2px solid black;
@@ -47,7 +45,7 @@
     .develop-bottom-left-div, .develop-bottom-right-div {
         width: 50%;
         display: block;
-        height: 65vh;
+        height: 60vh;
         overflow: hidden;
     }
 
@@ -64,21 +62,23 @@
         display: flex;
         flex-direction: column;
         margin-top: 50px;
-        min-width: 85vw;
-        max-width: 85vw;
     }
 
     .develop-header-div {
         display: inline-block;
         position: relative;
         padding: 3em 4em;
-        width: 80%; 
+        width: 90%; 
     }
 
     .develop-header {
-        font-size: 5.5em;
+        font-size: 4em;
         font-weight: 600;
         line-height: 1.2;
+    }
+
+    .develop-header span {
+        font-family: 'Bodoni Moda', serif;
     }
 
     .develop-descrip-div {
@@ -165,7 +165,178 @@
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 961px) and (max-width: 1299px) {
+    /* DEVELOP COMPONENT */
+    .develop-outer-div {
+        /* background-color: rgb(241, 241, 241); */
+        position: relative;
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 50px; */
+        overflow: hidden;
+        border-top: 2px solid black;
+    }
+
+    .develop-inner-div {
+        background-color: white;
+        /* min-width: 1200px;
+        max-width: 1600px; */
+        min-width: 85vw;
+        max-width: 85vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+        overflow: hidden;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    .develop-top-div {
+        /* background-color: antiquewhite; */
+        width: 100%;
+        min-height: 80vh;
+        display: flex;
+        overflow: hidden;
+        border-bottom: 2px solid black;
+    }
+
+    .develop-bottom-div {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .develop-bottom-left-div, .develop-bottom-right-div {
+        width: 50%;
+        display: block;
+        height: 70vh;
+        overflow: hidden;
+    }
+
+    .develop-bottom-left-div {
+        background-color: black;
+        background-image: url("../../../../images/splash/code.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 130%;
+    }
+
+    .develop-text-wrapper {
+        /* background-color: antiquewhite; */
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        min-width: 85vw;
+        max-width: 85vw;
+    }
+
+    .develop-header-div {
+        display: inline-block;
+        position: relative;
+        padding: 3em 4em;
+        width: 90%; 
+    }
+
+    .develop-header {
+        font-size: 5.5em;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .develop-header span {
+        font-family: 'Bodoni Moda', serif;
+    }
+
+    .develop-descrip-div {
+        width: 90%;
+        padding: 0 4em;
+    }
+
+    .develop-descrip {
+        font-size: 1.3em;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+   .develop-descrip  a {
+        font-weight: 600;
+        padding: 0 10px;
+        color: #389CF4;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    .develop-stage-skills-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 50;
+    }
+
+    .develop-stage-skills-header {
+        /* color: #389CF4; */
+        font-weight: 700;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.1em;
+        font-size: 30px;
+        /* margin-left: 50px; */
+    }
+
+    .develop-stage-skills-list {
+        width: 90%;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        /* border-top: 1px solid black;
+        border-bottom: 2px solid black; */
+    }
+
+    .develop-skill-wrapper {
+        /* background-color: #389CF4; */
+        width: 25%;
+        height: 100px;
+    }
+
+    .develop-skill-wrapper:last-child {
+       border: none;
+    }
+
+    .skill {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    #skill-icon {
+        color: rgb(75, 75, 75);
+        font-size: 2em;
+    }
+
+    .skill p {
+        font-size: 17px;
+        padding-top: 10px;
+        font-weight: 300;
+    }
+
+}
+
+
+@media screen and (max-width: 960px) and (orientation: portrait)  {
           /* DEVELOP COMPONENT */
     .develop-outer-div {
         /* background-color: rgb(241, 241, 241); */
@@ -311,6 +482,184 @@
         flex-wrap: wrap;
         /* border-top: 1px solid black;
         border-bottom: 2px solid black; */
+    }
+
+    .develop-skill-wrapper {
+        /* background-color: #389CF4; */
+        width: 30%;
+        height: 100px;
+    }
+
+    .develop-skill-wrapper:last-child {
+       border: none;
+    }
+
+    .skill {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    #skill-icon {
+        color: rgb(75, 75, 75);
+        font-size: 2em;
+    }
+
+    .skill p {
+        font-size: 15px;
+        padding-top: 10px;
+        font-weight: 300;
+    }
+
+    
+}
+
+@media screen and (max-width: 960px) and (orientation: landscape)  {
+          /* DEVELOP COMPONENT */
+    .develop-outer-div {
+        /* background-color: rgb(241, 241, 241); */
+        position: relative;
+        min-width: 100vw;
+        /* min-height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 50px; */
+        overflow: hidden;
+        border-top: 2px solid black;
+    }
+
+    .develop-inner-div {
+        background-color: white;
+        width: 90vw;
+        /* min-height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+        overflow: hidden;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+   .develop-top-div {
+        /* background-color: antiquewhite; */
+        width: 100%;
+        /* min-height: 70vh; */
+        display: flex;
+        overflow: hidden;
+        border-bottom: 2px solid black;
+        padding-bottom: 5em;
+    }
+
+    .develop-bottom-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .develop-bottom-left-div {
+        width: 100%;
+        display: block;
+        height: 90vh;
+        overflow: hidden;
+    }
+
+    .develop-bottom-right-div {
+        width: 100%;
+        display: block;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .develop-bottom-left-div {
+        background-color: black;
+        background-image: url("../../../../images/splash/code.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 130%;
+    }
+
+    .develop-text-wrapper {
+        /* background-color: antiquewhite; */
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .develop-header-div {
+        /* background-color: aliceblue; */
+        width: 100%;
+        height: 100%; 
+        display: inline-block;
+        position: relative;
+        padding: 1.5em;
+    }
+
+    .develop-header {
+        font-size: 3em;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .develop-descrip-div {
+        width: 85%; 
+        display: inline-block;
+        position: relative;
+        padding: 1.5em;
+    }
+
+    .develop-descrip {
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .develop-descrip  a {
+        font-weight: 600;
+        padding: 0 10px;
+        color: #389CF4;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
+
+    .develop-stage-skills-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 50;
+    }
+
+    .develop-stage-skills-header {
+        /* color: #389CF4; */
+        font-weight: 700;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        letter-spacing: 0.1em;
+        font-size: 30px;
+        line-height: 1.4;
+        /* margin-left: 50px; */
+    }
+
+
+    .develop-stage-skills-list {
+        margin-top: 2em;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .develop-skill-wrapper {

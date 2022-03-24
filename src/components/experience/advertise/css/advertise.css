@@ -1,4 +1,249 @@
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1300px) {
+    .advertise-outer-div {
+        /* background-color: rgb(44, 44, 44); */
+        position: relative;
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        border-top: 2px solid black;
+    }
+
+    .advertise-inner-div {
+        background-color: white;
+        min-width: 1200px;
+        max-width: 1200px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+        overflow: hidden;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+
+    .advertise-top-div {
+        /* background-color: antiquewhite; */
+        width: 100%;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-bottom: 2px solid black;
+    }
+
+    .advertise-bottom-div {
+        width: 100%;
+        height: 50vh;
+        display: block;
+        overflow: hidden;
+    }
+
+    .advertise-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .advertise-header-div {
+        display: inline-block;
+        position: relative;
+        padding: 3em 4em;
+        width: 100%; 
+    }
+
+    .advertise-header {
+        font-size: 4em;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .advertise-descrip-div {
+        width: 80%;
+        padding: 0 4em;
+    }
+  
+    .advertise-descrip {
+        font-size: 1.3em;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .advertise-cta {
+        font-weight: 600;
+        margin-top: 50px;
+        color: #389CF4;
+        padding-bottom: 50px;
+    }
+
+    .advertise-right-div {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        position: relative;
+        overflow: hidden;
+        height: 500px;
+    }
+
+    .agency-outer-wrapper {
+        /* background-color: antiquewhite; */
+        min-width: 85vw;
+        max-width: 85vw;
+        height: 100%;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .agency-slide-wrapper-inactive {
+        border-right: 2px solid black;
+        /* width: 100px; */
+        /* height: 50vh; */
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .agency-slide-wrapper-active {
+        flex: 5;
+        z-index: 50;
+        border-right: 2px solid black;
+    }
+
+    .agency-slide-wrapper-inactive:last-child, .agency-slide-wrapper-active:last-child {
+        border-right: none;
+    }
+
+    .agency-slide-inner-div {
+       display: flex;
+       height: 100%;
+       overflow: hidden;
+    }
+
+    .agency-slider-inner-left {
+       background-color: black;
+       width: 500px;
+       overflow: hidden;
+       display: block;
+    }
+
+    .agency-img {
+        width: 100%;
+        height: 100%;
+        object-position: 0px 0px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .draft-img {
+        width: 100%;
+        height: 100%;
+        object-position: 50%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    /* .agency-img:hover, .draft-img:hover  {
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    } */
+
+
+    .agency-slider-inner-mid {
+        max-width: 120px;
+        overflow: hidden;
+    }
+
+    .agency-slider-inner-right-inactive {
+        display: none;
+    }
+
+    .agency-slider-inner-right-active {
+        width: 300px;
+        background-color: white;
+    }
+
+    .agency-name {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        margin-top: 20px;
+        padding: 0 10px;
+        writing-mode: vertical-rl;
+    }
+
+    .agency-name:hover {
+        color: #389CF4;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .agency-name svg {
+        transform: rotate(180deg);
+        margin-top: 20px;
+        fill: #389CF4;
+        font-size: 1em;
+    }
+
+    .agency-close-button {
+        background-color: #389cf400;
+        border: none;
+        width: 100px;
+        height: 25px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        cursor: pointer;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    .agency-close-button:hover {
+        background-color: #389CF4;
+        color: white;
+    }
+
+    .agency-details-outer-wrapper {
+        /* background-color: antiquewhite; */
+        position: relative;
+        height: 100%;
+        margin-left: 30px;
+    }
+
+    .details-header, .details-header-timing {
+        padding: 40px 0 20px 0;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .details-header-timing {
+        font-family: 'Poppins', Helvetica, sans-serif;
+    }
+
+    .details-role {
+        padding-bottom: 20px;
+        line-height: 1.3;
+    }
+
+    .role-name {
+        font-weight: 600;
+    }
+
+    .role-name span {
+        font-weight: 300;
+    }
+
+  
+
+}
+
+@media screen and (min-width: 961px) and (max-width: 1299px) {
     .advertise-outer-div {
         /* background-color: rgb(44, 44, 44); */
         position: relative;
@@ -57,7 +302,7 @@
         display: inline-block;
         position: relative;
         padding: 3em 4em;
-        width: 80%; 
+        width: 100%; 
     }
 
     .advertise-header {
@@ -67,7 +312,7 @@
     }
 
     .advertise-descrip-div {
-        width: 90%;
+        width: 80%;
         padding: 0 4em;
     }
   

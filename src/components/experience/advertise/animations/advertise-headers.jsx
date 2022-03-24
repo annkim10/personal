@@ -21,7 +21,8 @@ const AdvertiseHeaders = ( { visible } ) => {
          <div className='advertise-text-wrapper'>
             <a.div style={up} className="advertise-header-div">
                 <h1 className="advertise-header">
-                    Learning to advertise the product
+                    Learning to advertise 
+                    <br/> the product
                 </h1>
             </a.div>
             <a.div style={up} className="advertise-descrip-div">

@@ -11,7 +11,7 @@ const Projects = ( {mobile}) => {
 
     const ref = useRef(null);
 
-    const visible = useIntersection(ref, '0px', '0.3');
+    const visible = useIntersection(ref, '0px', '0');
 
     useEffect(() => visible ? setLoad(true) : "")
 

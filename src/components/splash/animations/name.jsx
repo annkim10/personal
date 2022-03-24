@@ -1,5 +1,6 @@
 import React from "react"
 import { Transition, useTrail, easings, useSpring, animated as a, config } from "react-spring";
+import Descrip from "./descrip";
 
 const Name = ( { visible }) => {
 
@@ -22,19 +23,19 @@ const Name = ( { visible }) => {
     return (
     
         <div className="splash-header-wrapper">
-           <div className="splash-header-name-wrapper">
-              <a.div className="splash-header-name" style={animate}>
+           <div className="splash-header-name-wrapper-1">
+              <a.div className="splash-header-name-1" style={animate}>
                    I'm
               </a.div>
            </div>
-           <div className="splash-header-name-wrapper">
-              <a.div className="splash-header-name" style={animate}>
+           <div className="splash-header-name-wrapper-2">
+              <a.div className="splash-header-name-2" style={animate}>
                     Ann
               </a.div>
            </div>
-           <div className="splash-header-name-wrapper">
-              <a.div className="splash-header-name" style={animate}>
-                    Kim<span>.</span>
+            <div className="splash-header-name-wrapper-2">
+              <a.div className="splash-header-name-2" style={animate}>
+                    Kim.
               </a.div>
            </div>
         </div>
