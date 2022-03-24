@@ -25,7 +25,7 @@ const MarketHeaders = ( { visible } ) => {
                     <br/> the product
                 </h1>
             </a.div>
-            <a.div style={up} className="develop-descrip-div">
+            <a.div style={up} className="market-descrip-div">
                 <h1 className="develop-descrip">
                     As a product marketing manager at Samsung, I gained both B2B and B2C experience on marketing a wide portfolio of technology products.
                     <span>

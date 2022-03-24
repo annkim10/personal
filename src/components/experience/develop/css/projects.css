@@ -8,20 +8,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* margin-top: 50px; */
         overflow: hidden;
         border-top: 2px solid black;
     }
 
     .projects-inner-div {
-        /* background-color: rgb(241, 241, 241); */
         min-width: 1200px;
         max-width: 1200px;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: space-between; */
         overflow: hidden;
         border-right: 2px solid black;
         border-left: 2px solid black;
@@ -51,7 +48,7 @@
     }
 
     .develop-stage-project-header span {
-        animation: text-scrolling 25s linear infinite;
+        animation: text-scrolling 35s linear infinite;
         display: inline-block;
         padding-left: 100%;
     }
@@ -92,9 +89,6 @@
         min-height: 80vh;
         display: flex;
         max-width: 1200px;
-        /* border-top: 2px solid black; */
-        /* border-radius: 15px; */
-        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
     }
 
     .projects-card-right, .projects-card-left {
@@ -562,8 +556,6 @@
         display: flex;
         flex-direction: column;
         border-top: 2px solid black;
-        /* border-radius: 15px; */
-        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
     }
 
     .projects-card-right, .projects-card-left {
@@ -576,16 +568,16 @@
     }
 
     .projects-img-outer-wrapper {
-        /* background-color: red; */
         display: flex;
         justify-content: center;
         width: 90%;
-        height: 500px;
+        height: 100%;
         /* height: 90%; */
         overflow: hidden;
     }
 
     .projects-img-inner-wrapper {
+        padding-bottom: 1.5em;
         display: flex;
         align-items: center;
         overflow-x: scroll;

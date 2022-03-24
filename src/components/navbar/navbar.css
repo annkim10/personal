@@ -2,7 +2,7 @@
     .navbar-outer-div {
         background-color: white;
         width: 100vw;
-        height: 80px;
+        height: 60px;
         display: flex;
         position: fixed;
         top: 0;
@@ -55,10 +55,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 80px;
+        height: 60px;
         width: 170px;
         font-weight: 300;
-        font-size: 1.3em;
+        font-size: 1.1em;
         /* border-radius: 40px; */
         cursor: pointer;
         border-left: 2px solid black;
@@ -83,7 +83,7 @@
    }
 
    #nav-link:hover {
-       font-size: 1.6em;
+       font-size: 1.4em;
    }
 
    /* #logo:hover {

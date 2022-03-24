@@ -47,7 +47,6 @@
     }
 
     .splash-top-div {
-       /* background-color: antiquewhite; */
        display: flex;
        width: 100%;
        height: 100%;
@@ -230,7 +229,7 @@
         /* background-color: rgb(101, 206, 206); */
         width: 90vw;
         margin-top: 50px;
-        height: 1000px;
+        height: 1100px;
         display: flex;
         flex-direction: column;
         align-items: center;
