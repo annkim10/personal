@@ -17,21 +17,14 @@ const AdvertiseHeaders = ( { visible } ) => {
         }
     })
 
-    return (
-         <div className='advertise-text-wrapper'>
-            <a.div style={up} className="advertise-header-div">
-                <h1 className="advertise-header">
-                    Learning to advertise 
-                    <br/> the product
-                </h1>
-            </a.div>
-            <a.div style={up} className="advertise-descrip-div">
-                <h1 className="advertise-descrip">
-                    My experience in media planning/buying traverses across three different agencies and a multitude of industries including food & beverage, shipping, and pharma.
-                </h1>
-                <h1 className="advertise-cta">CLICK BELOW FOR MORE DETAILS</h1>
-            </a.div>
-        </div>
+    return ( 
+        <a.div style={up} className="advertise-header-div">
+            <h1 className="advertise-header">
+                Learning to 
+                <span> advertise the product</span>
+            </h1>
+        </a.div>
+        
     )
 
 

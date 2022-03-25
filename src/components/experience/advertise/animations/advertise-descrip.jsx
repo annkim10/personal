@@ -2,7 +2,8 @@ import useIntersection from "../../../_utils/useIntersection";
 import { config, easings, useSpring, animated as a } from "react-spring";
 
 
-const MarketHeaders = ( { visible } ) => {
+const AdvertiseDescrip = ( { visible } ) => {
+
 
     const up = useSpring({
         opacity: visible ? 1 : 0,
@@ -16,17 +17,17 @@ const MarketHeaders = ( { visible } ) => {
         }
     })
 
-
     return (
-        <a.div style={up} className="market-header-div">
-            <h1 className="market-header">
-                Learning to 
-                <span> market the product</span>
+        <a.div style={up} className="advertise-descrip-div">
+            <h1 className="advertise-descrip">
+                My experience in media planning/buying traverses across three different agencies and a multitude of industries including food & beverage, shipping, and pharma.
             </h1>
+            <h1 className="advertise-cta">CLICK BELOW FOR MORE DETAILS</h1>
         </a.div>
+     
     )
 
 
 }
 
-export default MarketHeaders
+export default AdvertiseDescrip

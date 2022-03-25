@@ -3,6 +3,7 @@ import useIntersection from '../../_utils/useIntersection';
 import "./css/market.css";
 import MarketHeaders from './animations/marketheaders';
 import VideoWrapper from './animations/videowrapper';
+import MarketDescrip from './animations/marketdescrip';
 
 
 const Market = ( { mobile }) => {
@@ -17,10 +18,23 @@ const Market = ( { mobile }) => {
     return (
         <div className='market-outer-div'>
             <div className='market-inner-div' ref={ref}>
-               <div className='market-top-div'>
-                    <MarketHeaders visible={visible}/>      
+               <div className='market-left-div'>
+                   <div className='market-left-top-div'>
+                        <MarketHeaders visible={visible}/> 
+                   </div>
+                   <div className='market-left-bottom-div'>
+                        <MarketDescrip visible={visible} /> 
+                   </div>
                 </div>
-                <div className='market-bottom-div'>
+                <div className='market-right-div'>
+                    <h1 className='youtube-header'>
+                        Featured in Samsung's 
+                        <span>
+                            <a href="https://news.samsung.com/global/video-replay-unbox-and-discover-2021">
+                                Unbox and Discover 2021
+                            </a>
+                        </span>
+                    </h1>
                     <VideoWrapper mobile={mobile} visible={visible}/>
                 </div>
             </div> 
