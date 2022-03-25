@@ -110,7 +110,7 @@
 }
 
 
-@media screen and (min-width: 450px) and (max-width: 960px) {
+@media screen and (min-width: 421px) and (max-width: 960px) {
 
     .splash-outer-div {
         /* background-color: antiquewhite; */
@@ -196,6 +196,117 @@
 
     .splash-header-name-2 {
         font-size: 14em;
+        font-weight: 600;
+    }
+
+    .splash-descrip {
+        /* background-color: red; */
+        display: flex;
+        align-items: flex-end;
+        width: 400px;
+        height: 100%;
+        /* border-bottom: 2px solid black; */
+    }
+
+    .splash-descrip-text {
+        display: block;
+        width: 250px;
+        text-align: center;
+        padding-bottom: 1em;
+        font-size: 1.2rem;
+        padding-top: 2em;
+        line-height: 1.3;
+        font-weight: 300;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .splash-outer-div {
+        /* background-color: antiquewhite; */
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .splash-inner-div {
+        /* background-color: rgb(101, 206, 206); */
+        min-width: 90vw;
+        max-width: 90vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .splash-footer-wrapper {
+        /* background-color: red; */
+        left: 0;
+        top: 16vh;
+        height: 400px;
+        width: 50px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-copytag {
+        font-size: 13px;
+        font-weight: 200;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+    .splash-top-div {
+        /* background-color: antiquewhite; */
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       height: 100%;
+    }
+
+    .splash-header-wrapper {
+        /* border: 1px solid black; */
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin-top: 25vh;
+        padding-bottom: 4em;
+    }
+
+    .splash-header-name-wrapper-1 {
+        /* border: 1px solid black; */
+        overflow: hidden;
+        height: 40px;
+    }
+
+    .splash-header-name-wrapper-2 {
+        /* border: 1px solid black; */
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .splash-header-name-1 {
+        font-size: 2em;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    .splash-header-name-2 {
+        font-size: 10em;
         font-weight: 600;
     }
 

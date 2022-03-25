@@ -32,7 +32,7 @@ const Projects = ( {mobile}) => {
             <div className='projects-inner-div' ref={ref}>
                 <a.div className='develop-stage-project-header-wrapper' style={up}>
                     <h1 className='develop-stage-project-header'>
-                       { mobile ? <span>PROJECTS I'VE DONE </span> : <span>PROJECTS I'VE DONE • PROJECTS I'VE DONE • PROJECTS I'VE DONE • PROJECTS I'VE DONE • PROJECTS I'VE DONE </span>}
+                       <h1>PROJECTS I'VE DONE </h1> 
                     </h1>
                 </a.div>      
                 <div className='develop-projects-wrapper' >
@@ -45,6 +45,7 @@ const Projects = ( {mobile}) => {
                         code={'https://github.com/annkim10/pupfinder'}
                         />
                     </a.div>
+                    <br/>
                     <a.div className='develop-projects-card-div' style={up} >
                         <ProjectCard 
                             title={'MEvert'} 

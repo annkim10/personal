@@ -43,7 +43,7 @@ const Skills = ( { visible } ) => {
     return (
         <a.div className='develop-stage-skills-wrapper'>
             <a.div style={up}>
-                <h1 className='develop-stage-skills-header'>SKILLS I'VE LEARNED</h1>
+                <h1 className='develop-stage-skills-header'>Skillset</h1>
             </a.div>
             <ul className='develop-stage-skills-list'>
                 {trail.map((styles, idx) => {

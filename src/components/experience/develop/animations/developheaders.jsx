@@ -17,25 +17,12 @@ const DevelopHeaders = ( { visible } ) => {
     })
  
     return (
-        <div className='develop-text-wrapper'>
-            <a.div style={up} className="develop-header-div">
-                <h1 className='develop-header'>
-                    Learning to develop
-                    <br/> the product
-                </h1>
-            </a.div>
-            <a.div style={up} className="develop-descrip-div">
-                <h1 className='develop-descrip'>
-                    To transition from hardware to software, I enrolled in 
-                    <span>
-                        <a href="https://www.appacademy.io/" target="_blank">
-                            App Academy's
-                        </a>
-                    </span>
-                    full-stack software engineering program in Oct 2021. As a graduate, I've not only gained a comprehensive set of technical skills but also an understanding of the development process - from just an idea to a live site.
-                </h1>
-            </a.div>
-        </div>
+        <a.div style={up} className="develop-header-div">
+            <h1 className='develop-header'>
+                Learning to
+                <span> develop the product</span>
+            </h1>
+        </a.div>
     )
 
 

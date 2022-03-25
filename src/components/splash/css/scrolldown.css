@@ -71,7 +71,79 @@
 }
 
 
-@media screen and (min-width: 450px) and (max-width: 960px) {
+@media screen and (min-width: 421px) and (max-width: 960px) {
+
+    #splash-scroll {
+        /* background-color: blanchedalmond; */
+        /* border: 1px solid black; */
+        height: 400px;
+        width: 300px;
+        position: relative;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+    }
+
+    #scroll-header {
+        font-weight: 600;
+        font-size: 2rem;
+        font-weight: 300;
+        color: #5b7cfc;    
+        font-family: 'Staatliches', cursive;
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        animation: animate 20s linear infinite;
+    }
+
+    @keyframes animate {
+       from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    #scroll-header span {
+        display: inline-block;
+        position: absolute;
+        transform-origin: 0 180px;
+        font-size: 1em;
+        top: -180px;
+    }
+
+    .scrolldown-link-div {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .scrolldown-link-div > span {
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .scrolldown-link-div > span:hover {
+        color: #389CF4;
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .arrow {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
 
     #splash-scroll {
         /* background-color: blanchedalmond; */
