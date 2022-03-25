@@ -34,7 +34,6 @@ const Contact = ( ) => {
                         <a.h1 className="contact-header" style={animate}>I'd love to chat with you!</a.h1>
                     </div>
                     <div className="contact-info-wrapper">
-                        <div className="contact-info-left">
                             <a.div className="contact-info-div" style={animate}>
                                 <MdEmail className="contact-icon" />
                                 <h1>Send me an email</h1>
@@ -51,7 +50,6 @@ const Contact = ( ) => {
                                     LinkedIn
                                 </a>
                             </a.div>
-                        </div>
                     </div>            
                 </div>      
             </div>    

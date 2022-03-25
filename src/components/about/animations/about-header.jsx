@@ -16,7 +16,7 @@ const AboutHeader = ( {visible}) => {
 
     return (
         <a.h1 className="about-header" style={animate} >
-           Some tidbits
+           some tidbits
             <h1 className="about-header-second">about me</h1>
         </a.h1>
     )

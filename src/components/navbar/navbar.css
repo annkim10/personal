@@ -50,11 +50,12 @@
         justify-content: center;
         height: 50px;
         width: 140px;
-        font-weight: 500;
+        font-weight: 600;
         letter-spacing: 0.1em;
         font-size: 1em;
         cursor: pointer;
         text-transform: uppercase;
+        border-left: 2px solid black;
     }
 
     #nav-link:last-child {

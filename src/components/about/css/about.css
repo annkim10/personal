@@ -1,4 +1,4 @@
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 961px) {
     .about-outer-div {
         position: relative;
         width: 100vw;
@@ -7,8 +7,6 @@
         justify-content: center;
         /* align-items: center; */
         overflow: hidden;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
     }
 
     .about-inner-div {
@@ -16,12 +14,12 @@
         min-width: 1200px;
         max-width: 1200px;
         height: 650px;
+        margin-top: 20vh;
         display: flex;
         align-items: center;
         justify-content: space-between;
         overflow: hidden;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
+        border: 2px solid black
     }
 
     .about-left-div {
@@ -48,7 +46,7 @@
         display: flex;
         flex-direction: column;
         gap: 6em;
-        width: 90%;
+        width: 100%;
         overflow: hidden;
         margin-top: 50px;
         margin-left: 2.5em;
@@ -57,16 +55,15 @@
     .about-header {
         /* color: #389CF4; */
         font-weight: 300;
-        font-size: 45px;
+        font-size: 2em;
         margin-top: 10px;
-        /* font-family: 'Bodoni Moda', serif; */
+
     }
 
     .about-header-second {  
-        font-size: 65px;
+        font-size: 3.2em;
         font-weight: 600;
         overflow: hidden;
-        font-family: 'Poppins', Helvetica, sans-serif;
     }
 
     .about-descrip-div {
@@ -81,14 +78,13 @@
         width: 95%;
         display: flex;
         line-height: 1.5;
-        font-size: 20px;
+        font-size: 1em;
         padding-bottom: 20px;
     }
     
     .about-descrip-div span {
         font-size: 1.5em;
         padding-right: 10px;
-        fill: #389CF4;
     }
 
     .about-img-wrapper {
@@ -102,13 +98,14 @@
     }
 
     .about-pic {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 500px;
         object-fit: cover;
-        border-radius: 50%;
-        outline: 2px dotted black;
-        outline-offset: 10px;
+        border-top-left-radius: 100px;
+        /* outline: 2px dotted black;
+        outline-offset: 10px; */
         margin-left: 2.5em;
+        box-shadow: rgba(91, 124, 252, 0.8) -5px 5px, rgba(97, 129, 253, 0.5) -10px 10px, rgba(134, 158, 250, 0.3) -15px 15px, rgba(154, 173, 250, 0.2) -20px 20px, rgba(187, 199, 250, 0.1) -25px 25px;
         
     }
 
@@ -116,324 +113,13 @@
         width: 200px;
         height: 200px;
         object-fit: cover;
-        border-radius: 50%;
         position: absolute;
-        top: 50%;
-        left: 55%;
-        outline: 2px dotted black;
-        outline-offset: 10px;
-    }
-
-    .rollie-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    #aboutme-header {
-        font-weight: 600;
-        user-select: none;
-        pointer-events: none;
-        position: absolute;
-        top: 80%;
-        left: 80%;
-        transform: rotate(270deg);
-    }
-
-    #aboutme-header span {
-        display: inline-block;
-        position: absolute;
-        transform-origin: 0 200px;
-        font-size: 4em;
-        top: -150px;
+        top: 13%;
+        left: 60%;
+        outline: 5px solid #5b7cfc;
+        outline-offset: 3px;
     }
 
 
  
-}
-
-
-@media screen and (min-width: 961px) and (max-width: 1299px) {
-    .about-outer-div {
-        position: relative;
-        width: 100vw;
-        /* height: 100vh; */
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-        overflow: hidden;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
-    }
-
-    .about-inner-div {
-        position: relative;
-        min-width: 85vw;
-        max-width: 85vw;
-        height: 650px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-    }
-
-    .about-left-div {
-        /* background-color: antiquewhite; */
-        /* border-right: 2px solid black; */
-        height: 100%;
-        display: inline-block;
-        flex-direction: column;
-        max-width: 600px;
-        gap: 3rem;
-        overflow: hidden;
-    }
-
-    .about-right-div {
-        width: 50%;
-        height: 100%;
-        display: inline-block;
-        overflow: hidden;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .about-text-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 6em;
-        width: 90%;
-        overflow: hidden;
-        margin-top: 50px;
-        margin-left: 2.5em;
-    }
-
-    .about-header {
-        /* color: #389CF4; */
-        font-weight: 300;
-        font-size: 45px;
-        margin-top: 10px;
-        /* font-family: 'Bodoni Moda', serif; */
-    }
-
-    .about-header-second {  
-        font-size: 65px;
-        font-weight: 600;
-        overflow: hidden;
-        font-family: 'Poppins', Helvetica, sans-serif;
-    }
-
-    .about-descrip-div {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        line-height: 1.5;
-    }
-
-    .about-descrip-text {
-        width: 95%;
-        display: flex;
-        line-height: 1.5;
-        font-size: 20px;
-        padding-bottom: 20px;
-    }
-    
-    .about-descrip-div span {
-        font-size: 1.5em;
-        padding-right: 10px;
-        fill: #389CF4;
-    }
-
-    .about-img-wrapper {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        
-    }
-
-    .about-pic {
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 50%;
-        outline: 2px dotted black;
-        outline-offset: 10px;
-        margin-left: 2.5em;
-        
-    }
-
-    .jojo-pic {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 55%;
-        outline: 2px dotted black;
-        outline-offset: 10px;
-    }
-
-    .rollie-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    #aboutme-header {
-        font-weight: 600;
-        user-select: none;
-        pointer-events: none;
-        position: absolute;
-        top: 80%;
-        left: 80%;
-        transform: rotate(270deg);
-    }
-
-    #aboutme-header span {
-        display: inline-block;
-        position: absolute;
-        transform-origin: 0 200px;
-        font-size: 4em;
-        top: -150px;
-    }
-
-
- 
-}
-
-
-@media screen and (max-width: 960px) {
-    .about-outer-div {
-        position: relative;
-        width: 100vw;
-        /* height: 100vh; */
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-        overflow: hidden;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
-    }
-
-    .about-inner-div {
-        position: relative;
-        width: 90vw;
-        /* height: 650px; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-    }
-
-  
-    .about-left-div {
-        /* background-color: antiquewhite; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-    }
-
-    .about-right-div {
-        /* border-top: 2px solid black; */
-        width: 100%;
-        /* height: 70vh; */
-        overflow: hidden;
-    }
-
-    .about-text-wrapper {
-        /* border-bottom: 2px solid black; */
-        display: flex;
-        flex-direction: column;
-        gap: 6em;
-        width: 90%;
-        overflow: hidden;
-        margin-top: 50px;
-        margin-left: 1.2em;
-    }
-
-    .about-header {
-        /* color: #389CF4; */
-        font-weight: 300;
-        font-size: 45px;
-        margin-top: 10px;
-        font-family: 'Bodoni Moda', serif;
-    }
-
-    .about-header-second {  
-        font-size: 65px;
-        font-weight: 600;
-        overflow: hidden;
-        font-family: 'Poppins', Helvetica, sans-serif;
-    }
-
-    .about-descrip-div {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        line-height: 1.5;
-        padding-bottom: 1em;
-    }
-
-    .about-descrip-text {
-        width: 95%;
-        display: flex;
-        line-height: 1.5;
-        font-size: 17px;
-        padding-bottom: 20px;
-    }
-
-    .about-descrip-div span {
-        font-size: 1.5em;
-        padding-right: 10px;
-    }
-
-    .about-img-wrapper {
-        /* background-color: #389CF4; */
-        width: 100%;
-        height: 480px;
-        position: relative;
-        display: flex;
-        gap: 3em;
-        flex-direction: column;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-    .about-pic {
-        width: 280px;
-        height: 280px;
-        object-fit: cover;
-        border-radius: 50%;
-        outline: 2px dotted black;
-        outline-offset: 5px;
-        margin-left: 1em;
-    }
-
-    .jojo-pic {
-        width: 130px;
-        height: 130px;
-        object-fit: cover;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 55%;
-        outline: 2px dotted black;
-        outline-offset: 5px;
-    }
-
-    
-
-
 }
