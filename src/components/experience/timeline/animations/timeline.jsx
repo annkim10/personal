@@ -7,6 +7,7 @@ import market from "../../../../images/splash/market.jpg"
 import TimelineHeader from "./timelineheader";
 import useIntersection from "../../../_utils/useIntersection";
 import TimelineImage from "./image";
+import line from "../../../../images/line.svg"
 
 const Timeline = (  ) => {
 
@@ -38,18 +39,27 @@ const Timeline = (  ) => {
                 </div>
                 <div className="timeline-inner-bottom">
                     <a.div className="timeline-stages-inner-wrapper" style={up}>
-                        <h1>• 2021 - NOW •</h1>
-                        <h2>Developing</h2>
+                        <div className="timeline-stage-div">
+                            <img src={line} id="line" />
+                            <h1>2021 - NOW</h1>
+                            <h2>Developing</h2>
+                        </div>
                         <TimelineImage visible={visible} img={code} />
                     </a.div>
                      <a.div className="timeline-stages-inner-wrapper" style={up}>
-                        <h1>• 2016 - 2021 •</h1>
-                        <h2>Marketing</h2>
+                        <div className="timeline-stage-div">
+                            <img src={line} id="line" />
+                            <h1>2021 - NOW</h1>
+                            <h2>Marketing</h2>
+                        </div>
                         <TimelineImage visible={visible} img={market} />
                     </a.div>
                      <a.div className="timeline-stages-inner-wrapper" style={up}>
-                        <h1>• 2010 - 2016 •</h1>
-                        <h2>Advertising</h2>
+                        <div className="timeline-stage-div">
+                            <img src={line} id="line" />
+                            <h1>2021 - NOW</h1>
+                            <h2>Advertising</h2>
+                        </div>
                         <TimelineImage visible={visible} img={advertise} />
                     </a.div>
                 </div>

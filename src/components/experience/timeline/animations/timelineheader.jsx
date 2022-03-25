@@ -22,7 +22,7 @@ const TimelineHeader = ( { visible} ) => {
         <a.div className="timeline-text-wrapper" style={up} >
             <h1 className="timeline-header">
                 My career has revolved around 
-                learning about the product.
+                <span> learning about the product.</span>
             </h1>  
             <h1 className="timeline-main-copy">
                 Over 10+ years, the various roles I've held spanned across 3 different stages where I've learned the fundamentals in successfully developing, marketing and advertising a product. 
