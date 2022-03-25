@@ -25,19 +25,19 @@ const Name = ( { visible }) => {
         <div className="splash-header-wrapper">
            <div className="splash-header-name-wrapper-1">
               <a.div className="splash-header-name-1" style={animate}>
-                   I'm
+                   Hello! My name is
               </a.div>
            </div>
            <div className="splash-header-name-wrapper-2">
               <a.div className="splash-header-name-2" style={animate}>
-                    Ann
+                    Ann Kim
               </a.div>
            </div>
-            <div className="splash-header-name-wrapper-2">
+            {/* <div className="splash-header-name-wrapper-2">
               <a.div className="splash-header-name-2" style={animate}>
                     Kim.
               </a.div>
-           </div>
+           </div> */}
         </div>
     )
 }

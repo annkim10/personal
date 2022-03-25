@@ -83,7 +83,6 @@
     }
 
     .projects-card-wrapper {
-        background-color: white;
         position: relative;
         overflow: hidden;
         min-height: 80vh;
@@ -139,7 +138,7 @@
     .project-img {
         min-width: 600px;
         object-fit: cover;
-        border: 1px solid rgb(201, 201, 201);
+        /* border: 1px solid rgb(201, 201, 201); */
     }
 
     .projects-card-text-wrapper {

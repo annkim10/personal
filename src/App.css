@@ -1,6 +1,6 @@
 @media screen and (min-width: 961px) {
   .app-outer-div {
-    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(255, 255, 255);
     width: 100vw;
     position: relative;
     display: flex;
@@ -9,7 +9,7 @@
     /* font-family: 'Raleway', Helvetica, sans-serif; */
     /* font-family: 'Epilogue', sans-serif; */
     font-family: 'Poppins', sans-serif;
-    color: #404040
+    color: #404040;
   }
 
 }

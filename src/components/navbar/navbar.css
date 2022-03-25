@@ -1,22 +1,19 @@
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 960px) {
     .navbar-outer-div {
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         width: 100vw;
-        height: 60px;
+        height: 100px;
         display: flex;
         position: fixed;
         top: 0;
         justify-content: center;
-        border-bottom: 2px solid black;
         z-index: 150;
     }
 
     .navbar-inner-div {
         background-color: rgb(255, 255, 255);
-        min-width: 1200px;
-        max-width: 1200px;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
+        min-width: 960px;
+        max-width: 1300px;
         height: 100%;
         position: sticky;
         display: flex;
@@ -26,22 +23,21 @@
     }
 
     .logo-div {
-        /* background-color: #389CF4; */
-        border-right: 2px solid black;
-        height: 100%;
-        min-width: 180px;
+        background-color: #5b7cfc;
+        color:  white;
+        height: 50px;
+        min-width: 50px;
+        border-radius: 50%;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
     }
 
     #logo {
         /* letter-spacing: 0.1em; */
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 2rem;
         cursor: pointer;
-        /* font-family: 'Staatliches', cursive; */
-        /* color: #389CF4; */
     }
 
     .links-div {
@@ -55,243 +51,117 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 60px;
-        width: 170px;
-        font-weight: 300;
-        font-size: 1.1em;
-        /* border-radius: 40px; */
+        height: 50px;
+        width: 140px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        font-size: 1em;
         cursor: pointer;
-        border-left: 2px solid black;
+        text-transform: uppercase;
     }
 
     #nav-link:last-child {
-        background-color:#389CF4;
-        color: white;
+        color: #5b7cfc;
     }
 
     #nav-link:last-child:hover {
-        font-family: 'Staatliches', cursive;
-        color: white;
         transition: all 0.2s ease-in-out ;
     }
 
     #nav-link:hover {
-        /* font-weight: 600; */
-        color: #389CF4;
-        font-family: 'Staatliches', cursive;
+        font-weight: 600;
         transition: all 0.2s ease-in-out ;
    }
 
-   #nav-link:hover {
-       font-size: 1.4em;
-   }
 
-   /* #logo:hover {
-       font-size: 35px;
-   } */
 
 }
 
-@media screen and (min-width: 961px) and (max-width: 1299px) {
+@media screen and (max-width: 959px) {
     .navbar-outer-div {
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         width: 100vw;
-        height: 50px;
+        height: 100px;
         display: flex;
         position: fixed;
         top: 0;
         justify-content: center;
-        border-bottom: 2px solid black;
         z-index: 150;
     }
 
     .navbar-inner-div {
-        background-color: white;
-        /* min-width: 1200px;
-        max-width: 1600px; */
-        min-width: 85vw;
-        max-width: 85vw;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-        /* border-bottom: 5px solid black; */
-        height: 50px;
-        position: sticky;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
-    }
-
-    .logo-div {
-        /* background-color: #389CF4; */
-        border-right: 2px solid black;
-        height: 100%;
-        min-width: 180px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #logo {
-        /* letter-spacing: 0.1em; */
-        font-weight: 600;
-        font-size: 20px;
-        cursor: pointer;
-        /* font-family: 'Staatliches', cursive; */
-        /* color: #389CF4; */
-    }
-
-    .links-div {
-        /* background-color: green; */
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-
-    #nav-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 50px;
-        width: 150px;
-        font-weight: 400;
-        font-size: 17px;
-        /* border-radius: 40px; */
-        cursor: pointer;
-        border-left: 2px solid black;
-    }
-
-    #nav-link:last-child {
-        background-color:#389CF4;
-        color: white;
-    }
-
-    #nav-link:last-child:hover {
-        font-family: 'Staatliches', cursive;
-        color: white;
-        transition: all 0.2s ease-in-out ;
-    }
-
-    #nav-link:hover {
-        /* font-weight: 600; */
-        color: #389CF4;
-        font-family: 'Staatliches', cursive;
-        transition: all 0.2s ease-in-out ;
-   }
-
-   #nav-link:hover {
-       font-size: 25px;
-   }
-
-   /* #logo:hover {
-       font-size: 35px;
-   } */
-
-}
-
-
-/* MOBILE */
-
-@media screen and (max-width: 960px) {
-    .navbar-outer-div {
-        background-color: white;
-        width: 100vw;
-        height: 60px;
-        display: flex;
-        position: fixed;
-        top: 0;
-        justify-content: center;
-        border-bottom: 2px solid black;
-        z-index: 100;
-    }
-
-    .navbar-inner-div {
+        background-color: rgb(255, 255, 255);
         width: 90vw;
-        background-color: white;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-        height: 60px;
+        height: 100%;
         position: sticky;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        z-index: 150;
+        /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
     }
 
     .logo-div {
-        border-right: 2px solid black;
-        height: 100%;
-        min-width: 180px;
+        background-color: #5b7cfc;
+        color:  white;
+        height: 50px;
+        min-width: 50px;
+        border-radius: 50%;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
     }
 
     #logo {
+        /* letter-spacing: 0.1em; */
         font-weight: 600;
-        font-size: 26px;
+        font-size: 2rem;
         cursor: pointer;
     }
 
     .links-div {
-       display: none;
+        display: none;
     }
 
-    .menu-icon, .close-icon {
-        font-size: 2em;
-        z-index: 120;
-    }
-
-    .mobile-menu-icon-div {
-        /* background-color: aqua; */
-        width: 80%;
+    .links-mobile-div  {
+        background-color: white;
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .links-mobile-div {
-        /* background-color: rgba(0, 0, 0, 0.5); */
-        position: fixed;
-        height: 100vh;
         width: 100vw;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: center; */
+        height: 100vh;
     }
 
     .links-inner-mobile-div {
-        margin-top: 50px;
-        border-top: 2px solid black;
-        height: 90vh;
-        width: 100vw;
-        z-index: 120;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        border: 1px solid black;
+        height: 100vh;
     }
 
     #nav-link {
-        background-color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 15vh;
-        width: 90vw;
-        font-weight: 400;
-        font-size: 2em;
-        /* border-radius: 40px; */
+        height: 50px;
+        width: 140px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        font-size: 1em;
         cursor: pointer;
-        border-bottom: 2px solid black;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
+        text-transform: uppercase;
     }
 
     #nav-link:last-child {
-        border-bottom: 10px solid black;
+        color: #5b7cfc;
     }
+
+    #nav-link:last-child:hover {
+        transition: all 0.2s ease-in-out ;
+    }
+
+    #nav-link:hover {
+        font-weight: 600;
+        transition: all 0.2s ease-in-out ;
+   }
+
+
 
 }
