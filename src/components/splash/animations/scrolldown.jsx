@@ -7,14 +7,18 @@ import { MdKeyboardArrowDown } from "react-icons/md"
 const ScrollDown = ( { idName, visible, name, container, mobile } ) => {
 
     const animate = useSpring({
-        y: visible ? 0 : 500, 
+        // opacity: visible ? 1 : 0,
+        // x: visible ? 0 : -1000, 
+        y: visible ? 0 : -1500,
+        // // transform: visible ? 'skewX(0)' : 'skewX(35deg)',
+        // transform: visible ? 'scale(1)' : 'scale(0.2)',
         // delay: 500,
         config: {
-            mass: 1,
-            tension: 200,
-            friction: 180,
-            duration: 1500,
-            easing: easings.easeInOutBack
+            mass: 10,
+            tension: 2000,
+            friction: 300,
+            duration: 5000,
+            easing: easings.easeInOutCubic
         }
     })
 
@@ -47,7 +51,6 @@ const ScrollDown = ( { idName, visible, name, container, mobile } ) => {
                 />
                 <MdKeyboardArrowDown className="arrow" />
             </div>
-           
         </a.div>
         
     )

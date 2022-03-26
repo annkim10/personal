@@ -17,7 +17,7 @@ const AboutImgs = ( {visible}) => {
     })
 
     return (
-        <a.div className="about-img-wrapper" style={animate}>
+        <a.div className="about-img-wrapper-inner" style={animate}>
             <div className="rollie-wrapper" >
                 <img className="about-pic" src={pic} />
             </div>

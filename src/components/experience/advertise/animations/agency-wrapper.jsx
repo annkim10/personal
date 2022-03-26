@@ -64,8 +64,6 @@ const AgencyWrapper = ( { visible, mobile }) => {
        e.preventDefault()
        !draft && (!mec && !um) ? setDraft(true) : setDraft(false)
     }
-
-    console.log(mobile)
  
     return (
         <a.div style={animate} className="agency-outer-wrapper">

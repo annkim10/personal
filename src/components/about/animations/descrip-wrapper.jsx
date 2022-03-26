@@ -22,18 +22,18 @@ const AboutMe = ( { visible } ) => {
 
     return (
         <a.div className="about-descrip-div" style={animate}>
-            <h1 className="about-descrip-text"> 
+            <div className="about-descrip-text"> 
                 <span><GrLocation /></span>
-                I am based in Long Island City, NY
-            </h1>
-            <h1 className="about-descrip-text"> 
+                <h1>I am based in Long Island City, NY</h1>
+            </div>
+            <div className="about-descrip-text"> 
                 <span><BsEmojiHeartEyes /></span>
-                I am a big dog lover and pet parent to Rollie & Jojo
-            </h1>
-            <h1 className="about-descrip-text"> 
+                <h1>I am a big dog lover and pet parent to Rollie & Jojo</h1>
+            </div>
+            <div className="about-descrip-text"> 
                 <span><MdOutlineSchool /></span>
-                I graduated from Northwestern University in 2010 with a Bachelor of Arts in Psychology & certificate in Integrated Marketing Communications
-            </h1>
+                <h1>I graduated from Northwestern University in 2010</h1>
+            </div>
         </a.div>
     )
 }

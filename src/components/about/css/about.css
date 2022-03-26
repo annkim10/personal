@@ -17,29 +17,74 @@
         margin-top: 20vh;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         overflow: hidden;
-        border: 2px solid black
+        border: 2px solid black;
     }
 
     .about-left-div {
-        /* background-color: antiquewhite; */
-        /* border-right: 2px solid black; */
         height: 100%;
-        display: inline-block;
-        flex-direction: column;
-        max-width: 600px;
-        gap: 3rem;
+        display: flex;
+        width: 50%;
         overflow: hidden;
+        position: relative;
     }
 
     .about-right-div {
         width: 50%;
         height: 100%;
-        display: inline-block;
+        display: flex;
         overflow: hidden;
         position: relative;
+        align-items: flex-end;
+    }
+
+    .about-img-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        /* align-items: center;
+        justify-content: center; */
         overflow: hidden;
+    }
+
+
+    .header-wrapper {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+    }
+
+    .about-header-first {
+
+        width: fit-content;
+        padding: 0.3em;
+        /* color: #389CF4; */
+        font-weight: 300;
+        font-size: 2em;
+        /* margin-top: 10px; */
+    }
+
+    .about-header-second {  
+        margin-top: 0.3px;
+        margin-left: 80px;
+        border: 2px solid black;
+        width: fit-content;
+        padding: 0.3em;
+        font-size: 3em;
+        font-weight: 600;
+        overflow: hidden;
+    }
+
+    .about-descrip-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        line-height: 1.5;
+        padding-bottom: 5em;
     }
 
     .about-text-wrapper {
@@ -48,78 +93,51 @@
         gap: 6em;
         width: 100%;
         overflow: hidden;
-        margin-top: 50px;
-        margin-left: 2.5em;
-    }
-
-    .about-header {
-        /* color: #389CF4; */
-        font-weight: 300;
-        font-size: 2em;
-        margin-top: 10px;
-
-    }
-
-    .about-header-second {  
-        font-size: 3.2em;
-        font-weight: 600;
-        overflow: hidden;
-    }
-
-    .about-descrip-div {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        line-height: 1.5;
     }
 
     .about-descrip-text {
-        width: 95%;
+        border: 2px solid black;
+        width: fit-content;
+        height: 100%;
         display: flex;
-        line-height: 1.5;
+        align-items: center;
+    }
+
+    .about-descrip-text h1 {
         font-size: 1em;
-        padding-bottom: 20px;
+        padding: 0 1em;
     }
     
     .about-descrip-div span {
-        font-size: 1.5em;
-        padding-right: 10px;
-    }
-
-    .about-img-wrapper {
-        width: 100%;
+        padding: 0.5em;
         height: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        
+        font-size: 1.5em;
+        /* padding-right: 10px; */
+        border-right: 2px solid black;
     }
 
     .about-pic {
-        width: 300px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
         object-fit: cover;
-        border-top-left-radius: 100px;
-        /* outline: 2px dotted black;
-        outline-offset: 10px; */
-        margin-left: 2.5em;
-        box-shadow: rgba(91, 124, 252, 0.8) -5px 5px, rgba(97, 129, 253, 0.5) -10px 10px, rgba(134, 158, 250, 0.3) -15px 15px, rgba(154, 173, 250, 0.2) -20px 20px, rgba(187, 199, 250, 0.1) -25px 25px;
-        
+        border-radius: 50%;
+        outline: 3px solid #5b7cfc;
+        outline-offset: 3px;
     }
 
     .jojo-pic {
         width: 200px;
         height: 200px;
+        border-radius: 50%;
+        object-position: 80%;
         object-fit: cover;
         position: absolute;
-        top: 13%;
-        left: 60%;
-        outline: 5px solid #5b7cfc;
-        outline-offset: 3px;
+        top: 40%;
+        left: 70%;
+        outline: 3px solid #5b7cfc;
+        outline-offset: 1px;
     }
-
 
  
 }
+

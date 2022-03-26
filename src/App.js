@@ -27,7 +27,11 @@ function App() {
       // return window.removeEventListener('resize', showMobileMenu)     
   }, [])
 
-  // useEffect(() => window.scroll(0,0))
+//   var currentScroll = window.scrollY
+
+//   console.log("currentscroll", currentScroll)
+
+  useEffect(() => console.log("currentscroll", window.scrollY))
 
   return (
     <div className="app-outer-div">

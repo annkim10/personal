@@ -25,9 +25,9 @@ const Splash = ( { visible, mobile }) => {
     return (
         <div className="splash-outer-div" id="splash-container">
             <a.div className="splash-inner-div" style={animate} >
-                {/* <div className="splash-footer-wrapper">
+                <div className="splash-footer-wrapper">
                     <h1 className="footer-copytag">© 2022 built by Ann Kim</h1>
-                </div> */}
+                </div>
                 <div className="splash-top-div">
                         <Name visible={visible} />  
                 </div>
@@ -39,7 +39,6 @@ const Splash = ( { visible, mobile }) => {
                     mobile={mobile}
                 /> 
             </a.div>    
-         
         </div>
     )
 }

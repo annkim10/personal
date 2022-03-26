@@ -15,10 +15,10 @@ const AboutHeader = ( {visible}) => {
     })
 
     return (
-        <a.h1 className="about-header" style={animate} >
-           some tidbits
-            <h1 className="about-header-second">about me</h1>
-        </a.h1>
+        <a.div className="about-header" style={animate} >
+            <h1 className="about-header-first">some tidbits</h1>
+            <h2 className="about-header-second">about me</h2>
+        </a.div>
     )
 }
 

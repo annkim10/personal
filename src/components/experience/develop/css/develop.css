@@ -16,8 +16,8 @@
         min-width: 1200px;
         max-width: 1200px;
         margin-top: 20vh;
-        min-height: 80vh;
-        max-height: 80vh;
+        /* min-height: 80vh;
+        max-height: 80vh; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -37,7 +37,7 @@
 
     .develop-bottom-div {
         width: 100%;
-        height: 30vh;
+        height: 300px;
         display: flex;
         overflow: hidden;
     }
@@ -108,11 +108,11 @@
         margin-top: 2%;
         border: 1px;
         display: flex;
-        gap: 8em;
+        gap: 5em;
         /* flex-direction: column; */
         /* align-items: center; */
         justify-content: center;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         position: relative;
     }
@@ -131,6 +131,7 @@
 
     .develop-stage-skills-list {
         width: 80%;
+        height: 230px;
         align-items: center;
         display: flex;
         /* justify-content: space-between; */
@@ -139,13 +140,8 @@
     }
 
     .develop-skill-wrapper {
-        /* background-color: #389CF4; */
         width: 15%;
         height: 100px;
-    }
-
-    .develop-skill-wrapper:last-child {
-       border: none;
     }
 
     .skill {
@@ -158,7 +154,7 @@
 
     #skill-icon {
         color: #404040;
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     .skill p {

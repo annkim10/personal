@@ -13,8 +13,6 @@ const NavBar = ( { mobile, visible } ) => {
     
     const closeMenu = () => setClick(false)
 
-    console.log("nav", mobile)
-
     const handleMobileIcon = () => {
         if (mobile && !click) {
             return <AiOutlineMenu className="menu-icon" onClick={handleClick}/>
@@ -27,13 +25,13 @@ const NavBar = ( { mobile, visible } ) => {
 
     const down = useSpring({
         opacity: visible ? 1 : 0,
-        y: visible ? 0 : -50,
+        // y: visible ? 0 : -150,
         // transform: visible ? 'translateY(50%)' : 'translateY(0%)',
         config: {
-            mass: 1,
-            tension: 200,
+            mass: 5,
+            tension: 2000,
             friction: 180,
-            duration: 1000,
+            duration: 2000,
             easing: easings.easeInOutBack
         }
     })
@@ -46,7 +44,7 @@ const NavBar = ( { mobile, visible } ) => {
 
     return (
         <a.div className='navbar-outer-div' style={down} >
-            <div className="navbar-inner-div">
+            <div className="navbar-inner-div-border">
                 <div className="logo-div">
                     <NavLink 
                         name={'ANN'}

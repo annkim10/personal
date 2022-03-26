@@ -63,7 +63,6 @@
         border-right: 1px solid black;
         border-bottom: 1px solid black;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1em;
@@ -100,3 +99,105 @@
 }
 
 
+@media screen and (min-width: 421px) and (max-width: 960px) {
+    .contact-outer-div {
+        /* background-color: #389CF4; */
+        position: relative;
+        width: 100vw;
+        /* height: 600px; */
+        border-bottom: 3em solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border-top: 1px solid black; */
+    }
+
+    .contact-inner-div {
+        min-width: 90vw;
+        max-width: 90vw;
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 5em;
+        /* border: 2px solid black; */
+    }
+
+    .contact-header-div {
+        font-weight: 100;
+        line-height: 1.3;
+        font-size: 3em;
+        font-weight: 600;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .contact-header {
+        margin-left: 30px;
+        /* color: #5b7cfc; */
+    }
+
+    .contact-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 2px solid black;
+    }
+
+    .contact-info-left {
+        display: flex;
+        width: 100%;
+    }
+
+    .contact-info-div {
+        /* background-color: antiquewhite; */
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .contact-info-div:last-child {
+        border-right: none;
+    }
+
+    .contact-icon {
+        font-size: 2em;
+    }
+
+    .contact, .contact-email {
+        font-size: 1.2em;
+        font-weight: 600;
+        color:#5b7cfc ;
+    }
+
+    .contact-email {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .contact-links-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+
+}

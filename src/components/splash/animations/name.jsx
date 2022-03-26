@@ -1,22 +1,39 @@
 import React from "react"
 import { Transition, useTrail, easings, useSpring, animated as a, config } from "react-spring";
-import Descrip from "./descrip";
+
 
 const Name = ( { visible }) => {
 
     const greeting = ['It\'s nice to meet you,']
-    const name = ['I\'m', 'Ann Kim']
+    const first = ['A', 'n', 'n']
+    const last = ['K', 'i', 'm']
 
     const animate = useSpring({
         opacity: visible ? 1 : 0,
-        // height: visible? '100%' : '0%',
+        // transform: visible ? 'skewX(0)' : 'skewX(30deg)',
+        // transform: visible ? 'scale(1)' : 'scale(10)',
         transform: visible ? 'translateY(0%)' : 'translateY(80%)',
         config: {
-            mass: 1,
+            mass: 10,
             tension: 2000,
             friction: 180,
             duration: 2000,
             easing: easings.easeInOutCubic
+        }
+    })
+
+
+    const trail2 = useTrail(last.length, {
+        opacity: visible ? 1 : 0,
+        height: visible? '100%' : '0%',
+        transform: visible ? 'skewY(0)' : 'skewY(90deg)',
+        transform: visible ? 'translateY(0%)' : 'translateY(100%)',
+        config: {
+            mass: 10,
+            tension: 2000,
+            friction: 130,
+            duration: 2000,
+            easing: easings.easeInOutQuad
         }
     })
 

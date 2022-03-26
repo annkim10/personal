@@ -14,7 +14,7 @@
         background-color: white;
         min-width: 1200px;
         max-width: 1200px;
-        margin-top: 20vh;
+        margin-top: 300px;
         min-height: 80vh;
         max-height: 80vh;
         overflow: hidden;
@@ -63,7 +63,7 @@
         text-decoration-color: #5b7cfc;
         text-underline-offset: 5px;
     }
-
+  
     .timeline-main-copy {
         margin-top: 10%;
         font-weight: 300;
