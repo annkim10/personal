@@ -32,8 +32,8 @@ const Timeline = (  ) => {
     })
 
     return (
-        <div className="timeline-outer-div" id="timeline-container" ref={ref}>
-            <div className="timeline-inner-div">
+        <div className="timeline-outer-div" id="timeline-container">
+            <div className="timeline-inner-div" ref={ref}>
                 <div className="timeline-inner-top">     
                     <TimelineHeader visible={visible} />
                 </div>

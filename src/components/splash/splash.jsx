@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react"
-import { FaLinkedinIn, FaGithub } from "react-icons/fa"
 import "./css/splash.css"
-import Timeline from "../experience/timeline/animations/timeline"
 import Name from "./animations/name";
-import Descrip from "./animations/descrip";
 import ScrollDown from "./animations/scrolldown.jsx"
 import { useSpring, easings, config, animated as a } from "react-spring"
 

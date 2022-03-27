@@ -17,7 +17,7 @@ const ScrollDown = ( { idName, visible, name, container, mobile } ) => {
             mass: 10,
             tension: 2000,
             friction: 300,
-            duration: 5000,
+            duration: 4000,
             easing: easings.easeInOutCubic
         }
     })

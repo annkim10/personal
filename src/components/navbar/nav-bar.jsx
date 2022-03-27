@@ -38,7 +38,7 @@ const NavBar = ( { mobile, visible } ) => {
 
     const animate = useSpring ({
         height: click ? '100%' : "0%",
-        config: config.molasses,
+        config: config.default,
     })
 
 

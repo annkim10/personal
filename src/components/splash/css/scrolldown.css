@@ -188,9 +188,9 @@
     #scroll-header span {
         display: inline-block;
         position: absolute;
-        transform-origin: 0 180px;
+        transform-origin: 0 160px;
         font-size: 1em;
-        top: -180px;
+        top: -160px;
     }
 
     .scrolldown-link-div {

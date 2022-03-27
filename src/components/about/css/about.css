@@ -402,9 +402,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 1em;
         line-height: 1.5;
         padding-bottom: 5em;
+        
     }
 
     .about-text-wrapper {
@@ -418,7 +420,7 @@
 
     .about-descrip-text {
         border: 2px solid black;
-        width: 80%;
+        width: 85%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -426,8 +428,9 @@
     }
 
     .about-descrip-text h1 {
-        font-size: 1em;
-        padding: 0 1em;
+        font-size: 0.8em;
+        /* padding: 0 1em; */
+        padding-left: 0.5em;
     }
     
     .about-descrip-div span {
