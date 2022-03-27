@@ -153,7 +153,7 @@
 
     .agency-slider-inner-left {
        background-color: black;
-       width: 500px;
+       width: 400px;
        height: 350px;
        overflow: hidden;
        display: block;
@@ -175,8 +175,12 @@
 
 
     .agency-slider-inner-mid {
+        min-width: 120px;
         max-width: 120px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .agency-slider-inner-right-inactive {
@@ -189,11 +193,14 @@
     }
 
     .agency-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 20px;
         font-weight: 600;
         letter-spacing: 0.1em;
         margin-top: 20px;
-        padding: 0 10px;
+        padding: 0 25px;
         writing-mode: vertical-rl;
     }
 
@@ -438,7 +445,7 @@
         font-weight: 600;
         letter-spacing: 0.1em;
         margin-top: 20px;
-        padding: 0 10px;
+        padding: 0 25px;
         writing-mode: vertical-rl;
     }
 
@@ -683,7 +690,7 @@
         font-weight: 600;
         letter-spacing: 0.1em;
         margin-top: 20px;
-        padding: 0 10px;
+        padding: 0 25px;
         writing-mode: vertical-rl;
     }
 

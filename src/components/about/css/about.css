@@ -130,8 +130,7 @@
         height: 400px;
         object-fit: cover;
         border-radius: 50%;
-        outline: 3px solid #5b7cfc;
-        outline-offset: 3px;
+        
     }
 
     .jojo-pic {
@@ -143,8 +142,6 @@
         position: absolute;
         top: 40%;
         left: 60%;
-        outline: 3px solid #5b7cfc;
-        outline-offset: 1px;
     }
 
  
@@ -286,8 +283,6 @@
         height: 300px;
         object-fit: cover;
         border-radius: 50%;
-        outline: 3px solid #5b7cfc;
-        outline-offset: 3px;
     }
 
     .jojo-pic {
@@ -299,8 +294,6 @@
         position: absolute;
         top: 40%;
         left: 60%;
-        outline: 3px solid #5b7cfc;
-        outline-offset: 1px;
     }
 
  
@@ -446,8 +439,6 @@
         height: 250px;
         object-fit: cover;
         border-radius: 50%;
-        outline: 3px solid #5b7cfc;
-        outline-offset: 3px;
     }
 
     .jojo-pic {
@@ -459,8 +450,6 @@
         position: absolute;
         top: 40%;
         left: 60%;
-        outline: 3px solid #5b7cfc;
-        outline-offset: 1px;
     }
 
  

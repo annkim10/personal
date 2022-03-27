@@ -123,8 +123,8 @@
         width: 80%;
         height: 300px;
         border-radius: 190px;
-        outline: 1px solid black;
-        outline-offset: 8px;
+        /* outline: 1px solid black;
+        outline-offset: 8px; */
         overflow: hidden;
         position: relative;
     }
@@ -273,8 +273,8 @@
         width: 80%;
         height: 300px;
         border-radius: 190px;
-        outline: 1px solid black;
-        outline-offset: 8px;
+        /* outline: 1px solid black;
+        outline-offset: 8px; */
         overflow: hidden;
         position: relative;
     }
@@ -418,8 +418,8 @@
         width: 80%;
         height: 300px;
         border-radius: 190px;
-        outline: 1px solid black;
-        outline-offset: 8px;
+        /* outline: 1px solid black;
+        outline-offset: 8px; */
         overflow: hidden;
         position: relative;
     }
