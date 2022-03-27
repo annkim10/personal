@@ -20,7 +20,7 @@ const MarketDescrip = ( { visible } ) => {
     return (
         <a.div style={up} className="market-descrip-div">
             <h1 className="market-descrip">
-                As a product marketing manager at Samsung, I gained both B2B and B2C experience on marketing a wide portfolio of technology products.
+                From 2016 to 2021, I was a product marketing manager at Samsung, responsible for B2B hospitality TVs and B2C Desktop Monitors. As a PM, I was involved in all aspects of the business - from marketing to supply chain to pricing and more.  
                 <span>
                     <a className="resume-email" target="_blank" href = "mailto:ann.sun.kim@gmail.com">
                         Ask me for my resume!

@@ -29,7 +29,6 @@
     .develop-top-div {
         /* background-color: antiquewhite; */
         width: 100%;
-        /* min-height: 40vh; */
         display: flex;
         overflow: hidden;
         border-bottom: 2px solid black;
@@ -47,7 +46,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 40vh;
+        min-height: 300px;
         overflow: hidden;
     }
 
@@ -86,7 +85,7 @@
 
     .develop-descrip-div {
         width: 90%;
-        padding: 0 4em;
+        padding: 0 3em;
     }
 
     .develop-descrip {
@@ -98,7 +97,7 @@
 
    .develop-descrip  a {
         font-weight: 600;
-        padding: 0 10px;
+        padding: 0 7px;
         color: #5b7cfc;
         text-decoration: underline;
         text-decoration-thickness: 2px;

@@ -30,7 +30,7 @@ const Market = ( { mobile }) => {
                     <h1 className='youtube-header'>
                         Featured in Samsung's 
                         <span>
-                            <a href="https://news.samsung.com/global/video-replay-unbox-and-discover-2021">
+                            <a target="_blank" href="https://news.samsung.com/global/video-replay-unbox-and-discover-2021">
                                 Unbox and Discover 2021
                             </a>
                         </span>

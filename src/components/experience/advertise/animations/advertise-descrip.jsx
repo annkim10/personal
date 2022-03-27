@@ -20,7 +20,7 @@ const AdvertiseDescrip = ( { visible } ) => {
     return (
         <a.div style={up} className="advertise-descrip-div">
             <h1 className="advertise-descrip">
-                My experience in media planning/buying traverses across three different agencies and a multitude of industries including food & beverage, shipping, and pharma.
+                From 2010 to 2016, I began my career in cross-channel media planning and buying, working across a variety of industries including food & beverage, shipping, and pharma.
             </h1>
             <h1 className="advertise-cta">CLICK BELOW FOR MORE DETAILS</h1>
         </a.div>

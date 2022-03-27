@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react"
 import "./contact.css"
-import { MdEmail } from "react-icons/md"
-import { FaLinkedinIn, FaPhoneAlt } from "react-icons/fa"
+import { MdOutlineEmail } from "react-icons/md"
+import { AiOutlineLinkedin } from "react-icons/ai"
+import { FiArrowUpRight } from "react-icons/fi"
 import { useSpring, config, easings, animated as a}  from "react-spring"
 import useIntersection from "../_utils/useIntersection"
 
@@ -34,22 +35,36 @@ const Contact = ( ) => {
                         <a.h1 className="contact-header" style={animate}>I'd love to chat with you!</a.h1>
                     </div>
                     <div className="contact-info-wrapper">
-                            <a.div className="contact-info-div" style={animate}>
-                                <MdEmail className="contact-icon" />
-                                <h1>Send me an email</h1>
-                                <a className="contact-email" target="_blank" href = "mailto:ann.sun.kim@gmail.com">
-                                    ann.sun.kim@gmail.com
-                                </a>
-                            </a.div>
-                            <a.div className="contact-info-div" style={animate}>
-                                <FaLinkedinIn className="contact-icon" />
-                                <h1>Connect with me</h1>
-                                 <a className="contact-email" 
-                                    target="_blank" 
-                                    href = "https://www.linkedin.com/in/ann-kim">
-                                    LinkedIn
-                                </a>
-                            </a.div>
+                            <div className="contact-info-div">
+                                <div className="icon-div">
+                                    <MdOutlineEmail className="contact-icon" />
+                                </div>
+                                <div className="info-div-1">
+                                    <h1>Send me an email</h1>
+                                </div>
+                                <div className="info-div-2">
+                                    <a className="contact-email" target="_blank" href = "mailto:ann.sun.kim@gmail.com">
+                                        ann.sun.kim@gmail.com
+                                    </a>
+                                    <span><FiArrowUpRight className="contact-arrow"/></span>
+                                </div>
+                            </div>
+                            <div className="contact-info-div">
+                                <div className="icon-div">
+                                      <AiOutlineLinkedin className="contact-icon" />
+                                </div>
+                                <div className="info-div-1">
+                                    <h1>Connect with me</h1>
+                                </div>
+                                <div className="info-div-2">
+                                   <a className="contact-email" 
+                                        target="_blank" 
+                                        href = "https://www.linkedin.com/in/ann-kim">
+                                        LinkedIn 
+                                    </a>
+                                    <span><FiArrowUpRight className="contact-arrow"/></span>
+                                </div>
+                            </div>
                     </div>            
                 </div>      
             </div>    

@@ -25,7 +25,7 @@ const TimelineHeader = ( { visible} ) => {
                 <span> learning about the product.</span>
             </h1>  
             <h1 className="timeline-main-copy">
-                Over 10+ years, the various roles I've held spanned across 3 different stages where I've learned the fundamentals in successfully developing, marketing and advertising a product. 
+                Over the span of 12 years, the various roles I've held were shaped by 3 different stages in which I learned the fundamentals to successfully developing, marketing and advertising a product. 
             </h1> 
         </a.div>
     )

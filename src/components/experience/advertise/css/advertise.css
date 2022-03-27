@@ -161,7 +161,6 @@
 
     .agency-img {
         width: 500px;
-        object-position: 50%;
         object-fit: cover;
         overflow: hidden;
     }
