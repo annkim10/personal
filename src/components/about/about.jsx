@@ -11,7 +11,7 @@ const About = () => {
     const [load, setLoad] = useState(false)
 
     const ref = useRef();
-    const visible = useIntersection(ref, '0px', '0');
+    const visible = useIntersection(ref, '0px', '0.2');
 
     useEffect(() => visible ? setLoad(true) : "")
 

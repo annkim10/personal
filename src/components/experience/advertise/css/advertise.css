@@ -399,6 +399,7 @@
 
     .agency-slide-inner-div {
        display: flex;
+       width: 100%;
        min-height: 350px;
        max-height: 350px;
        overflow: hidden;
@@ -406,7 +407,7 @@
 
     .agency-slider-inner-left {
        background-color: black;
-       width: 500px;
+       min-width: 70%;
        overflow: hidden;
        display: block;
     }
