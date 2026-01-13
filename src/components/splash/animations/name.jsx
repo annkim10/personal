@@ -26,7 +26,7 @@ const Name = ( { visible }) => {
         <div className="splash-header-wrapper">
            <div className="splash-header-name-wrapper-1">
               <a.div className="splash-header-name-1" style={animate}>
-                   Hello! My name is
+                   Hi! My name is
               </a.div>
            </div>
            <div className="splash-header-name-wrapper-2">

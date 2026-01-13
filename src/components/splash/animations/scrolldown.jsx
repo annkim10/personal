@@ -41,7 +41,7 @@ const ScrollDown = ( { idName, visible, name, container, mobile } ) => {
                 })}
             </h1>
             <div className="scrolldown-link-div">
-                <p className="splash-descrip-text">I'm a product manager, coder, & dog mom of two based in NYC.</p>
+                <p className="splash-descrip-text">I'm a product marketing expert, coder, & dog mom of two based in NYC.</p>
                 <NavLink 
                     name={'SCROLL'}
                     navLinkId={'scroll-icon'} 

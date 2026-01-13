@@ -24,7 +24,7 @@ const AboutMe = ( { visible } ) => {
         <a.div className="about-descrip-div" style={animate}>
             <div className="about-descrip-text"> 
                 <span><GrLocation /></span>
-                <h1>I am based in Long Island City, NY</h1>
+                <h1>I am based in Brooklyn, NY</h1>
             </div>
             <div className="about-descrip-text"> 
                 <span><BsEmojiHeartEyes /></span>

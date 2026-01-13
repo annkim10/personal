@@ -41,24 +41,24 @@ const Timeline = (  ) => {
                     <a.div className="timeline-stages-inner-wrapper" style={up}>
                         <div className="timeline-stage-div">
                             <img src={line} id="line" />
-                            <h1>2021 - NOW</h1>
-                            <h2>Developing</h2>
+                            {/* <h1>2021 - NOW</h1> */}
+                            <h2>Developing the product</h2>
                         </div>
                         <TimelineImage visible={visible} img={code} />
                     </a.div>
                      <a.div className="timeline-stages-inner-wrapper" style={up}>
                         <div className="timeline-stage-div">
                             <img src={line} id="line" />
-                            <h1>2016 - 2021</h1>
-                            <h2>Marketing</h2>
+                            {/* <h1>2016 - 2021</h1> */}
+                            <h2>Marketing the product</h2>
                         </div>
                         <TimelineImage visible={visible} img={market} />
                     </a.div>
                      <a.div className="timeline-stages-inner-wrapper" style={up}>
                         <div className="timeline-stage-div">
                             <img src={line} id="line" />
-                            <h1>2010 - 2016</h1>
-                            <h2>Advertising</h2>
+                            {/* <h1>2010 - 2016</h1> */}
+                            <h2>Advertising the product</h2>
                         </div>
                         <TimelineImage visible={visible} img={advertise} />
                     </a.div>
